@@ -1,0 +1,230 @@
+language: 'en'
+template:
+  # basic template properties (required by design.properties)
+  name: BJB_Landingpage
+  author: Steven Rogers
+  # custom variables (only if required by design.properties, set to [] if not needed)
+  i18n:
+    phone: Telefon
+    fax: Fax
+    regards: Herzliche Grüsse und bis bald
+  company: Bank Julius Baer & Co. Ltd.
+  companyexampleimageurl: Bank%20Julius%20Baer
+  address:
+    name: Julius Baer
+    position: Head of Equity Research
+    street: Bahnhofstrasse 36
+    city: 8010 Zurich
+    phone: +41 (0)58 888 1111
+    fax: +41 (0)58 888 1122
+  exampletext:
+    short: Lorem ipsum – dolor sit amet
+    long: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+  # custom element-naming (drag-n-drop-elements) (set to [] if not needed)
+  element:
+    naming:
+      header:
+        container: Header-Container
+        h1: Article title
+        h1partsplaintext0: Title
+        breadcrumb: Date, Author, Reading time
+        breadcrumbpartsplaintext0: Publish-Date
+        breadcrumbpartsplaintext1: Author
+        breadcrumbpartsplaintext2: Estimated reading time
+        image: Headerimage
+        imagepartsimage0: Imagesource
+        text: Lead
+        textpartsplaintext0: Lead
+      content:
+        printsubscribe: Interaction-Container
+        cta: Contact with link
+        highlightbox: Rectangle
+        image: Image-Element
+        quote: Quote
+        spacer: Divider
+        text: Bodytext-Element
+        textpartsplaintext0: Title Bodytext
+        textpartsplaintext1: Content Bodytext
+        textimage: Image-Element
+        texttitleimage: Image-Element
+        video: Embed-Video
+        videopartsvideo0: Video-Source
+        videohtml: iframe-Video
+        videohtmlpartsvideo0: iframe-Video-Source
+    # custom element-description (drag-n-drop-elements) (set to [] if not needed)
+    description:
+      header:
+        container: Container for header elements
+      content:
+        highlightbox: Title/Text in a box
+        content1: Part of
+        content2: Part of
+        printsubscribe: print/subscribe, social-follow
+        image: without legend
+        textimage: with legend
+        texttitleimage: with title and legend
+        video: External Videosource
+        videohtml: External Videosource
+      footer:
+        container: Container Footer-Elements
+  # placeholder-naming library (set to [] if not needed)
+  placeholder:
+    header:
+      h1: '{header_h1-title}'
+      image: '{header_image-alttext}'
+      text: '{header_lead-text}'
+    content:
+      cta: '{content_contact-text}'
+      quote:
+        text: '{content_quote-text}'
+        name: '{content_quote-name}'
+        position: '{content_quote-position}'
+      highlightbox:
+        title: '{content_rectangle-title}'
+        text: '{content_rectangle-text}'
+    articles:
+      tag1: '{related_article1-tag}'
+      tag2: '{related_article2-tag}'
+      tag3: '{related_article3-tag}'
+      tag4: '{related_article4-tag}'
+      content1: '{related_article1-title}'
+      content2: '{related_article2-title}'
+      content3: '{related_article3-title}'
+      content4: '{related_article4-title}'
+    footer:
+      disclaimer: '{footer_disclaimer-text}'
+  # imagereference-look_up_table library (set to [] if not needed)
+  imagereference: []
+  # define your styles (only if required by design.properties, set to [] if not needed)
+  styles: []
+  # name your groups (required by design.properties)
+  groups:
+    header: 'Header Elements'
+    content: 'Content Elements'
+    articles: 'Related Articles'
+    articlesalt: 'Alternative Elements'
+    footer: 'Footer Elements'
+  # organize your elements in groups (equals studio element groups)
+  elements:
+    header:
+      - 'container'
+      - 'h1'
+      - 'breadcrumb'
+      - 'image'
+      - 'text'
+    content:
+      - 'printsubscribe'
+      - 'content1'
+      - 'content2'
+      - 'text'
+      - 'video'
+      - 'video-html'
+      - 'image'
+      - 'text-image'
+      - 'text-title-image'
+      - 'quote'
+      - 'highlightbox'
+      - 'cta'
+      - 'spacer'
+    articles:
+      - 'image1'
+      - 'image2'
+      - 'image'
+      - 'content1'
+      - 'content2'
+      - 'content3'
+      - 'content4'
+    articlesalt:
+      - 'backtotop'
+    footer:
+      - 'container'
+      - 'links'
+      - 'social'
+      - 'legal'
+      - 'disclaimer'
+  # define your dropzones here
+  dropzones:
+    header:
+      header:
+        - 'container'
+    content:
+      content:
+        - 'printsubscribe'
+        - 'text'
+        - 'video'
+        - 'video-html'
+        - 'quote'
+        - 'text-image'
+        - 'text-title-image'
+        - 'image'
+        - 'cta'
+        - 'highlightbox'
+        - 'spacer'
+    articles:
+      articles:
+        - 'image'
+        - 'image1'
+        - 'image2'
+    articlesalt:
+      articlesalt:
+        - 'backtotop'
+    footer:
+      footer:
+        - 'container'
+  # define the default elements of your dropzones here
+  defaults:
+    header:
+      - header: ['container']
+    content:
+      - content: ['printsubscribe']
+      - content: ['text']
+      - content: ['video']
+      - content: ['video-html']
+      - content: ['quote']
+      - content: ['cta']
+      - content: ['text-image']
+      - content: ['text-title-image']
+      - content: ['image']
+      - content: ['spacer']
+    articles:
+      - articles: ['image']
+    articlesalt:
+      - articlesalt: ['backtotop']
+    footer:
+      - footer: ['container']
+  # define the elements of your preview template here
+  preview:
+    header:
+      - header: ['container']
+      - header: ['h1']
+      - header: ['breadcrumb']
+      - header: ['image']
+      - header: ['text']
+    content:
+      - content: ['text']
+      - content: ['video']
+      - content: ['quote']
+      - content: ['text-image']
+      - content: ['text-title-image']
+      - content: ['image']
+      - content: ['cta']
+      - content: ['spacer']
+      - content: ['highlightbox']
+    articles:
+      - articles: ['image']
+    articlesalt:
+      - articlesalt: ['backtotop']
+    footer:
+      - footer: ['container']
+styles: ~
+# custom rich-text (ckeditor) (only if required by design.properties, set to [] if not needed)
+# htmleditor:
+#     features: bold,italic,alignLeft,alignCenter,alignRight
+#     textcolors: '#ff0000,#00ff00,#0000ff'
+#     background-colors: '#ff0000,#00ff00,#0000ff'
+#     formats: h1,h2,h3,h4,pre
+#     fontsizes: 8,9,10,11,12,14,16,18,24,30,36,48,72
+#     fontsize-unit: px
+#     fontsizedefault: 12
+#     lineheights: 1,1.15,1.5,2
+#     enter: p

@@ -1,0 +1,3 @@
+*.exe
+*.zip
+template/www/whitelabel/*.html

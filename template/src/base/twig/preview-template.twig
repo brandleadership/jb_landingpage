@@ -1,0 +1,23 @@
+{% import '_macros.twig' as macros %}
+
+{% extends '_layout.twig' %}
+
+{% block header %}
+    {{ macros.includeDropzoneComponents(properties.template.preview.header) }} 
+{% endblock %}
+
+{% block content %}
+    {{ macros.includeDropzoneComponents(properties.template.preview.content) }}
+{% endblock %}
+
+{% block articles %}
+    {{ macros.includeDropzoneComponents(properties.template.preview.articles) }}
+{% endblock %}
+
+{% block articlesalt %}
+    {{ macros.includeDropzoneComponents(properties.template.preview.articlesalt) }}
+{% endblock %}
+
+{% block footer %}
+    {{ macros.includeDropzoneComponents(properties.template.preview.footer) }}
+{% endblock %}
