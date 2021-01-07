@@ -2,7 +2,7 @@ language: 'en'
 template:
   # basic template properties (required by design.properties)
   name: BJB_Landingpage
-  author: Steven Rogers
+  author: Firstname, Lastname
   # custom variables (only if required by design.properties, set to [] if not needed)
   i18n:
     phone: Telefon
