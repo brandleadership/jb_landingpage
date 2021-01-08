@@ -136,6 +136,7 @@ template:
       - 'content4'
     articlesalt:
       - 'backtotop'
+      - 'optinoptout'
     footer:
       - 'container'
       - 'links'
@@ -168,6 +169,7 @@ template:
     articlesalt:
       articlesalt:
         - 'backtotop'
+        - 'optinoptout'
     footer:
       footer:
         - 'container'
@@ -190,6 +192,7 @@ template:
       - articles: ['image']
     articlesalt:
       - articlesalt: ['backtotop']
+      - articlesalt: ['optinoptout']
     footer:
       - footer: ['container']
   # define the elements of your preview template here
@@ -214,6 +217,7 @@ template:
       - articles: ['image']
     articlesalt:
       - articlesalt: ['backtotop']
+      - articlesalt: ['optinoptout']
     footer:
       - footer: ['container']
 styles: ~
