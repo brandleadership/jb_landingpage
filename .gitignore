@@ -1,5 +1,4 @@
 *.exe
-*.zip
 template/www/whitelabel/*.html
 studio-design-creator-mac
 .DS_Store?
