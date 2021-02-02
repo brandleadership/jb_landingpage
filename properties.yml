@@ -119,6 +119,7 @@ template:
       - 'text'
       - 'video'
       - 'video-html'
+      - 'video-tag'
       - 'image'
       - 'text-image'
       - 'text-title-image'
@@ -155,6 +156,7 @@ template:
         - 'text'
         - 'video'
         - 'video-html'
+        - 'video-tag'
         - 'quote'
         - 'text-image'
         - 'text-title-image'
@@ -184,6 +186,7 @@ template:
       - content: ['text']
       - content: ['video']
       - content: ['video-html']
+      - content: ['video-tag']
       - content: ['quote']
       - content: ['cta']
       - content: ['text-image']
@@ -207,6 +210,7 @@ template:
       - header: ['image']
       - header: ['text']
     content:
+      - content: ['video-tag']
       - content: ['text']
       - content: ['video']
       - content: ['quote']

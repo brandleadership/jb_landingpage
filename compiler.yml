@@ -56,7 +56,7 @@ task:
               - design.properties
               - static
               - assets
-            target: ../../bjb_landingpage-1.0.0.zip
+            target: ../../bjb_landingpage-1.1.zip
 defaults:
     twig:
         validate: true
