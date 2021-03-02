@@ -1,90 +1,90 @@
 watch:
-    - resources
-    - properties.yml
-    - template/src
+  - resources
+  - properties.yml
+  - template/src
 task:
-    ### bundle and process component specific less and javascript files
-    - twig:
-        - source: [template/src/_setup/components.less.twig]
-          target: template/tmp/components.less
-          model: [properties.yml]
-          tidy: false
-          validate: false
-        - source: [template/src/_setup/components.js.twig]
-          target: template/tmp/components.js
-          model: [properties.yml]
-          tidy: false
-          validate: false
-    - less:
-        - source: [template/tmp/components.less]
-          target: template/www/static/styles.css
-          model:
-              stack: [properties.yml]
-              scope: [styles]
-      js:
-        - source: [template/tmp/components.js]
-          target: template/www/static/scripts.js
-      rm:
-        - template/tmp/components.js
-        - template/tmp/components.less
-    ### create regular design files
-    - twig:
-          ### design.html
-          - source: [template/src/base/twig/design.twig]
-            target: template/www/design.html
-            model: [properties.yml]
-          ### content-elements.html
-          - source: [template/src/base/twig/content-elements.twig]
-            target: template/www/content-elements.html
-            model: [properties.yml]
-          ### preview-template.html
-          - source: [template/src/base/twig/preview-template.twig]
-            target: template/www/preview-template.html
-            model: [properties.yml]
-          ### design.properties
-          - source: [template/src/base/twig/design.properties.twig]
-            target: template/www/design.properties
-            model: [properties.yml]
-            tidy: false
-            validate: false
-      zip:
-          - base: template/www
-            source:
-              - design.html
-              - content-elements.html
-              - preview-template.html
-              - design.properties
-              - static
-              - assets
-            target: ../../bjb_landingpage-1.1.zip
-defaults:
-    twig:
-        validate: true
-        tidy: true
-        tabsize: 4
-        comments: true
-    less:
-        compress: true
+  ### bundle and process component specific less and javascript files
+  - twig:
+      - source: [template/src/_setup/components.less.twig]
+        target: template/tmp/components.less
+        model: [properties.yml]
+        tidy: false
+        validate: false
+      - source: [template/src/_setup/components.js.twig]
+        target: template/tmp/components.js
+        model: [properties.yml]
+        tidy: false
+        validate: false
+  - less:
+      - source: [template/tmp/components.less]
+        target: template/www/static/styles.css
+        model:
+          stack: [properties.yml]
+          scope: [styles]
     js:
-        compress: true
-    global:
-        charset: utf8
-        compress: true
-        failonerror: false
+      - source: [template/tmp/components.js]
+        target: template/www/static/scripts.js
+    rm:
+      - template/tmp/components.js
+      - template/tmp/components.less
+  ### create regular design files
+  - twig:
+      ### design.html
+      - source: [template/src/base/twig/design.twig]
+        target: template/www/design.html
+        model: [properties.yml]
+      ### content-elements.html
+      - source: [template/src/base/twig/content-elements.twig]
+        target: template/www/content-elements.html
+        model: [properties.yml]
+      ### preview-template.html
+      - source: [template/src/base/twig/preview-template.twig]
+        target: template/www/preview-template.html
+        model: [properties.yml]
+      ### design.properties
+      - source: [template/src/base/twig/design.properties.twig]
+        target: template/www/design.properties
+        model: [properties.yml]
+        tidy: false
+        validate: false
+    zip:
+      - base: template/www
+        source:
+          - design.html
+          - content-elements.html
+          - preview-template.html
+          - design.properties
+          - static
+          - assets
+        target: ../../MO-Article-LP-EN-v1.1-20210223.zip
+defaults:
+  twig:
+    validate: true
+    tidy: true
+    tabsize: 4
+    comments: true
+  less:
+    compress: true
+  js:
+    compress: true
+  global:
+    charset: utf8
+    compress: true
+    failonerror: false
 webserver:
-    packages:
-        - name: ' JULIUS BAER - Templates'
-          designs:
-            - name: 'Landingpage'
-              viewports:
-                  - type: desktop
-                    width: 100%
-                  - type: desktop
-                    width: 940px
-                  - type: tablet
-                    width: 768px
-                  - type: mobile
-                    width: 360px
-              templates:
-                  - file: template/www/preview-template.html
-                    language: Deutsch
+  packages:
+    - name: ' JULIUS BAER - Templates'
+      designs:
+        - name: 'Landingpage'
+          viewports:
+            - type: desktop
+              width: 100%
+            - type: desktop
+              width: 940px
+            - type: tablet
+              width: 768px
+            - type: mobile
+              width: 360px
+          templates:
+            - file: template/www/preview-template.html
+              language: Deutsch
