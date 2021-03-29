@@ -42,6 +42,7 @@ template:
         download-item: Download Item
         highlightbox: Rectangle
         image: Image-Element
+        link-block: Link Block
         quote: Quote
         spacer: Divider
         text: Bodytext-Element
@@ -130,6 +131,7 @@ template:
       - 'cta'
       - 'downloads'
       - 'download-item'
+      - 'link-block'
       - 'spacer'
     articles:
       - 'image1'
@@ -168,6 +170,7 @@ template:
         - 'cta'
         - 'downloads'
         - 'download-item'
+        - 'link-block'
         - 'highlightbox'
         - 'spacer'
     articles:
@@ -197,6 +200,7 @@ template:
       - content: ['cta']
       - content: ['downloads']
       - content: ['download-item']
+      - content: ['link-block']
       - content: ['text-image']
       - content: ['text-title-image']
       - content: ['image']
@@ -227,6 +231,7 @@ template:
       - content: ['image']
       - content: ['cta']
       - content: ['downloads']
+      - content: ['link-block']
       - content: ['spacer']
       - content: ['highlightbox']
     articles:
