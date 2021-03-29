@@ -1,8 +1,8 @@
 *.exe
 *.zip
-www/*.html
-www/*
-template/www/*
+template/www/*.html
+template/www/*.properties
+template/www/static/styles.css
 studio-design-creator-mac
 .DS_Store?
 ehthumbs.db
