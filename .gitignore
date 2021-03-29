@@ -1,7 +1,7 @@
 *.exe
 *.zip
-www/whitelabel/*.html
-www/whitelabel/
+www/*.html
+www/*
 studio-design-creator-mac
 .DS_Store?
 ehthumbs.db
