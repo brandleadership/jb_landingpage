@@ -39,6 +39,7 @@ template:
         printsubscribe: Interaction-Container
         cta: Contact with link
         downloads: Downloads
+        download-item: Download Item
         highlightbox: Rectangle
         image: Image-Element
         quote: Quote
@@ -128,6 +129,7 @@ template:
       - 'highlightbox'
       - 'cta'
       - 'downloads'
+      - 'download-item'
       - 'spacer'
     articles:
       - 'image1'
@@ -165,6 +167,7 @@ template:
         - 'image'
         - 'cta'
         - 'downloads'
+        - 'download-item'
         - 'highlightbox'
         - 'spacer'
     articles:
@@ -193,6 +196,7 @@ template:
       - content: ['quote']
       - content: ['cta']
       - content: ['downloads']
+      - content: ['download-item']
       - content: ['text-image']
       - content: ['text-title-image']
       - content: ['image']
