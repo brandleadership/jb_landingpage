@@ -43,6 +43,8 @@ template:
         highlightbox: Rectangle
         image: Image-Element
         link-block: Link Block
+        links-group: Links Group
+        links-group-item: Links Group Item
         quote: Quote
         spacer: Divider
         text: Bodytext-Element
@@ -132,6 +134,8 @@ template:
       - 'downloads'
       - 'download-item'
       - 'link-block'
+      - 'links-group'
+      - 'links-group-item'
       - 'spacer'
     articles:
       - 'image1'
@@ -171,6 +175,7 @@ template:
         - 'downloads'
         - 'download-item'
         - 'link-block'
+        - 'links-group'
         - 'highlightbox'
         - 'spacer'
     articles:
@@ -201,6 +206,7 @@ template:
       - content: ['downloads']
       - content: ['download-item']
       - content: ['link-block']
+      - content: ['links-group']
       - content: ['text-image']
       - content: ['text-title-image']
       - content: ['image']
@@ -232,6 +238,7 @@ template:
       - content: ['cta']
       - content: ['downloads']
       - content: ['link-block']
+      - content: ['links-group']
       - content: ['spacer']
       - content: ['highlightbox']
     articles:
