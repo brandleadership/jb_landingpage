@@ -2,6 +2,7 @@
 *.zip
 www/*.html
 www/*
+template/www/*
 studio-design-creator-mac
 .DS_Store?
 ehthumbs.db
