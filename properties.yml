@@ -38,6 +38,7 @@ template:
       content:
         printsubscribe: Interaction-Container
         cta: Contact with link
+        downloads: Downloads
         highlightbox: Rectangle
         image: Image-Element
         quote: Quote
@@ -126,6 +127,7 @@ template:
       - 'quote'
       - 'highlightbox'
       - 'cta'
+      - 'downloads'
       - 'spacer'
     articles:
       - 'image1'
@@ -162,6 +164,7 @@ template:
         - 'text-title-image'
         - 'image'
         - 'cta'
+        - 'downloads'
         - 'highlightbox'
         - 'spacer'
     articles:
@@ -189,6 +192,7 @@ template:
       - content: ['video-tag']
       - content: ['quote']
       - content: ['cta']
+      - content: ['downloads']
       - content: ['text-image']
       - content: ['text-title-image']
       - content: ['image']
@@ -218,6 +222,7 @@ template:
       - content: ['text-title-image']
       - content: ['image']
       - content: ['cta']
+      - content: ['downloads']
       - content: ['spacer']
       - content: ['highlightbox']
     articles:
