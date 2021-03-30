@@ -39,12 +39,12 @@ template:
         printsubscribe: Interaction-Container
         cta: Contact with link
         downloads: Downloads
-        download-item: Download Item
+        downloaditem: Download Item
         highlightbox: Rectangle
         image: Image-Element
-        link-block: Link Block
-        links-group: Links Group
-        links-group-item: Links Group Item
+        linkblock: Link Block
+        linksgroup: Links Group
+        linksgroupitem: Links Group Item
         quote: Quote
         spacer: Divider
         text: Bodytext-Element
