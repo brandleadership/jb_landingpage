@@ -56,7 +56,7 @@ task:
           - design.properties
           - static
           - assets
-        target: ../../MO-Article-LP-EN-v1.1-20210223.zip
+        target: ../../MO-Article-LP-EN-v1.2-20210331.zip
 defaults:
   twig:
     validate: true

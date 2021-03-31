@@ -38,8 +38,13 @@ template:
       content:
         printsubscribe: Interaction-Container
         cta: Contact with link
+        downloads: Downloads
+        downloaditem: Download Item
         highlightbox: Rectangle
         image: Image-Element
+        linkblock: Link Block
+        linksgroup: Links Group
+        linksgroupitem: Links Group Item
         quote: Quote
         spacer: Divider
         text: Bodytext-Element
@@ -126,6 +131,11 @@ template:
       - 'quote'
       - 'highlightbox'
       - 'cta'
+      - 'downloads'
+      - 'download-item'
+      - 'link-block'
+      - 'links-group'
+      - 'links-group-item'
       - 'spacer'
     articles:
       - 'image1'
@@ -162,6 +172,10 @@ template:
         - 'text-title-image'
         - 'image'
         - 'cta'
+        - 'downloads'
+        - 'download-item'
+        - 'link-block'
+        - 'links-group'
         - 'highlightbox'
         - 'spacer'
     articles:
@@ -189,6 +203,10 @@ template:
       - content: ['video-tag']
       - content: ['quote']
       - content: ['cta']
+      - content: ['downloads']
+      - content: ['download-item']
+      - content: ['link-block']
+      - content: ['links-group']
       - content: ['text-image']
       - content: ['text-title-image']
       - content: ['image']
@@ -218,6 +236,9 @@ template:
       - content: ['text-title-image']
       - content: ['image']
       - content: ['cta']
+      - content: ['downloads']
+      - content: ['link-block']
+      - content: ['links-group']
       - content: ['spacer']
       - content: ['highlightbox']
     articles:
