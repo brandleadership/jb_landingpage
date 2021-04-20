@@ -52,6 +52,7 @@ template:
         textpartsplaintext1: Content Bodytext
         textimage: Image-Element
         texttitleimage: Image-Element
+        texttitleimagealt: Alternative Image-Element
         video: Embed-Video
         videopartsvideo0: Video-Source
         videohtml: iframe-Video
@@ -68,6 +69,7 @@ template:
         image: without legend
         textimage: with legend
         texttitleimage: with title and legend
+        texttitleimagealt: with top headline and legend
         video: External Videosource
         videohtml: External Videosource
       footer:
@@ -128,6 +130,7 @@ template:
       - 'image'
       - 'text-image'
       - 'text-title-image'
+      - 'text-title-image-alt'
       - 'quote'
       - 'highlightbox'
       - 'cta'
@@ -170,6 +173,7 @@ template:
         - 'quote'
         - 'text-image'
         - 'text-title-image'
+        - 'text-title-image-alt'
         - 'image'
         - 'cta'
         - 'downloads'
@@ -209,6 +213,7 @@ template:
       - content: ['links-group']
       - content: ['text-image']
       - content: ['text-title-image']
+      - content: ['text-title-image-alt']
       - content: ['image']
       - content: ['spacer']
     articles:
@@ -234,6 +239,7 @@ template:
       - content: ['quote']
       - content: ['text-image']
       - content: ['text-title-image']
+      - content: ['text-title-image-alt']
       - content: ['image']
       - content: ['cta']
       - content: ['downloads']
