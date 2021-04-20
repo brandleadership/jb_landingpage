@@ -124,8 +124,7 @@ template:
       - 'content1'
       - 'content2'
       - 'text'
-      - 'video'
-      - 'video-html'
+
       - 'video-tag'
       - 'image'
       - 'text-image'
@@ -167,8 +166,6 @@ template:
       content:
         - 'printsubscribe'
         - 'text'
-        - 'video'
-        - 'video-html'
         - 'video-tag'
         - 'quote'
         - 'text-image'
@@ -202,8 +199,6 @@ template:
     content:
       - content: ['printsubscribe']
       - content: ['text']
-      - content: ['video']
-      - content: ['video-html']
       - content: ['video-tag']
       - content: ['quote']
       - content: ['cta']
