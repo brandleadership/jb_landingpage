@@ -124,7 +124,6 @@ template:
       - 'content1'
       - 'content2'
       - 'text'
-
       - 'video-tag'
       - 'image'
       - 'text-image'
@@ -139,6 +138,7 @@ template:
       - 'links-group'
       - 'links-group-item'
       - 'spacer'
+      - 'single-link'
     articles:
       - 'image1'
       - 'image2'
@@ -185,6 +185,8 @@ template:
         - 'image1'
         - 'image2'
     articlesalt:
+      content:
+        - 'single-link'
       articlesalt:
         - 'backtotop'
         - 'optinoptout'
