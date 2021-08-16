@@ -1,18 +1,24 @@
 @import 'fonts.css';
 
-/* Add custom styles for content-table element */
+/* Add custom styles for content-table element, always stretch table fields equally to fill content width */
+div[data-bsi-element-part="table"] {
+  width: 100%;
+}
 
 div[data-bsi-element="content-table"] table {
   border-collapse:collapse;
   max-width: 100%;
   overflow-x: hidden;
+  display: table;
+  width: 100%;
 }
 
 div[data-bsi-element="content-table"] th,
 div[data-bsi-element="content-table"] td {
-  border-top: 2px solid darkgray;
+  border-top: 1px solid darkgray;
   padding: 10px 20px;
-  color: #141e55;
+  color: #333;
+  border-collapse: collapse;
 }
 
 .page-template--has-sticky-alert.page-template:not(.page-template--campaign-hub):not(.template-home-page):not(.template-moment-page) { padding-top: 212px !important; } .page-template--has-sticky-alert .megamenu { top: 118px !important; } @media (min-width: 960px) { .page-template--has-sticky-alert .megamenu { top: 66px !important; } } .module-navigation-footer .module-special-cookie-banner.active { z-index: 99!important; }
