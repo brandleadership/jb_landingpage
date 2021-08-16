@@ -3,14 +3,13 @@
 /* Add custom styles for content-table element, always stretch table fields equally to fill content width */
 div[data-bsi-element-part="table"] {
   width: 100%;
+  overflow-x: hidden;
 }
 
 div[data-bsi-element="content-table"] table {
   border-collapse:collapse;
-  max-width: 100%;
-  overflow-x: hidden;
-  display: table;
   width: 100%;
+  display: table;
 }
 
 div[data-bsi-element="content-table"] th,
