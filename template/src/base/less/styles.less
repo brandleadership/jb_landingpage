@@ -1,23 +1,36 @@
 @import 'fonts.css';
 
 /* Add custom styles for content-table element, always stretch table fields equally to fill content width */
-div[data-bsi-element-part="table"] {
+
+.custom-table-wrapper {
   width: 100%;
   overflow-x: hidden;
 }
 
-div[data-bsi-element="content-table"] table {
-  border-collapse:collapse;
+.custom-table-container,
+.single-link-element {
+  margin: 0 60px;
+}
+
+.custom-table-container table {
+  border-spacing: 0!important;
   width: 100%;
   display: table;
 }
 
-div[data-bsi-element="content-table"] th,
-div[data-bsi-element="content-table"] td {
+.custom-table-container th,
+.custom-table-container td {
   border-top: 1px solid darkgray;
-  padding: 10px 20px;
+  padding: 10px;
   color: #333;
   border-collapse: collapse;
+}
+
+@media (max-width: 959px) {
+  .custom-table-container,
+  .single-link-element {
+    margin: 0 20px;
+  }
 }
 
 .page-template--has-sticky-alert.page-template:not(.page-template--campaign-hub):not(.template-home-page):not(.template-moment-page) { padding-top: 212px !important; } .page-template--has-sticky-alert .megamenu { top: 118px !important; } @media (min-width: 960px) { .page-template--has-sticky-alert .megamenu { top: 66px !important; } } .module-navigation-footer .module-special-cookie-banner.active { z-index: 99!important; }
