@@ -41,6 +41,7 @@ template:
         downloads: Downloads
         downloaditem: Download Item
         highlightbox: Rectangle
+        highlightbox2: Rectangle with Buttons
         image: Image-Element
         linkblock: Link Block
         linksgroup: Links Group
@@ -63,6 +64,7 @@ template:
         container: Container for header elements
       content:
         highlightbox: Title/Text in a box
+        highlightbox2: Title/Text in a box with 2 buttons
         content1: Part of
         content2: Part of
         printsubscribe: print/subscribe, social-follow
@@ -89,6 +91,9 @@ template:
       highlightbox:
         title: '{content_rectangle-title}'
         text: '{content_rectangle-text}'
+      highlightbox2:
+        title: '{content_rectangle2-title}'
+        text: '{content_rectangle2-text}'
     articles:
       tag1: '{related_article1-tag}'
       tag2: '{related_article2-tag}'
@@ -132,6 +137,7 @@ template:
       - 'text-title-image-alt'
       - 'quote'
       - 'highlightbox'
+      - 'highlightbox2'
       - 'cta'
       - 'downloads'
       - 'download-item'
@@ -178,6 +184,7 @@ template:
         - 'link-block'
         - 'links-group'
         - 'highlightbox'
+        - 'highlightbox2'
         - 'spacer'
     articles:
       articles:
@@ -242,6 +249,7 @@ template:
       - content: ['links-group']
       - content: ['spacer']
       - content: ['highlightbox']
+      - content: ['highlightbox2']
     articles:
       - articles: ['image']
     articlesalt:
