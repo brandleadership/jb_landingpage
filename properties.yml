@@ -157,6 +157,7 @@ template:
       - 'backtotop'
       - 'optinoptout'
       - 'confirm'
+      - 'calltoaction'
     footer:
       - 'container'
       - 'links'
@@ -196,6 +197,7 @@ template:
         - 'backtotop'
         - 'optinoptout'
         - 'confirm'
+        - 'calltoaction'
     footer:
       footer:
         - 'container'
@@ -224,6 +226,7 @@ template:
       - articlesalt: ['backtotop']
       - articlesalt: ['optinoptout']
       - articlesalt: ['confirm']
+      - articlesalt: ['calltoaction']
     footer:
       - footer: ['container']
   # define the elements of your preview template here
@@ -256,6 +259,7 @@ template:
       - articlesalt: ['backtotop']
       - articlesalt: ['optinoptout']
       - articlesalt: ['confirm']
+      - articlesalt: ['calltoaction']
     footer:
       - footer: ['container']
 styles: ~
