@@ -58,6 +58,8 @@ template:
         videopartsvideo0: Video-Source
         videohtml: iframe-Video
         videohtmlpartsvideo0: iframe-Video-Source
+      articles:
+        title: Title
     # custom element-description (drag-n-drop-elements) (set to [] if not needed)
     description:
       header:
@@ -76,6 +78,8 @@ template:
         videohtml: External Videosource
       footer:
         container: Container Footer-Elements
+      articles:
+        title: Title for 'Related Articles' containers
   # placeholder-naming library (set to [] if not needed)
   placeholder:
     header:
@@ -129,7 +133,6 @@ template:
       - 'content1'
       - 'content2'
       - 'text'
-
       - 'video-tag'
       - 'image'
       - 'text-image'
@@ -147,12 +150,14 @@ template:
       - 'spacer'
     articles:
       - 'image1'
+      - 'imagewide'
       - 'image2'
       - 'image'
       - 'content1'
       - 'content2'
       - 'content3'
       - 'content4'
+      - 'title'
     articlesalt:
       - 'backtotop'
       - 'optinoptout'
@@ -192,6 +197,7 @@ template:
         - 'image'
         - 'image1'
         - 'image2'
+        - 'imagewide'
     articlesalt:
       articlesalt:
         - 'backtotop'
@@ -222,6 +228,7 @@ template:
       - content: ['spacer']
     articles:
       - articles: ['image']
+      - articles: ['imagewide']
     articlesalt:
       - articlesalt: ['backtotop']
       - articlesalt: ['optinoptout']
@@ -255,6 +262,7 @@ template:
       - content: ['highlightbox2']
     articles:
       - articles: ['image']
+      - articles: ['imagewide']
     articlesalt:
       - articlesalt: ['backtotop']
       - articlesalt: ['optinoptout']
