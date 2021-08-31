@@ -90,7 +90,8 @@
                <div data-bsi-dropzone="header" data-bsi-dropzone-allowed-elements="{{ macros.dropzoneAllowedElements(properties.template.dropzones.header) }}" data-bsi-dropzone-max-number-of-elements="1">
                   {% block header %}{% endblock %}
                </div>
-               <div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="{{ macros.dropzoneAllowedElements(properties.template.dropzones.content) }}" class="article-content-wrapper">
+               {% set contentAndArticles = properties.template.dropzones.content|merge(properties.template.dropzones.articles) %}
+               <div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="{{ macros.dropzoneAllowedElements(contentAndArticles) }}" class="article-content-wrapper">
                   {% block content %}{% endblock %}
                </div>
                <div data-bsi-dropzone="articles" data-bsi-dropzone-allowed-elements="{{ macros.dropzoneAllowedElements(properties.template.dropzones.articles) }}" data-bsi-dropzone-max-number-of-elements="1">
