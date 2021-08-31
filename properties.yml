@@ -126,13 +126,14 @@ template:
       - 'container'
       - 'h1'
       - 'breadcrumb'
-      - 'image'
+      - 'image' 
       - 'text'
     content:
       - 'printsubscribe'
       - 'content1'
       - 'content2'
       - 'text'
+      - 'list-element'
       - 'video-tag'
       - 'image'
       - 'text-image'
@@ -178,6 +179,7 @@ template:
       content:
         - 'printsubscribe'
         - 'text'
+        - 'list-element'
         - 'video-tag'
         - 'quote'
         - 'text-image'
@@ -214,6 +216,7 @@ template:
     content:
       - content: ['printsubscribe']
       - content: ['text']
+      - content: ['list-element']
       - content: ['video-tag']
       - content: ['quote']
       - content: ['cta']
@@ -247,6 +250,7 @@ template:
     content:
       - content: ['video-tag']
       - content: ['text']
+      - content: ['list-element']
       - content: ['video']
       - content: ['quote']
       - content: ['text-image']
