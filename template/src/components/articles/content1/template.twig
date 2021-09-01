@@ -1,26 +1,39 @@
 <!-- related_articles_1_start -->
-<div data-bsi-element="articles-content1">
+<div data-bsi-element="articles-content1" class="video-overlay-hidden">
   <article class="teaser-components-article-card">
     <div class="teaser-components-article-card__wrapper">
-      <div class="teaser-components-article-card__link">
+      <a class="teaser-components-article-card__link"
+        data-bsi-element-part="link"
+        data-bsi-link-fixed-inner-html="true">
         <header class="teaser-components-teaser-header teaser-components-article-card__header">
-          <div>
-            <img data-bsi-element-part="image"
-              src="{{
-              src
-                ?
-                : 'https://via.placeholder.com/750x500?text=2020+JULIUS+BAER'
-              }}"
-              alt="{{ template.placeholder.articles.content1 }}"
-              width="750"
-              height="500" />
-          </div>
+          <img data-bsi-element-part="image"
+            src="{{
+            src
+              ?
+              : 'https://via.placeholder.com/750x500?text=2020+JULIUS+BAER'
+            }}"
+            alt="{{ template.placeholder.articles.content1 }}"
+            width="750"
+            height="500" />
+          <button class="a-button-play" aria-label="Play">
+            <svg class="a-button-play__icon"
+              viewBox="0 0 18 18"
+              focusable="false"
+              aria-hidden="true"
+              tabindex="0"
+              xmlns="http://www.w3.org/2000/svg">
+              <g fill="#FFF" fill-rule="evenodd">
+                <path fill="none" d="M0 0h18v18H0z"></path>
+                <path d="M13.308 9.192l-6.345 6.345a.271.271 0 01-.463-.192V2.655a.271.271 0 01.463-.192l6.345 6.345a.271.271 0 010 .384z"></path>
+              </g>
+            </svg>
+          </button>
           <h4 data-bsi-element-part="plain-text"
             class="h4 color-text-main-royalblue teaser-components-teaser-header__title teaser-components-article-card__title">
             {{ template.placeholder.articles.content1 }}
           </h4>
         </header>
-      </div>
+      </a>
       <div class="teaser-components-teaser-meta teaser-components-article-card__meta">
         <a data-bsi-element-part="link"
           href="{{ href ? : '[related_article1-link]' }}"
