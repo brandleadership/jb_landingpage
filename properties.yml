@@ -99,14 +99,8 @@ template:
         title: '{content_rectangle2-title}'
         text: '{content_rectangle2-text}'
     articles:
-      tag1: '{related_article1-tag}'
-      tag2: '{related_article2-tag}'
-      tag3: '{related_article3-tag}'
-      tag4: '{related_article4-tag}'
-      content1: '{related_article1-title}'
-      content2: '{related_article2-title}'
-      content3: '{related_article3-title}'
-      content4: '{related_article4-title}'
+      tag: '{related_article-tag}'
+      content: '{related_article-title}'
     footer:
       disclaimer: '{footer_disclaimer-text}'
   # imagereference-look_up_table library (set to [] if not needed)
@@ -154,10 +148,7 @@ template:
       - 'imagewide'
       - 'image2'
       - 'image'
-      - 'content1'
-      - 'content2'
-      - 'content3'
-      - 'content4'
+      - 'content'
       - 'title'
     articlesalt:
       - 'backtotop'
