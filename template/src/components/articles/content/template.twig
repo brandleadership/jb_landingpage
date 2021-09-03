@@ -3,7 +3,8 @@
     <div class="teaser-components-article-card__wrapper">
       <a class="teaser-components-article-card__link"
         data-bsi-element-part="link"
-        data-bsi-link-fixed-inner-html="true">
+        data-bsi-link-fixed-inner-html="true"
+        href="{{ href ? : '[related_article-link]' }}">
         <header class="teaser-components-teaser-header teaser-components-article-card__header">
           <img data-bsi-element-part="image"
             src="{{
@@ -35,9 +36,9 @@
       </a>
       <div class="teaser-components-teaser-meta teaser-components-article-card__meta">
         <a data-bsi-element-part="link"
-          href="{{ href ? : '[related_article-link]' }}"
+          href="{{ href ? : '[related_article-tag]' }}"
           class="text-4 text-main-royalblue teaser-components-teaser-meta__category teaser-components-article-card__category">
-          {{ template.placeholder.articles.tag1 }}
+          {{ template.placeholder.articles.tag }}
         </a>
         <div class="teaser-components-article-card__time-wrap">
           <div class="teaser-components-teaser-meta__time-icon teaser-components-article-card__time-icon">

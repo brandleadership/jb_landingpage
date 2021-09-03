@@ -100,7 +100,7 @@ template:
         text: '{content_rectangle2-text}'
     articles:
       tag: '{related_article-tag}'
-      content: '{related_article-title}'
+      content: '{related_article-content}'
     footer:
       disclaimer: '{footer_disclaimer-text}'
   # imagereference-look_up_table library (set to [] if not needed)
