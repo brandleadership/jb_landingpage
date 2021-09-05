@@ -2,7 +2,7 @@
   position: absolute;
   top: auto;
   left: 30px;
-  bottom: 78px;
+  bottom: 30px;
   width: 50px;
   height: 50px;
   border: 2px solid #fff;
@@ -12,16 +12,28 @@
   padding: 14px;
 }
 
-@media (min-width: 1281px) {
-  .a-button-play {
-    bottom: 90px;
-  }
+.podcast-overlay {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
 }
 
-.video-overlay-hidden button.a-button-play {
+.overlay-hidden button.a-button-play,
+.podcast-overlay-visible button.a-button-play {
+  display: none;
+}
+
+.overlay-hidden img.podcast-overlay,
+.video-overlay-visible img.podcast-overlay {
   display: none;
 }
 
 .a-button-play__icon {
   outline: none;
+}
+
+.article-image-container {
+  position: relative;
 }
