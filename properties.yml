@@ -120,7 +120,7 @@ template:
       - 'container'
       - 'h1'
       - 'breadcrumb'
-      - 'image' 
+      - 'image'
       - 'text'
     content:
       - 'printsubscribe'
@@ -143,6 +143,8 @@ template:
       - 'links-group'
       - 'links-group-item'
       - 'spacer'
+      - 'single-link'
+      - 'table'
     articles:
       - 'image1'
       - 'imagewide'
@@ -185,6 +187,7 @@ template:
         - 'highlightbox'
         - 'highlightbox2'
         - 'spacer'
+        - 'table'
     articles:
       articles:
         - 'image'
@@ -192,6 +195,8 @@ template:
         - 'image2'
         - 'imagewide'
     articlesalt:
+      content:
+        - 'single-link'
       articlesalt:
         - 'backtotop'
         - 'optinoptout'
