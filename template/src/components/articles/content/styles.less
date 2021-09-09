@@ -1,0 +1,51 @@
+.a-button-play {
+  position: absolute;
+  top: auto;
+  left: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  outline: none;
+  z-index: 2;
+  transition: transform 0.7s, width 0.7s, height 0.7s;
+  padding: 14px;
+}
+
+.podcast-overlay {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .two-articles .teaser-components-article-card {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  .teaser-components-article-card {
+    margin-bottom: 0px;
+  }
+}
+
+.overlay-hidden button.a-button-play,
+.podcast-overlay-visible button.a-button-play {
+  display: none;
+}
+
+.overlay-hidden img.podcast-overlay,
+.video-overlay-visible img.podcast-overlay {
+  display: none;
+}
+
+.a-button-play__icon {
+  outline: none;
+}
+
+.article-image-container {
+  position: relative;
+}

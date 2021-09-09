@@ -41,6 +41,7 @@ template:
         downloads: Downloads
         downloaditem: Download Item
         highlightbox: Rectangle
+        highlightbox2: Rectangle with Buttons
         image: Image-Element
         linkblock: Link Block
         linksgroup: Links Group
@@ -57,12 +58,15 @@ template:
         videopartsvideo0: Video-Source
         videohtml: iframe-Video
         videohtmlpartsvideo0: iframe-Video-Source
+      articles:
+        title: Title
     # custom element-description (drag-n-drop-elements) (set to [] if not needed)
     description:
       header:
         container: Container for header elements
       content:
         highlightbox: Title/Text in a box
+        highlightbox2: Title/Text in a box with 2 buttons
         content1: Part of
         content2: Part of
         printsubscribe: print/subscribe, social-follow
@@ -74,6 +78,8 @@ template:
         videohtml: External Videosource
       footer:
         container: Container Footer-Elements
+      articles:
+        title: Title for 'Related Articles' containers
   # placeholder-naming library (set to [] if not needed)
   placeholder:
     header:
@@ -89,15 +95,12 @@ template:
       highlightbox:
         title: '{content_rectangle-title}'
         text: '{content_rectangle-text}'
+      highlightbox2:
+        title: '{content_rectangle2-title}'
+        text: '{content_rectangle2-text}'
     articles:
-      tag1: '{related_article1-tag}'
-      tag2: '{related_article2-tag}'
-      tag3: '{related_article3-tag}'
-      tag4: '{related_article4-tag}'
-      content1: '{related_article1-title}'
-      content2: '{related_article2-title}'
-      content3: '{related_article3-title}'
-      content4: '{related_article4-title}'
+      tag: '{related_article-tag}'
+      content: '{related_article-content}'
     footer:
       disclaimer: '{footer_disclaimer-text}'
   # imagereference-look_up_table library (set to [] if not needed)
@@ -124,6 +127,7 @@ template:
       - 'content1'
       - 'content2'
       - 'text'
+      - 'list-element'
       - 'video-tag'
       - 'image'
       - 'text-image'
@@ -131,6 +135,7 @@ template:
       - 'text-title-image-alt'
       - 'quote'
       - 'highlightbox'
+      - 'highlightbox2'
       - 'cta'
       - 'downloads'
       - 'download-item'
@@ -142,16 +147,16 @@ template:
       - 'table'
     articles:
       - 'image1'
+      - 'imagewide'
       - 'image2'
       - 'image'
-      - 'content1'
-      - 'content2'
-      - 'content3'
-      - 'content4'
+      - 'content'
+      - 'title'
     articlesalt:
       - 'backtotop'
       - 'optinoptout'
       - 'confirm'
+      - 'calltoaction'
     footer:
       - 'container'
       - 'links'
@@ -167,6 +172,7 @@ template:
       content:
         - 'printsubscribe'
         - 'text'
+        - 'list-element'
         - 'video-tag'
         - 'quote'
         - 'text-image'
@@ -179,6 +185,7 @@ template:
         - 'link-block'
         - 'links-group'
         - 'highlightbox'
+        - 'highlightbox2'
         - 'spacer'
         - 'table'
     articles:
@@ -186,6 +193,7 @@ template:
         - 'image'
         - 'image1'
         - 'image2'
+        - 'imagewide'
     articlesalt:
       content:
         - 'single-link'
@@ -193,6 +201,7 @@ template:
         - 'backtotop'
         - 'optinoptout'
         - 'confirm'
+        - 'calltoaction'
     footer:
       footer:
         - 'container'
@@ -203,6 +212,7 @@ template:
     content:
       - content: ['printsubscribe']
       - content: ['text']
+      - content: ['list-element']
       - content: ['video-tag']
       - content: ['quote']
       - content: ['cta']
@@ -217,10 +227,12 @@ template:
       - content: ['spacer']
     articles:
       - articles: ['image']
+      - articles: ['imagewide']
     articlesalt:
       - articlesalt: ['backtotop']
       - articlesalt: ['optinoptout']
       - articlesalt: ['confirm']
+      - articlesalt: ['calltoaction']
     footer:
       - footer: ['container']
   # define the elements of your preview template here
@@ -234,6 +246,7 @@ template:
     content:
       - content: ['video-tag']
       - content: ['text']
+      - content: ['list-element']
       - content: ['video']
       - content: ['quote']
       - content: ['text-image']
@@ -246,12 +259,15 @@ template:
       - content: ['links-group']
       - content: ['spacer']
       - content: ['highlightbox']
+      - content: ['highlightbox2']
     articles:
       - articles: ['image']
+      - articles: ['imagewide']
     articlesalt:
       - articlesalt: ['backtotop']
       - articlesalt: ['optinoptout']
       - articlesalt: ['confirm']
+      - articlesalt: ['calltoaction']
     footer:
       - footer: ['container']
 styles: ~
