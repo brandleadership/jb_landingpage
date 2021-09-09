@@ -1,3 +1,4 @@
+engine: { version: '0.79.4' }
 watch:
   - resources
   - properties.yml
