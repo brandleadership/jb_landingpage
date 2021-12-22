@@ -27,6 +27,4 @@ showMenuPanel = () => {
 	}
 }
 
-document
-	.getElementById("copyright-year")
-	.appendChild(document.createTextNode(new Date().getFullYear()))
+document.getElementById("copyright-year").innerHTML = new Date().getFullYear()
