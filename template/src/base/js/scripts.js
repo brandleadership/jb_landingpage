@@ -26,5 +26,3 @@ showMenuPanel = () => {
 		me(a, !0), me(i, !1), Qe.focusFirstMenuItem.call(this, i, n)
 	}
 }
-
-document.getElementById("copyright-year").innerHTML = new Date().getFullYear()
