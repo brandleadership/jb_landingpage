@@ -1,17 +1,11 @@
-
-
- <section data-bsi-element="content-video-tag" class="template-section-spacer--media-components">
+<section data-bsi-element="content-video-tag" class="template-section-spacer--media-components">
    <div class="row center-xs">
       <div class="col-md-10 col-sm-12 col-xs-12">
          <div class="component-content-video__column">
             <div class="component-content-video aspect-16-9 ">
-               <div data-bsi-element-part="html" class="a-video  aspect-16-9" data-icon-path="https://cdn.plyr.io/3.6.4/plyr.svg">
-                  <video id="player" playsinline controls poster="https://www.juliusbaer.com/fileadmin/_processed_/5/1/csm_Market-outlook-q4-the-big-picture-THUMBNAIL_f6314070bd.jpg" class="lazy a-video__content " width="100%" height="100%" style="object-fit: fill;">
+               <div data-bsi-element-part="html" class="a-video aspect-16-9" data-icon-path="https://cdn.plyr.io/3.6.4/plyr.svg">
+                  <video id="player" autoplay muted playsinline controls poster="https://www.juliusbaer.com/fileadmin/_processed_/5/1/csm_Market-outlook-q4-the-big-picture-THUMBNAIL_f6314070bd.jpg" class="lazy a-video__content " width="100%" height="100%" style="object-fit: fill;">
                      <source src="https://www.juliusbaer.com/fileadmin/content-hub/insights/200924_Market_Outlook_Q4_External.mp4" type="video/mp4" />
-                {#     <source src="/path/to/video.webm" type="video/webm" /> 
-                   
-                     <!-- Captions are optional -->
-                     <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default /> #}
                    </video>
                </div>
             </div>
@@ -19,50 +13,3 @@
       </div>
    </div>
 </section>
-
-
-{#
-
-
-<section data-bsi-element="content-video-tag" class="template-section-spacer--media-components">
-            <div data-bsi-element-part="html"  class="a-video  aspect-16-9" data-icon-path="/typo3conf/ext/sitepackage/Resources/Public/Contrib/assets/icons/video-player.svg">
-               <video 
-                   class="lazy a-video__content "
-                   poster="https://www.juliusbaer.com/fileadmin/_processed_/5/1/csm_Market-outlook-q4-the-big-picture-THUMBNAIL_f6314070bd.jpg"
-                   preload="auto"
-                   controls
-                   
-                   
-                   
-                   playsinline
-                   data-setup="{}"
-               >
-                   
-                       <source src="/fileadmin/content-hub/insights/200924_Market_Outlook_Q4_External.mp4" type="video/mp4"/>
-                   
-               </video>
-           </div>
-         </section>
-
-#}
-
-
-{#
-         <section data-bsi-element="content-video-tag" class="template-section-spacer--media-components">
-            <div class="row center-xs">
-               <div class="col-md-10 col-sm-12 col-xs-12">
-                  <div class="component-content-video__column">
-                     <div class="component-content-video aspect-16-9 ">
-                        <div data-bsi-element-part="html" class="a-video  aspect-16-9" data-icon-path="/typo3conf/ext/sitepackage/Resources/Public/Contrib/assets/icons/video-player.svg">
-                           <video class="lazy a-video__content " poster="https://www.juliusbaer.com/fileadmin/_processed_/5/1/csm_Market-outlook-q4-the-big-picture-THUMBNAIL_f6314070bd.jpg" preload="auto" controls>
-                              <source src="https://www.juliusbaer.com/fileadmin/content-hub/insights/200924_Market_Outlook_Q4_External.mp4" type="video/mp4"/>
-                              Your browser does not support the video tag.
-                           </video>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
- #}
-
