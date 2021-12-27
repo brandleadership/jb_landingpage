@@ -1,4 +1,4 @@
-language: 'en'
+language: "en"
 template:
   # basic template properties (required by design.properties)
   name: BJB_Landingpage
@@ -83,193 +83,197 @@ template:
   # placeholder-naming library (set to [] if not needed)
   placeholder:
     header:
-      h1: '{header_h1-title}'
-      image: '{header_image-alttext}'
-      text: '{header_lead-text}'
+      h1: "{header_h1-title}"
+      image: "{header_image-alttext}"
+      text: "{header_lead-text}"
     content:
-      cta: '{content_contact-text}'
+      cta: "{content_contact-text}"
       quote:
-        text: '{content_quote-text}'
-        name: '{content_quote-name}'
-        position: '{content_quote-position}'
+        text: "{content_quote-text}"
+        name: "{content_quote-name}"
+        position: "{content_quote-position}"
       highlightbox:
-        title: '{content_rectangle-title}'
-        text: '{content_rectangle-text}'
+        title: "{content_rectangle-title}"
+        text: "{content_rectangle-text}"
       highlightbox2:
-        title: '{content_rectangle2-title}'
-        text: '{content_rectangle2-text}'
+        title: "{content_rectangle2-title}"
+        text: "{content_rectangle2-text}"
     articles:
-      tag: '{related_article-tag}'
-      content: '{related_article-content}'
+      tag: "{related_article-tag}"
+      content: "{related_article-content}"
     footer:
-      disclaimer: '{footer_disclaimer-text}'
+      disclaimer: "{footer_disclaimer-text}"
   # imagereference-look_up_table library (set to [] if not needed)
   imagereference: []
   # define your styles (only if required by design.properties, set to [] if not needed)
   styles: []
   # name your groups (required by design.properties)
   groups:
-    header: 'Header Elements'
-    content: 'Content Elements'
-    articles: 'Related Articles'
-    articlesalt: 'Alternative Elements'
-    footer: 'Footer Elements'
+    header: "Header Elements"
+    content: "Content Elements"
+    articles: "Related Articles"
+    articlesalt: "Alternative Elements"
+    footer: "Footer Elements"
   # organize your elements in groups (equals studio element groups)
   elements:
     header:
-      - 'container'
-      - 'h1'
-      - 'breadcrumb'
-      - 'image'
-      - 'text'
+      - "container"
+      - "h1"
+      - "breadcrumb"
+      - "image"
+      - "text"
     content:
-      - 'printsubscribe'
-      - 'content1'
-      - 'content2'
-      - 'text'
-      - 'list-element'
-      - 'video-tag'
-      - 'image'
-      - 'text-image'
-      - 'text-title-image'
-      - 'text-title-image-alt'
-      - 'quote'
-      - 'highlightbox'
-      - 'highlightbox2'
-      - 'cta'
-      - 'downloads'
-      - 'download-item'
-      - 'link-block'
-      - 'links-group'
-      - 'links-group-item'
-      - 'spacer'
-      - 'single-link'
-      - 'table'
+      - "printsubscribe"
+      - "content1"
+      - "content2"
+      - "text"
+      - "list-element"
+      - "video-tag"
+      - "image"
+      - "text-image"
+      - "text-title-image"
+      - "text-title-image-alt"
+      - "quote"
+      - "highlightbox"
+      - "highlightbox2"
+      - "cta"
+      - "downloads"
+      - "download-item"
+      - "link-block"
+      - "links-group"
+      - "links-group-item"
+      - "spacer"
+      - "single-link"
+      - "sticky-buttons"
+      - "table"
     articles:
-      - 'image1'
-      - 'imagewide'
-      - 'image2'
-      - 'image'
-      - 'content'
-      - 'title'
+      - "image1"
+      - "imagewide"
+      - "image2"
+      - "image"
+      - "content"
+      - "title"
     articlesalt:
-      - 'backtotop'
-      - 'optinoptout'
-      - 'confirm'
-      - 'calltoaction'
+      - "backtotop"
+      - "optinoptout"
+      - "confirm"
+      - "calltoaction"
     footer:
-      - 'container'
-      - 'links'
-      - 'social'
-      - 'legal'
-      - 'disclaimer'
+      - "container"
+      - "links"
+      - "social"
+      - "legal"
+      - "disclaimer"
   # define your dropzones here
   dropzones:
     header:
       header:
-        - 'container'
+        - "container"
     content:
       content:
-        - 'printsubscribe'
-        - 'text'
-        - 'list-element'
-        - 'video-tag'
-        - 'quote'
-        - 'text-image'
-        - 'text-title-image'
-        - 'text-title-image-alt'
-        - 'image'
-        - 'cta'
-        - 'downloads'
-        - 'download-item'
-        - 'link-block'
-        - 'links-group'
-        - 'highlightbox'
-        - 'highlightbox2'
-        - 'spacer'
-        - 'table'
+        - "printsubscribe"
+        - "text"
+        - "list-element"
+        - "video-tag"
+        - "quote"
+        - "text-image"
+        - "text-title-image"
+        - "text-title-image-alt"
+        - "image"
+        - "cta"
+        - "downloads"
+        - "download-item"
+        - "link-block"
+        - "links-group"
+        - "highlightbox"
+        - "highlightbox2"
+        - "spacer"
+        - "sticky-buttons"
+        - "table"
     articles:
       articles:
-        - 'image'
-        - 'image1'
-        - 'image2'
-        - 'imagewide'
+        - "image"
+        - "image1"
+        - "image2"
+        - "imagewide"
     articlesalt:
       content:
-        - 'single-link'
+        - "single-link"
       articlesalt:
-        - 'backtotop'
-        - 'optinoptout'
-        - 'confirm'
-        - 'calltoaction'
+        - "backtotop"
+        - "optinoptout"
+        - "confirm"
+        - "calltoaction"
     footer:
       footer:
-        - 'container'
+        - "container"
   # define the default elements of your dropzones here
   defaults:
     header:
-      - header: ['container']
+      - header: ["container"]
     content:
-      - content: ['printsubscribe']
-      - content: ['text']
-      - content: ['list-element']
-      - content: ['video-tag']
-      - content: ['quote']
-      - content: ['cta']
-      - content: ['downloads']
-      - content: ['download-item']
-      - content: ['link-block']
-      - content: ['links-group']
-      - content: ['text-image']
-      - content: ['text-title-image']
-      - content: ['text-title-image-alt']
-      - content: ['image']
-      - content: ['spacer']
+      - content: ["printsubscribe"]
+      - content: ["text"]
+      - content: ["list-element"]
+      - content: ["video-tag"]
+      - content: ["quote"]
+      - content: ["cta"]
+      - content: ["downloads"]
+      - content: ["download-item"]
+      - content: ["link-block"]
+      - content: ["links-group"]
+      - content: ["text-image"]
+      - content: ["text-title-image"]
+      - content: ["text-title-image-alt"]
+      - content: ["image"]
+      - content: ["spacer"]
+      - content: ["sticky-buttons"]
     articles:
-      - articles: ['image']
-      - articles: ['imagewide']
+      - articles: ["image"]
+      - articles: ["imagewide"]
     articlesalt:
-      - articlesalt: ['backtotop']
-      - articlesalt: ['optinoptout']
-      - articlesalt: ['confirm']
-      - articlesalt: ['calltoaction']
+      - articlesalt: ["backtotop"]
+      - articlesalt: ["optinoptout"]
+      - articlesalt: ["confirm"]
+      - articlesalt: ["calltoaction"]
     footer:
-      - footer: ['container']
+      - footer: ["container"]
   # define the elements of your preview template here
   preview:
     header:
-      - header: ['container']
-      - header: ['h1']
-      - header: ['breadcrumb']
-      - header: ['image']
-      - header: ['text']
+      - header: ["container"]
+      - header: ["h1"]
+      - header: ["breadcrumb"]
+      - header: ["image"]
+      - header: ["text"]
     content:
-      - content: ['video-tag']
-      - content: ['text']
-      - content: ['list-element']
-      - content: ['video']
-      - content: ['quote']
-      - content: ['text-image']
-      - content: ['text-title-image']
-      - content: ['text-title-image-alt']
-      - content: ['image']
-      - content: ['cta']
-      - content: ['downloads']
-      - content: ['link-block']
-      - content: ['links-group']
-      - content: ['spacer']
-      - content: ['highlightbox']
-      - content: ['highlightbox2']
+      - content: ["video-tag"]
+      - content: ["text"]
+      - content: ["list-element"]
+      - content: ["video"]
+      - content: ["quote"]
+      - content: ["text-image"]
+      - content: ["text-title-image"]
+      - content: ["text-title-image-alt"]
+      - content: ["image"]
+      - content: ["cta"]
+      - content: ["downloads"]
+      - content: ["link-block"]
+      - content: ["links-group"]
+      - content: ["spacer"]
+      - content: ["highlightbox"]
+      - content: ["highlightbox2"]
+      - content: ["sticky-buttons"]
     articles:
-      - articles: ['image']
-      - articles: ['imagewide']
+      - articles: ["image"]
+      - articles: ["imagewide"]
     articlesalt:
-      - articlesalt: ['backtotop']
-      - articlesalt: ['optinoptout']
-      - articlesalt: ['confirm']
-      - articlesalt: ['calltoaction']
+      - articlesalt: ["backtotop"]
+      - articlesalt: ["optinoptout"]
+      - articlesalt: ["confirm"]
+      - articlesalt: ["calltoaction"]
     footer:
-      - footer: ['container']
+      - footer: ["container"]
 styles: ~
 # custom rich-text (ckeditor) (only if required by design.properties, set to [] if not needed)
 # htmleditor:
