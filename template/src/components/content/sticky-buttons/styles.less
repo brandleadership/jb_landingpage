@@ -6,6 +6,7 @@
 
 .sticky-button {
 	background-color: #001489;
+	color: white;
 	width: 130px;
 	height: 130px;
 	display: flex;
@@ -14,6 +15,8 @@
 	align-items: center;
 	text-align: center;
 	margin-left: auto;
+	text-decoration: none;
+	font-weight: 200;
 }
 
 .sticky-button p {
@@ -27,7 +30,7 @@
 		justify-content: center;
 		padding: 20px;
 	}
-	.sticky-button:last-child {
+	.second {
 		margin-left: 20px;
 	}
 	.sticky-button {
@@ -36,7 +39,15 @@
 }
 
 @media only screen and (min-width: 600px) {
-	.sticky-button:last-child {
+	.second {
 		margin-top: 20px;
 	}
+}
+
+.hide-button .second {
+	display: none;
+}
+
+.show-buton .second {
+	display: flex;
 }
