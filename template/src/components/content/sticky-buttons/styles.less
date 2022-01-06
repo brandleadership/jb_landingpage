@@ -27,7 +27,7 @@
 	.sticky {
 		flex-direction: row;
 		display: flex;
-		justify-content: center;
+		justify-content: space-evenly;
 		padding: 20px;
 	}
 	.second {
@@ -39,6 +39,10 @@
 }
 
 @media only screen and (min-width: 600px) {
+	.sticky {
+		margin-top: -300px;
+	}
+
 	.second {
 		margin-top: 20px;
 	}
