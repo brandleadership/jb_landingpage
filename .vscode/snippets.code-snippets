@@ -1,0 +1,294 @@
+{
+    "BSI Element": {
+        "scope": "html,twig",
+        "prefix": "bsi",
+        "body": ["<div data-bsi-element=\"$1\">$0</div>"],
+        "description": "BSI Element Tag"
+    },
+
+    "BSI Element Attribute": {
+        "scope": "html,twig",
+        "prefix": "bsielem",
+        "body": ["data-bsi-element=\"$1\"$0"],
+        "description": "BSI Element Attribute"
+    },
+
+    "Dropzone Div": {
+        "scope": "html,twig",
+        "prefix": "drop",
+        "body": [
+            "<div data-bsi-dropzone=\"$1\" ${2:data-bsi-dropzone-allowed-elements=\"$3\"} ${4:data-bsi-dropzone-max-number-of-elements=\"$5\"}>$0</div>"
+        ],
+        "description": "Container div holding attributes needed for dropzone"
+    },
+
+    "BSI Element + Dropzone": {
+        "scope": "html,twig",
+        "prefix": "dropbsi",
+        "body": [
+            "<div data-bsi-element=\"$1\" data-bsi-dropzone=\"$2\" ${3:data-bsi-dropzone-allowed-elements=\"$4\"} ${5:data-bsi-dropzone-max-number-of-elements=\"$6\"}>$0</div>"
+        ],
+        "description": "BSI Element Div also holding attributes needed for dropzone"
+    },
+
+    "Dropzone Attributes": {
+        "scope": "html,twig",
+        "prefix": "dropattr",
+        "body": [
+            "data-bsi-dropzone=\"$1\" ${2:data-bsi-dropzone-allowed-elements=\"$3\"} ${4:data-bsi-dropzone-max-number-of-elements=\"$5\"}$0"
+        ],
+        "description": "BSI Attributes used for BSI Dropzones"
+    },
+
+    "BSI Element Group": {
+        "scope": "html,twig",
+        "prefix": "bsig",
+        "body": ["<div data-bsi-group=\"$1\">$0</div>"],
+        "description": "Group of BSI content Elements for use in content-elements.twig"
+    },
+
+    "BSI Element Group Label": {
+        "scope": "properties,twig",
+        "prefix": "propgroup",
+        "body": ["group.$1.label={{ $0 }}"],
+        "description": "BSI Element group label property for design UI"
+    },
+
+    "BSI Element Properties Without Description": {
+        "scope": "properties",
+        "prefix": "propelem",
+        "body": ["element.$1.label=$2\nelement.$1.icon=${0:snippet}"],
+        "description": "Must-have BSI Element properties for design UI"
+    },
+
+    "BSI Element Properties With Description": {
+        "scope": "properties",
+        "prefix": "propelemd",
+        "body": [
+            "element.$1.label=$2\nelement.$1.description=$3\nelement.$1.icon=${0:snippet}"
+        ],
+        "description": "Must-have BSI Element properties for design UI + description"
+    },
+
+    "BSI Element Parts Label": {
+        "scope": "properties",
+        "prefix": "proppart",
+        "body": [
+            "element.$1.parts.${2|plain-text,formatted-text,link,video|}[$3].label=$4"
+        ],
+    },
+
+    "Twig Include for BSI Elements": {
+        "scope": "twig",
+        "prefix": "twinc",
+        "body": [
+            "{% include \"${1:content-elements}/${2:elements}/$3/template.twig\" ${4:with {$5}}%}$0"
+        ]
+    },
+
+    "Twig Block": {
+        "scope": "twig",
+        "prefix": "twblo",
+        "body": ["{% block $1 %}\n$2{% endblock %}$0"]
+    },
+
+    "Twig Extend": {
+        "scope": "twig",
+        "prefix": "twext",
+        "body": [
+            "{% extends '$1.twig' %}$0"
+        ]
+    },
+
+    "Twig Embed": {
+        "scope": "twig",
+        "prefix": "twemb",
+        "body": [
+            "{% embed '$1' ${2:with {$3}}%}\n{% block $4 %}\n$5{% endblock %}\n$6{% endembed %}$0"
+        ]
+    },
+
+    "Twig If ElseIf Else": {
+        "scope": "twig",
+        "prefix": "twif",
+        "body": [
+            "{% if ${1:condition1} %}\n$2${3:\n{% elseif ${4:condition2} %\\}\n$5}${6:\n{% else %\\}\n$7}\n{% endif %}$0"
+        ]
+    },
+
+    "Twig Set": {
+        "scope": "twig",
+        "prefix": "twset",
+        "body": ["{% set ${1:variable_name} = ${2:variable_value} %}$0"]
+    },
+
+    "Design Properties Blocks": {
+        "scope": "twig",
+        "prefix": "propadd",
+        "body": [
+            "{% set elements = [\n'$1'\n] %}\n\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/design.properties' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set layouts = [\n'$2'\n] %}\n\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/design.properties' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set sections = [\n'$3'\n] %}\n\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/design.properties' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+        ],
+        "description": "For use in the design.properties.twig file"
+    },
+
+    "Single Design Properties Block": {
+        "scope": "twig",
+        "prefix": "propsingleadd",
+        "body": [
+            "{% set $1 = [\n'$3'\n] %}\n\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/design.properties' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+        ],
+        "description": "For use in the design.properties.twig file"
+    },
+
+    "BSI Video Element Part's Properties": {
+        "scope": "properties",
+        "prefix": "proppartvid",
+        "body": [
+            "element.$1.label=Video\nelement.$1.icon=${2:youtube}\n\nelement.$1.parts.video[0].label=${3:Video Details}$0"
+        ]
+    },
+
+    "Design Templates Block": {
+        "scope": "twig",
+        "prefix": "bsitempadd",
+        "body": [
+            "{% set elements = [\n'$1'\n] %}\n\n<div data-bsi-group=\"elements\">\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/template.twig' %}\n{% endfor %}\n</div>\n{% set layouts = [\n'$2'\n] %}\n\n<div data-bsi-group=\"layouts\">\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/template.twig' %}\n{% endfor %}\n</div>\n{% set sections = [\n'$3'\n] %}\n\n<div data-bsi-group=\"sections\">\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/template.twig' %}\n{% endfor %}\n</div>\n$0"
+        ],
+        "description": "For use in the content-elements.twig file"
+    },
+
+    "Single Design Templates Block": {
+        "scope": "twig",
+        "prefix": "bsisingletempadd",
+        "body": [
+            "{% set $1 = [\n'$3'\n] %}\n\n<div data-bsi-group=\"$1\">\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/template.twig' %}\n{% endfor %}\n</div>\n$0"
+        ],
+        "description": "For use in the content-elements.twig file"
+    },
+
+    "Design Custom Script Blocks": {
+        "scope": "twig",
+        "prefix": "jsadd",
+        "body": [
+            "{% set elements = [\n'$1'\n] %}\n\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set layouts = [\n'$2'\n] %}\n\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set sections = [\n'$3'\n] %}\n\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+        ],
+        "description": "For use in the design.js.twig file"
+    },
+
+    "Single Design Custom Script Block": {
+        "scope": "twig",
+        "prefix": "jssingleadd",
+        "body": [
+            "{% set $1 = [\n'$3'\n] %}\n\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+        ],
+        "description": "For use in the design.js.twig file"
+    },
+
+    "Design Custom Styling Blocks": {
+        "scope": "twig",
+        "prefix": "lessadd",
+        "body": [
+            "{% set elements = [\n'$1'\n] %}\n\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set layouts = [\n'$2'\n] %}\n\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set sections = [\n'$3'\n] %}\n\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+        ],
+        "description": "For use in the components.less.twig file"
+    },
+
+    "Single Design Custom Styling Block": {
+        "scope": "twig",
+        "prefix": "lesssingleadd",
+        "body": [
+            "{% set $1 = [\n'$3'\n] %}\n\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+        ],
+        "description": "For use in the components.less.twig file"
+    },
+
+    "Twig with block": {
+        "scope": "twig",
+        "prefix": "twwith",
+        "body": ["with { $1 : $2 }$0"]
+    },
+
+    "Twig for block": {
+        "scope": "twig",
+        "prefix": "twfor",
+        "body": ["{% for ${1|key,value\\,value|} in $2 %}\n$3\n{% endfor %}$0"]
+    },
+
+    "CSS Comment": {
+        "scope": "css, less",
+        "prefix": "csscomm",
+        "body": "/* $1 */$0"
+    },
+
+    "Twig Comment": {
+        "scope": "twig",
+        "prefix": "twcomm",
+        "body": "{# $1 #}$0"
+    },
+
+    "No Edit Button in BSI": {
+        "scope": "twig",
+        "prefix": "bsihide",
+        "body": "data-bsi-hide-edit-button=\"true\"$0"
+    },
+
+    "BSI Element Part Attribute": {
+        "scope": "twig",
+        "prefix": "part",
+        "body": "data-bsi-element-part=\"$1\"$0"
+    },
+
+    "BSI Image": {
+        "scope": "twig",
+        "prefix": "partimg",
+        "body": "<img src=\"./img/$1\" alt=\"$2\" data-bsi-element-part=\"image\"/>$0"
+    },
+
+    "BSI Plain Text": {
+        "scope": "twig",
+        "prefix": "partplain",
+        "body": "<p data-bsi-element-part=\"plain-text\" ${1:data-bsi-multiline=\"\"}>$2</p>$0"
+    },
+
+    "BSI Video": {
+        "scope": "twig",
+        "prefix": "partvid",
+        "body": "<div data-bsi-element-part=\"video\" data-bsi-video-data-url=\"\">\n${1:<iframe style=\"width: 100%; height: 100%;\"></iframe>}\n${2:<img src=\"$3\" data-bsi-video-thumbnail=\"\"/>}\n${4:<p data-bsi-video-title=\"$5\"></p>}\n${6:<p data-bsi-video-description=\"\">$7</p>}\n${8:<a data-bsi-video-link=\"\">$9</a>}\n</div>$0"
+    },
+
+    "BSI Link": {
+        "scope": "twig",
+        "prefix": "partlink",
+        "body": "<a data-bsi-element-part=\"link\" ${1:data-bsi-link-fixed-inner-html=\"\"}>\n${2:<span data-bsi-link-text-part=\"\">$3</span>}$4\n</a>$0"
+    },
+
+    "BSI Form": {
+        "scope": "twig",
+        "prefix": "partform",
+        "body": "<form id=\"$1\" data-bsi-element-part=\"form\">\n<ul data-bsi-form-validation=\"\" style=\"list-style:none\">\n<li data-bsi-form-validation-item=\"\"></li>\n</ul>\n<div data-bsi-dropzone=\"${2:form-container-zone}\" ${3:data-bsi-dropzone-allowed-elements=\"$4\"}>\n</div>\n</form>$0"
+    },
+
+    "Required Form Field Styling": {
+        "scope": "css, less",
+        "prefix": "cssreq",
+        "body": ".reverse-for-required { display:flex; flex-direction: column-reverse; }\n\n/* spacing needed due to reversing */ .reverse-for-required > label {margin-bottom: 3px;}\n\ninput:required ~ label::after, select:required ~ label::after, textarea:required ~ label::after {content: \"*\";color: $1;padding-left: 5px;}$0"
+    },
+
+    "BSI Form Select": {
+        "scope": "twig",
+        "prefix": "fpartsel",
+        "body": "<div data-bsi-element-part=\"form-select\" data-bsi-value-list=\"$1\" class=\"reverse-for-required\" ${2:data-bsi-value=\"$3\"} ${4:data-bsi-form-select-fixed-value-list=\"$5\"}>\n<select id=\"$6\" ${7:class=\"$8\"}><option value=\"$9\">$10</option></select>\n<label for=\"$6\">$11</label>\n</div>$0"
+    },
+
+    "BSI Form Input": {
+        "scope": "twig",
+        "prefix": "fpartinp",
+        "body": "<div data-bsi-element-part=\"form-field\" class=\"reverse-for-required\" ${2:data-bsi-form-field-fixed-type=\"$3\"}>\n<input id=\"$4\" type=\"$5\" ${6:class=\"$7\"} ${8:pattern=\"$9\" title=\"$10\"}/>\n<label for=\"$4\">$11</label>\n</div>$0"
+    },
+
+    "BSI Form Textarea": {
+        "scope": "twig",
+        "prefix": "fpartarea",
+        "body": "<div data-bsi-element-part=\"form-textarea\" class=\"reverse-for-required\">\n<textarea id=\"$1\" ${2:class=\"$3\"} ${4:rows=\"$5\" cols=\"$6\"}></textarea>\n<label for=\"$1\">$7</label>\n</div>$0"
+    }
+}

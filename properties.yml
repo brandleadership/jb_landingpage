@@ -146,6 +146,9 @@ template:
       - "single-link"
       - "sticky-buttons"
       - "table"
+      - "element-heading"
+      - "element-legend"
+      - "table-advanced"
     articles:
       - "image1"
       - "imagewide"
@@ -190,6 +193,7 @@ template:
         - "spacer"
         - "sticky-buttons"
         - "table"
+        - "table-advanced"
     articles:
       articles:
         - "image"

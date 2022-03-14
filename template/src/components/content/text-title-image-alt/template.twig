@@ -4,23 +4,29 @@
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="media-image">
 					<div class="media-image__wrap">
-						<div class="col-xs-12 col-lg-6 module-content-gallery__content">
-							<h5 class="h5 module-content-gallery__content-title" data-bsi-element-part="plain-text"
-								data-bsi-multiline="true">{{ legend ?: "V-shaped recoveries – a bumpy road to pre-crisis
-								GDP levels" }}</h5>
+						<div data-bsi-dropzone="element-heading-holder"
+							data-bsi-dropzone-allowed-elements="element-heading"
+							data-bsi-dropzone-max-number-of-elements="1">
+							{% include '../element-heading/template.twig' %}
 						</div>
-						<div class=" component-content-image--standalone ">
+						<div class="component-content-image--standalone">
 							<div>
-								<img data-bsi-element-part="image" src="{{ src ?: "
-									https://via.placeholder.com/615x345?text=" }}{{ 'now'|date('j\. F Y') }}+{{ template.companyexampleimageurl }}"
+								<img data-bsi-element-part="image"
+									src="{{
+									src
+										?
+										: '
+									https://via.placeholder.com/615x345?text='
+									}}{{ 'now'|date('j\. F Y') }}+{{
+									template.companyexampleimageurl
+									}}"
 									alt="" />
 							</div>
 						</div>
-						<div class="col-xs-12 module-content-gallery__content">
-							<p class="text-small module-content-gallery__content-caption"
-								data-bsi-element-part="plain-text" data-bsi-multiline="true">{{ legend ?: "September
-								2020; GDP = gross domestic product. Source: Bloomberg Finance L.P., Julius Baer Economic
-								Research" }}</p>
+						<div data-bsi-dropzone="element-legend-holder"
+							data-bsi-dropzone-allowed-elements="element-legend"
+							data-bsi-dropzone-max-number-of-elements="1">
+							{% include '../element-legend/template.twig' %}
 						</div>
 					</div>
 				</div>
