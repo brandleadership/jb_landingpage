@@ -1,5 +1,5 @@
 .sticky {
-	position: sticky;
+	position: relative;
 	bottom: 0;
 	padding: 50px;
 }
@@ -39,8 +39,13 @@
 }
 
 @media only screen and (min-width: 600px) {
+
+	.sticky .sticky-button-container {
+		position: absolute;
+		top: -300px;
+	}
+
 	.sticky {
-		margin-top: -300px;
 		width: 180px;
 		margin-left: calc(100% - 180px);
 		padding: 0px;
