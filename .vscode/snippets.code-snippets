@@ -78,6 +78,20 @@
         ],
     },
 
+    "HTML Editor Configs Properties": {
+        "scope": "properties",
+        "prefix": "prophtmledit",
+        "body" : "html-editor-config.$1.features=${2:bold,}${3:italic,}${4:underline,}${5:alignLeft,}${6:alignCenter,}${7:alignRight,}${8:formatOL,}${9:formatUL,}${10:textColor,}${11:fontSize,}${12:specialCharacters,}${13:insertLink,}${14:html}\n${15:html-editor-config.$1.formats=${16:h1,p}}\n${17:html-editor-config.$1.font-sizes=${18:8,9,10,11,12}}\n${19:html-editor-config.$1.font-size-unit=${20:px}}\n${21:html-editor-config.$1.font-size-default=${22:12}}\n${23:html-editor-config.$1.text-colors=${24:#}}\n${25:html-editor-config.$1.line-heights=${26:1.1,1.5}}\n${27:html-editor-config.$1.enter=${28:br}}\n\nelement.$29.parts.formatted-text.html-editor-config=$1",
+        "description" : "Definition of HTML Editor Configs for Formatted-Text BSI Element Part"
+    },
+
+    "Style Variants via Properties": {
+        "scope": "properties",
+        "prefix": "propstyles",
+        "body" : "style.$1.label=$2\nstyle.$1.class.$3.label=$4\nstyle.$1.class.$5.label=$6\n\nelement.$7.styles=$1${8:,$9}",
+        "description" : "Definition of different style variants of BSI elements"
+    },
+
     "Twig Include for BSI Elements": {
         "scope": "twig",
         "prefix": "twinc",
