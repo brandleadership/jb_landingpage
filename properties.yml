@@ -150,6 +150,9 @@ template:
       - "element-heading"
       - "element-legend"
       - "table-advanced"
+      - "title-lvl-one"
+      - "title-lvl-two"
+      - "title-lvl-three"
     articles:
       - "image1"
       - "imagewide"
@@ -196,6 +199,9 @@ template:
         - "sticky-buttons"
         - "table"
         - "table-advanced"
+        - "title-lvl-one"
+        - "title-lvl-two"
+        - "title-lvl-three"
     articles:
       articles:
         - "image"
