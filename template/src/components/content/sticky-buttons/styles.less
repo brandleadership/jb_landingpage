@@ -1,7 +1,9 @@
+/* important added because bsi elements have position:relative; would overwrite */
 .sticky {
-	position: relative;
-	bottom: 0;
-	padding: 50px;
+	position: fixed !important;
+	top: 150px !important;
+	margin-right: 50px !important;
+	margin-bottom: 50px !important;
 }
 
 .sticky-button {
@@ -30,21 +32,15 @@
 		justify-content: space-evenly;
 		padding: 20px;
 	}
-	.second {
-		margin-left: 20px;
-	}
 	.sticky-button {
 		margin-left: unset;
+	}
+	.second {
+		margin-left: 20px;
 	}
 }
 
 @media only screen and (min-width: 600px) {
-
-	.sticky .sticky-button-container {
-		position: absolute;
-		top: -300px;
-	}
-
 	.sticky {
 		width: 180px;
 		margin-left: calc(100% - 180px);
