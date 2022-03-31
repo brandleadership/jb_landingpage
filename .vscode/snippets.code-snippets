@@ -74,29 +74,29 @@
         "scope": "properties",
         "prefix": "proppart",
         "body": [
-            "element.$1.parts.${2|plain-text,formatted-text,link,video|}[$3].label=$4"
-        ],
+            "element.$1.parts.${2|plain-text,formatted-text,link,video,image,form-field,form-select,form-textarea,form-checkbox,form-radio|}[$3].label=$4"
+        ]
     },
 
     "HTML Editor Configs Properties": {
         "scope": "properties",
         "prefix": "prophtmledit",
-        "body" : "html-editor-config.$1.features=${2:bold,}${3:italic,}${4:underline,}${5:alignLeft,}${6:alignCenter,}${7:alignRight,}${8:formatOL,}${9:formatUL,}${10:textColor,}${11:fontSize,}${12:specialCharacters,}${13:insertLink,}${14:html}\n${15:html-editor-config.$1.formats=${16:h1,p}}\n${17:html-editor-config.$1.font-sizes=${18:8,9,10,11,12}}\n${19:html-editor-config.$1.font-size-unit=${20:px}}\n${21:html-editor-config.$1.font-size-default=${22:12}}\n${23:html-editor-config.$1.text-colors=${24:#}}\n${25:html-editor-config.$1.line-heights=${26:1.1,1.5}}\n${27:html-editor-config.$1.enter=${28:br}}\n\nelement.$29.parts.formatted-text.html-editor-config=$1",
-        "description" : "Definition of HTML Editor Configs for Formatted-Text BSI Element Part"
+        "body": "html-editor-config.$1.features=${2:bold,}${3:italic,}${4:underline,}${5:alignLeft,}${6:alignCenter,}${7:alignRight,}${8:formatOL,}${9:formatUL,}${10:textColor,}${11:fontSize,}${12:specialCharacters,}${13:insertLink,}${14:html}\n${15:html-editor-config.$1.formats=${16:h1,p}}\n${17:html-editor-config.$1.font-sizes=${18:8,9,10,11,12}}\n${19:html-editor-config.$1.font-size-unit=${20:px}}\n${21:html-editor-config.$1.font-size-default=${22:12}}\n${23:html-editor-config.$1.text-colors=${24:#}}\n${25:html-editor-config.$1.line-heights=${26:1.1,1.5}}\n${27:html-editor-config.$1.enter=${28:br}}\n\nelement.$29.parts.formatted-text.html-editor-config=$1",
+        "description": "Definition of HTML Editor Configs for Formatted-Text BSI Element Part"
     },
 
     "Style Variants via Properties": {
         "scope": "properties",
         "prefix": "propstyles",
-        "body" : "style.$1.label=$2\nstyle.$1.class.$3.label=$4\nstyle.$1.class.$5.label=$6\n\nelement.$7.styles=$1${8:,$9}",
-        "description" : "Definition of different style variants of BSI elements"
+        "body": "style.$1.label=$2\nstyle.$1.class.$3.label=$4\nstyle.$1.class.$5.label=$6\n\nelement.$7.styles=$1${8:,$9}",
+        "description": "Definition of different style variants of BSI elements"
     },
 
     "Twig Include for BSI Elements": {
         "scope": "twig",
         "prefix": "twinc",
         "body": [
-            "{% include \"${1:content-elements}/${2:elements}/$3/template.twig\" ${4:with {$5}}%}$0"
+            "{% include \"${1:content-elements}/${2:elements}/$3/template.twig\" ${4:with {$5\\}}%}$0"
         ]
     },
 
@@ -109,9 +109,7 @@
     "Twig Extend": {
         "scope": "twig",
         "prefix": "twext",
-        "body": [
-            "{% extends '$1.twig' %}$0"
-        ]
+        "body": ["{% extends '$1.twig' %}$0"]
     },
 
     "Twig Embed": {
@@ -184,7 +182,7 @@
         "scope": "twig",
         "prefix": "jsadd",
         "body": [
-            "{% set elements = [\n'$1'\n] %}\n\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set layouts = [\n'$2'\n] %}\n\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set sections = [\n'$3'\n] %}\n\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+            "{% set elements = [\n'$1'\n] %}\n\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/custom.js' %}\n{% endfor %}\n\n{% set layouts = [\n'$2'\n] %}\n\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/custom.js' %}\n{% endfor %}\n\n{% set sections = [\n'$3'\n] %}\n\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/custom.js' %}\n{% endfor %}\n$0"
         ],
         "description": "For use in the design.js.twig file"
     },
@@ -193,16 +191,42 @@
         "scope": "twig",
         "prefix": "jssingleadd",
         "body": [
-            "{% set $1 = [\n'$3'\n] %}\n\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/custom.js' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+            "{% set $1 = [\n'$3'\n] %}\n\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/custom.js' %}\n{% endfor %}\n$0"
         ],
         "description": "For use in the design.js.twig file"
+    },
+
+    "Js Function used to highlight required radiobutton fields": {
+        "scope": "javascript",
+        "prefix": "jsradioreq",
+        "body": [
+            "(function() {",
+            "// Function which higlights required radiobuttons fields",
+            "function highlightRequiredRadios() {",
+            "let radioSets = document.getElementsByClassName(",
+            "\"radiobutton-set-container\"",
+            ");",
+            "if (radioSets.length !== 0) {",
+            "// .map only works for arrays, not for HTML Collections, so convert to array",
+            "[...radioSets].map(function(radioSet) {",
+            "if (radioSet.querySelector('input[required=\"\"]') !== null) {",
+            "radioSet.parentNode.children[0].className +=\"required-radiobutton-field\";",
+            "}",
+            "});",
+            "}",
+            "}",
+            "// Immediately run on page load",
+            "highlightRequiredRadios();",
+            "})();"
+        ],
+        "description": "Only fully functional if coupled with 'fpartradio' (twig) and 'cssradio' (css) snippets"
     },
 
     "Design Custom Styling Blocks": {
         "scope": "twig",
         "prefix": "lessadd",
         "body": [
-            "{% set elements = [\n'$1'\n] %}\n\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set layouts = [\n'$2'\n] %}\n\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n\n{% set sections = [\n'$3'\n] %}\n\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+            "{% set elements = [\n'$1'\n] %}\n\n{% for element in elements %}\n{% include 'content-elements/elements/' ~ element ~ '/styles.less' %}\n{% endfor %}\n\n{% set layouts = [\n'$2'\n] %}\n\n{% for layout in layouts %}\n{% include 'content-elements/layouts/' ~ layout ~ '/styles.less' %}\n{% endfor %}\n\n{% set sections = [\n'$3'\n] %}\n\n{% for section in sections %}\n{% include 'content-elements/sections/' ~ section ~ '/styles.less' %}\n{% endfor %}\n$0"
         ],
         "description": "For use in the components.less.twig file"
     },
@@ -211,7 +235,7 @@
         "scope": "twig",
         "prefix": "lesssingleadd",
         "body": [
-            "{% set $1 = [\n'$3'\n] %}\n\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/styles.less' %}\n{{ '\\n' }}\n{% endfor %}\n$0"
+            "{% set $1 = [\n'$3'\n] %}\n\n{% for $2 in $1 %}\n{% include 'content-elements/$1/' ~ $2 ~ '/styles.less' %}\n{% endfor %}\n$0"
         ],
         "description": "For use in the components.less.twig file"
     },
@@ -232,6 +256,283 @@
         "scope": "css, less",
         "prefix": "csscomm",
         "body": "/* $1 */$0"
+    },
+
+    "Custom Checkbox Styling": {
+        "scope": "css, less",
+        "prefix": "csscheck",
+        "body": [
+            "/* disable default checkbox display */",
+            "",
+            "input[type=\"checkbox\"] {",
+            "display: none;",
+            "}",
+            "",
+            "/* correctly align content */",
+            "",
+            ".custom-checkbox-container {",
+            "display: flex;",
+            "flex-direction: row-reverse;",
+            "justify-content: flex-end;",
+            "align-items: center;",
+            "}",
+            "",
+            "/* accomodate spacing for custom checkbox in label */",
+            "",
+            ".custom-checkbox-container label {",
+            "padding-left: 30px;",
+            "/* In BSI, the label cannot wrap around the input element,",
+            "as it is traditionally done when using custom checkbox for optimal",
+            "UX + styling. Hence, we have to position the checkbox label",
+            "above the .custom-checkbox-frame; otherwise the checkbox would",
+            "not be directly clickable */",
+            "/* to assure that checkbox is always clickable (place label above) */",
+            "z-index: 2;",
+            "margin-left: -15px;",
+            "}",
+            "",
+            ".custom-checkbox-container label:hover {",
+            "cursor: pointer;",
+            "}",
+            "",
+            "/* create custom checkbox frame */",
+            "",
+            ".custom-checkbox-container .custom-checkbox-frame {",
+            "background-color: white;",
+            "width: 15px;",
+            "height: 15px;",
+            "border: 1px solid black;",
+            "display: flex;",
+            "justify-content: center;",
+            "/* assure that checkbox is clickable (place below label) */",
+            "z-index: 1;",
+            "}",
+            "",
+            ".custom-checkbox-container label:hover ~ .custom-checkbox-frame {",
+            "background-color: #eee;",
+            "}",
+            "",
+            "/* create custom checkbox checked symbol */",
+            "",
+            ".custom-checkbox-frame::after {",
+            "content: \"\";",
+            "width: 5px;",
+            "height: 10px;",
+            "transform: rotate(45deg);",
+            "border-bottom: 2px solid black;",
+            "border-right: 2px solid black;",
+            "display: none;",
+            "/* to assure that checkbox is clickable (place below label) also when checked */",
+            "z-index: 1;",
+            "}",
+            "",
+            ".custom-checkbox-container input:checked ~ .custom-checkbox-frame::after {",
+            "display: block;",
+            "}"
+        ],
+        "description": "Allows for custom styling while compatible with BSI requirements"
+    },
+
+    "Custom Radiobutton Styling": {
+        "scope": "css, less",
+        "prefix": "cssradio",
+        "body": [
+            "/* highlight required radiobutton sets with required star */",
+            ".required-radiobutton-field::after {",
+            "content: \"*\";",
+            "color: red;",
+            "padding-left: 5px;",
+            "}",
+            "/* disable default radiobutton display */",
+            "",
+            "input[type=\"radio\"] {",
+            "display: none;",
+            "}",
+            "",
+            "/* correctly align content */",
+            "",
+            ".custom-radiobutton-container {",
+            "display: flex;",
+            "flex-direction: row-reverse;",
+            "justify-content: flex-end;",
+            "align-items: center;",
+            "}",
+            "",
+            "/* accomodate spacing for custom radiobutton in label */",
+            "",
+            ".custom-radiobutton-container label {",
+            "padding-left: 30px;",
+            "/* In BSI, the label cannot wrap around the input element,",
+            "as it is traditionally done when using custom radiobutton for optimal",
+            "UX + styling. Hence, we have to position the radiobutton label",
+            "above the .custom-radiobutton-frame; otherwise the radiobutton would",
+            "not be directly clickable */",
+            "/* to assure that checkbox is always clickable (place label above) */",
+            "z-index: 2;",
+            "margin-left: -15px;",
+            "}",
+            "",
+            ".custom-radiobutton-container label:hover {",
+            "cursor: pointer;",
+            "}",
+            "",
+            "/* create custom radiobutton frame */",
+            "",
+            ".custom-radiobutton-container .custom-radiobutton-frame {",
+            "background-color: white;",
+            "width: 15px;",
+            "height: 15px;",
+            "border: 1px solid black;",
+            "display: flex;",
+            "justify-content: center;",
+            "/* assure that radiobutton is clickable (place below label) */",
+            "z-index: 1;",
+            "}",
+            "",
+            ".custom-radiobutton-container label:hover ~ .custom-radiobutton-frame {",
+            "background-color: #eee;",
+            "}",
+            "",
+            "/* create custom radiobutton checked symbol */",
+            "",
+            ".custom-radiobutton-frame::after {",
+            "content: \"\";",
+            "width: 5px;",
+            "height: 10px;",
+            "transform: rotate(45deg);",
+            "border-bottom: 2px solid black;",
+            "border-right: 2px solid black;",
+            "display: none;",
+            "/* to assure that radiobutton is clickable (place below label) also when checked */",
+            "z-index: 1;",
+            "}",
+            "",
+            ".custom-radiobutton-container input:checked ~ .custom-radiobutton-frame::after {",
+            "display: block;",
+            "}"
+        ],
+        "description": "Allows for custom styling while compatible with BSI requirements"
+    },
+
+    "Radiobutton Scale Styling": {
+        "scope": "css, less",
+        "prefix": "cssrating",
+        "body": [
+            ".rating-set-container {",
+            "display: flex;",
+            "width: 100%;",
+            "margin-top: 10px;",
+            "height: 40px;",
+            "}",
+            "",
+            ".rating-set-container > .custom-radiobutton-container {",
+            "flex-grow: 1;",
+            "position: relative;",
+            "}",
+            "",
+            ".rating-set-container .custom-radiobutton-container label {",
+            "position: absolute;",
+            "width: 100%;",
+            "height: 100%;",
+            "padding: 0;",
+            "margin: 0;",
+            "display: flex;",
+            "justify-content: center;",
+            "align-items: center;",
+            "}",
+            "",
+            "/* highlight required radiobutton sets with required star */",
+            ".required-radiobutton-field::after {",
+            "content: \"*\";",
+            "color: red;",
+            "padding-left: 5px;",
+            "}",
+            "/* disable default radiobutton display */",
+            "",
+            "input[type=\"radio\"] {",
+            "display: none;",
+            "}",
+            "",
+            "/* correctly align content */",
+            "",
+            ".custom-radiobutton-container {",
+            "display: flex;",
+            "flex-direction: row-reverse;",
+            "justify-content: flex-end;",
+            "align-items: center;",
+            "}",
+            "",
+            "/* accomodate spacing for custom radiobutton in label */",
+            "",
+            ".custom-radiobutton-container label {",
+            "padding-left: 30px;",
+            "/* In BSI, the label cannot wrap around the input element,",
+            "as it is traditionally done when using custom radiobutton for optimal",
+            "UX + styling. Hence, we have to position the radiobutton label",
+            "above the .custom-radiobutton-frame; otherwise the radiobutton would",
+            "not be directly clickable */",
+            "/* to assure that checkbox is always clickable (place label above) */",
+            "z-index: 2;",
+            "margin-left: -15px;",
+            "}",
+            "",
+            ".custom-radiobutton-container label:hover {",
+            "cursor: pointer;",
+            "}",
+            "",
+            "/* create custom radiobutton frame */",
+            "",
+            ".custom-radiobutton-container .custom-radiobutton-frame-rating {",
+            "background-color: white;",
+            "width: 15px;",
+            "height: 15px;",
+            "border: 1px solid black;",
+            "display: flex;",
+            "justify-content: center;",
+            "/* assure that radiobutton is clickable (place below label) */",
+            "z-index: 1;",
+            "width: 100%;",
+            "height: 100%;",
+            "}",
+            "",
+            ".rating-set-container .custom-radiobutton-container:first-of-type .custom-radiobutton-frame-rating {",
+            "border-top-left-radius: 10px;",
+            "border-bottom-left-radius: 10px;",
+            "}",
+            "",
+            ".rating-set-container .custom-radiobutton-container:last-of-type .custom-radiobutton-frame-rating {",
+            "border-top-right-radius: 10px;",
+            "border-bottom-right-radius: 10px;",
+            "}",
+            "",
+            ".custom-radiobutton-container label:hover ~ .custom-radiobutton-frame-rating {",
+            "background-color: #eee;",
+            "}",
+            "",
+            ".custom-radiobutton-container input:checked ~ .custom-radiobutton-frame-rating {",
+            "background-color: #13aff0;",
+            "}",
+            "",
+            ".rating-labels {",
+            "margin-top: 10px;",
+            "display: flex;",
+            "flex-direction: row;",
+            "width: 100%;",
+            "}",
+            "",
+            ".rating-labels .label-left {",
+            "width: 50%;",
+            "display: flex;",
+            "justify-content: flex-start;",
+            "}",
+            "",
+            ".rating-labels .label-right {",
+            "width: 50%;",
+            "display: flex;",
+            "justify-content: flex-end;",
+            "}"
+        ],
+        "description": "Allows for custom styling while compatible with BSI requirements"
     },
 
     "Twig Comment": {
@@ -264,6 +565,12 @@
         "body": "<p data-bsi-element-part=\"plain-text\" ${1:data-bsi-multiline=\"\"}>$2</p>$0"
     },
 
+    "BSI Formatted Text": {
+        "scope": "twig",
+        "prefix": "partformatted",
+        "body": "<p data-bsi-element-part=\"formatted-text\">$1</p>$0"
+    },
+
     "BSI Video": {
         "scope": "twig",
         "prefix": "partvid",
@@ -279,30 +586,71 @@
     "BSI Form": {
         "scope": "twig",
         "prefix": "partform",
-        "body": "<form id=\"$1\" data-bsi-element-part=\"form\">\n<ul data-bsi-form-validation=\"\" style=\"list-style:none\">\n<li data-bsi-form-validation-item=\"\"></li>\n</ul>\n<div data-bsi-dropzone=\"${2:form-container-zone}\" ${3:data-bsi-dropzone-allowed-elements=\"$4\"}>\n</div>\n</form>$0"
+        "body": "<form data-bsi-element-part=\"form\">\n<div data-bsi-form-validation=\"\">\n<p data-bsi-form-validation-item=\"\"></p>\n</div>\n<div data-bsi-dropzone=\"${1:form-container}\" data-bsi-dropzone-allowed-elements=\"$2\"></div>\n<div>\n<input data-bsi-part=\"form-submit\" type=\"submit\" value=\"${3:Senden}\" />\n</div>\n</form>$0"
     },
 
     "Required Form Field Styling": {
         "scope": "css, less",
         "prefix": "cssreq",
-        "body": ".reverse-for-required { display:flex; flex-direction: column-reverse; }\n\n/* spacing needed due to reversing */ .reverse-for-required > label {margin-bottom: 3px;}\n\ninput:required ~ label::after, select:required ~ label::after, textarea:required ~ label::after {content: \"*\";color: $1;padding-left: 5px;}$0"
+        "body": ".reverse-for-required { display:flex; flex-direction: column-reverse; }\n\n/* spacing needed due to reversing */ .reverse-for-required > label {margin-bottom: 3px;}\n\ninput:not([type=\"radio\"]):required ~ label::after, select:required ~ label::after, textarea:required ~ label::after {content: \"*\";color: $1;padding-left: 5px;}$0"
     },
 
     "BSI Form Select": {
         "scope": "twig",
         "prefix": "fpartsel",
-        "body": "<div data-bsi-element-part=\"form-select\" data-bsi-value-list=\"$1\" class=\"reverse-for-required\" ${2:data-bsi-value=\"$3\"} ${4:data-bsi-form-select-fixed-value-list=\"$5\"}>\n<select id=\"$6\" ${7:class=\"$8\"}><option value=\"$9\">$10</option></select>\n<label for=\"$6\">$11</label>\n</div>$0"
+        "body": "<div data-bsi-element-part=\"form-select\" data-bsi-value-list=\"$1\" class=\"reverse-for-required\" ${2:data-bsi-value=\"$3\"} ${4:data-bsi-form-select-fixed-value-list=\"$5\"}>\n<select id=\"$6\" name=\"$6\" ${7:class=\"$8\"}><option value=\"$9\">$10</option></select>\n<label for=\"$6\">$11</label>\n</div>$0"
+    },
+
+    "BSI Form Select Value List": {
+        "scope": "twig",
+        "prefix": "fpartselval",
+        "body": "$1${2:|$3}",
+        "description": "For different value + label"
     },
 
     "BSI Form Input": {
         "scope": "twig",
         "prefix": "fpartinp",
-        "body": "<div data-bsi-element-part=\"form-field\" class=\"reverse-for-required\" ${2:data-bsi-form-field-fixed-type=\"$3\"}>\n<input id=\"$4\" type=\"$5\" ${6:class=\"$7\"} ${8:pattern=\"$9\" title=\"$10\"}/>\n<label for=\"$4\">$11</label>\n</div>$0"
+        "body": "<div data-bsi-element-part=\"form-field\" class=\"reverse-for-required\" ${2:data-bsi-form-field-fixed-type=\"$3\"}>\n<input id=\"$4\" name=\"$4\" type=\"$5\" ${6:class=\"$7\"} ${8:pattern=\"$9\" title=\"$10\"}/>\n<label for=\"$4\">$11</label>\n</div>$0"
+    },
+
+    "BSI Form Custom Checkbox": {
+        "scope": "twig",
+        "prefix": "fpartbox",
+        "body": "<div data-bsi-element=\"${1:checkbox}\">\n<div data-bsi-element-part=\"form-checkbox\" class=\"custom-checkbox-container\" data-bsi-form-field-fixed-type=\"\">\n<input id=\"${2:sample-checkbox}\"\nname=\"${2:sample-checkbox}\"\ntype=\"checkbox\"\nclass=\"custom-checkbox-field\" />\n<label for=\"${2:sample-checkbox}\">$3</label>\n<span class=\"custom-checkbox-frame\"></span>\n</div>\n</div>$0"
+    },
+
+    "BSI Form Custom Radiobutton": {
+        "scope": "twig",
+        "prefix": "fpartradio_normal",
+        "body": "<div data-bsi-element=\"radiobutton-container\" class=\"radiobutton-container-wrapper\">\n<div id=\"${8:field-id}\" data-bsi-element-part=\"form-radio\"\ndata-bsi-value-list=\"$1|$2\n$3|$4\"\n${5:data-bsi-fixed-value-list=\"\"}>\n<label>$7</label>\n<div data-bsi-radio-group=\"\" class=\"radiobutton-set-container\">\n<div data-bsi-radio-item=\"\" class=\"custom-radiobutton-container\">\n<input type=\"radio\" name=\"$6\" id=\"$6-1\" value=\"$2\" />\n<label for=\"$6-1\">$1</label>\n<span class=\"custom-radiobutton-frame\"></span>\n</div>\n<div data-bsi-radio-item=\"\" class=\"custom-radiobutton-container\">\n<input type=\"radio\" name=\"$6\" id=\"$6-2\" value=\"$4\" />\n<label for=\"$6-2\">$3</label>\n<span class=\"custom-radiobutton-frame\"></span>\n</div>\n</div>\n</div>\n</div>$0",
+        "description": "Custom radiobuttons ensemble.\nUse together with styles accessible via 'cssradio' snippet (in elements' styles.less) for proper layout and 'jsradioreq' snippet (in elements' custom.js) for required highlighting of main label"
+    },
+
+    "BSI Form Scale Radiobutton": {
+        "scope": "twig",
+        "prefix": "fpartradio_scale",
+        "body": "<div data-bsi-element=\"radiobutton-container\" class=\"radiobutton-container-wrapper\">\n<div id=\"${8:field-id}\" data-bsi-element-part=\"form-radio\"\ndata-bsi-value-list=\"$1|$2\n$3|$4\"\n${5:data-bsi-fixed-value-list=\"\"}>\n<label>$7</label>\n<div data-bsi-radio-group=\"\" class=\"radiobutton-set-container rating-set-container\">\n<div data-bsi-radio-item=\"\" class=\"custom-radiobutton-container\">\n<input type=\"radio\" name=\"$6\" id=\"$6-1\" value=\"$2\" />\n<label for=\"$6-1\">$1</label>\n<span class=\"custom-radiobutton-frame-rating\"></span>\n</div>\n<div data-bsi-radio-item=\"\" class=\"custom-radiobutton-container\">\n<input type=\"radio\" name=\"$6\" id=\"$6-2\" value=\"$4\" />\n<label for=\"$6-2\">$3</label>\n<span class=\"custom-radiobutton-frame-rating\"></span>\n</div>\n</div>\n</div>\n<div class=\"rating-labels\">\n<span class=\"label-left\">$9</span>\n<span class=\"label-right\">$10</span>\n</div>\n</div>$0",
+        "description": "Custom rating scale.\nUse together with 'cssrating' snippet (in elements' styles.less) for proper layout and 'jsradioreq' snippet (in elements' custom.js) for required highlighting of main label"
+    },
+
+    "BSI Form Rating Scale Labels": {
+        "scope": "twig",
+        "prefix": "fpartradio_scale_labels",
+        "body": "<div class=\"rating-labels\">\n<span class=\"label-left\">$1</span>\n<span class=\"label-right\">$2</span>\n</div>$0",
+        "description": "Labels of radiobutton (NPS) Extremes, to be placed as last div within 'fpartradio', and apply 'cssrating' styles"
+    },
+
+    "BSI Form Custom Radio Item": {
+        "scope": "twig",
+        "prefix": "fpartradioitem",
+        "body": "<div data-bsi-radio-item=\"\" class=\"custom-radiobutton-container\">\n<input type=\"radio\" name=\"$2\" id=\"$2-$1\" value=\"$1\" />\n<label for=\"$2-$1\">$3</label>\n<span class=\"${4|custom-radiobutton-frame,custom-radiobutton-frame-rating|}\"></span>\n</div>$0",
+        "description": "Choose between the 'custom-radiobutton-frame' or the 'custom-radiobutton-frame-rating' option to add either a custom radiobutton or a scale element, respectively.\nUse in conjunction with the respective style snippets 'cssradio' or 'cssrating' in the elements' styles.less file."
     },
 
     "BSI Form Textarea": {
         "scope": "twig",
         "prefix": "fpartarea",
-        "body": "<div data-bsi-element-part=\"form-textarea\" class=\"reverse-for-required\">\n<textarea id=\"$1\" ${2:class=\"$3\"} ${4:rows=\"$5\" cols=\"$6\"}></textarea>\n<label for=\"$1\">$7</label>\n</div>$0"
+        "body": "<div data-bsi-element-part=\"form-textarea\" class=\"reverse-for-required\">\n<textarea id=\"$1\" name=\"$1\" ${2:class=\"$3\"} ${4:rows=\"$5\" cols=\"$6\"}></textarea>\n<label for=\"$1\">$7</label>\n</div>$0"
     }
 }
