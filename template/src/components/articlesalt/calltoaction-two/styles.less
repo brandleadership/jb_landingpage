@@ -1,0 +1,52 @@
+.calltoaction-button-two {
+  line-height: 22px;
+  color: #141e55;
+  padding: 10px 0 10px 15px;
+  border:none;
+  font-family: 'VerlagSSm', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  mso-line-height-rule: exactly;
+  display: inline-block;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: padding 0.5s;
+}
+
+.calltoaction-button-two::after,
+.calltoaction-button-two::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background-color: #141e55;
+}
+
+.calltoaction-button-two::after {
+    left: 0;
+    height: 80%;
+    width: 1px;
+    transition: height 0.5s;
+}
+
+.calltoaction-button-two::before {
+    width: 50%;
+    height: 1px;  
+    left: 0;
+    transition: width 0.5s;  
+}
+
+.calltoaction-button-two:hover {
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.calltoaction-button-two:hover::after {
+    height: 0;
+}
+
+.calltoaction-button-two:hover::before {
+    width: 100%;
+}
