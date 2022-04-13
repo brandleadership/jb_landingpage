@@ -143,6 +143,7 @@ template:
       - "link-block"
       - "links-group"
       - "links-group-item"
+      - "links-group-title"
       - "spacer"
       - "single-link"
       - "sticky-buttons"
