@@ -7,13 +7,9 @@
 					data-bsi-element-part="plain-text">
 					How to invest
 				</h2>
-				<div data-bsi-dropzone="links-group-subtitle"
-					data-bsi-dropzone-allowed-elements="content-links-group-title"
-					data-bsi-dropzone-max-number-of-elements="5">
-					{% include '../links-group-title/template.twig' %}
-				</div>
 				<div data-bsi-dropzone="links-group"
-					data-bsi-dropzone-allowed-elements="content-links-group-item">
+					data-bsi-dropzone-allowed-elements="content-links-group-item content-links-group-title">
+          {% include '../links-group-title/template.twig' %}
 					{% include '../links-group-item/template.twig' %}
 				</div>
 			</div>
