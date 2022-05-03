@@ -1,7 +1,0 @@
-{% for group, elements in properties.template.elements %}
-    <div data-bsi-group="{{ group }}">
-    {% for element in elements %}
-        {% include '../../components/' ~ group ~ '/' ~ element ~ '/template.twig' with properties %}
-    {% endfor %}
-    </div>
-{% endfor %}

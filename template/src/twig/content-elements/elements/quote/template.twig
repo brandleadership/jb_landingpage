@@ -1,0 +1,19 @@
+<!-- body-quote_start -->
+<div data-bsi-element="quote"
+    class="o-quote template-section-spacer--text-components">
+    <div class="o-quote__inner">
+        <div class="element wysiwyg">
+            {% if text %}
+                {{ text|raw }}
+            {% else %}
+                <h3 data-bsi-element-part="plain-text" class="o-quote__quote">
+                    {content_quote-text}
+                </h3>
+                <p data-bsi-element-part="plain-text" class="o-quote__author">
+                    {content_quote-name}, {content_quote-position}
+                </p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- body-quote_end -->
