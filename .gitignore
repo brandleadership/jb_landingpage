@@ -1,11 +1,5 @@
 *.exe
 *.zip
-template/www/*.html
-template/www/*.properties
-template/www/static/styles.css
-template/www/static/scripts.js
-studio-design-creator-mac
-.DS_Store?
-ehthumbs.db
-Thumbs.db
-*.DS_Store
+template/www/*
+template/tmp/*
+node_modules/*

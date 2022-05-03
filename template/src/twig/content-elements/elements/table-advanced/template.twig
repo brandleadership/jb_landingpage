@@ -1,0 +1,25 @@
+<div data-bsi-element="table-advanced">
+    <div class="row center-xs">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            <div data-bsi-dropzone="advanced-table-title"
+                data-bsi-dropzone-allowed-elements="element-heading"
+                data-bsi-dropzone-max-number-of-elements="1">
+                {% include '../element-heading/template.twig' %}
+            </div>
+        </div>
+    </div>
+    <div data-bsi-dropzone="content-table"
+        data-bsi-dropzone-allowed-elements="table"
+        data-bsi-dropzone-max-number-of-elements="1">
+        {% include '../table/template.twig' %}
+    </div>
+    <div class="row center-xs">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            <div data-bsi-dropzone="advanced-table-legend"
+                data-bsi-dropzone-allowed-elements="element-legend"
+                data-bsi-dropzone-max-number-of-elements="1">
+                {% include '../element-legend/template.twig' %}
+            </div>
+        </div>
+    </div>
+</div>

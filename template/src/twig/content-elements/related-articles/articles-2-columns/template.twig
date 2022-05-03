@@ -1,0 +1,25 @@
+<div data-bsi-element="articles-2-columns"
+    class="template-section-spacer article-container-context articles-context">
+    <!-- start_related_articles -->
+    <div class="component-teaser-article-row two-articles">
+        <div data-bsi-dropzone="articles-header"
+            data-bsi-dropzone-allowed-elements="articles-title"
+            data-bsi-dropzone-max-number-of-elements="1">
+            {% include '../articles-title/template.twig' %}
+        </div>
+        <!-- related_articles_content_start -->
+        <div class="row center-xs">
+            <!-- related_articles_1 2 and 3 start -->
+            {% block articles %}
+                <div class="col-md-4 col-sm-6 col-xs-12"
+                    data-bsi-dropzone="articles1"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12"
+                    data-bsi-dropzone="articles3"></div>
+            {% endblock %}
+            <!-- related_articles_1 2 and 3_end -->
+        </div>
+        <!-- related_articles_content_end -->
+    </div>
+    <!-- related_articles_end -->
+    <!-- end_related_articles -->
+</div>

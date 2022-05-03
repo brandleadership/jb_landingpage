@@ -1,87 +1,153 @@
-engine: { version: '0.79.4' }
+# when the files listed under "watch" will be modified and saved, 
+# the compiler will automatically be retriggered
 watch:
-  - resources
   - properties.yml
+  - resources
   - template/src
+
+# this key defines the tasks which are executed via the present file.
+# first sublevel keys (cp, twig, less, zip here) inform about the
+# respective operation the compiler is currently executing when
+# you run the studio-design-creator-win.exe (keys will be shown within the terminal).
+# Concerning the values of the sub-sublvl keys, you can specify a list of multiple sources.
+# For example for multiple sources for a given target file, by using [source1, source2].
+# That's why the value of model is prepared as a list of properties files, as
+# you may use multiple properties files in certain cases.
 task:
-  ### bundle and process component specific less and javascript files
+  # folders have to be created first, otherwise .exe file will report a "not found" error
+  - cp:
+      - source: resources/img/
+        target: template/www/img/
+      - source: resources/fonts/
+        target: template/www/fonts/
+      - source: template/src/less/styles.less
+        target: template/www/css/styles.css
+      - source: template/src/js/custom.js
+        target: template/www/js/custom.js
+  # twigs
   - twig:
-      - source: [template/src/_setup/components.less.twig]
+      - source: template/src/twig/design.twig
+        target: template/www/design.html
+        model: [properties.yml]
+      - source: template/src/twig/content-elements.twig
+        target: template/www/content-elements.html
+        model: [properties.yml] 
+      - source: template/src/twig/preview-template.twig
+        target: template/www/preview-template.html
+        model:
+          stack: [properties.yml]
+          override:
+            - property: ['preview']
+              value: true
+      - source: template/src/twig/components.less.twig
         target: template/tmp/components.less
         model: [properties.yml]
         tidy: false
         validate: false
-      - source: [template/src/_setup/components.js.twig]
-        target: template/tmp/components.js
-        model: [properties.yml]
-        tidy: false
-        validate: false
-  - less:
-      - source: [template/tmp/components.less]
-        target: template/www/static/styles.css
-        model:
-          stack: [properties.yml]
-          scope: [styles]
-    js:
-      - source: [template/tmp/components.js]
-        target: template/www/static/scripts.js
-    rm:
-      - template/tmp/components.js
-      - template/tmp/components.less
-  ### create regular design files
-  - twig:
-      ### design.html
-      - source: [template/src/base/twig/design.twig]
-        target: template/www/design.html
-        model: [properties.yml]
-      ### content-elements.html
-      - source: [template/src/base/twig/content-elements.twig]
-        target: template/www/content-elements.html
-        model: [properties.yml]
-      ### preview-template.html
-      - source: [template/src/base/twig/preview-template.twig]
-        target: template/www/preview-template.html
-        model: [properties.yml]
-      ### design.properties
-      - source: [template/src/base/twig/design.properties.twig]
+      - source: template/src/twig/design.properties.twig
         target: template/www/design.properties
         model: [properties.yml]
         tidy: false
         validate: false
-    zip:
+      - source: template/src/twig/design.js.twig
+        target: template/www/js/components.js
+        model: [properties.yml]
+        tidy: false
+        validate: false
+  # stylesheets
+  - less:
+      - source: template/src/less/styles.less
+        target: template/www/css/styles.css
+        model: [properties.yml]
+        compress: false
+      - source: template/tmp/components.less
+        target: template/www/css/components.css
+        model: [properties.yml]
+        compress: false
+      - source: template/src/less/custom.less
+        target: template/www/css/custom.css
+        model: [properties.yml]
+        compress: false
+  #include plyr package
+  - css:
+      - source: template/src/css/plyr.css
+        target: template/www/css/plyr.css
+        compress: true
+  - js:
+      - source: [template/src/js/plyr.js]
+        target: template/www/js/plyr.js
+        compress: false
+  # generate ZIP(s) for use in BSI
+  - zip:
       - base: template/www
+        # if the source file used to generate the ZIP's respective output file
+        # and that respective output file have the same name / contents,
+        # you can specify the source value only. For example, by specifying
+        # 'preview-template.html' as written below, you take
+        # template/www/preview-template.html as source and place it
+        # as preview-template.html within your output ZIP.
         source:
-          - design.html
-          - content-elements.html
+          - img
+          - fonts
+          - css
+          - js
           - preview-template.html
+          # Now let's say you have to develop a template in multiple languages.
+          # In this case, in the twig section above, you will most likely need
+          # to generate language-specific htmls, like content-elements-de.html
+          # for german, and content-elements-en.html for english. You would do
+          # so by following the usual syntax within the twig section above, with
+          # an additional "lang-de.yml" file added to the project root in this
+          # case, holding the translations in german:
+          #    - source: template/src/twig/content-elements.twig
+          #      target: template/www/content-elements-de.html
+          #      model: [properties.yml, lang-de.yml]
+          # in this case, the name of the source file you use for
+          # german - content-elements-de.html - differs from the name of the
+          # target file - which must always be content-elements.html for BSI
+          # to understand it. In this case, you specify the source and the
+          # target here instead of a simple value, like:
+          # - source: content-elements-de.html
+          #   target: content-elements.html
+          # Accordingly, you would then also have multiple "base" sections
+          # within your "zip" section of the compiler, each one specific to the
+          # respective sources of its languages.
+          # For illustrative purposes only, as the input and output files in this
+          # single language single page template are the same, below you can see
+          # the syntax you would use in case of different source vs target file names
+          - source: content-elements.html
+            target: content-elements.html
+          # This template is setup for one template in one language, meaning
+          # that we can directly provide the simple filenames to use them as target
+          # filenames too.
+          - design.html
           - design.properties
-          - static
-          - assets
-        target: ../../MO-Article-LP-EN-v2.0-202204.zip
+        target: ../../LP_JB_May_2022.zip
+
 defaults:
   twig:
     validate: true
-    tidy: true
+    tidy: false
     tabsize: 4
     comments: true
   less:
-    compress: true
+    compress: false
   js:
-    compress: true
+    compress: false
   global:
     charset: utf8
-    compress: true
+    compress: false
     failonerror: false
+    container: false
+
 webserver:
   packages:
-    - name: ' JULIUS BAER - Templates'
+    - name: Landingpage
       designs:
         - name: 'Landingpage'
           viewports:
             - type: desktop
-              width: 100%
-            - type: desktop
-              width: 940px
+              width: 1500px
             - type: tablet
               width: 768px
             - type: mobile
