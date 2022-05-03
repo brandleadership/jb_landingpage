@@ -1,15 +1,24 @@
-            <!-- video_component_start -->
-            <section data-bsi-element="content-video" class="template-section-spacer--media-components">
-               <div class="row center-xs">
-                  <div class="col-md-10 col-sm-12 col-xs-12">
-                     <div class="component-content-video__column">
-                        <div class="component-content-video aspect-16-9 ">
-                           <iframe data-bsi-element-part="video" width="560" height="315" src="{{ src ?: "https://www.youtube.com/embed/Nv2ceV9N_hc" }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- video_component_end -->		
-
-            
+<!-- video_component_start -->
+<section data-bsi-element="content-video"
+	class="template-section-spacer--media-components">
+	<div class="row center-xs">
+		<div class="col-md-10 col-sm-12 col-xs-12">
+			<div class="component-content-video__column">
+				<div class="component-content-video aspect-16-9">
+					<iframe data-bsi-element-part="video"
+						width="560"
+						height="315"
+						src="{{
+						src
+							?
+							: 'https://www.youtube.com/embed/Nv2ceV9N_hc'
+						}}"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- video_component_end -->
