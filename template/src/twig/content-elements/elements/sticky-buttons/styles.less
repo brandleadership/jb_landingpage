@@ -2,7 +2,6 @@
 .sticky {
 	position: sticky;
 	bottom: 0;
-	z-index: 99;
 	padding: 50px;
 }
 
@@ -47,7 +46,8 @@
 	/* to avoid that links lying under button container are not clickable in desktop view, only occupy space required for container */
 	.sticky {
 		display: inline-block;
-		left: 100%;
+		/* sticky buttons container is 230px wide in desktop view */
+		left: calc(100% - 230px);
 	}
 }
 
