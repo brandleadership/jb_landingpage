@@ -3,3 +3,11 @@
 .ratio-random .aspect-21-9::before {
     padding-bottom: 0!important;
 }
+
+/* enable aspect ratios that are different from 21:9 too; the class below sets a fixed with AND height, so you use the same selector and
+ add "auto". Same is applied to img, so */
+ /* Note that the module-hero-article-page--push-left class is applied onto the div wrapping the dropzone */
+.module-hero-article-page--push-left .ratio-random .module-hero-article-page__media-image-aspect,
+.module-hero-article-page--push-left .ratio-random .module-hero-article-page__media-image-aspect img {
+    height: auto;
+}
