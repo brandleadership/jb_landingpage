@@ -8,4 +8,4 @@ That's why the design has been refactored to follow the structural guidelines of
 will notice, the element names will partially be the BSI Element names of the initial setup (and again, this cannot
 be changed). To facilitate your work, the BSI Element folder names have been adapted to match the respective Element
 Name labels of the BSI Editor. Use the folder names, combined with the word doc illustrating the mapping in this 
-repository, to quickly identify the elements / dropzones.
+repository, to quickly identify the elements / allowed elements for dropzones.
