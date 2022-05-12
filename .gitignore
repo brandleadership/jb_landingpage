@@ -3,3 +3,4 @@
 template/www/*
 template/tmp/*
 node_modules/*
+*.docx
