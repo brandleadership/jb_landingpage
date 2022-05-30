@@ -3,7 +3,6 @@
 	position: sticky;
 	bottom: 0;
 	padding: 50px;
-	margin-top: -300px;
 }
 
 .sticky-button {
@@ -47,7 +46,7 @@
 	/* to avoid that links lying under button container are not clickable in desktop view, only occupy space required for container */
 	.sticky {
 		/* sticky buttons container is 230px wide in desktop view */
-		left: calc(100% - 230px);
+		margin-top: -300px;
 	}
 }
 
@@ -55,6 +54,6 @@
 	display: none;
 }
 
-.show-buton .second {
+.show-button .second {
 	display: flex;
 }
