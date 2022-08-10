@@ -20,6 +20,45 @@
   height: 50px;
 }
 
+.article-text {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    color: rgba(20,30,85,.8);
+    margin-bottom: 30px;
+}
+
+.three-row-text {
+  max-height: 78px;
+  overflow: hidden;
+  position: relative;
+}
+
+.three-row-text:before {
+    height: 26px;
+    bottom: 0;
+    background: linear-gradient(90deg,hsla(0,0%,100%,0),#fff 83%);
+    content: "";
+    margin: auto;
+    max-width: 115px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 50%;
+}
+
+.text-hidden .article-text {
+    display: none;
+}
+
+.text-shown .article-text {
+    display: block;
+}
+
+
 @media (min-width: 600px) and (max-width: 959px) {
   .two-articles .teaser-components-article-card {
     margin-bottom: 0px;
