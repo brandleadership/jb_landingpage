@@ -7,37 +7,18 @@
 {% set related_articles = ['articles-content', 'articles-3-columns'] %}
 
 {% for related_article in related_articles %}
-    {% include 'content-elements/related-articles/' ~ related_article
-        ~ '/styles.less' %}
+    {% include 'content-elements/related-articles/' ~ related_article ~ '/styles.less' %}
 {% endfor %}
 
 {% set alternative_elements = ['cta-button', 'cta-button-two'] %}
 
 {% for alternative in alternative_elements %}
-    {% include 'content-elements/alternative-elements/' ~ alternative
-        ~ '/styles.less' %}
+    {% include 'content-elements/alternative-elements/' ~ alternative ~ '/styles.less' %}
 {% endfor %}
 
-{% set elements = [
-    'download-item',
-    'element-heading',
-    'element-legend',
-    'rectangle',
-    'rectangle-with-buttons',
-    'link-block',
-    'sticky-buttons',
-    'links-group-item',
-    'links-group-title',
-    'table',
-    'title-lvl-one',
-    'title-lvl-two',
-    'title-lvl-three',
-    'single-legal-link',
-    'podcast-audio'
-    
-] %}
+{% set elements = ['download-item', 'element-heading', 'element-legend', 'rectangle', 'rectangle-advanced', 'rectangle-with-buttons', 'link-block', 'sticky-buttons', 'links-group-item', 'links-group-title', 'table', 'title-lvl-one', 'title-lvl-two', 'title-lvl-three', 'single-legal-link', 'podcast-audio'] %}
+
 
 {% for element in elements %}
     {% include 'content-elements/elements/' ~ element ~ '/styles.less' %}
 {% endfor %}
-
