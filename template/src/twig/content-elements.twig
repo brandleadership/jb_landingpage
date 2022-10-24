@@ -14,7 +14,18 @@
     {% endfor %}
 </div>
 
-{% set related_articles = ['articles-1-column', 'articles-1-column-wide', 'articles-2-columns', 'articles-3-columns', 'articles-content', 'articles-title'] %}
+{% set related_articles = [
+    'articles-1-column',
+    'articles-1-column-wide',
+    'articles-2-columns',
+    'articles-3-columns',
+    'articles-content',
+    'articles-title',
+    'related-topics',
+    'related-topic-tag'
+   
+] %}
+
 
 <div data-bsi-group="related-articles">
     {% for related_article in related_articles %}
@@ -31,6 +42,7 @@
 </div>
 
 {% set normal_elements = ['bodytext', 'contact-link', 'divider', 'download-item', 'downloads', 'element-heading', 'element-legend', 'image-element', 'image-headline-legend', 'image-title-legend', 'image-with-legend', 'interaction-container', 'link-block', 'links-group', 'links-group-item', 'links-group-title', 'list-element', 'print-subscribe', 'quote', 'rectangle', 'rectangle-advanced', 'rectangle-with-buttons', 'single-legal-link', 'social-follow', 'sticky-buttons', 'table', 'table-advanced', 'title-lvl-one', 'title-lvl-two', 'title-lvl-three', 'embed-video', 'iframe-video', 'video-tag', 'podcast-audio'] %}
+
 
 <div data-bsi-group="normal-elements">
     {% for element in normal_elements %}

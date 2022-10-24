@@ -18,7 +18,19 @@ group.normal-elements.label={{ 'Content Elements' }}
     {{ '\n' }}
 {% endfor %}
 
-{% set related_articles = ['articles-1-column', 'articles-1-column-wide', 'articles-2-columns', 'articles-3-columns', 'articles-content', 'articles-title'] %}
+
+{% set related_articles = [
+    'articles-1-column',
+    'articles-1-column-wide',
+    'articles-2-columns',
+    'articles-3-columns',
+    'articles-content',
+    'articles-title',
+    'related-topics',
+    'related-topic-tag'
+   
+] %}
+
 
 {% for related_article in related_articles %}
     {% include 'content-elements/related-articles/' ~ related_article ~ '/design.properties' %}
