@@ -23,9 +23,16 @@
 {% include 'content-elements/elements/sticky-buttons/template.twig' with { properties: properties } %} #}
 {% endblock %}
 
+{% block topics %}
+{# {% include 'content-elements/related-articles/related-topics/template.twig' with { properties: properties } %}
+{# {% include 'content-elements/related-articles/articles-3-columns/template.twig' with { properties: properties } %}
+{% include 'content-elements/related-articles/articles-1-column-wide/template.twig' with { properties: properties } %} #}
+{% endblock %}
+
 {% block articles %}
-{#{% include 'content-elements/related-articles/articles-3-columns/template.twig' with { properties: properties } %}
-{% include 'content-elements/related-articles/articles-1-column-wide/template.twig' with { properties: properties } %}#}
+{# {% include 'content-elements/related-articles/related-topics/template.twig' with { properties: properties } %}
+{# {% include 'content-elements/related-articles/articles-3-columns/template.twig' with { properties: properties } %}
+{% include 'content-elements/related-articles/articles-1-column-wide/template.twig' with { properties: properties } %} #}
 {% endblock %}
 
 {% block footer %}
