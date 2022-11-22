@@ -1,4 +1,4 @@
-{
+/* {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "html.format.indentHandlebars": true,
@@ -6,3 +6,4 @@
     "html.format.templating": true,
     "editor.formatOnPaste": true
 }
+ */
