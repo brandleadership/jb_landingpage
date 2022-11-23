@@ -15,5 +15,3 @@ module.exports = cx.contentElement
                 require('../../../configs/styles/formatted-text-config')
             )
     );
-
-// element.content-links-group-title.parts.formatted-text.html-editor-config=content-title-configs

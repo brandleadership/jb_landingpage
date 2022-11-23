@@ -13,7 +13,3 @@ module.exports = cx.contentElement
                 require('../../../configs/styles/formatted-text-config')
             )
     );
-
-// html-editor-config.list-element-configs.features=bold,underline,italic,subscript,superscript,textColor,insertLink
-// html-editor-config.list-element-configs.text-colors=#008fb3,#20419a,#ffffff
-// element.content-list-element.parts.formatted-text.html-editor-config=list-element-configs
