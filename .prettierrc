@@ -1,8 +1,8 @@
 {
-    "printWidth": 80,
-    "proseWrap": "always",
+    "trailingComma": "es5",
+    "maxLineLength": "40",
     "tabWidth": 4,
-    "plugins": [
-        "c:/Users/cedric.zimmermann/node_modules/prettier-plugin-twig-melody"
-    ]
+    "semi": true,
+    "singleQuote": true,
+    "plugins": ["./node_modules/prettier-plugin-twig-melody"]
 }
