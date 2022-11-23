@@ -5,6 +5,10 @@ module.exports = cx.contentElement
     .withIcon(Icon.text)
     .withLabel('Article')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(
+        require('../../../configs/styles/sticky-button-display'),
+        require('../../../configs/styles/articles-content-overlay')
+    )
     .withParts(
         cx.part.link
             .withId('19556e7e-6b13-11ed-a1eb-0242ac120002')

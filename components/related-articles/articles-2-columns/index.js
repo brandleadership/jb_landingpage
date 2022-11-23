@@ -6,6 +6,7 @@ module.exports = cx.contentElement
     .withLabel('Article-Container 2-column')
     .withDescription('Number of allowed articles: 1')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/articles-context'))
     .withParts(
         cx.part.plainText.withLabel('Related Articles Title'),
         cx.part.image.withLabel('Article')

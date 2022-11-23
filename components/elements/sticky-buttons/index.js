@@ -5,6 +5,7 @@ module.exports = cx.contentElement
     .withIcon(Icon.chain)
     .withLabel('Sticky Buttons')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/sticky-button-display'))
     .withParts(
         cx.part.link
             .withId('78128094-6b06-11ed-a1eb-0242ac120002')

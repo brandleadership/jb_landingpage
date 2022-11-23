@@ -5,7 +5,10 @@ module.exports = cx.contentElement
     .withIcon(Icon.formfield)
     .withLabel('Rectangle Advanced')
     .withDescription('Element with One Dropzone')
-    .withFile(require('./template.twig'));
+    .withFile(require('./template.twig'))
+    .withStyleConfigs(
+        require('../../../configs/styles/rectangle-advanced-theme')
+    );
 
 // #styles
 // style.rectangle-advanced-color-theme.label=Theme

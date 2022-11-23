@@ -6,17 +6,15 @@ module.exports = cx.contentElement
     .withLabel('Element Heading')
     .withDescription('For Advanced Table + Image')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(
+        require('../../../configs/styles/heading-align'),
+        require('../../../configs/styles/heading-body-text')
+    )
     .withParts(
         cx.part.plainText
             .withId('6115e50e-6a7d-11ed-a1eb-0242ac120002')
             .withLabel('Legend, Title')
     );
-
-// # element.element-heading.label=Element Heading
-// # element.element-heading.description=For Advanced Table + Image
-// # element.element-heading.icon=snippet
-
-// # element.element-heading.parts.plain-text[0].label=Legend, Title
 
 // style.heading-alignment.label=Alignment Heading
 // style.heading-alignment.class.module-content-gallery__content.label=Indented

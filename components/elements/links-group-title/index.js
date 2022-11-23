@@ -6,6 +6,7 @@ module.exports = cx.contentElement
     .withLabel('Title')
     .withDescription('For Links Group element')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/link-group'))
     .withParts(
         cx.part.formattedText
             .withId('3534a6fa-6a87-11ed-a1eb-0242ac120002')

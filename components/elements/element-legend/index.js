@@ -6,6 +6,7 @@ module.exports = cx.contentElement
     .withLabel('Element Legend')
     .withDescription('For Advanced Table + Image')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/legend-align'))
     .withParts(
         cx.part.formattedText
             .withId('25c0688c-6a80-11ed-a1eb-0242ac120002')

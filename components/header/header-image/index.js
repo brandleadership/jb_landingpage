@@ -5,6 +5,7 @@ module.exports = cx.contentElement
     .withIcon(Icon.image)
     .withLabel('Headerimage')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/header-image'))
     .withParts(
         cx.part.image
             .withId('f452f266-6b0f-11ed-a1eb-0242ac120002')

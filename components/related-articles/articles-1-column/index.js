@@ -6,6 +6,7 @@ module.exports = cx.contentElement
     .withLabel('Article-Container 1-column')
     .withDescription('Number of allowed articles: 1')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/articles-context'))
     .withParts(
         cx.part.plainText.withLabel('Related Articles Title'),
         cx.part.image.withLabel('Article')
@@ -19,3 +20,7 @@ module.exports = cx.contentElement
 
 // # style defined in articles/image/design properties
 // element.articles-image1.styles=article-container-context
+
+// style.article-container-context.label=Context
+// style.article-container-context.class.content-context.label=Content
+// style.article-container-context.class.articles-context.label=Articles
