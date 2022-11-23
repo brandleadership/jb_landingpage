@@ -10,7 +10,3 @@ module.exports = cx.contentElement
             .withId('6115e0cc-6a7d-11ed-a1eb-0242ac120002')
             .withLabel('Link to Article')
     );
-
-// # element.content-download-item.label=Download Item
-// # element.content-download-item.parts.link[0].label=Link to Article
-// # element.content-download-item.icon=chain

@@ -16,9 +16,3 @@ module.exports = cx.contentElement
             .withId('e04b9d40-6b0a-11ed-a1eb-0242ac120002')
             .withLabel('Legal')
     );
-
-// # element.footer-links.label=Links
-// # element.footer-links.icon=chain
-// # element.footer-links.parts.link[0].label=About Us
-// # element.footer-links.parts.link[1].label=Contact
-// # element.footer-links.parts.link[2].label=Legal

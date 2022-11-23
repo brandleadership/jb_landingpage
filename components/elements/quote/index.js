@@ -13,8 +13,3 @@ module.exports = cx.contentElement
             .withId('ee65cec8-6b00-11ed-a1eb-0242ac120002')
             .withLabel('Source-reference')
     );
-
-// # element.content-quote.label=Quote
-// # element.content-quote.icon=communication
-// # element.content-quote.parts.plain-text[0].label=Quote
-// # element.content-quote.parts.plain-text[1].label=Source-reference

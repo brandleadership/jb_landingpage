@@ -11,8 +11,3 @@ module.exports = cx.contentElement
             .withId('13e2a91e-6b06-11ed-a1eb-0242ac120002')
             .withLabel('Title for Social-Follow')
     );
-
-// # element.content-content2.label=Social-Follow-Element
-// # element.content-content2.description=Part of Interaction-Container
-// # element.content-content2.icon=social-follow
-// # element.content-content2.parts.plain-text[0].label=Title for Social-Follow

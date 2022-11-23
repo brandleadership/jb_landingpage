@@ -6,7 +6,3 @@ module.exports = cx.contentElement
     .withLabel('Table')
     .withDescription('With Title + Legend')
     .withFile(require('./template.twig'));
-
-// # element.content-table-advanced.label=Table
-// # element.content-table-advanced.description=With Title + Legend
-// # element.content-table-advanced.icon=table

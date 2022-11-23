@@ -10,7 +10,3 @@ module.exports = cx.contentElement
             .withId('b5294610-6a85-11ed-a1eb-0242ac120002')
             .withLabel('Link to File')
     );
-
-// element.content-links-group-item.label=Links Group Item
-// element.content-links-group-item.parts.link[0].label=Link to File
-// element.content-links-group-item.icon=chain

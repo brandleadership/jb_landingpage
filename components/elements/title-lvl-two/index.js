@@ -15,12 +15,6 @@ module.exports = cx.contentElement
             )
     );
 
-// # element.content-title-lvl-two.label=Title
-// # element.content-title-lvl-two.description=Level Two
-// # element.content-title-lvl-two.icon=snippet
-
-// # element.content-title-lvl-two.parts.formatted-text.label=Title Options
-
 // html-editor-config.content-title-two-configs.features=bold,italic,underline,strikeThrough,textColor,backgroundColor,fontSize,paragraphFormat,lineHeight
 // html-editor-config.content-title-two-configs.text-colors=#ff0000,#00ff00,#0000ff,#008fb3,#20419a,#ffffff
 // html-editor-config.content-title-two-configs.background-colors=#ff0000,#00ff00,#0000ff
@@ -30,5 +24,3 @@ module.exports = cx.contentElement
 // html-editor-config.content-title-two-configs.font-size-default=12
 // html-editor-config.content-title-two-configs.line-heights=1,1.15,1.5,2
 // html-editor-config.content-title-two-configs.enter=br
-
-// element.content-title-lvl-two.parts.formatted-text.html-editor-config=content-title-two-configs

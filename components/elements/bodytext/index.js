@@ -7,7 +7,14 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.formattedText
+            .withLabel('Bodytext')
+            .withId('c2b1ef58-6b34-11ed-a1eb-0242ac120002')
+            .withHtmlEditorConfig(
+                require('../../../configs/styles/formatted-text-config')
+            ),
+        cx.part.formattedText
             .withLabel('Content Bodytext')
+            .withId('c2b1f282-6b34-11ed-a1eb-0242ac120002')
             .withHtmlEditorConfig(
                 require('../../../configs/styles/formatted-text-config')
             )
@@ -22,9 +29,3 @@ module.exports = cx.contentElement
 // html-editor-config.full.font-size-default=12
 // html-editor-config.full.line-heights=1,1.15,1.5,2
 // html-editor-config.full.enter=p
-
-// # element.content-text.label=Bodytext-Element
-// # element.content-text.icon=text
-// # element.content-text.parts.plain-text.label=Title Bodytext
-// # element.content-text.parts.formatted-text.label=Content Bodytext
-// element.content-text.parts.formatted-text.html-editor-config=full

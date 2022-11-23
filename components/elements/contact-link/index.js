@@ -11,7 +11,3 @@ module.exports = cx.contentElement
             .withId('e5154328-6a7c-11ed-a1eb-0242ac120002')
             .withLabel('Hyperlink')
     );
-
-// # element.content-cta.label=Contact Link
-// # element.content-cta.icon=handshake
-// # element.content-cta.parts.link[0].label=Hyperlink

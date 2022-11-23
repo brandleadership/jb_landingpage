@@ -6,7 +6,3 @@ module.exports = cx.contentElement
     .withLabel('Related Topics')
     .withDescription('Number of allowed tags: 6 ')
     .withFile(require('./template.twig'));
-
-// # element.related-topics.label=Related Topics
-// # element.related-topics.description=Number of allowed tags: 6
-// # element.related-topics.icon=chain

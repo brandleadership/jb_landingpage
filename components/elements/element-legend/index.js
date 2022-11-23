@@ -23,18 +23,3 @@ module.exports = cx.contentElement
 // html-editor-config.legend-formatting.font-size-default=14
 // html-editor-config.legend-formatting.enter=br
 // html-editor-config.legend-formatting.text-colors=#008fb3,#20419a,#ffffff
-
-// element.parts.formatted-text.html-editor-config=legend-formatting
-
-// # element.element-legend.label=Element Legend
-// # element.element-legend.description=For Advanced Table + Image
-// # element.element-legend.icon=snippet
-
-// # element.element-legend.parts.formatted-text[0].label=Legend, Source / Reference
-// element.element-legend.parts.formatted-text.html-editor-config=legend-formatting
-
-// style.element-legend-alignment.label=Alignment Legend
-// style.element-legend-alignment.class.module-content-gallery__content.label=Indented
-// style.element-legend-alignment.class.element-legend-not-indented.label=Left-Aligned
-
-// element.element-legend.styles=element-legend-alignment

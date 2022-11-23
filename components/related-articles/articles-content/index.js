@@ -6,7 +6,7 @@ module.exports = cx.contentElement
     .withLabel('Article')
     .withFile(require('./template.twig'))
     .withStyleConfigs(
-        require('../../../configs/styles/sticky-button-display'),
+        require('../../../configs/styles/articles-content-display-text'),
         require('../../../configs/styles/articles-content-overlay')
     )
     .withParts(
@@ -32,24 +32,3 @@ module.exports = cx.contentElement
             .withId('19557db0-6b13-11ed-a1eb-0242ac120002')
             .withLabel('Estimated reading time')
     );
-
-// style.articles-content-overlay.label=Show overlay
-// style.articles-content-overlay.class.video-overlay-visible.label=Video
-// style.articles-content-overlay.class.podcast-overlay-visible.label=Posdcast
-// style.articles-content-overlay.class.overlay-hidden.label=None
-
-// style.display-text.label=Display text
-// style.display-text.class.text-shown.label=Shown
-// style.display-text.class.text-hidden.label=Hidden
-
-// element.articles-content.styles=articles-content-overlay,display-text
-
-// # element.articles-content.label=Article
-// # element.articles-content.icon=text
-// # element.articles-content.parts.link[0].label=Article Link
-// # element.articles-content.parts.link[1].label=Article Tag Link
-
-// # element.articles-content.parts.image[0].label=Teaserimage
-// # element.articles-content.parts.plain-text[0].label=Article Title
-// # element.articles-content.parts.plain-text[1].label=Estimated reading time
-// # element.articles-content.parts.formatted-text[0].label=Lead Text

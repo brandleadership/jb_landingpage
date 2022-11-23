@@ -10,7 +10,3 @@ module.exports = cx.contentElement
             .withId('6115e3ba-6a7d-11ed-a1eb-0242ac120002')
             .withLabel('Title')
     );
-
-// # element.content-downloads.label=Downloads
-// # element.content-downloads.parts.plain-text[0].label=Title
-// # element.content-downloads.icon=pile

@@ -6,7 +6,3 @@ module.exports = cx.contentElement
     .withLabel('Interaction-Container')
     .withDescription('print/subscribe, social-follow')
     .withFile(require('./template.twig'));
-
-// # element.content-printsubscribe.label=Interaction-Container
-// # element.content-printsubscribe.description=print/subscribe, social-follow
-// # element.content-printsubscribe.icon=pile

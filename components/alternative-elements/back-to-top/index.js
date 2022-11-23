@@ -5,6 +5,3 @@ module.exports = cx.contentElement
     .withIcon(Icon.signpost)
     .withLabel('«back to top»-Button')
     .withFile(require('./template.twig'));
-
-// # element.articlesalt-backtotop.label=«back to top»-Button
-// # element.articlesalt-backtotop.icon=signpost

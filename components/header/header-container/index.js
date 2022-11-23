@@ -6,7 +6,3 @@ module.exports = cx.contentElement
     .withLabel('Header-Container')
     .withDescription('Container for header elements')
     .withFile(require('./template.twig'));
-
-// # element.header-container.label=Header-Container
-// # element.header-container.description=Container for header elements
-// # element.header-container.icon=pile

@@ -11,8 +11,3 @@ module.exports = cx.contentElement
             .withId('30302e5a-6b08-11ed-a1eb-0242ac120002')
             .withLabel('Disclaimer Content')
     );
-
-// element.footer-disclaimer.label=Disclaimer
-// element.footer-disclaimer.description=For Footer
-// element.footer-disclaimer.icon=textarea
-// element.footer-disclaimer.parts.plain-text[0].label=Disclaimer Content

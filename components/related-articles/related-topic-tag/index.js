@@ -6,7 +6,3 @@ module.exports = cx.contentElement
     .withLabel('Topic Tag')
     .withDescription('Related Topic Tag ')
     .withFile(require('./template.twig'));
-
-// # element.related-topic-tag.label=Topic Tag
-// # element.related-topic-tag.icon=list
-// # element.related-topic-tag.description=Related Topic Tag

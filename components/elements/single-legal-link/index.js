@@ -14,10 +14,6 @@ module.exports = cx.contentElement
             )
     );
 
-// # element.content-single-link.label=Single Legal Link
-// # element.content-single-link.icon=chain
-// # element.content-single-link.parts.formatted-text[0].label = Link Details
-
 // html-editor-config.single-legal-link.features=bold,fontSize,insertLink,textColor,underline
 // html-editor-config.single-legal-link.font-sizes=12,13,14,15,16,17,18,19,20,21,22,23,24
 // html-editor-config.single-legal-link.font-size-unit=px
@@ -25,6 +21,3 @@ module.exports = cx.contentElement
 // html-editor-config.single-legal-link.text-colors=#000000,#22338b,#ffffff
 // html-editor-config.single-legal-link.line-heights=1.1,1.5
 // html-editor-config.single-legal-link.enter=br
-
-// element.content - single - link.parts.formatted - text.html - editor - config =
-//     single - legal - link;

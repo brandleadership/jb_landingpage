@@ -17,9 +17,3 @@ module.exports = cx.contentElement
             .withId('b52941ce-6a85-11ed-a1eb-0242ac120002')
             .withLabel('Button Link')
     );
-
-// # element.content-link-block.label=Link Block
-// # element.content-link-block.parts.image[0].label=Icon Image
-// # element.content-link-block.parts.plain-text[0].label=Title
-// # element.content-link-block.parts.link[0].label=Button Link
-// # element.content-link-block.icon=snippet

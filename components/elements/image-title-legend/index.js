@@ -17,10 +17,3 @@ module.exports = cx.contentElement
             .withId('22da174c-6a82-11ed-a1eb-0242ac120002')
             .withLabel('Legend, source-reference')
     );
-
-// # element.content-text-title-image.label=Image-Element
-// # element.content-text-title-image.description=with title and legend
-// # element.content-text-title-image.icon=snippet
-// # element.content-text-title-image.parts.image[0].label=Imagesource
-// # element.content-text-title-image.parts.plain-text[0].label=Legend, Title
-// # element.content-text-title-image.parts.plain-text[1].label=Legend, source-reference

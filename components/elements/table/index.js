@@ -5,6 +5,3 @@ module.exports = cx.contentElement
     .withIcon(Icon.table)
     .withLabel('Table')
     .withFile(require('./template.twig'));
-
-// # element.content-table.label=Table
-// # element.content-table.icon=table

@@ -10,7 +10,3 @@ module.exports = cx.contentElement
             .withId('f452f0d6-6b0f-11ed-a1eb-0242ac120002')
             .withLabel('Title Details')
     );
-
-// # element.header-h1.label=Header Title
-// # element.header-h1.icon=heading
-// # element.header-h1.parts.plain-text[0].label=Title Details

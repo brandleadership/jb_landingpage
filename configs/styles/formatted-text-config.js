@@ -63,6 +63,6 @@ module.exports = cx.htmlEditorConfig
     )
     .withFontSizes(8, 9, 10, 11, 12, 14, 16, 18, 24, 30, 36, 48, 72)
     .withFontSizeUnit(FontSizeUnit.PT)
-    .withFontSizeDefault(12)
+    .withFontSizeDefault(14)
     .withLineHeights(1, 1.15, 1.5, 2)
     .withEnterMode(EnterMode.P);

@@ -11,8 +11,3 @@ module.exports = cx.contentElement
             .withId('22da07b6-6a82-11ed-a1eb-0242ac120002')
             .withLabel('Imagesource')
     );
-
-// # element.content-image.label=Image-Element
-// # element.content-image.description=without legend
-// # element.content-image.icon=image
-// # element.content-image.parts.image[0].label=Imagesource

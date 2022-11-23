@@ -11,8 +11,3 @@ module.exports = cx.contentElement
             .withId('303029be-6b08-11ed-a1eb-0242ac120002')
             .withLabel('Video Link')
     );
-
-// # element.content-video-tag.label=Video
-// # element.content-video-tag.description=Video Snippet
-// # element.content-video-tag.parts.video.label=Video Link
-// # element.content-video-tag.icon=youtube
