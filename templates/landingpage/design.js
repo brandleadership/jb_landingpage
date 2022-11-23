@@ -3,10 +3,9 @@ require('./styles/styles.scss');
 const { cx, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
-    .withTitle('Detailpage Digital Magazine')
+    .withTitle('JB-Landing Page')
     .withAuthor('gateB')
-    .withDate('10.11.2022')
-    /* .withPreviewImage(require('./preview.png')) */
+    .withDate('23.11.2022')
     .withDefaultLocale(Locale.EN)
     .withLocales(Locale.EN, Locale.DE)
     .withContentElementGroups(
