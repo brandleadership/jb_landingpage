@@ -7,6 +7,9 @@
         "prettier-plugin-twig-melody": "^0.4.6"
     },
     "scripts": {
-        "pretty": "prettier --write \"./**/*.{js,twig}\""
+        "pretty": "prettier --write \"./**/*.{js,twig}\"",
+        "build": "webpack --config webpack.config.js --mode production --progress",
+        "watch": "webpack --config webpack.config.js --mode development --watch --progress",
+        "serve": "webpack serve --config webpack.config.js --mode development --progress"
     }
 }
