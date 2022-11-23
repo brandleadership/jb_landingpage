@@ -1,1 +1,0 @@
-place your font files in this folder

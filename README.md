@@ -9,3 +9,5 @@ will notice, the element names will partially be the BSI Element names of the in
 be changed). To facilitate your work, the BSI Element folder names have been adapted to match the respective Element
 Name labels of the BSI Editor. Use the folder names, combined with the word doc illustrating the mapping in this 
 repository, to quickly identify the elements / allowed elements for dropzones.
+
+-> The overview is in the Github Wiki now, Readme will be updated soon
