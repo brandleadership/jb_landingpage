@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@bsi-cx/design-build": "^1.10.4-rc.1"
+  },
+  "dependencies": {
+    "prettier": "^2.8.0",
+    "prettier-plugin-twig-melody": "^0.4.6"
+  }
+}
