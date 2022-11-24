@@ -3,7 +3,7 @@ require('./styles/styles.scss');
 const { cx, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
-    .withTitle('JB-Landing Page')
+    .withTitle('JB Landing Page')
     .withAuthor('gateB')
     .withDate('23.11.2022')
     .withDefaultLocale(Locale.EN)
@@ -45,7 +45,6 @@ module.exports = cx.design
                 require('../../components/elements/element-legend'),
                 require('../../components/elements/embed-video'),
                 require('../../components/elements/iframe-video'),
-                require('../../components/elements/image-element'),
                 require('../../components/elements/image-element'),
                 require('../../components/elements/image-headline-legend'),
                 require('../../components/elements/image-title-legend'),
