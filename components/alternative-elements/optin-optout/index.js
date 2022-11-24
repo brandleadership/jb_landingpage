@@ -1,7 +1,7 @@
-const { cx, Icon } = require('@bsi-cx/design-build');
+const { cx, Icon } = require('@bsi-cx/design-build')
 
 module.exports = cx.contentElement
     .withElementId('articlesalt-optinoptout')
-    .withIcon(Icon.signpost)
+    .withIcon(Icon.SIGNPOST)
     .withLabel('«optin/optout»-Button')
-    .withFile(require('./template.twig'));
+    .withFile(require('./template.twig'))

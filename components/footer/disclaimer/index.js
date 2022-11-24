@@ -1,8 +1,8 @@
-const { cx, Icon } = require('@bsi-cx/design-build');
+const { cx, Icon } = require('@bsi-cx/design-build')
 
 module.exports = cx.contentElement
     .withElementId('footer-disclaimer')
-    .withIcon(Icon.textarea)
+    .withIcon(Icon.TEXTAREA)
     .withLabel('Disclaimer')
     .withDescription('For Footer')
     .withFile(require('./template.twig'))
@@ -10,4 +10,4 @@ module.exports = cx.contentElement
         cx.part.plainText
             .withId('30302e5a-6b08-11ed-a1eb-0242ac120002')
             .withLabel('Disclaimer Content')
-    );
+    )

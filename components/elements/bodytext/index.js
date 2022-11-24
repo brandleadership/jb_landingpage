@@ -1,8 +1,8 @@
-const { cx, Icon } = require('@bsi-cx/design-build');
+const { cx, Icon } = require('@bsi-cx/design-build')
 
 module.exports = cx.contentElement
     .withElementId('content-text')
-    .withIcon(Icon.text)
+    .withIcon(Icon.TEXT)
     .withLabel('Bodytext-Element')
     .withFile(require('./template.twig'))
     .withParts(
@@ -18,4 +18,4 @@ module.exports = cx.contentElement
             .withHtmlEditorConfig(
                 require('../../../configs/styles/body-text-config')
             )
-    );
+    )

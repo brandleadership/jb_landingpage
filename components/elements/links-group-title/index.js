@@ -1,8 +1,8 @@
-const { cx, Icon } = require('@bsi-cx/design-build');
+const { cx, Icon } = require('@bsi-cx/design-build')
 
 module.exports = cx.contentElement
     .withElementId('content-links-group-title')
-    .withIcon(Icon.heading)
+    .withIcon(Icon.HEADING)
     .withLabel('Title')
     .withDescription('For Links Group element')
     .withFile(require('./template.twig'))
@@ -14,4 +14,4 @@ module.exports = cx.contentElement
             .withHtmlEditorConfig(
                 require('../../../configs/styles/formatted-text-config')
             )
-    );
+    )

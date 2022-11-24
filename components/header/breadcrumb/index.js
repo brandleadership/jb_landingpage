@@ -1,8 +1,8 @@
-const { cx, Icon } = require('@bsi-cx/design-build');
+const { cx, Icon } = require('@bsi-cx/design-build')
 
 module.exports = cx.contentElement
     .withElementId('header-breadcrumb')
-    .withIcon(Icon.info)
+    .withIcon(Icon.INFO)
     .withLabel('Date, Author, Reading time')
     .withFile(require('./template.twig'))
     .withParts(
@@ -15,4 +15,4 @@ module.exports = cx.contentElement
         cx.part.plainText
             .withId('f452ef14-6b0f-11ed-a1eb-0242ac120002')
             .withLabel('Estimated reading time')
-    );
+    )

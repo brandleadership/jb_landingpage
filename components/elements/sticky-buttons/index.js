@@ -1,8 +1,8 @@
-const { cx, Icon } = require('@bsi-cx/design-build');
+const { cx, Icon } = require('@bsi-cx/design-build')
 
 module.exports = cx.contentElement
     .withElementId('content-sticky-buttons')
-    .withIcon(Icon.chain)
+    .withIcon(Icon.CHAIN)
     .withLabel('Sticky Buttons')
     .withFile(require('./template.twig'))
     .withStyleConfigs(require('../../../configs/styles/sticky-button-display'))
@@ -13,4 +13,4 @@ module.exports = cx.contentElement
         cx.part.link
             .withId('781285ee-6b06-11ed-a1eb-0242ac120002')
             .withLabel('Second Link')
-    );
+    )

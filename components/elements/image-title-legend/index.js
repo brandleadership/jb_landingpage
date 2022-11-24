@@ -1,8 +1,8 @@
-const { cx, Icon } = require('@bsi-cx/design-build');
+const { cx, Icon } = require('@bsi-cx/design-build')
 
 module.exports = cx.contentElement
     .withElementId('content-text-title-image')
-    .withIcon(Icon.snippet)
+    .withIcon(Icon.SNIPPET)
     .withLabel('Image-Element')
     .withDescription('with title and legend')
     .withFile(require('./template.twig'))
@@ -16,4 +16,4 @@ module.exports = cx.contentElement
         cx.part.plainText
             .withId('22da174c-6a82-11ed-a1eb-0242ac120002')
             .withLabel('Legend, source-reference')
-    );
+    )
