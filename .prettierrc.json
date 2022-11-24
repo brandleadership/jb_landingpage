@@ -1,11 +1,8 @@
 {
     "trailingComma": "es5",
-
     "tabWidth": 4,
-    "semi": true,
+    "semi": false,
     "singleQuote": true,
+    "max_line_length": 80,
     "plugins": ["./node_modules/prettier-plugin-twig-melody"]
-
 }
-
-
