@@ -1,5 +1,6 @@
 <!-- Image_with_text_start -->
-<section data-bsi-element="content-image" class="template-section-spacer--media-components">
+<section data-bsi-element="content-image"
+    class="template-section-spacer--media-components">
     <div class="row center-xs">
         <div class="col-md-8 col-sm-12 col-xs-12">
             <!-- Image_with_text__content_start -->
@@ -8,7 +9,15 @@
                     <!-- Image_with_text__image_start -->
                     <div class="component-content-image--standalone">
                         <div>
-                            <img id="22da07b6-6a82-11ed-a1eb-0242ac120002" data-bsi-element-part="image" src="{{ src ? : 'https://via.placeholder.com/615x345?text=' }}{{ 'now'|date('j\. F Y') }}+Bank%20Julius%20Baer" alt="" />
+                            <img data-bsi-element-part="image"
+                                src="{{
+                                src
+                                    ?
+                                    : 'https://via.placeholder.com/615x345?text='
+                                }}{{ 'now'|date(
+                                    'j\. F Y'
+                                ) }}+Bank%20Julius%20Baer"
+                                alt="" />
                         </div>
                     </div>
                     <!-- Image_with_text__image_end -->

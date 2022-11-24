@@ -1,16 +1,30 @@
-{% set header = ['breadcrumb', 'header-container', 'header-h1', 'header-image', 'header-lead'] %}
+{% set header = [
+    'breadcrumb',
+    'header-container',
+    'header-h1',
+    'header-image',
+    'header-lead'
+] %}
 
 <div data-bsi-group="header">
     {% for header_element in header %}
-        {% include 'content-elements/header/' ~ header_element ~ '/template.twig' %}
+        {% include 'content-elements/header/' ~ header_element
+            ~ '/template.twig' %}
     {% endfor %}
 </div>
 
-{% set footer = ['footer-container', 'disclaimer', 'footer-links', 'socials', 'legal'] %}
+{% set footer = [
+    'footer-container',
+    'disclaimer',
+    'footer-links',
+    'socials',
+    'legal'
+] %}
 
 <div data-bsi-group="footer">
     {% for footer_element in footer %}
-        {% include 'content-elements/footer/' ~ footer_element ~ '/template.twig' %}
+        {% include 'content-elements/footer/' ~ footer_element
+            ~ '/template.twig' %}
     {% endfor %}
 </div>
 
@@ -23,26 +37,66 @@
     'articles-title',
     'related-topics',
     'related-topic-tag'
-   
 ] %}
-
 
 <div data-bsi-group="related-articles">
     {% for related_article in related_articles %}
-        {% include 'content-elements/related-articles/' ~ related_article ~ '/template.twig' %}
+        {% include 'content-elements/related-articles/' ~ related_article
+            ~ '/template.twig' %}
     {% endfor %}
 </div>
 
-{% set alternative_elements = ['back-to-top', 'cta-button', 'cta-button-two', 'optin-optout', 'wildcard'] %}
+{% set alternative_elements = [
+    'back-to-top',
+    'cta-button',
+    'cta-button-two',
+    'optin-optout',
+    'wildcard'
+] %}
 
 <div data-bsi-group="alternative-elements">
     {% for alternative in alternative_elements %}
-        {% include 'content-elements/alternative-elements/' ~ alternative ~ '/template.twig' %}
+        {% include 'content-elements/alternative-elements/' ~ alternative
+            ~ '/template.twig' %}
     {% endfor %}
 </div>
 
-{% set normal_elements = ['bodytext', 'contact-link', 'divider', 'download-item', 'downloads', 'element-heading', 'element-legend', 'image-element', 'image-headline-legend', 'image-title-legend', 'image-with-legend', 'interaction-container', 'link-block', 'links-group', 'links-group-item', 'links-group-title', 'list-element', 'print-subscribe', 'quote', 'rectangle', 'rectangle-advanced', 'rectangle-with-buttons', 'single-legal-link', 'social-follow', 'sticky-buttons', 'table', 'table-advanced', 'title-lvl-one', 'title-lvl-two', 'title-lvl-three', 'embed-video', 'iframe-video', 'video-tag', 'podcast-audio'] %}
-
+{% set normal_elements = [
+    'bodytext',
+    'contact-link',
+    'divider',
+    'download-item',
+    'downloads',
+    'element-heading',
+    'element-legend',
+    'image-element',
+    'image-headline-legend',
+    'image-title-legend',
+    'image-with-legend',
+    'interaction-container',
+    'link-block',
+    'links-group',
+    'links-group-item',
+    'links-group-title',
+    'list-element',
+    'print-subscribe',
+    'quote',
+    'rectangle',
+    'rectangle-advanced',
+    'rectangle-with-buttons',
+    'single-legal-link',
+    'social-follow',
+    'sticky-buttons',
+    'table',
+    'table-advanced',
+    'title-lvl-one',
+    'title-lvl-two',
+    'title-lvl-three',
+    'embed-video',
+    'iframe-video',
+    'video-tag',
+    'podcast-audio'
+] %}
 
 <div data-bsi-group="normal-elements">
     {% for element in normal_elements %}

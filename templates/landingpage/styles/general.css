@@ -1,0 +1,44 @@
+/* ============================================================= */
+/*	Schriften */
+/* ============================================================= */
+
+body {
+    font-family: 'VerlagSSm', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'VerlagSSm', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: 'VerlagSSm', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/* ============================================================= */
+/*	Schrift Integrationen   */
+/* ============================================================= */
+/* @font-face {
+    font-family: 'master-template';
+    src: url('../../../assets/fonts/icon-font.eot');
+    src: url('../../../assets/fonts/icon-font.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../../assets/fonts/icon-font.woff') format('woff'),
+        url('../../../assets/fonts/icon-font.ttf') format('truetype'),
+        url('../../../assets/fonts/icon-font.svg#bsi-master-template')
+            format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'VerlagSSm';
+    src: url('../../../assets/fonts/VerlagSSm-Book.woff2') format('woff2'),
+        url('../../../assets/fonts/VerlagSSm-Book.woff') format('woff'),
+        url('../../../assets/fonts/VerlagSSm-Book.ttf') format('truetype');
+}

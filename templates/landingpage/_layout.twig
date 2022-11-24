@@ -8,9 +8,10 @@
     <meta charset="utf-8" />
     <meta name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    {# <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/custom.css" /> #}
+    <link rel="stylesheet" href="{{ bsi_cx_css_href() }}" />
     <!-- PLYR library has a CSS and js, both enqueued on this template and added manually into the scr folder -->
     <link rel="stylesheet" href="./css/plyr.css" />
     <link rel="apple-touch-icon"
@@ -66,14 +67,12 @@
               <div class="module-navigation-main__top-left-navigation">
                 <div class="module-navigation-main__mobile-search-wrap">
                   <span class="search-icon module-navigation-main__mobile-search-icon">
-
                   </span>
                 </div>
               </div>
               <div class="module-navigation-main__logo-wrap">
-                <div class="module-navigation-main__logo">
-                  <a class="a-logo a-logo--blue o-main-navigation__logo"
-                    href="https://www.juliusbaer.com/">
+                <div class="module-navigation-main__logo" href="https://www.juliusbaer.com/">
+                  <a class="a-logo a-logo--blue o-main-navigation__logo">
                     <svg version="1.1"
                       id="Ebene_1"
                       xmlns="http://www.w3.org/2000/svg"
