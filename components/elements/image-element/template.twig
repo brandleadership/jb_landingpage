@@ -8,7 +8,9 @@
                     <!-- Image_with_text__image_start -->
                     <div class="component-content-image--standalone">
                         <div>
-                            <img id="22da07b6-6a82-11ed-a1eb-0242ac120002" data-bsi-element-part="image" src="{{ src ? : 'https://via.placeholder.com/615x345?text=' }}{{ 'now'|date('j\. F Y') }}+Bank%20Julius%20Baer" alt="" />
+                            <img id="22da07b6-6a82-11ed-a1eb-0242ac120002" data-bsi-element-part="image" src="{{ src ? : bsi_cx_asset('https://via.placeholder.com/615x345?text=') }}
+                          
+                            {{ 'now'|date('j\. F Y') }}+Bank%20Julius%20Baer" alt="" />
                         </div>
                     </div>
                     <!-- Image_with_text__image_end -->
@@ -19,3 +21,5 @@
     </div>
 </section>
 <!-- Image_with_text_end -->
+
+{# {{ src ? : 'https://via.placeholder.com/615x345?text=' }} #}
