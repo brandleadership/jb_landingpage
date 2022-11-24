@@ -1,7 +1,7 @@
-{% extends 'layout.twig' %}
+{% extends '_layout.twig' %}
 
 {% block header %}
-    {% include 'content-elements/header/header-container/template.twig' with {
+    {# {% include 'content-elements/header/header-container/template.twig' with {
         properties: properties
     } %}
     {% include 'content-elements/header/header-h1/template.twig' with {
@@ -15,11 +15,11 @@
     } %}
     {% include 'content-elements/header/header-lead/template.twig' with {
         properties: properties
-    } %}
+    } %} #}
 {% endblock %}
 
 {% block content %}
-    {% include 'content-elements/elements/video-tag/template.twig' with {
+    {# {% include 'content-elements/elements/video-tag/template.twig' with {
         properties: properties
     } %}
     {% include 'content-elements/elements/bodytext/template.twig' with {
@@ -63,11 +63,11 @@
     } %}
     {% include 'content-elements/elements/sticky-buttons/template.twig' with {
         properties: properties
-    } %}
+    } %} #}
 {% endblock %}
 
 {% block articlesalt %}
-    {% include 'content-elements/alternative-elements/back-to-top/template.twig' with {
+    {# {% include 'content-elements/alternative-elements/back-to-top/template.twig' with {
         properties: properties
     } %}
     {% include 'content-elements/alternative-elements/optin-optout/template.twig' with {
@@ -78,11 +78,11 @@
     } %}
     {% include 'content-elements/alternative-elements/cta-button/template.twig' with {
         properties: properties
-    } %}
+    } %} #}
 {% endblock %}
 
 {% block footer %}
-    {% include 'content-elements/footer/footer-container/template.twig' with {
+    {% include '../../components/footer/footer-container/template.twig' with {
         properties: properties
     } %}
 {% endblock %}
