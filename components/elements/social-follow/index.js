@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-content2')
-    .withIcon(Icon.social - follow)
+    .withIcon(Icon.SOCIAL_FOLLOW)
     .withLabel('Social-Follow-Element')
     .withDescription('Part of Interaction-Container')
     .withFile(require('./template.twig'))
