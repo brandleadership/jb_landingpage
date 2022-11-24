@@ -13,5 +13,7 @@
     "editor.formatOnPaste": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.documentSelectors": ["**/*.twig"],
-    "workbench.colorTheme": "Atom One Dark"
+    "workbench.colorTheme": "Atom One Dark",
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 16
 }
