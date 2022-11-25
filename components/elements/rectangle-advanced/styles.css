@@ -1,4 +1,3 @@
-
 .component-content-info-box {
     padding: 39px 30px;
     box-sizing: border-box;
@@ -6,15 +5,16 @@
 }
 
 .rectangle-advanced-bright .component-content-info-box {
-background-color: white;
+    background-color: white;
 }
 
 .rectangle-advanced-dark .component-content-info-box {
-  background-color: #141E55;
+    background-color: #141e55;
 }
 
 .rectangle-advanced-stone .component-content-info-box {
-  background-color: #efeee5;
+    background-color: #efeee5;
+    border-color: #efeee5;
 }
 
 .rectangle-advanced-dark .component-content-info-box p,
@@ -25,7 +25,5 @@ background-color: white;
 .rectangle-advanced-dark .component-content-info-box h3,
 .rectangle-advanced-dark .component-content-info-box h4,
 .rectangle-advanced-dark .component-content-info-box h5 {
-  color: white;
+    color: white;
 }
-
-
