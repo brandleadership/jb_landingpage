@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('header-image')
-    .withIcon(Icon.image)
+    .withIcon(Icon.IMAGE)
     .withLabel('Headerimage')
     .withFile(require('./template.twig'))
     .withStyleConfigs(require('../../../configs/styles/header-image'))

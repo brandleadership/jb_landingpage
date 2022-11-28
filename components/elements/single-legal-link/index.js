@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-single-link')
-    .withIcon(Icon.chain)
+    .withIcon(Icon.CHAIN)
     .withLabel('Single Legal Link')
     .withFile(require('./template.twig'))
     .withParts(

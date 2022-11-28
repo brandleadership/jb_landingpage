@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-download-item')
-    .withIcon(Icon.chain)
+    .withIcon(Icon.CHAIN)
     .withLabel('Download Item')
     .withFile(require('./template.twig'))
     .withParts(

@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-cta')
-    .withIcon(Icon.handshake)
+    .withIcon(Icon.HANDSHAKE)
     .withLabel('Contact Link')
     .withDescription('Hyplink')
     .withFile(require('./template.twig'))

@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('header-breadcrumb')
-    .withIcon(Icon.info)
+    .withIcon(Icon.INFO)
     .withLabel('Date, Author, Reading time')
     .withFile(require('./template.twig'))
     .withParts(

@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-video-tag')
-    .withIcon(Icon.youtube)
+    .withIcon(Icon.YOUTUBE)
     .withLabel('Video')
     .withDescription('Video Snippet')
     .withFile(require('./template.twig'))

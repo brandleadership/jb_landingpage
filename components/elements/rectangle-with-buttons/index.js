@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-highlightbox2')
-    .withIcon(Icon.communication)
+    .withIcon(Icon.COMMUNICATION)
     .withLabel('Rectangle with Buttons')
     .withDescription('Title/Text in a box with 2 buttons')
     .withFile(require('./template.twig'))

@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('header-text')
-    .withIcon(Icon.text)
+    .withIcon(Icon.TEXT)
     .withLabel('Lead')
     .withFile(require('./template.twig'))
     .withParts(

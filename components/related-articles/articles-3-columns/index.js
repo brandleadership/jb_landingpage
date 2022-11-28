@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('articles-image')
-    .withIcon(Icon.threeColumns)
+    .withIcon(Icon.THREE_COLUMNS)
     .withLabel('Article-Container 3-column')
     .withDescription('Number of allowed articles: 3')
     .withFile(require('./template.twig'))
