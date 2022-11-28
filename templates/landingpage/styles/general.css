@@ -157,7 +157,7 @@ button {
 .video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder:before {
     content: '';
     position: absolute;
-    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 17'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M19.282 11.555a.729.729 0 0 1-.508-.205l-1.648-1.604-1.648 1.604a.729.729 0 0 1-1.17-.227.686.686 0 0 1 .155-.762l1.648-1.604-1.648-1.605a.686.686 0 0 1 .017-.971.733.733 0 0 1 .998-.018l1.648 1.605 1.648-1.605a.733.733 0 0 1 .998.018.686.686 0 0 1 .018.971l-1.648 1.605 1.648 1.604c.205.2.266.501.155.762a.719.719 0 0 1-.663.432zm-8.743 3.513V1.948L5.99 5.082v6.85zm-5.27-1.89H.72c-.397 0-.719-.285-.719-.637V4.686c0-.352.322-.637.719-.637h4.418l5.68-3.915a.795.795 0 0 1 .765-.066c.247.11.401.338.394.584v15.711c0 .352-.321.637-.718.637a.78.78 0 0 1-.44-.134l-5.393-3.703a.81.81 0 0 1-.155.015zm-3.832-1.273h3.114V5.323H1.437z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 17'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M19.282 11.555a.729.729 0 0 1-.508-.205l-1.648-1.604-1.648 1.604a.729.729 0 0 1-1.17-.227.686.686 0 0 1 .155-.762l1.648-1.604-1.648-1.605a.686.686 0 0 1 .017-.971.733.733 0 0 1 .998-.018l1.648 1.605 1.648-1.605a.733.733 0 0 1 .998.018.686.686 0 0 1 .018.971l-1.648 1.605 1.648 1.604c.205.2.266.501.155.762a.719.719 0 0 1-.663.432zm-8.743 3.513V1.948L5.99 5.082v6.85zm-5.27-1.89H.72c-.397 0-.719-.285-.719-.637V4.686c0-.352.322-.637.719-.637h4.418l5.68-3.915a.795.795 0 0 1 .765-.066c.247.11.401.338.394.584v15.711c0 .352-.321.637-.718.637a.78.78 0 0 1-.44-.134l-5.393-3.703a.81.81 0 0 1-.155.015zm-3.832-1.273h3.114V5.323H1.437z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20px;
@@ -1390,7 +1390,7 @@ body.vjs-full-window {
     width: 16px;
     height: 16px;
     top: -6px;
-    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23fff' fill-opacity='.2' d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23fff' fill-opacity='.2' d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     position: absolute;
 }
 
@@ -9890,14 +9890,14 @@ select[data-ss-uuid] {
 }
 .component-content-rich-text ol {
     padding-left: 20px;
-     margin-bottom: 30px;
+    margin-bottom: 30px;
     margin-left: 24px;
 }
- @media (min-width: 1281px) {
-   .component-content-rich-text ol {
-     margin-bottom: 34px;
-   }
- }
+@media (min-width: 1281px) {
+    .component-content-rich-text ol {
+        margin-bottom: 34px;
+    }
+}
 .component-content-rich-text a {
     color: #141e55;
 }
