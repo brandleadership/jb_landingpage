@@ -1,15 +1,84 @@
 {% extends '_layout.twig' %}
 
 {% block header %}
-
+    {% include '../../components/header/header-container/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/header/header-h1/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/header/breadcrumb/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/header/header-image/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/header/header-lead/template.twig' with {
+        properties: properties
+    } %}
 {% endblock %}
 
 {% block content %}
-
+    {% include '../../components/elements/video-tag/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/bodytext/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/list-element/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/iframe-video/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/quote/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/image-with-legend/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/image-headline-legend/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/image-element/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/downloads/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/link-block/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/links-group/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/rectangle/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/rectangle-advanced/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/rectangle-with-buttons/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/sticky-buttons/template.twig' with {
+        properties: properties
+    } %}
 {% endblock %}
 
 {% block articlesalt %}
-
+    {% include '../../components/alternative-elements/back-to-top/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/alternative-elements/optin-optout/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/alternative-elements/wildcard/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/alternative-elements/cta-button/template.twig' with {
+        properties: properties
+    } %}
 {% endblock %}
 
 {% block footer %}
