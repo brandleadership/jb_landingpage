@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('podcast-audio')
@@ -13,4 +13,4 @@ module.exports = cx.contentElement
         cx.part.html
             .withId('c38df880-6afe-11ed-a1eb-0242ac120002')
             .withLabel('Audio Content')
-    )
+    );

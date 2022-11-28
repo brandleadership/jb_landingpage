@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('footer-container')
@@ -6,4 +6,4 @@ module.exports = cx.contentElement
     .withLabel('Footer-Container')
     .withDescription('Container Footer-Elements')
     .withFile(require('./template.twig'))
-    .withParts(cx.part.image.withLabel('Image'))
+    .withParts(cx.part.image.withLabel('Image'));

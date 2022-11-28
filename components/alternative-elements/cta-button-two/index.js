@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('articlesalt-calltoaction-two')
@@ -6,4 +6,4 @@ module.exports = cx.contentElement
     .withLabel('CTA Button')
     .withDescription('Animated Version')
     .withFile(require('./template.twig'))
-    .withParts(cx.part.link.withLabel('Link Details'))
+    .withParts(cx.part.link.withLabel('Link Details'));

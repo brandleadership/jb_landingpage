@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('rectangle-advanced')
@@ -8,4 +8,4 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withStyleConfigs(
         require('../../../configs/styles/rectangle-advanced-theme')
-    )
+    );

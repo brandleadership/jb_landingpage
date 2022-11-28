@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-text')
@@ -18,4 +18,4 @@ module.exports = cx.contentElement
             .withHtmlEditorConfig(
                 require('../../../configs/styles/body-text-config')
             )
-    )
+    );

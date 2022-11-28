@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('element-legend')
@@ -14,4 +14,4 @@ module.exports = cx.contentElement
             .withHtmlEditorConfig(
                 require('../../../configs/styles/legend-text-config')
             )
-    )
+    );

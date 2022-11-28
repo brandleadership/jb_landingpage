@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-content2')
@@ -10,4 +10,4 @@ module.exports = cx.contentElement
         cx.part.plainText
             .withId('13e2a91e-6b06-11ed-a1eb-0242ac120002')
             .withLabel('Title for Social-Follow')
-    )
+    );

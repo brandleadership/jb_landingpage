@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('footer-links')
@@ -15,4 +15,4 @@ module.exports = cx.contentElement
         cx.part.link
             .withId('e04b9d40-6b0a-11ed-a1eb-0242ac120002')
             .withLabel('Legal')
-    )
+    );

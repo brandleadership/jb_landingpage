@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('articles-image2')
@@ -10,4 +10,4 @@ module.exports = cx.contentElement
     .withParts(
         cx.part.plainText.withLabel('Related Articles Title'),
         cx.part.image.withLabel('Article')
-    )
+    );

@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-single-link')
@@ -12,4 +12,4 @@ module.exports = cx.contentElement
             .withHtmlEditorConfig(
                 require('../../../configs/styles/legal-link-text-config')
             )
-    )
+    );

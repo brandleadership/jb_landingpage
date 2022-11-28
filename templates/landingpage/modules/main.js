@@ -1,2 +1,2 @@
-import '../scripts/custom'
-import '../scripts/plyr'
+import '../scripts/custom';
+import '../scripts/plyr';

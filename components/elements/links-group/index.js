@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-links-group')
@@ -9,4 +9,4 @@ module.exports = cx.contentElement
         cx.part.plainText
             .withId('b52943d6-6a85-11ed-a1eb-0242ac120002')
             .withLabel('Title')
-    )
+    );

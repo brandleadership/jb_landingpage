@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('header-text')
@@ -9,4 +9,4 @@ module.exports = cx.contentElement
         cx.part.plainText
             .withId('3d8a0464-6b11-11ed-a1eb-0242ac120002')
             .withLabel('Lead Details')
-    )
+    );

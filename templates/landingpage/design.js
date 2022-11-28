@@ -1,6 +1,6 @@
-require('./styles/styles.scss')
+require('./styles/styles.scss');
 
-const { cx, Locale } = require('@bsi-cx/design-build')
+const { cx, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
     .withTitle('JB Landing Page')
@@ -91,4 +91,4 @@ module.exports = cx.design
                 require('../../components/footer/legal'),
                 require('../../components/footer/socials')
             )
-    )
+    );

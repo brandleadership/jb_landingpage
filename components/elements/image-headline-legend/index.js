@@ -1,4 +1,4 @@
-const { cx, Icon } = require('@bsi-cx/design-build')
+const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('content-text-title-image-alt')
@@ -10,4 +10,4 @@ module.exports = cx.contentElement
         cx.part.image
             .withId('22da0b62-6a82-11ed-a1eb-0242ac120002')
             .withLabel('Imagesource')
-    )
+    );
