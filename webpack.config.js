@@ -19,7 +19,7 @@ module.exports = WebpackConfigBuilder.fromConfigs(
         .withModules(new ModuleConfig().withName('main').withPath('main.js'))
         .withAdditionalFilesToCopy({
             from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
-            to: 'img', // copy to <output folder>/files/**/*
+            to: 'static/img', // copy to <output folder>/files/**/*
         })
     /* new BuildConfig()
         .withName('website')
