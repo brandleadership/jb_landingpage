@@ -1,0 +1,23 @@
+<!-- body-quote_start -->
+<div data-bsi-element="content-quote"
+    class="o-quote template-section-spacer--text-components">
+    <div class="o-quote__inner">
+        <div class="element wysiwyg">
+            {% if text %}
+                {{ text|raw }}
+            {% else %}
+                <h3 data-bsi-element-part="plain-text"
+                    id="ee65d24c-6b00-11ed-a1eb-0242ac120002"
+                    class="o-quote__quote">
+                    {content_quote-text}
+                </h3>
+                <p data-bsi-element-part="plain-text"
+                    id="ee65cec8-6b00-11ed-a1eb-0242ac120002"
+                    class="o-quote__author">
+                    {content_quote-name}, {content_quote-position}
+                </p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- body-quote_end -->

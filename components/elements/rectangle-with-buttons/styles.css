@@ -1,0 +1,19 @@
+.highlightbox2-aligned-text.highlightbox2-text-align-left h4,
+.highlightbox2-aligned-text.highlightbox2-text-align-left p {
+    text-align: left;
+}
+
+.highlightbox2-aligned-text.highlightbox2-text-align-center p,
+.highlightbox2-aligned-text.highlightbox2-text-align-center h4 {
+    text-align: center;
+}
+
+@media (max-width: 599px) {
+    .highlightbox2-button .button {
+        display: block;
+    }
+
+    .highlightbox2-button .component-special-article-tool-bar__inner {
+        display: block;
+    }
+}

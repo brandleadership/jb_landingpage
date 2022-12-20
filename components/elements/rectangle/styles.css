@@ -1,0 +1,31 @@
+.highlightbox-aligned-text.highlightbox-text-align-left h4,
+.highlightbox-aligned-text.highlightbox-text-align-left p {
+    text-align: left;
+}
+
+.highlightbox-aligned-text.highlightbox-text-align-center p,
+.highlightbox-aligned-text.highlightbox-text-align-center h4 {
+    text-align: center;
+}
+
+.highlightbox-bright .component-content-info-box {
+    background-color: white;
+}
+
+.highlightbox-dark .component-content-info-box {
+    background-color: #141e55;
+}
+
+.highlightbox-dark .component-content-info-box__title,
+.highlightbox-dark .component-content-rich-text p {
+    color: white;
+}
+
+.highlightbox-stone .component-content-info-box {
+    background-color: #efeee5;
+    border-color: #efeee5;
+}
+
+.component-content-info-box h4 {
+    margin-bottom: 18px;
+}

@@ -1,0 +1,29 @@
+.component-content-info-box {
+    padding: 39px 30px;
+    box-sizing: border-box;
+    border: 1px solid rgba(20, 30, 85, 0.2);
+}
+
+.rectangle-advanced-bright .component-content-info-box {
+    background-color: white;
+}
+
+.rectangle-advanced-dark .component-content-info-box {
+    background-color: #141e55;
+}
+
+.rectangle-advanced-stone .component-content-info-box {
+    background-color: #efeee5;
+    border-color: #efeee5;
+}
+
+.rectangle-advanced-dark .component-content-info-box p,
+.rectangle-advanced-dark .component-content-info-box div,
+.rectangle-advanced-dark .component-content-info-box h6,
+.rectangle-advanced-dark .component-content-info-box h1,
+.rectangle-advanced-dark .component-content-info-box a,
+.rectangle-advanced-dark .component-content-info-box h3,
+.rectangle-advanced-dark .component-content-info-box h4,
+.rectangle-advanced-dark .component-content-info-box h5 {
+    color: white;
+}

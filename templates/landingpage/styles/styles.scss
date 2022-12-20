@@ -1,0 +1,34 @@
+@import '../styles/plyr.css';
+@import '../styles/general.css';
+@import '../styles/components.css';
+
+/* TODO: Uncomment all elements as soon as they were renamed to css */
+
+/* Elements */
+@import '../../../components/elements/download-item/styles.css';
+@import '../../../components/elements/element-heading/styles.css';
+@import '../../../components/elements/element-legend/styles.css';
+@import '../../../components/elements/rectangle/styles.css';
+@import '../../../components/elements/rectangle-advanced/styles.css';
+@import '../../../components/elements/rectangle-with-buttons/styles.css';
+@import '../../../components/elements/link-block/styles.css';
+@import '../../../components/elements/sticky-buttons/styles.css';
+@import '../../../components/elements/links-group-item/styles.css';
+@import '../../../components/elements/links-group-title/styles.css';
+@import '../../../components/elements/table/styles.css';
+@import '../../../components/elements/title-lvl-one/styles.css';
+@import '../../../components/elements/title-lvl-two/styles.css';
+@import '../../../components/elements/title-lvl-three/styles.css';
+@import '../../../components/elements/single-legal-link/styles.css';
+@import '../../../components/elements/podcast-audio/styles.css';
+
+/* Alternative Elements */
+@import '../../../components/alternative-elements/cta-button/styles.css';
+@import '../../../components/alternative-elements/cta-button-two/styles.css';
+
+/* Related Articles */
+@import '../../../components/related-articles/articles-content/styles.css';
+@import '../../../components/related-articles/articles-3-columns/styles.css';
+
+/* Header */
+@import '../../../components/header/header-image/styles.css';

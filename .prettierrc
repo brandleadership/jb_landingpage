@@ -1,8 +1,0 @@
-{
-    "printWidth": 80,
-    "proseWrap": "always",
-    "tabWidth": 4,
-    "plugins": [
-        "c:/Users/cedric.zimmermann/node_modules/prettier-plugin-twig-melody"
-    ]
-}
