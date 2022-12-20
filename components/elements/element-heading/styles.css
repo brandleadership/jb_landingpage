@@ -1,15 +1,14 @@
 .element-heading-not-indented {
-	padding: 0;
+    padding: 0;
 }
 
 .element-heading h5 {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .element-heading-styling-bodytext h5 {
-	font-family: VerlagSSm, sans-serif;
-	font-weight: 700;
-	font-size: 1.0625rem;
-	line-height: 1.875rem;
-	color: #141e55;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    line-height: 1.875rem;
+    color: #141e55;
 }
