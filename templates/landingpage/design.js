@@ -88,7 +88,7 @@ module.exports = cx.design
                 require('../../components/footer/disclaimer'),
                 require('../../components/footer/footer-container'),
                 require('../../components/footer/footer-links'),
-                require('../../components/footer/legal'),
+                require('../../components/footer/legal-links'),
                 require('../../components/footer/socials')
             )
     );
