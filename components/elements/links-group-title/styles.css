@@ -1,11 +1,11 @@
 .default-links-group-title h5 {
-	text-transform: none;
+    text-transform: none;
 }
 
 .uppercase-links-group-title h5 {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .links-group-title {
-	margin-top: 25px;
+    margin-top: 25px;
 }

@@ -1,59 +1,59 @@
 /* important added because bsi elements have position:relative; would overwrite */
 .sticky {
-	position: sticky;
-	bottom: 0;
-	padding: 50px;
+    position: sticky;
+    bottom: 0;
+    padding: 50px;
 }
 
 .sticky-button {
-	background-color: #141e55;
-	color: white;
-	width: 130px;
-	height: 130px;
-	display: flex;
-	border-radius: 50%;
-	padding: 20px;
-	align-items: center;
-	text-align: center;
-	margin-left: auto;
-	text-decoration: none;
-	font-weight: 400;
+    background-color: #141e55;
+    color: white;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    border-radius: 50%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 .sticky-button p {
-	color: white;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
-	.sticky {
-		flex-direction: row;
-		display: flex;
-		justify-content: space-evenly;
-		padding: 20px;
-	}
-	.sticky-button {
-		margin-left: unset;
-	}
-	.second {
-		margin-left: 20px;
-	}
+    .sticky {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    .sticky-button {
+        margin-left: unset;
+    }
+    .second {
+        margin-left: 20px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-	.second {
-		margin-top: 20px;
-	}
-	/* to avoid that links lying under button container are not clickable in desktop view, only occupy space required for container */
-	.sticky {
-		/* sticky buttons container is 230px wide in desktop view */
-		margin-top: -300px;
-	}
+    .second {
+        margin-top: 20px;
+    }
+    /* to avoid that links lying under button container are not clickable in desktop view, only occupy space required for container */
+    .sticky {
+        /* sticky buttons container is 230px wide in desktop view */
+        margin-top: -300px;
+    }
 }
 
 .hide-button .second {
-	display: none;
+    display: none;
 }
 
 .show-button .second {
-	display: flex;
+    display: flex;
 }
