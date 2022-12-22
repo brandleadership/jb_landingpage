@@ -14,6 +14,7 @@ module.exports = cx.design
             .withLabel('Header')
             .withContentElements(
                 require('../../components/header/breadcrumb'),
+                require('../../components/elements/chart'),
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),

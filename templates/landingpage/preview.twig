@@ -1,6 +1,9 @@
 {% extends '_layout.twig' %}
 
 {% block header %}
+    {% include '../../components/elements/chart/template.twig' with {
+        properties: properties
+    } %}
     {% include '../../components/header/header-container/template.twig' with {
         properties: properties
     } %}

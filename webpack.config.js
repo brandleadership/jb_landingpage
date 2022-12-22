@@ -16,7 +16,10 @@ module.exports = WebpackConfigBuilder.fromConfigs(
         .withTargetVersion(Version.CX_22_0)
         .withRootPath(path.resolve(__dirname, 'templates', 'landingpage'))
         .withPropertiesFilePath('properties.js')
-        .withModules(new ModuleConfig().withName('main').withPath('main.js'))
+        .withModules(
+            new ModuleConfig().withName('main').withPath('main.js'),
+            new ModuleConfig().withName('chart').withPath('chart.js')
+        )
         .withAdditionalFilesToCopy({
             from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
             to: 'static/img', // copy to <output folder>/files/**/*

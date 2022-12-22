@@ -71,15 +71,15 @@
                 </div>
               </div>
               <div class="module-navigation-main__logo-wrap">
-                <div class="module-navigation-main__logo" href="https://www.juliusbaer.com/">
+                <div class="module-navigation-main__logo" href='https://www.juliusbaer.com/'>
                   <a class="a-logo a-logo--blue o-main-navigation__logo">
-                    <svg version="1.1"
+                    <svg version='1.1'
                       id="Ebene_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns='http://www.w3.org/2000/svg'
+                      xmlns:xlink='http://www.w3.org/1999/xlink'
                       x="0px"
                       y="0px"
-                      viewbox="0 0 283.7 55.8"
+                      viewbox='0 0 283.7 55.8'
                       enable-background="new 0 0 283.7 55.8"
                       xml:space="preserve">
                       <path d="M49.1,42.1V13.7H38.5v1.9h4v15.7c0,2.9-0.8,5.6-2.1,7.6c-1.5,2.2-3.7,3.3-6.3,3.3c-1.4,0-2.5-0.4-3.2-1.1
@@ -124,7 +124,7 @@
         </div>
         <div class="article-content-wrapper">
           <div data-bsi-dropzone="header"
-            data-bsi-dropzone-allowed-elements="header-container"
+            data-bsi-dropzone-allowed-elements="header-container chart"
             data-bsi-dropzone-max-number-of-elements="1">
             {% block header %}
 
@@ -165,5 +165,10 @@
     <script data-bsi-remove-if="draft" src="./js/components.js"></script>
     <script data-bsi-remove-if="draft" src="./js/custom.js"></script>
     <script data-bsi-remove-if="draft"> document.getElementById("copyright-year").innerHTML = new Date().getFullYear()</script>
+    <script src="{{ bsi_cx_js_module_runtime_href() }}"
+            defer="defer"></script>
+        <script src="{{ bsi_cx_js_module_href('main') }}"
+            defer="defer"></script>
+        {{ bsi_cx_js_module_missing_chunks_import() }}
   </body>
 </html>
