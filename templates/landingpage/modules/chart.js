@@ -14,17 +14,32 @@ import Chart from 'chart.js/auto';
         { color: '#B3B9DC' },
     ];
 
+    const chartTitle = await document.getElementById('chart-title').textContent;
+
+    Chart.defaults.font.family = 'VerlagSSm';
+
     new Chart(document.getElementById('acquisitions'), {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: data.data.map((row) => row.Year),
             datasets: [
                 {
-                    label: 'Acquisitions by year',
+                    label: chartTitle,
                     data: data.data.map((row) => row.Population),
                     backgroundColor: bgcolors.map((row) => row.color),
                 },
             ],
+        },
+        options: {
+            plugins: {
+                legend: {
+                    labels: {
+                        font: {
+                            family: 'VerlagSSm',
+                        },
+                    },
+                },
+            },
         },
     });
 })();
