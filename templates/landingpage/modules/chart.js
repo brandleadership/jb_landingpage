@@ -1,15 +1,7 @@
 import Chart from 'chart.js/auto';
 
 (async function () {
-    const data = [
-        { year: 2010, count: 10 },
-        { year: 2011, count: 20 },
-        { year: 2012, count: 15 },
-        { year: 2013, count: 25 },
-        { year: 2014, count: 22 },
-        { year: 2015, count: 30 },
-        { year: 2016, count: 28 },
-    ];
+    const data = await JSON.parse(document.getElementById('data').textContent);
 
     const bgcolors = [
         { color: '#001489' },
@@ -25,11 +17,11 @@ import Chart from 'chart.js/auto';
     new Chart(document.getElementById('acquisitions'), {
         type: 'bar',
         data: {
-            labels: data.map((row) => row.year),
+            labels: data.data.map((row) => row.Year),
             datasets: [
                 {
                     label: 'Acquisitions by year',
-                    data: data.map((row) => row.count),
+                    data: data.data.map((row) => row.Population),
                     backgroundColor: bgcolors.map((row) => row.color),
                 },
             ],
