@@ -17,6 +17,7 @@ import Chart from 'chart.js/auto';
     const chartTitle = await document.getElementById('chart-title').textContent;
 
     Chart.defaults.font.family = 'VerlagSSm';
+    /* Chart.defaults.font.weight = 'bold'; */
 
     new Chart(document.getElementById('acquisitions'), {
         type: 'line',
@@ -27,10 +28,35 @@ import Chart from 'chart.js/auto';
                     label: chartTitle,
                     data: data.data.map((row) => row.Population),
                     backgroundColor: bgcolors.map((row) => row.color),
+                    borderColor: bgcolors[0].color,
+                    pointRadius: 0,
+                    pointStyle: 'circle',
                 },
             ],
         },
         options: {
+            responsive: true,
+            scales: {
+                gridLines: {
+                    display: false,
+                    drawBorder: false,
+                },
+            },
+            scales: {
+                x: {
+                    border: {
+                        display: false,
+                    },
+                    grid: {
+                        display: false,
+                    },
+                },
+                y: {
+                    border: {
+                        display: false,
+                    },
+                },
+            },
             plugins: {
                 legend: {
                     labels: {
