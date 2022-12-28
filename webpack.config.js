@@ -10,8 +10,8 @@ const {
 
 module.exports = WebpackConfigBuilder.fromConfigs(
     new BuildConfig()
-        .withName('jb-landingpage')
-        .withVersion('3.0.0')
+        .withName('LP_JB_')
+        .withVersion('v3.0.0')
         .withDesignType(DesignType.LANDINGPAGE)
         .withTargetVersion(Version.CX_22_0)
         .withRootPath(path.resolve(__dirname, 'templates', 'landingpage'))
