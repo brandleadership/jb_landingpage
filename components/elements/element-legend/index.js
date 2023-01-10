@@ -12,6 +12,6 @@ module.exports = cx.contentElement
             .withId('25c0688c-6a80-11ed-a1eb-0242ac120002')
             .withLabel('Legend, Source / Reference')
             .withHtmlEditorConfig(
-                require('../../../configs/styles/legend-text-config')
+                require('../../../configs/editor/legend-text-config')
             )
     );
