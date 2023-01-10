@@ -6,6 +6,7 @@ module.exports = cx.design
     .withTitle('JB Landing Page')
     .withAuthor('gateB')
     .withDate('23.11.2022')
+    .withPreviewImage('static/preview.png')
     .withDefaultLocale(Locale.EN)
     .withLocales(Locale.EN, Locale.DE)
     .withContentElementGroups(
