@@ -1,8 +1,7 @@
-/* // Remove awkward spacing  */
-/* .ratio-21-9 .aspect-21-9::before,
+Remove awkward spacing */ .ratio-21-9 .aspect-21-9::before,
 .ratio-random .aspect-21-9::before {
     padding-bottom: 0 !important;
-} */
+}
 
 /* enable aspect ratios that are different from 21:9 too; the class below sets a fixed with AND height, so you use the same selector and
  add "auto". Same is applied to img, so */
