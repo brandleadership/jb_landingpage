@@ -9901,6 +9901,7 @@ select[data-ss-uuid] {
 }
 .component-content-rich-text a {
     color: #141e55;
+    white-space: nowrap;
 }
 .component-content-rich-text table {
     margin-bottom: 30px;
