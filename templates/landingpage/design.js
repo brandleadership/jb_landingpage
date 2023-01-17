@@ -62,6 +62,7 @@ module.exports = cx.design
                 require('../../components/elements/rectangle'),
                 require('../../components/elements/rectangle-advanced'),
                 require('../../components/elements/rectangle-with-buttons'),
+                require('../../components/elements/risk-rating'),
                 require('../../components/elements/single-legal-link'),
                 require('../../components/elements/social-follow'),
                 require('../../components/elements/sticky-buttons'),
