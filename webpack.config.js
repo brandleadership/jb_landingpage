@@ -10,17 +10,28 @@ const {
 
 module.exports = WebpackConfigBuilder.fromConfigs(
     new BuildConfig()
-        .withName('LP_JB_')
-        .withVersion('v3.0.0')
+        .withName('JB_LP')
+        .withVersion('v3.0.1')
         .withDesignType(DesignType.LANDINGPAGE)
         .withTargetVersion(Version.CX_22_0)
         .withRootPath(path.resolve(__dirname, 'templates', 'landingpage'))
         .withPropertiesFilePath('properties.js')
         .withModules(new ModuleConfig().withName('main').withPath('main.js'))
-        .withAdditionalFilesToCopy({
-            from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
-            to: 'static/img', // copy to <output folder>/files/**/*
-        })
+        .withAdditionalFilesToCopy(
+            {
+                from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
+                to: 'static/img', // copy to <output folder>/files/**/*
+            },
+            {
+                from: path.resolve(
+                    __dirname,
+                    'templates',
+                    'landingpage',
+                    'preview.png'
+                ),
+                to: 'static/preview.png',
+            }
+        )
     /* new BuildConfig()
         .withName('website')
         .withVersion('2.0.0')

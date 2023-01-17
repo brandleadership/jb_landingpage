@@ -10,6 +10,6 @@ module.exports = cx.contentElement
             .withId('c38df9a2-6afe-11ed-a1eb-0242ac120002')
             .withLabel('Text')
             .withHtmlEditorConfig(
-                require('../../../configs/styles/formatted-text-config')
+                require('../../../configs/editor/formatted-text-config')
             )
     );

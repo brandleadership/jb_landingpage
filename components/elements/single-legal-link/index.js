@@ -10,6 +10,6 @@ module.exports = cx.contentElement
             .withId('2f406314-6b05-11ed-a1eb-0242ac120002')
             .withLabel('Link Details')
             .withHtmlEditorConfig(
-                require('../../../configs/styles/legal-link-text-config')
+                require('../../../configs/editor/legal-link-text-config')
             )
     );
