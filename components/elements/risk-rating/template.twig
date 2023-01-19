@@ -1,4 +1,4 @@
-<div data-bsi-element="risk-rating">
+<div data-bsi-element="risk-rating" class="risk-bar">
     <section class="template-section-spacer--media-components">
         <div class="row center-xs">
             <div class="col-md-8 col-sm-12 col-xs-12">
@@ -15,45 +15,57 @@
                         </div>
                         <div class="risk-rating-box">
                             <div class="risk-rating__rating">
-                                <div>
+                                <div class="risk-rating_element highlight-first">
                                     <p>
                                         1
                                     </p>
                                 </div>
-                                <div>
+                                <div class="risk-rating_element">
                                     <p>
                                         2
                                     </p>
                                 </div>
-                                <div>
+                                <div class="risk-rating_element">
                                     <p>
                                         3
                                     </p>
                                 </div>
-                                <div>
+                                <div class="risk-rating_element">
                                     <p>
                                         4
                                     </p>
                                 </div>
-                                <div>
+                                <div class="risk-rating_element">
                                     <p>
                                         5
                                     </p>
                                 </div>
-                                <div>
+                                <div class="risk-rating_element">
                                     <p>
                                         6
                                     </p>
                                 </div>
-                                <div>
+                                <div class="risk-rating_element">
                                     <p>
                                         7
                                     </p>
                                 </div>
                             </div>
-                            <div class="risk-rating__legend"></div>
+                            <div class="risk-rating__legend">
+                                <div class="line-container">
+                                    <span class="line arrow-right"></span>
+                                </div>
+                                <div class="legend-box">
+                                    <p>
+                                        Lower Risk
+                                    </p>
+                                    <p>
+                                        Higher Risk
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 module-content-gallery__content">
+                        {# <div class="col-xs-12 module-content-gallery__content">
                             <p class="text-small module-content-gallery__content-caption"
                                 data-bsi-element-part="plain-text"
                                 data-bsi-multiline="true">
@@ -61,7 +73,7 @@
                                     ?
                                     : 'September 2020; GDP = gross domestic product. Source: Bloomberg Finance L.P., Julius Baer Economic Research' }}
                             </p>
-                        </div>
+                        </div> #}
                     </div>
                 </div>
             </div>

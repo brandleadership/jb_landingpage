@@ -5,6 +5,7 @@ module.exports = cx.contentElement
     .withIcon(Icon.SNIPPET)
     .withLabel('Risk Rating')
     .withFile(require('./template.twig'))
+    .withStyleConfigs(require('../../../configs/styles/hightlighted-element'))
     .withParts(
         cx.part.plainText
             .withId('c565d5c6-9653-11ed-a1eb-0242ac120002')
