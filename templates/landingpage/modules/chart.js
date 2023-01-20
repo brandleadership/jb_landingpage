@@ -16,32 +16,59 @@ import Chart from 'chart.js/auto';
 
     const chartTitle = await document.getElementById('chart-title').textContent;
 
-    Chart.defaults.font.family = 'VerlagSSm';
-    /* Chart.defaults.font.weight = 'bold'; */
+    Chart.defaults.datasets.line.hoverBackgroundColor = '#ffffff';
 
-    new Chart(document.getElementById('acquisitions'), {
+    // Interactions
+    Chart.defaults.interaction.intersect = false;
+    Chart.defaults.interaction.mode = 'index';
+
+    // Scales
+    Chart.defaults.scale.display = true;
+    // TODO: Add more scale styles to match the design in figma
+
+    // Line Styles
+    Chart.defaults.datasets.line.borderWidth = 2;
+    Chart.defaults.datasets.line.backgroundColor = () => {
+        return '#eee';
+    };
+    // TODO: Add more default line styles
+
+    // Legend Defaults
+    Chart.defaults.plugins.legend.display = true;
+    Chart.defaults.plugins.legend.position = 'bottom';
+    Chart.defaults.plugins.legend.align = 'start';
+    Chart.defaults.plugins.legend.labels.boxWidth = 40;
+    Chart.defaults.plugins.legend.labels.boxHeight = 4;
+    Chart.defaults.plugins.legend.labels.textAlign = 'left';
+
+    // Font
+    Chart.defaults.font.family = '"VerlagSSm"';
+    Chart.defaults.font.weight = 'bold';
+    // TODO: Change text color to black
+
+    // Predefined Chart Config
+    new Chart(document.getElementById('blubb'), {
         type: 'line',
         data: {
-            labels: data.data.map((row) => row.Year),
+            labels: data.data.datasets[1].data.map((row) => row.x),
             datasets: [
                 {
                     label: chartTitle,
-                    data: data.data.map((row) => row.Population),
+                    data: data.data.datasets[1].data.map((row) => row.y),
                     backgroundColor: bgcolors.map((row) => row.color),
-                    borderColor: bgcolors[0].color,
+                    /* borderColor: bgcolors[0].color, */
+                    borderColor: '#162056',
                     pointRadius: 0,
                     pointStyle: 'circle',
                 },
             ],
         },
         options: {
-            responsive: true,
-            scales: {
-                gridLines: {
-                    display: false,
-                    drawBorder: false,
-                },
+            interaction: {
+                intersect: false,
+                mode: 'index',
             },
+            responsive: true,
             scales: {
                 x: {
                     border: {
@@ -59,7 +86,15 @@ import Chart from 'chart.js/auto';
             },
             plugins: {
                 legend: {
+                    maxWidth: 10,
+                    position: 'bottom',
+                    align: 'start',
                     labels: {
+                        boxWidth: 40,
+                        boxHeight: 2,
+                        textAlign: 'left',
+                        padding: 0,
+                        boxPadding: 0,
                         font: {
                             family: 'VerlagSSm',
                         },
@@ -68,4 +103,6 @@ import Chart from 'chart.js/auto';
             },
         },
     });
+
+    new Chart(document.getElementById('chart'), data);
 })();
