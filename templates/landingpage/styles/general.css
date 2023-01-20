@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'VerlagSSm', sans-serif, Arial, Helvetica, sans-serif;
 }
@@ -15983,24 +15986,7 @@ select[data-ss-uuid] {
         font-size: 3.125rem;
     }
 }
-.module-hero-article-page__headline {
-    font-family: VerlagSSm, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 66px;
-    line-height: 4.125rem;
-    margin: 0 0 24px;
-    text-align: left;
-}
-@media (max-width: 1280px) {
-    .module-hero-article-page__headline {
-        line-height: 46px;
-        line-height: 2.875rem;
-        font-size: 36px;
-        font-size: 2.25rem;
-        margin-bottom: 21px;
-    }
-}
+
 @media (max-width: 599px) {
     .module-hero-article-page__sharebar {
         flex-basis: 20%;
@@ -16246,29 +16232,7 @@ select[data-ss-uuid] {
         margin-bottom: 10px;
     }
 }
-.module-hero-article-page--push-left .module-hero-article-page__headline {
-    font-family: VerlagSSm, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: left;
-}
-@media (min-width: 960px) and (max-width: 1280px) {
-    .module-hero-article-page--push-left .module-hero-article-page__headline {
-        font-size: 34px;
-        font-size: 2.125rem;
-        line-height: 44px;
-        line-height: 2.75rem;
-    }
-}
-@media (max-width: 959px) {
-    .module-hero-article-page--push-left .module-hero-article-page__headline {
-        margin-right: 0;
-        margin-left: 0;
-        font-size: 34px;
-        line-height: 44px;
-        line-height: 2.75rem;
-    }
-}
+
 .module-hero-article-page--push-left
     .module-hero-article-page__breadcrumb-wrap {
     margin-left: 0;
@@ -16385,15 +16349,7 @@ select[data-ss-uuid] {
         padding: 0 20px;
     }
 }
-.module-hero-article-page--2-col .module-hero-article-page__headline {
-    text-align: center;
-    margin-bottom: 40px;
-}
-@media (max-width: 959px) {
-    .module-hero-article-page--2-col .module-hero-article-page__headline {
-        margin-bottom: 32px;
-    }
-}
+
 .module-hero-article-page--2-col .module-hero-article-page__breadcrumb-wrap {
     margin-left: 0;
     margin-right: 30px;
