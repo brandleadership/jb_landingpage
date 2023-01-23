@@ -80,7 +80,7 @@
 .highlight-fourth .risk-rating__rating div:nth-child(4),
 .highlight-fifth .risk-rating__rating div:nth-child(5),
 .highlight-sixth .risk-rating__rating div:nth-child(6),
-.highlight-seven .risk-rating__rating div:nth-child(7) {
+.highlight-seventh .risk-rating__rating div:nth-child(7) {
     border: 4px solid #141e55;
     background-color: #141e55;
     width: 120px;
@@ -93,7 +93,7 @@
 .highlight-fourth .risk-rating__rating div:nth-child(4) p,
 .highlight-fifth .risk-rating__rating div:nth-child(5) p,
 .highlight-sixth .risk-rating__rating div:nth-child(6) p,
-.highlight-seven .risk-rating__rating div:nth-child(7) p {
+.highlight-seventh .risk-rating__rating div:nth-child(7) p {
     color: #ffffff;
     padding: 35%;
 }
@@ -135,7 +135,7 @@
 .highlight-fourth .risk-rating__rating div:nth-child(4),
 .highlight-fifth .risk-rating__rating div:nth-child(5),
 .highlight-sixth .risk-rating__rating div:nth-child(6),
-.highlight-seven .risk-rating__rating div:nth-child(7) {
+.highlight-seventh .risk-rating__rating div:nth-child(7) {
     animation-name: zoomIn;
     animation-duration: 3s;
 }
