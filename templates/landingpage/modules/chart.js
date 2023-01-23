@@ -27,11 +27,14 @@ import Chart from 'chart.js/auto';
     // TODO: Add more scale styles to match the design in figma
 
     // Line Styles
+    //Chart.defaults.datasets.line.borderColor;
+    //Chart.defaults.datasets.line.stepped = false;
     Chart.defaults.datasets.line.borderWidth = 2;
     Chart.defaults.datasets.line.backgroundColor = () => {
         return '#eee';
     };
     // TODO: Add more default line styles
+    // Line styles default
 
     // Legend Defaults
     Chart.defaults.plugins.legend.display = true;

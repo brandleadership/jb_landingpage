@@ -1,0 +1,147 @@
+.risk-rating__rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.risk-rating_element {
+    border: 4px solid #141e55;
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+}
+
+.risk-rating_element p {
+    font-style: normal;
+    font-weight: 325;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30%;
+    color: #141e55;
+}
+
+.risk-rating__legend {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.line-container {
+    display: flex;
+    width: 100%;
+    margin: 24px auto;
+    align-items: center;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background: black;
+    position: relative;
+}
+
+.line.arrow-right::after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid black;
+}
+
+.line.arrow-right::before {
+    position: absolute;
+    content: '';
+    top: -8px;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid black;
+}
+
+.legend-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight-first .risk-rating__rating div:nth-child(1),
+.highlight-second .risk-rating__rating div:nth-child(2),
+.highlight-third .risk-rating__rating div:nth-child(3),
+.highlight-fourth .risk-rating__rating div:nth-child(4),
+.highlight-fifth .risk-rating__rating div:nth-child(5),
+.highlight-sixth .risk-rating__rating div:nth-child(6),
+.highlight-seventh .risk-rating__rating div:nth-child(7) {
+    border: 4px solid #141e55;
+    background-color: #141e55;
+    width: 120px;
+    height: 120px;
+}
+
+.highlight-first .risk-rating__rating div:nth-child(1) p,
+.highlight-second .risk-rating__rating div:nth-child(2) p,
+.highlight-third .risk-rating__rating div:nth-child(3) p,
+.highlight-fourth .risk-rating__rating div:nth-child(4) p,
+.highlight-fifth .risk-rating__rating div:nth-child(5) p,
+.highlight-sixth .risk-rating__rating div:nth-child(6) p,
+.highlight-seventh .risk-rating__rating div:nth-child(7) p {
+    color: #ffffff;
+    padding: 35%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.risk-bar {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.risk-rating__legend {
+    animation-name: zoomIn;
+    animation-duration: 3s;
+}
+
+.highlight-first .risk-rating__rating div:nth-child(1),
+.highlight-second .risk-rating__rating div:nth-child(2),
+.highlight-third .risk-rating__rating div:nth-child(3),
+.highlight-fourth .risk-rating__rating div:nth-child(4),
+.highlight-fifth .risk-rating__rating div:nth-child(5),
+.highlight-sixth .risk-rating__rating div:nth-child(6),
+.highlight-seventh .risk-rating__rating div:nth-child(7) {
+    animation-name: zoomIn;
+    animation-duration: 3s;
+}
+
+.risk-rating_element:hover {
+    transform: scale(1.2);
+    animation-duration: 1s;
+    border: 5px solid #141e55;
+}
