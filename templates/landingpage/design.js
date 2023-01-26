@@ -92,12 +92,4 @@ module.exports = cx.design
                 require('../../components/footer/legal-links'),
                 require('../../components/footer/socials')
             )
-    )
-    .withDropzones(
-        cx.dropzone
-            .withDropzone('header')
-            .withAllowedElements(
-                require('../../components/header/header-container'),
-                require('../../components/elements/chart')
-            )
     );
