@@ -37,6 +37,7 @@ module.exports = cx.design
             .withGroupId('elements')
             .withLabel('Elements')
             .withContentElements(
+                require('../../components/elements/header-logo'),
                 require('../../components/elements/bodytext'),
                 require('../../components/elements/contact-link'),
                 require('../../components/elements/divider'),

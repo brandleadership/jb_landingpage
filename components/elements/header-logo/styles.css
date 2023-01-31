@@ -1,0 +1,32 @@
+.header-wrapper {
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 46px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-logo .header-logo-link {
+    width: 164px;
+    height: auto;
+}
+
+.header-logo .header-logo-link svg {
+    fill: #22338b;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+     .header-logo .header-logo-link {
+    width: 114px;
+    height: auto;
+} 
+}
