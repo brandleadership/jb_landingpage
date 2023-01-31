@@ -15,6 +15,7 @@ module.exports = cx.design
             .withContentElements(
                 require('../../components/header/breadcrumb'),
                 require('../../components/elements/chart'),
+                require('../../components/elements/chart-freeform'),
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),
@@ -99,6 +100,7 @@ module.exports = cx.design
             .withDropzone('header')
             .withAllowedElements(
                 require('../../components/header/header-container'),
-                require('../../components/elements/chart')
+                require('../../components/elements/chart'),
+                require('../../components/elements/chart-freeform')
             )
     );
