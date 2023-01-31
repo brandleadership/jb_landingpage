@@ -1,7 +1,9 @@
 <!-- prettier-ignore -->
 <div data-bsi-element="chart">
     <div style="width: 800px; margin: auto;">
-        {% include '../element-heading/template.twig' %}
+        {% include '../element-heading/template.twig' with {
+          isNoElement: true
+        } %}
         <div data-bsi-element-part="juliusbaer-chart">
             <script type="application/json" id="data" data-bsi-chart-config="">
             {
