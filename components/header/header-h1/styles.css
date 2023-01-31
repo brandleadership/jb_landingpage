@@ -6,6 +6,7 @@
     line-height: 4.125rem;
     margin: 0 0 24px;
     text-align: left;
+    word-break: break-word;
 }
 @media (max-width: 1280px) {
     .module-hero-article-page__headline {
