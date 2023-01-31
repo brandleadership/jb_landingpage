@@ -7,7 +7,7 @@ import Chart from 'chart.js/auto';
     /* Define default sets and values */
     const bgcolors = ['#141E55', '#434B77', '#727899', '#A1A5BB', '#D0D2DD'];
 
-    const chartTitle = await document.getElementById('chart-title').textContent;
+    /* const chartTitle = await document.getElementById('chart-title').textContent; */
 
     // Generate chart with pre-defined config
     new Chart(document.getElementById('chart'), {
