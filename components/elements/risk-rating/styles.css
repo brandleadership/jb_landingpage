@@ -113,7 +113,7 @@
     animation-duration: 3s;
 }
 
-@keyframes zoomIn {
+/* @keyframes zoomIn {
     from {
         opacity: 0;
         transform: scale3d(0.3, 0.3, 0.3);
@@ -127,7 +127,7 @@
 .risk-rating__legend {
     animation-name: zoomIn;
     animation-duration: 3s;
-}
+} */
 
 .highlight-first .risk-rating__rating div:nth-child(1),
 .highlight-second .risk-rating__rating div:nth-child(2),
@@ -138,10 +138,4 @@
 .highlight-seventh .risk-rating__rating div:nth-child(7) {
     animation-name: zoomIn;
     animation-duration: 3s;
-}
-
-.risk-rating_element:hover {
-    transform: scale(1.2);
-    animation-duration: 1s;
-    border: 5px solid #141e55;
 }
