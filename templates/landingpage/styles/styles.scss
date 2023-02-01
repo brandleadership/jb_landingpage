@@ -5,6 +5,7 @@
 /* TODO: Uncomment all elements as soon as they were renamed to css */
 
 /* Elements */
+@import '../../../components/elements/header-logo/styles.css';
 @import '../../../components/elements/download-item/styles.css';
 @import '../../../components/elements/element-heading/styles.css';
 @import '../../../components/elements/element-legend/styles.css';
@@ -32,3 +33,4 @@
 
 /* Header */
 @import '../../../components/header/header-image/styles.css';
+@import '../../../components/header/header-h1/styles.css';
