@@ -4,6 +4,11 @@
         {% include '../element-heading/template.twig' with {
           isNoElement: true
         } %}
+         {% include '../chart-description/template.twig' with {
+          isNoElement: true,
+          text: 'Over the last five years or since IPO, in EUR',
+          marginCustom: 'margin-top-desc'
+        } %}
         <div data-bsi-element-part="juliusbaer-chart">
             <script type="application/json" id="data-freeform" data-bsi-chart-config="">
             {
@@ -189,7 +194,14 @@
               }
             }
             </script>
+            
         </div>
+         
         <canvas id="chart-freeform"></canvas>
+         {% include '../chart-description/template.twig' with {
+          isNoElement: true,
+          text: '20. Dezember 2022, 01: 00 CET Source: FIS Global Trading (Suisse) SA',
+          marginCustom: 'margin-top-desc'
+        } %} 
     </div>
 </div>

@@ -7,8 +7,10 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.plainText.withLabel('Subtitle'),
+        cx.part.plainText.withLabel('Description Top'),
         cx.part
             .raw('juliusbaer-chart')
             .withLabel('Chart JSON')
-            .withProperty('type', 'line')
+            .withProperty('type', 'line'),
+        cx.part.plainText.withLabel('Description Bottom')
     );
