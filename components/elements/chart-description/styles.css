@@ -1,18 +1,8 @@
 .element-heading-not-indented {
     padding: 0;
 }
-.element-description {
-    padding-left: 10px;
-}
 
-.element-description .description {
-    margin-bottom: 30px;
-}
-
-.element-description-styling-bodytext .description {
-    font-weight: 325;
-    font-size: 24px;
-    line-height: 29px;
+.module-content-gallery__content .description {
     color: #000000;
 }
 
