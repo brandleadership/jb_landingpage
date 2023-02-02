@@ -4,9 +4,9 @@
         {% include '../element-heading/template.twig' with {
           isNoElement: true
         } %}
-         {% include '../chart-description/template.twig' with {
+         {% include '../element-description/template.twig' with {
           isNoElement: true,
-          text: 'Over the last five years or since IPO, in EUR',
+          legend: 'Over the last five years or since IPO, in EUR',
           marginCustom: 'margin-top-desc'
         } %}
         <div data-bsi-element-part="juliusbaer-chart">
@@ -156,9 +156,9 @@
         </div>
        
         <canvas id="chart"></canvas>
-          {% include '../chart-description/template.twig' with {
+          {% include '../element-description/template.twig' with {
           isNoElement: true,
-          text: '20. Dezember 2022, 01: 00 CET Source: FIS Global Trading (Suisse) SA',
+          legend: '20. Dezember 2022, 01: 00 CET Source: FIS Global Trading (Suisse) SA',
           marginCustom: 'margin-top-desc'
         } %}
     </div>
