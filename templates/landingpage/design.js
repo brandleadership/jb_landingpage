@@ -14,6 +14,7 @@ module.exports = cx.design
             .withGroupId('header')
             .withLabel('Header')
             .withContentElements(
+                require('../../components/elements/header-logo'),
                 require('../../components/header/breadcrumb'),
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
@@ -37,7 +38,6 @@ module.exports = cx.design
             .withGroupId('elements')
             .withLabel('Elements')
             .withContentElements(
-                require('../../components/elements/header-logo'),
                 require('../../components/elements/bodytext'),
                 require('../../components/elements/contact-link'),
                 require('../../components/elements/divider'),
