@@ -2606,6 +2606,7 @@ button.swiper-pagination-bullet {
     -o-object-fit: contain;
     object-fit: contain;
 }
+
 .swiper-slide-zoomed {
     cursor: move;
 }
@@ -23784,3 +23785,10 @@ section.disclaimer__section
 .disable-menu .module-navigation-main__hamburger-wrap {
     display: none !important;
 }
+
+/* .chart-container {
+    position: relative;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+} */

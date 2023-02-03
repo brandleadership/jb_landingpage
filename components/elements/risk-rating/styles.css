@@ -7,10 +7,16 @@
 }
 
 .risk-rating_element {
+    position: relative;
     border: 4px solid #141e55;
     border-radius: 50%;
-    width: 93px;
-    height: 93px;
+    width: 50%;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+.risk-rating_element:not(:last-child) {
+    margin-right: 10px;
 }
 
 .risk-rating_element p {
@@ -19,9 +25,9 @@
     font-size: 32px;
     line-height: 39px;
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 30%;
     color: #141e55;
 }
 
@@ -83,8 +89,8 @@
 .highlight-seventh .risk-rating__rating div:nth-child(7) {
     border: 4px solid #141e55;
     background-color: #141e55;
-    width: 120px;
-    height: 120px;
+    width: 60%;
+    /* height: 120px; */
 }
 
 .highlight-first .risk-rating__rating div:nth-child(1) p,
@@ -138,4 +144,21 @@
 .highlight-seventh .risk-rating__rating div:nth-child(7) {
     animation-name: zoomIn;
     animation-duration: 3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .risk-rating_element p {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .highlight-first .risk-rating__rating div:nth-child(1) p,
+    .highlight-second .risk-rating__rating div:nth-child(2) p,
+    .highlight-third .risk-rating__rating div:nth-child(3) p,
+    .highlight-fourth .risk-rating__rating div:nth-child(4) p,
+    .highlight-fifth .risk-rating__rating div:nth-child(5) p,
+    .highlight-sixth .risk-rating__rating div:nth-child(6) p,
+    .highlight-seventh .risk-rating__rating div:nth-child(7) p {
+        padding: 10%;
+    }
 }

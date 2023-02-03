@@ -29,10 +29,8 @@ import Chart from 'chart.js/auto';
                 intersect: false,
                 mode: 'index',
             },
-            layout: {
-                padding: 30,
-            },
             responsive: true,
+            maintainAspectRatio: false,
             scales: {
                 x: {
                     border: {

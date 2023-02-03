@@ -1,6 +1,6 @@
 <!-- prettier-ignore -->
 <div data-bsi-element="chart-freeform">
-    <div style="width: 800px; margin: auto;">
+    <div style="max-width: 800px; margin: auto;padding-bottom: 60px;">
         {% include '../element-heading/template.twig' with {
           isNoElement: true
         } %}
@@ -159,6 +159,7 @@
                   "mode": "index"
                 },
                 "responsive": true,
+                "maintainAspectRatio": false,
                 "scales": {
                   "x": {
                     "border": {
@@ -196,8 +197,9 @@
             </script>
             
         </div>
-         
+         <div id="chart-wrapper" class="chart-wrapper">
         <canvas id="chart-freeform"></canvas>
+       </div>
          {% include '../element-description/template.twig' with {
           isNoElement: true,
           legend: '20. Dezember 2022, 01: 00 CET Source: FIS Global Trading (Suisse) SA',
