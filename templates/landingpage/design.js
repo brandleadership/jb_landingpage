@@ -14,8 +14,6 @@ module.exports = cx.design
             .withLabel('Header')
             .withContentElements(
                 require('../../components/header/breadcrumb'),
-                require('../../components/elements/chart'),
-                require('../../components/elements/chart-freeform'),
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),
@@ -72,7 +70,9 @@ module.exports = cx.design
                 require('../../components/elements/title-lvl-one'),
                 require('../../components/elements/title-lvl-three'),
                 require('../../components/elements/title-lvl-two'),
-                require('../../components/elements/video-tag')
+                require('../../components/elements/video-tag'),
+                require('../../components/elements/chart'),
+                require('../../components/elements/chart-freeform')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')
@@ -99,8 +99,6 @@ module.exports = cx.design
         cx.dropzone
             .withDropzone('header')
             .withAllowedElements(
-                require('../../components/header/header-container'),
-                require('../../components/elements/chart'),
-                require('../../components/elements/chart-freeform')
+                require('../../components/header/header-container')
             )
     );
