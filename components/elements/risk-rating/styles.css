@@ -9,12 +9,11 @@
 
 .risk-rating_element {
     position: relative;
-    border: 4px solid #141e55;
+    border: 3px solid #141e55;
     border-radius: 50%;
-    /* width: 50%; */
     text-align: center;
     aspect-ratio: 1 / 1;
-    flex-basis: calc(100% / 8);
+    flex-basis: calc(100% / 9);
 }
 
 .risk-rating_element p {
@@ -88,10 +87,9 @@
 .highlight-fifth .risk-rating__rating div:nth-child(5),
 .highlight-sixth .risk-rating__rating div:nth-child(6),
 .highlight-seventh .risk-rating__rating div:nth-child(7) {
-    border: 4px solid #141e55;
+    border: 3px solid #141e55;
     background-color: #141e55;
-    flex-grow: 0.3;
-    /* height: 120px; */
+    flex-grow: 0.2;
 }
 
 .highlight-first .risk-rating__rating div:nth-child(1) p,
@@ -148,13 +146,18 @@
 
 @media only screen and (max-width: 1200px) {
     .risk-rating_element {
-        border: 3px solid #141e55;
+        border: 2px solid #141e55;
+    }
+
+    .risk-rating_element p {
+        font-size: 26px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .risk-rating_element {
         border: 1px solid #141e55;
+        flex-basis: calc(100% / 8);
     }
 
     .risk-rating__rating {
@@ -172,5 +175,18 @@
     .risk-rating_element p {
         font-size: 24px;
         padding: 0;
+    }
+
+    .highlight-first .risk-rating__rating div:nth-child(1),
+    .highlight-second .risk-rating__rating div:nth-child(2),
+    .highlight-third .risk-rating__rating div:nth-child(3),
+    .highlight-fourth .risk-rating__rating div:nth-child(4),
+    .highlight-fifth .risk-rating__rating div:nth-child(5),
+    .highlight-sixth .risk-rating__rating div:nth-child(6),
+    .highlight-seventh .risk-rating__rating div:nth-child(7) {
+        border: 3px solid #141e55;
+        background-color: #141e55;
+        flex-grow: 0.3;
+        /* height: 120px; */
     }
 }
