@@ -2,21 +2,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 80px;
+    padding: 0 40px;
 }
 
 .risk-rating_element {
     position: relative;
     border: 4px solid #141e55;
     border-radius: 50%;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
     aspect-ratio: 1 / 1;
-}
-
-.risk-rating_element:not(:last-child) {
-    margin-right: 10px;
+    flex-basis: calc(100% / 8);
 }
 
 .risk-rating_element p {
@@ -38,7 +36,7 @@
 
 .line-container {
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: 24px auto;
     align-items: center;
 }
@@ -78,6 +76,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .highlight-first .risk-rating__rating div:nth-child(1),
@@ -89,7 +90,7 @@
 .highlight-seventh .risk-rating__rating div:nth-child(7) {
     border: 4px solid #141e55;
     background-color: #141e55;
-    width: 60%;
+    flex-grow: 0.3;
     /* height: 120px; */
 }
 
@@ -101,7 +102,6 @@
 .highlight-sixth .risk-rating__rating div:nth-child(6) p,
 .highlight-seventh .risk-rating__rating div:nth-child(7) p {
     color: #ffffff;
-    padding: 35%;
 }
 
 @keyframes fadeIn {
@@ -146,19 +146,31 @@
     animation-duration: 3s;
 }
 
+@media only screen and (max-width: 1200px) {
+    .risk-rating_element {
+        border: 3px solid #141e55;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    .risk-rating_element {
+        border: 1px solid #141e55;
+    }
+
+    .risk-rating__rating {
+        padding: 0 20px;
+    }
+
+    .legend-box {
+        width: 90%;
+    }
+
+    .line-container {
+        width: 90%;
+    }
+
     .risk-rating_element p {
         font-size: 24px;
         padding: 0;
-    }
-
-    .highlight-first .risk-rating__rating div:nth-child(1) p,
-    .highlight-second .risk-rating__rating div:nth-child(2) p,
-    .highlight-third .risk-rating__rating div:nth-child(3) p,
-    .highlight-fourth .risk-rating__rating div:nth-child(4) p,
-    .highlight-fifth .risk-rating__rating div:nth-child(5) p,
-    .highlight-sixth .risk-rating__rating div:nth-child(6) p,
-    .highlight-seventh .risk-rating__rating div:nth-child(7) p {
-        padding: 10%;
     }
 }
