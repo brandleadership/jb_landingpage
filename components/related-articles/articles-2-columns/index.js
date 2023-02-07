@@ -4,7 +4,7 @@ module.exports = cx.contentElement
     .withElementId('articles-image2')
     .withIcon(Icon.TWO_COLUMNS)
     .withLabel('Article-Container 2-column')
-    .withDescription('Number of allowed articles: 1')
+    .withDescription('Number of allowed articles: 2')
     .withFile(require('./template.twig'))
     .withStyleConfigs(require('../../../configs/styles/articles-context'))
     .withParts(

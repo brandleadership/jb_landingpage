@@ -4,7 +4,6 @@ module.exports = cx.contentElement
     .withElementId('content-cta')
     .withIcon(Icon.HANDSHAKE)
     .withLabel('Contact Link')
-    .withDescription('Hyplink')
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.link

@@ -1,80 +1,11 @@
 {% extends '_layout.twig' %}
 
-
-{% block navigation %}
-     <bsi:include reference="navigation-Vp05IU"></bsi:include> 
- {% endblock %}
-
-
 {% block header %}
-     <bsi:include reference="header-Sq8Of9"></bsi:include> 
-    {% include '../../components/header/header-container/template.twig' %}
-    {% include '../../components/header/header-h1/template.twig' %}
-    {% include '../../components/header/header-image/template.twig' %}
-    {% include '../../components/header/header-lead/template.twig' %}
-    {% include '../../components/header/breadcrumb/template.twig' %}
+     <bsi:include reference="header-Sq8Of9"></bsi:include>
 {% endblock %}
 
 {% block content %}
+
 <bsi:include reference="{navigation.activePage.contentId}"></bsi:include>
-  {% include '../../components/elements/interaction-container/template.twig' %}
-    {% include '../../components/elements/bodytext/template.twig' %}
-    {% include '../../components/elements/list-element/template.twig' %}
-    {% include '../../components/elements/video-tag/template.twig' %}
-    {% include '../../components/elements/quote/template.twig' %}
-    {% include '../../components/elements/contact-link/template.twig' %}
-    {% include '../../components/elements/downloads/template.twig' %}
-    {% include '../../components/elements/download-item/template.twig' %}
-    {% include '../../components/elements/link-block/template.twig' %}
-    {% include '../../components/elements/links-group/template.twig' %}
-    {% include '../../components/elements/image-with-legend/template.twig' %}
-    {% include '../../components/elements/image-title-legend/template.twig' %}
-    {% include '../../components/elements/image-headline-legend/template.twig' %}
-    {% include '../../components/elements/image-element/template.twig' %}
-    {% include '../../components/elements/divider/template.twig' %}
-    {% include '../../components/elements/sticky-buttons/template.twig' %}
-{% endblock %}
-
-{# At the moment, the dropzones are supposed to be empty. 
-If the dropzones should be prefilled with elements in the futre, 
-these are their assigned places. #}
-
-{# {% block header %}
-    {% include '../../components/header/header-container/template.twig' %}
 
 {% endblock %}
-
-{% block content %}
-    {% include '../../components/elements/interaction-container/template.twig' %}
-    {% include '../../components/elements/bodytext/template.twig' %}
-    {% include '../../components/elements/list-element/template.twig' %}
-    {% include '../../components/elements/video-tag/template.twig' %}
-    {% include '../../components/elements/quote/template.twig' %}
-    {% include '../../components/elements/contact-link/template.twig' %}
-    {% include '../../components/elements/downloads/template.twig' %}
-    {% include '../../components/elements/download-item/template.twig' %}
-    {% include '../../components/elements/link-block/template.twig' %}
-    {% include '../../components/elements/links-group/template.twig' %}
-    {% include '../../components/elements/image-with-legend/template.twig' %}
-    {% include '../../components/elements/image-title-legend/template.twig' %}
-    {% include '../../components/elements/image-headline-legend/template.twig' %}
-    {% include '../../components/elements/image-element/template.twig' %}
-    {% include '../../components/elements/divider/template.twig' %}
-    {% include '../../components/elements/sticky-buttons/template.twig' %}
-{% endblock %}#}
-
-{% block topics %}
-    {% include '../../components/related-articles/related-topics/template.twig' %}
-    {% include '../../components/related-articles/articles-3-columns/template.twig' %}
-    {% include '../../components/related-articles/articles-1-column-wide/template.twig' %}
-{% endblock %}
-
-{% block articles %}
-    {% include '../../components/related-articles/related-topics/template.twig' %}
-    {% include '../../components/related-articles/articles-3-columns/template.twig' %}
-    {% include '../../components/related-articles/articles-1-column-wide/template.twig' %}
-{% endblock %}
-
-{% block footer %}
-    {% include '../../components/footer/footer-container/template.twig' %}
-{% endblock %} 

@@ -1,44 +1,76 @@
 {{#if navigation}}
-    <section class="o-listing template-section-spacer--list" data-bg-color-class="">
-      <div class="o-listing__inner">
-        <div class="m-listing">
-          <h2 class="h4 section-title m-listing__title" id="how-to-invest-box" name="how-to-invest-box">{{ bsi.nls "HowToInvest" }}</h2>
-          <div>
-            {{#each navigation.items as |lv1|}}
-              <div class="navigation-item-container-lv1">
-                {{#if lv1.folder}}
-                    {{#unless lv1.metadata.productTemplateFolder}}
-                        {{#if lv1.items}}
-                             <div id="navigation-item-{{lv1.id}}"  class="default-links-group-title links-group-title">
-                                <h5 class="h7 module-content-gallery__content-title">{{lv1.title}}</h5>
-                              </div>
-                              {{#each lv1.items as |lv2|}}
-                                  <div>
-                                    <ul class="m-listing__list space-top">
-                                      <li class="atom-content-listing animate-left-bottom m-listing__animate">
-                                        <a id="navigation-item-{{lv2.id}}"  href="{{lv2.url}}" class="text-small atom-content-listing__link">
-                                          <p>{{lv2.title}}</p>
-                                          <div class="internal-icon atom-content-listing__icon">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                              <g fill="#141E55" fill-rule="evenodd">
-                                                <path d="M15.812 5.555a.71.71 0 0 1 0 1.003l-4.654 4.654a.71.71 0 1 1-1.003-1.003l4.153-4.152-4.153-4.152A.71.71 0 1 1 11.158.902l4.654 4.653z"></path>
-                                                <path d="M0 5.3h15v1.5H0z"></path>
-                                              </g>
-                                            </svg>
-                                          </div>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                              {{/each}}
-                          {{/if}}
-                      {{/unless}}
-                {{/if}}
-              </div>
-            {{/each}}
-          </div>
+    <section
+        class='o-listing template-section-spacer--list'
+        data-bg-color-class=''
+    >
+        <div class='o-listing__inner'>
+            <div class='m-listing'>
+                <h2
+                    class='h4 section-title m-listing__title'
+                    id='how-to-invest-box'
+                    name='how-to-invest-box'
+                >How To Invest</h2>
+                <div>
+                    {{#each navigation.items as |lv1|}}
+                        <div class='navigation-item-container-lv1'>
+                            {{#if lv1.folder}}
+                                {{#unless lv1.metadata.productTemplateFolder}}
+                                    {{#if lv1.items}}
+                                        <div
+                                            id='navigation-item-{{lv1.id}}'
+                                            class='default-links-group-title links-group-title'
+                                        >
+                                            <h5
+                                                class='h7 module-content-gallery__content-title'
+                                            >{{lv1.title}}</h5>
+                                        </div>
+                                        {{#each lv1.items as |lv2|}}
+                                            <div>
+                                                <ul
+                                                    class='m-listing__list space-top'
+                                                >
+                                                    <li
+                                                        class='atom-content-listing animate-left-bottom m-listing__animate'
+                                                    >
+                                                        <a
+                                                            id='navigation-item-{{lv2.id}}'
+                                                            href='{{lv2.url}}'
+                                                            class='text-small atom-content-listing__link'
+                                                        >
+                                                            <p>{{lv2.title}}</p>
+                                                            <div
+                                                                class='internal-icon atom-content-listing__icon'
+                                                            >
+                                                                <svg
+                                                                    width='16'
+                                                                    height='16'
+                                                                    xmlns='http://www.w3.org/2000/svg'
+                                                                >
+                                                                    <g
+                                                                        fill='#141E55'
+                                                                        fill-rule='evenodd'
+                                                                    >
+                                                                        <path
+                                                                            d='M15.812 5.555a.71.71 0 0 1 0 1.003l-4.654 4.654a.71.71 0 1 1-1.003-1.003l4.153-4.152-4.153-4.152A.71.71 0 1 1 11.158.902l4.654 4.653z'
+                                                                        ></path>
+                                                                        <path
+                                                                            d='M0 5.3h15v1.5H0z'
+                                                                        ></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        {{/each}}
+                                    {{/if}}
+                                {{/unless}}
+                            {{/if}}
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 {{/if}}
-

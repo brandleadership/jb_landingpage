@@ -1,11 +1,11 @@
 {% extends '_layout.twig' %}
 
 {% block navigation %}
-     <bsi:include reference="product-nav"></bsi:include> 
+     <bsi:include reference="navigation"></bsi:include>
  {% endblock %}
 
 {% block header %}
-     <bsi:include reference="header"></bsi:include> 
+     <bsi:include reference="header"></bsi:include>
 {% endblock %}
 
 {% block content %}
@@ -28,8 +28,8 @@
     {% include '../../components/elements/sticky-buttons/template.twig' %}
 {% endblock %}
 
-{# At the moment, the dropzones are supposed to be empty. 
-If the dropzones should be prefilled with elements in the futre, 
+{# At the moment, the dropzones are supposed to be empty.
+If the dropzones should be prefilled with elements in the futre,
 these are their assigned places.
 
 {% block header %}

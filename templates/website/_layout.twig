@@ -51,7 +51,7 @@
       type="image/png"
       sizes="16x16"
       href="{{ bsi_cx_asset('./img/Icons/JB_16.png') }}" />
-  
+
     <meta property="og:description"
       content="{header_lead-text}" />
  <title>{% verbatim %}{{ navigation.activePage.pageTitle }}{% endverbatim %}</title>
@@ -61,18 +61,17 @@
    <main class="main">
 
   <section class="page-template template-article-page">
- 
+
 {% block header %}
 
 {% endblock %}
 
-{% block navigation %}
-
+{% block content %}
 {% endblock %}
-       </section>        
-       
+       </section>
+
         </main>
-  
+
     <script src="./js/plyr.js"></script>
     <script data-bsi-remove-if="draft" src="./js/components.js"></script>
     <script data-bsi-remove-if="draft" src="./js/custom.js"></script>
