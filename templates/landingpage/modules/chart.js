@@ -30,6 +30,7 @@ import Chart from 'chart.js/auto';
                 mode: 'index',
             },
             responsive: true,
+            maintainAspectRatio: false,
             scales: {
                 x: {
                     border: {
