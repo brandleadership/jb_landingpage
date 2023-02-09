@@ -13,7 +13,7 @@
     border-radius: 50%;
     text-align: center;
     aspect-ratio: 1 / 1;
-    flex-basis: calc(100% / 9);
+    flex-basis: calc(100% / 10);
 }
 
 .risk-rating_element p {
@@ -89,7 +89,7 @@
 .highlight-seventh .risk-rating__rating div:nth-child(7) {
     border: 3px solid #141e55;
     background-color: #141e55;
-    flex-grow: 0.2;
+    flex-grow: 0.1;
 }
 
 .highlight-first .risk-rating__rating div:nth-child(1) p,
