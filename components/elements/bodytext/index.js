@@ -10,12 +10,12 @@ module.exports = cx.contentElement
             .withLabel('Bodytext')
             .withId('c2b1ef58-6b34-11ed-a1eb-0242ac120002')
             .withHtmlEditorConfig(
-                require('../../../configs/styles/body-text-config')
+                require('../../../configs/editor/body-text-config')
             ),
         cx.part.formattedText
             .withLabel('Content Bodytext')
             .withId('c2b1f282-6b34-11ed-a1eb-0242ac120002')
             .withHtmlEditorConfig(
-                require('../../../configs/styles/body-text-config')
+                require('../../../configs/editor/body-text-config')
             )
     );
