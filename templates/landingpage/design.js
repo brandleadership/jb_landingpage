@@ -6,6 +6,7 @@ module.exports = cx.design
     .withTitle('JB Landing Page')
     .withAuthor('gateB')
     .withDate('23.11.2022')
+    .withPreviewImage('static/preview.png')
     .withDefaultLocale(Locale.EN)
     .withLocales(Locale.EN, Locale.DE)
     .withContentElementGroups(
@@ -13,6 +14,7 @@ module.exports = cx.design
             .withGroupId('header')
             .withLabel('Header')
             .withContentElements(
+                require('../../components/elements/header-logo'),
                 require('../../components/header/breadcrumb'),
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),

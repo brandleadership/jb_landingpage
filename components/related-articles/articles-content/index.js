@@ -23,7 +23,7 @@ module.exports = cx.contentElement
             .withId('3ab455e4-6b13-11ed-a1eb-0242ac120002')
             .withLabel('Lead Text')
             .withHtmlEditorConfig(
-                require('../../../configs/styles/formatted-text-config')
+                require('../../../configs/editor/formatted-text-config')
             ),
         cx.part.link
             .withId('195571da-6b13-11ed-a1eb-0242ac120002')
