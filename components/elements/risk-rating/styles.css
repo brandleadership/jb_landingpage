@@ -7,16 +7,16 @@
     padding: 0 40px;
 }
 
-.risk-rating_element {
+.risk-rating-element {
     position: relative;
     border: 3px solid #141e55;
     border-radius: 50%;
     text-align: center;
     aspect-ratio: 1 / 1;
-    flex-basis: calc(100% / 9);
+    flex-basis: calc(100% / 10);
 }
 
-.risk-rating_element p {
+.risk-rating-element p {
     font-style: normal;
     font-weight: 325;
     font-size: 32px;
@@ -89,7 +89,7 @@
 .highlight-seventh .risk-rating__rating div:nth-child(7) {
     border: 3px solid #141e55;
     background-color: #141e55;
-    flex-grow: 0.2;
+    flex-grow: 0.1;
 }
 
 .highlight-first .risk-rating__rating div:nth-child(1) p,
@@ -101,6 +101,46 @@
 .highlight-seventh .risk-rating__rating div:nth-child(7) p {
     color: #ffffff;
 }
+
+/* .text-rating {
+    font-family: VerlagSSm, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #141e55;
+} */
+
+.text-block {
+    margin-top: 30px;
+}
+
+.strong {
+    font-weight: 500;
+}
+
+.hidden-text-1 {
+    display: none;
+}
+.hidden-text-2 {
+    display: none;
+}
+.hidden-text-3 {
+    display: none;
+}
+.hidden-text-4 {
+    display: none;
+}
+.hidden-text-5 {
+    display: none;
+}
+.hidden-text-6 {
+    display: none;
+}
+.hidden-text-7 {
+    display: none;
+}
+/* animation */
 
 @keyframes fadeIn {
     from {
@@ -145,17 +185,17 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .risk-rating_element {
+    .risk-rating-element {
         border: 2px solid #141e55;
     }
 
-    .risk-rating_element p {
+    .risk-rating-element p {
         font-size: 26px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .risk-rating_element {
+    .risk-rating-element {
         border: 1px solid #141e55;
         flex-basis: calc(100% / 8);
     }
@@ -172,7 +212,7 @@
         width: 90%;
     }
 
-    .risk-rating_element p {
+    .risk-rating-element p {
         font-size: 24px;
         padding: 0;
     }

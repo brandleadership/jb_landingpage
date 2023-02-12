@@ -25,6 +25,7 @@ import Chart from 'chart.js/auto';
                     pointStyle: 'circle',
                 },
             },
+
             interaction: {
                 intersect: false,
                 mode: 'index',
@@ -38,12 +39,22 @@ import Chart from 'chart.js/auto';
                     },
                     grid: {
                         display: false,
+
+                        drawBorder: false, // hide the x axis
                     },
+
                     ticks: {
+                        maxTicksLimit: 7,
+                        maxRotation: 0,
+                        minRotation: 0,
+                        callback: function (value) {
+                            return this.getLabelForValue(value).substring(0, 4);
+                        },
                         color: '#000000',
                     },
                 },
                 y: {
+                    offset: true,
                     border: {
                         display: false,
                     },

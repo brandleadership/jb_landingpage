@@ -28,6 +28,9 @@
 {% endblock %}
 
 {% block content %}
+    {% include '../../components/elements/risk-rating/template.twig' with {
+        properties: properties
+    } %}
     {% include '../../components/elements/video-tag/template.twig' with {
         properties: properties
     } %}

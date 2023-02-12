@@ -27,7 +27,7 @@ const {
 //             from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
 //             to: 'static/img', // copy to <output folder>/files/**/*
 //         })
-    /* new BuildConfig()
+/* new BuildConfig()
         .withName('website')
         .withVersion('2.0.0')
         .withDesignType(DesignType.WEBSITE)
@@ -35,7 +35,7 @@ const {
         .withRootPath(path.resolve(__dirname, 'templates', 'website'))
         .withPropertiesFilePath('properties.js')
         .withModules(new ModuleConfig().withName('main').withPath('main.js')) */
-);
+//);
 
 const landingpageBuildConfig = new BuildConfig()
     .withName('JB_LP')

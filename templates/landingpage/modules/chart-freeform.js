@@ -18,7 +18,9 @@ import Chart from 'chart.js/auto';
     Chart.defaults.scale.display = true;
     Chart.defaults.scales.category.ticks.color = '#000000';
     Chart.defaults.scales.linear.ticks.color = '#000000';
-
+    // Chart.defaults.scales.ticks.maxTicksLimit = 7;
+    // Chart.defaults.scales.ticks.maxRotation = 0;
+    // Chart.defaults.scales.ticks.minRotation = 0;
     // Legend Defaults
     Chart.defaults.plugins.legend.display = true;
     Chart.defaults.plugins.legend.position = 'bottom';
