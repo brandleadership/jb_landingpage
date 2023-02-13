@@ -65,10 +65,7 @@
                     { "x": "2022-09-30", "y": 10.0 },
                     { "x": "2022-10-31", "y": 10.0 }
                 ],
-                "label": "STOXX ope 600 Oil&Gas NR (100%)",
-                "borderColor": "#162056",
-                "pointRadius": 0,
-                "pointStyle": "circle"
+                "label": "STOXX ope 600 Oil&Gas NR (100%)"
             },
             {
                 "data": [
@@ -133,50 +130,11 @@
                     { "x": "2022-09-30", "y": -6.79812 },
                     { "x": "2022-10-31", "y": 10.8372 }
                 ],
-                "label": "iShares STOXX Europe 600 Oil & Gas (DE)",
-                "borderColor": "#001489",
-                "pointRadius": 0,
-                "pointStyle": "circle"
+                "label": "iShares STOXX Europe 600 Oil & Gas (DE)"
             }
         ]
     },
     "options": {
-        "interaction": {
-            "intersect": false,
-            "mode": "index"
-        },
-        "responsive": true,
-        "scales": {
-            "x": {
-                "border": {
-                    "display": false
-                },
-                "grid": {
-                    "display": false
-                }
-            },
-            "y": {
-                "border": {
-                    "display": false
-                }
-            }
-        },
-        "plugins": {
-            "legend": {
-                "maxWidth": 10,
-                "position": "bottom",
-                "align": "start",
-                "labels": {
-                    "boxWidth": 40,
-                    "boxHeight": 2,
-                    "textAlign": "left",
-                    "padding": 0,
-                    "boxPadding": 0,
-                    "font": {
-                        "family": "VerlagSSm"
-                    }
-                }
-            }
-        }
+        "responsive": true
     }
 }
