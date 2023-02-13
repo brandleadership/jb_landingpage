@@ -135,6 +135,7 @@
                 ],
                 "label": "iShares STOXX Europe 600 Oil & Gas (DE)",
                 "borderColor": "#434B77",
+                "backgroundColor": "#434B77",
                 "pointRadius": 0,
                 "pointStyle": "circle"
             }
