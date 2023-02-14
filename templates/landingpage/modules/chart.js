@@ -58,6 +58,7 @@ import Chart from 'chart.js/auto';
                         maxRotation: 0,
                         minRotation: 0,
                         color: '#000000',
+                        align: 'start',
                     },
                 },
                 y: {
