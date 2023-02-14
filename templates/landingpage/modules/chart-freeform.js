@@ -6,6 +6,18 @@ import Chart from 'chart.js/auto';
         document.getElementById('data-freeform').textContent
     );
 
+    /* Define default color set */
+    const bgcolors = ['#141E55', '#434B77', '#727899', '#A1A5BB', '#D0D2DD'];
+
+    // Loop over datasets and add the matching color
+    let datasetlength = data.data.datasets.length;
+    for (let i = 0; i < datasetlength; i++) {
+        data.data.datasets[i] = {
+            ...data.data.datasets[i],
+            ...{ backgroundColor: bgcolors[i] },
+        };
+    }
+
     /* 
     /* Define Chart Default Values 
     */
