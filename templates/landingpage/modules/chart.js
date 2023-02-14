@@ -34,7 +34,6 @@ import Chart from 'chart.js/auto';
                     pointStyle: 'circle',
                 },
             },
-
             interaction: {
                 intersect: false,
                 mode: 'index',
@@ -50,7 +49,6 @@ import Chart from 'chart.js/auto';
                         display: false,
                         drawBorder: false,
                     },
-
                     ticks: {
                         // Only show year not full date
                         callback: function (value) {

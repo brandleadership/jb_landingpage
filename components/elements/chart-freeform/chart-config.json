@@ -155,6 +155,10 @@
                 },
                 "grid": {
                     "display": false
+                },
+                "ticks": {
+                    "maxTicksLimit": 8,
+                    "maxRotation": 0
                 }
             },
             "y": {
@@ -174,6 +178,7 @@
                     "textAlign": "left",
                     "padding": 10,
                     "boxPadding": 0,
+                    "color": "#000000",
                     "font": {
                         "family": "VerlagSSm"
                     }
