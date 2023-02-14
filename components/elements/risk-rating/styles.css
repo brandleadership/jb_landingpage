@@ -102,15 +102,6 @@
     color: #ffffff;
 }
 
-/* .text-rating {
-    font-family: VerlagSSm, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #141e55;
-} */
-
 .text-block {
     margin-top: 30px;
 }
@@ -119,27 +110,6 @@
     font-weight: 500;
 }
 
-.hidden-text-1 {
-    display: none;
-}
-.hidden-text-2 {
-    display: none;
-}
-.hidden-text-3 {
-    display: none;
-}
-.hidden-text-4 {
-    display: none;
-}
-.hidden-text-5 {
-    display: none;
-}
-.hidden-text-6 {
-    display: none;
-}
-.hidden-text-7 {
-    display: none;
-}
 /* animation */
 
 @keyframes fadeIn {
@@ -156,22 +126,6 @@
     animation-name: fadeIn;
     animation-duration: 3s;
 }
-
-/* @keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-.risk-rating__legend {
-    animation-name: zoomIn;
-    animation-duration: 3s;
-} */
 
 .highlight-first .risk-rating__rating div:nth-child(1),
 .highlight-second .risk-rating__rating div:nth-child(2),
@@ -227,6 +181,49 @@
         border: 3px solid #141e55;
         background-color: #141e55;
         flex-grow: 0.3;
-        /* height: 120px; */
     }
+}
+
+.highlight-first .level::before {
+    content: 'very low';
+}
+.highlight-second .level::before {
+    content: 'low';
+}
+.highlight-third .level::before {
+    content: 'medium-low';
+}
+.highlight-fourth .level::before {
+    content: 'medium';
+}
+.highlight-fifth .level::before {
+    content: 'medium-high';
+}
+.highlight-sixth .level::before {
+    content: 'high';
+}
+.highlight-seventh .level::before {
+    content: 'very high';
+}
+
+.highlight-first .impact::before {
+    content: 'are extremely unlikely to';
+}
+.highlight-second .impact::before {
+    content: 'are very unlikely to';
+}
+.highlight-third .impact::before {
+    content: 'are unlikely to';
+}
+.highlight-fourth .impact::before {
+    content: 'might';
+}
+.highlight-fifth .impact::before {
+    content: 'are likely to';
+}
+.highlight-sixth .impact::before {
+    content: 'are very likely to';
+}
+.highlight-seventh .impact::before {
+    content: 'are extremely likely to';
 }
