@@ -16,6 +16,12 @@ import Chart from 'chart.js/auto';
         };
     }
 
+    // Font Settings
+    Chart.defaults.plugins.legend.labels.textAlign = 'left';
+    Chart.defaults.plugins.legend.labels.color = '#000000';
+    Chart.defaults.font.family = '"VerlagSSm"';
+    Chart.defaults.font.weight = 'bold';
+
     /* Generate chart with pre-defined config */
     new Chart(document.getElementById('chart'), {
         type: 'line',
