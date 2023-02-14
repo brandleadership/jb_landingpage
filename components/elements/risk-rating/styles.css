@@ -13,7 +13,7 @@
     border-radius: 50%;
     text-align: center;
     aspect-ratio: 1 / 1;
-    flex-basis: calc(100% / 12);
+    flex-basis: calc(100% / 11);
 }
 
 .risk-rating-element p {
