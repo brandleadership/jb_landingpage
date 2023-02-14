@@ -4,41 +4,19 @@ import Chart from 'chart.js/auto';
     /* Grab data from bsi element part input */
     const data = await JSON.parse(document.getElementById('data').textContent);
 
-    console.log(data);
-
-    /*console.log(data.data.datasets.map((x) => x.label));
-
-    console.log(
-        data.data.datasets.map((x) => {
-            x.data.map((s) => s.y);
-        })
-    ); */
-
     /* Define default sets and values */
     const bgcolors = ['#141E55', '#434B77', '#727899', '#A1A5BB', '#D0D2DD'];
 
-    /* const chartTitle = await document.getElementById('chart-title').textContent; */
-
-    // Get data for the dataset (in this case Year and Population)
-    let labels = [];
-
-    for (let i = 0; i < length; i++) {
-        labels.push(data.data.datasets[i].label);
-        /* values.push(data.data[i].Population); */
-    }
-    console.log(labels);
-
-    let backgroundcolors = [];
-    let colorlength = data.data.datasets.length;
-    for (let i = 0; i < colorlength; i++) {
+    // Loop over datasets and add the matching color
+    let datasetlength = data.data.datasets.length;
+    for (let i = 0; i < datasetlength; i++) {
         data.data.datasets[i] = {
             ...data.data.datasets[i],
             ...{ backgroundColor: bgcolors[i] },
         };
     }
-    console.log(data);
 
-    // Generate chart with pre-defined config
+    /* Generate chart with pre-defined config */
     new Chart(document.getElementById('chart'), {
         type: 'line',
         data: {
@@ -52,7 +30,6 @@ import Chart from 'chart.js/auto';
         options: {
             datasets: {
                 line: {
-                    /* backgroundColor: bgcolors.map((x) => x), */
                     pointRadius: 0,
                     pointStyle: 'circle',
                 },
@@ -71,10 +48,11 @@ import Chart from 'chart.js/auto';
                     },
                     grid: {
                         display: false,
-                        drawBorder: false, // hide the x axis
+                        drawBorder: false,
                     },
 
                     ticks: {
+                        // Only show year not full date
                         callback: function (value) {
                             return this.getLabelForValue(value).substring(0, 4);
                         },
