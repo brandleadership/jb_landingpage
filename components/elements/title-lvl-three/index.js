@@ -11,6 +11,6 @@ module.exports = cx.contentElement
             .withId('78128936-6b06-11ed-a1eb-0242ac120002')
             .withLabel('Title Options')
             .withHtmlEditorConfig(
-                require('../../../configs/styles/title-text-config')
+                require('../../../configs/editor/title-text-config')
             )
     );
