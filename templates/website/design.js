@@ -8,7 +8,7 @@ module.exports = cx.design
     .withAuthor('Gateb')
     .withDate('28.12.2022')
     .withDefaultLocale(Locale.EN)
-    .withLocales(Locale.EN, Locale.DE)
+    .withLocales(Locale.EN, Locale.DE_CH)
     .withContentElementGroups(
         cx.contentElementGroup
             .withGroupId('header')
@@ -105,6 +105,7 @@ module.exports = cx.design
             .withIncludes(
                 require('./includes/page'),
                 require('./includes/header'),
-                require('./includes/product-nav')
+                require('./includes/product-nav'),
+                require('./includes/navigation')
             )
     );
