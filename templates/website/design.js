@@ -7,8 +7,8 @@ module.exports = cx.design
     .withTitle('Website')
     .withAuthor('Gateb')
     .withDate('28.12.2022')
-    .withDefaultLocale(Locale.EN)
-    .withLocales(Locale.EN, Locale.DE_CH)
+    .withRawDefaultLocale('en-CH')
+    .withRawLocales('en-CH', 'de-CH')
     .withContentElementGroups(
         cx.contentElementGroup
             .withGroupId('header')
