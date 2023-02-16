@@ -1,6 +1,6 @@
 require('./styles/styles.scss');
 
-const { cx, SchemaVersion, Locale } = require('@bsi-cx/design-build');
+const { cx, SchemaVersion } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
     .withSchemaVersion(SchemaVersion.V_22_0)
@@ -40,8 +40,6 @@ module.exports = cx.design
                 require('../../components/related-articles/articles-3-columns'),
                 require('../../components/related-articles/articles-content'),
                 require('../../components/related-articles/articles-title')
-                // require('../../components/related-articles/related-topic-tag'),
-                // require('../../components/related-articles/related-topics')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')
