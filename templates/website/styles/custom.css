@@ -1,0 +1,23 @@
+/**
+ * This CSS rule was added to support dark version of rectangle-advanced
+ */
+.highlightbox-dark .component-content-rich-text h4,
+.highlightbox-dark .component-content-rich-text h5,
+.highlightbox-dark .component-content-rich-text h6,
+.highlightbox-dark .component-content-rich-text.text {
+    color: white;
+}
+.template-section-spacer--text-components.highlightbox-aligned-text
+    .component-content-rich-text.component-content-info-box__rte:last-child
+    .component-content-rich-text.text
+    .element.wysiwyg
+    > div
+    ul:last-child,
+.template-section-spacer--text-components.highlightbox-aligned-text
+    .component-content-rich-text.component-content-info-box__rte:last-child
+    .component-content-rich-text.text
+    .element.wysiwyg
+    > div
+    ol:last-child {
+    margin-bottom: 0;
+}
