@@ -4,6 +4,7 @@ const {
     Format,
     FontSizeUnit,
     cx,
+    bsiProperty,
 } = require('@bsi-cx/design-build');
 
 module.exports = cx.htmlEditorConfig
@@ -33,28 +34,19 @@ module.exports = cx.htmlEditorConfig
         Feature.EMOTICONS,
         Feature.INSERT_LINK
     )
-    .withTextColors('#ffffff', '#008fb3', '#20419a', '#22338b')
-    .withBackgroundColors(
-        '#973436',
-        '#000000',
+    .withTextColors(
+        '#141e55',
+        '#22338b',
         '#ffffff',
-        '#4283bc',
-        '#296b4f',
-        '#4283bc',
-        '#333963'
+        '#333333',
+        '#b0aa7e',
+        '#eeeeee',
+        '#001489',
+        '#000000'
     )
-    .withFormats(
-        Format.P,
-        Format.H1,
-        Format.H2,
-        Format.H3,
-        Format.H4,
-        Format.H5,
-        Format.H6,
-        Format.PRE
-    )
-    .withFontSizes(8, 9, 10, 11, 12, 14, 16, 18, 24, 30, 36, 48, 72)
+    .withFormats(Format.P, Format.H2)
+    .withFontSizes(8, 9, 10, 11, 12, 13, 14, 16, 18, 24, 30, 36, 48, 72)
     .withFontSizeUnit(FontSizeUnit.PX)
-    .withFontSizeDefault(16)
-    .withLineHeights(1, 1.5)
-    .withEnterMode(EnterMode.BR);
+    .withFontSizeDefault(12)
+    .withLineHeights(1.1, 1.2, 1.3, 1.4, 1.5)
+    .withEnterMode(EnterMode.P);

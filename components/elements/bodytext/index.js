@@ -8,13 +8,11 @@ module.exports = cx.contentElement
     .withParts(
         cx.part.formattedText
             .withLabel('Bodytext')
-            .withId('c2b1ef58-6b34-11ed-a1eb-0242ac120002')
             .withHtmlEditorConfig(
                 require('../../../configs/editor/body-text-config')
             ),
         cx.part.formattedText
             .withLabel('Content Bodytext')
-            .withId('c2b1f282-6b34-11ed-a1eb-0242ac120002')
             .withHtmlEditorConfig(
                 require('../../../configs/editor/body-text-config')
             )
