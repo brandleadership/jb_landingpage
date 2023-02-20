@@ -6,4 +6,5 @@ const mainContainer = document.getElementById('main');
 export const defaultCharts =
     mainContainer.getElementsByClassName('chart-default');
 
-const freeformCharts = mainContainer.getElementsByClassName('chart-freeform');
+export const freeformCharts =
+    mainContainer.getElementsByClassName('chart-freeform');
