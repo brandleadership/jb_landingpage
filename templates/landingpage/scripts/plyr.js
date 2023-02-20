@@ -3402,7 +3402,7 @@
                             get: function () {
                                 return this.enabled
                                     ? Function.prototype.bind.call(
-                                          console.log,
+                                          /* console.log, */
                                           console
                                       )
                                     : pt;
