@@ -134,8 +134,8 @@
                     { "x": "2022-10-31", "y": 10.8372 }
                 ],
                 "label": "iShares STOXX Europe 600 Oil & Gas (DE)",
-                "borderColor": "#434B77",
-                "backgroundColor": "#434B77",
+                "borderColor": "#727899",
+                "backgroundColor": "#727899",
                 "pointRadius": 0,
                 "pointStyle": "circle"
             }

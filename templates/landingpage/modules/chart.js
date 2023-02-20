@@ -5,7 +5,7 @@ import Chart from 'chart.js/auto';
     const data = await JSON.parse(document.getElementById('data').textContent);
 
     /* Define default sets and values */
-    const bgcolors = ['#141E55', '#434B77', '#727899', '#A1A5BB', '#D0D2DD'];
+    const bgcolors = ['#141E55', '#727899', '#D0D2DD'];
 
     // Loop over datasets and add the matching color
     let datasetlength = data.data.datasets.length;
