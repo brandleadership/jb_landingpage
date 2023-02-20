@@ -1,13 +1,11 @@
 import Chart from 'chart.js/auto';
+import { bgcolors } from './chart';
 
 (async function () {
     /* Grab data from bsi element part input */
     const data = await JSON.parse(
         document.getElementById('data-freeform').textContent
     );
-
-    /* Define default color set */
-    const bgcolors = ['#141E55', '#727899', '#D0D2DD'];
 
     // Loop over datasets and add the matching color
     let datasetlength = data.data.datasets.length;
@@ -30,9 +28,7 @@ import Chart from 'chart.js/auto';
     Chart.defaults.scale.display = true;
     Chart.defaults.scales.category.ticks.color = '#000000';
     Chart.defaults.scales.linear.ticks.color = '#000000';
-    // Chart.defaults.scales.ticks.maxTicksLimit = 7;
-    // Chart.defaults.scales.ticks.maxRotation = 0;
-    // Chart.defaults.scales.ticks.minRotation = 0;
+
     // Legend Defaults
     Chart.defaults.plugins.legend.display = true;
     Chart.defaults.plugins.legend.position = 'bottom';
