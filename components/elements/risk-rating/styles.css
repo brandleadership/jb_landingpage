@@ -184,46 +184,47 @@
     }
 }
 
-.highlight-first .level::before {
-    content: 'very low';
+/* Add texts depending on the selected class  */
+.highlight-first .risk-level::before {
+    content: 'Risk Level 1:';
 }
-.highlight-second .level::before {
-    content: 'low';
+.highlight-second .risk-level::before {
+    content: 'Risk Level 2:';
 }
-.highlight-third .level::before {
-    content: 'medium-low';
+.highlight-third .risk-level::before {
+    content: 'Risk Level 3:';
 }
-.highlight-fourth .level::before {
-    content: 'medium';
+.highlight-fourth .risk-level::before {
+    content: 'Risk Level 4:';
 }
-.highlight-fifth .level::before {
-    content: 'medium-high';
+.highlight-fifth .risk-level::before {
+    content: 'Risk Level 5:';
 }
-.highlight-sixth .level::before {
-    content: 'high';
+.highlight-sixth .risk-level::before {
+    content: 'Risk Level 6:';
 }
-.highlight-seventh .level::before {
-    content: 'very high';
+.highlight-seventh .risk-level::before {
+    content: 'Risk Level 7:';
 }
 
-.highlight-first .impact::before {
-    content: 'are extremely unlikely to';
+.highlight-first .conclusion::before {
+    content: 'This rates the potential losses from future performance at a very low level, and poor market condi­tions are extremely unlikely to impact the counterparty’s capacity to pay you.';
 }
-.highlight-second .impact::before {
-    content: 'are very unlikely to';
+.highlight-second .conclusion::before {
+    content: 'This rates the potential losses from future performance at a low level, and poor market conditions are very unlikely to impact the counterparty’s capacity to pay you.';
 }
-.highlight-third .impact::before {
-    content: 'are unlikely to';
+.highlight-third .conclusion::before {
+    content: 'This rates the potential losses from future performance at a medium-low level, and poor market conditions are unlikely to impact the counterparty’s capacity to pay you.';
 }
-.highlight-fourth .impact::before {
-    content: 'might';
+.highlight-fourth .conclusion::before {
+    content: 'This rates the potential losses from future performance at a medium level, and poor market conditions might impact the counterparty’s capacity to pay you.';
 }
-.highlight-fifth .impact::before {
-    content: 'are likely to';
+.highlight-fifth .conclusion::before {
+    content: 'This rates the potential losses from future performance at a medium-high level, and poor market conditions are likely to impact the counterparty’s capacity to pay you.';
 }
-.highlight-sixth .impact::before {
-    content: 'are very likely to';
+.highlight-sixth .conclusion::before {
+    content: 'This rates the potential losses from future performance at a high level, and poor market conditions are very likely to impact the counterparty’s capacity to pay you.';
 }
-.highlight-seventh .impact::before {
-    content: 'are extremely likely to';
+.highlight-seventh .conclusion::before {
+    content: 'This rates the potential losses from future performance at a very high level, and poor market condi­tions are extremely likely to impact the counterparty’s capacity to pay you.';
 }
