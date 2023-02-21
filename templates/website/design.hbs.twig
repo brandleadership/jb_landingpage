@@ -1,0 +1,11 @@
+{% extends '_layout.twig' %}
+
+{% block header %}
+     <bsi:include reference="header"></bsi:include>
+{% endblock %}
+
+{% block content %}
+
+<bsi:include reference="{navigation.activePage.contentId}"></bsi:include>
+
+{% endblock %}

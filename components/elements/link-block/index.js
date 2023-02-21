@@ -4,7 +4,6 @@ module.exports = cx.contentElement
     .withElementId('content-link-block')
     .withIcon(Icon.CHAIN)
     .withLabel('Link Block')
-    .withDescription('with legend')
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.image

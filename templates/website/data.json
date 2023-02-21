@@ -1,0 +1,1138 @@
+{
+    "__REM000": "style defined in articles/image/design properties",
+    "__REM001": "style defined in articles/image/design properties",
+    "__REM002": "style defined in articles/image/design properties",
+    "__REM003": "By default all includes listed here are contentType=built-in and editable=false",
+    "__REM004": "All .hbs files must be editable=false, otherwise the syntax of these files will be",
+    "__REM005": "destroyed by the design-parser.",
+    "author": "Samuel Keusch",
+    "contentElementGroups": [
+        {
+            "contentElements": [
+                {
+                    "elementId": "product-nav",
+                    "file": "content-elements/product-nav.html",
+                    "icon": "info",
+                    "label": "Product navigation",
+                    "parts": []
+                }
+            ],
+            "groupid": "Censhare",
+            "label": "Censhare"
+        },
+        {
+            "contentElements": [
+                {
+                    "elementId": "header-breadcrumb",
+                    "file": "content-elements/header-breadcrumb.html",
+                    "icon": "info",
+                    "label": "Date, Author, Reading time",
+                    "parts": [
+                        {
+                            "label": "Publish-Date",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Author",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Estimated reading time",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "Container for header elements",
+                    "elementId": "header-container",
+                    "file": "content-elements/header-container.html",
+                    "icon": "pile",
+                    "label": "Header-Container"
+                },
+                {
+                    "elementId": "header-h1",
+                    "file": "content-elements/header-h1.html",
+                    "icon": "heading",
+                    "label": "Header Title",
+                    "parts": [
+                        {
+                            "label": "Title Details",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "header-image",
+                    "file": "content-elements/header-image.html",
+                    "icon": "image",
+                    "label": "Headerimage",
+                    "parts": [
+                        {
+                            "label": "Imagesource",
+                            "partId": "image"
+                        }
+                    ],
+                    "styleConfigs": ["header-img-layout"]
+                },
+                {
+                    "elementId": "header-text",
+                    "file": "content-elements/header-text.html",
+                    "icon": "text",
+                    "label": "Lead",
+                    "parts": [
+                        {
+                            "label": "Lead Details",
+                            "partId": "plain-text"
+                        }
+                    ]
+                }
+            ],
+            "groupId": "header",
+            "label": "Header Elements"
+        },
+        {
+            "contentElements": [
+                {
+                    "description": "Container Footer-Elements",
+                    "elementId": "footer-container",
+                    "file": "content-elements/footer-container.html",
+                    "icon": "pile",
+                    "label": "Footer-Container",
+                    "parts": [
+                        {
+                            "label": "Image",
+                            "partId": "image"
+                        }
+                    ]
+                },
+                {
+                    "description": "For Footer",
+                    "elementId": "footer-disclaimer",
+                    "file": "content-elements/footer-disclaimer.html",
+                    "icon": "textarea",
+                    "label": "Disclaimer",
+                    "parts": [
+                        {
+                            "label": "Disclaimer Content",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "footer-links",
+                    "file": "content-elements/footer-links.html",
+                    "icon": "chain",
+                    "label": "Links",
+                    "parts": [
+                        {
+                            "label": "About Us",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Contact",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Legal",
+                            "partId": "link"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "footer-social",
+                    "file": "content-elements/footer-social.html",
+                    "icon": "social-follow",
+                    "label": "Social-Links"
+                },
+                {
+                    "elementId": "footer-legal",
+                    "file": "content-elements/footer-legal.html",
+                    "icon": "asterisk",
+                    "label": "Legal",
+                    "parts": [
+                        {
+                            "label": "Data Privacy Policy",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Terms of Use",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Cookie Settings",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "News Alert",
+                            "partId": "link"
+                        }
+                    ]
+                }
+            ],
+            "groupId": "footer",
+            "label": "Footer Elements"
+        },
+        {
+            "contentElements": [
+                {
+                    "description": "Number of allowed articles: 1",
+                    "elementId": "articles-image1",
+                    "file": "content-elements/articles-image1.html",
+                    "icon": "one-column",
+                    "label": "Article-Container 1-column",
+                    "parts": [
+                        {
+                            "label": "Related Articles Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Article",
+                            "partId": "image"
+                        }
+                    ],
+                    "styleConfigs": ["article-container-context"]
+                },
+                {
+                    "description": "Number of allowed articles: 1",
+                    "elementId": "articles-imagewide",
+                    "file": "content-elements/articles-imagewide.html",
+                    "icon": "one-column",
+                    "label": "Article-Container 1-column wide",
+                    "parts": [
+                        {
+                            "label": "Related Articles Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Image",
+                            "partId": "image"
+                        }
+                    ],
+                    "styleConfigs": ["article-container-context"]
+                },
+                {
+                    "description": "Number of allowed articles: 2",
+                    "elementId": "articles-image2",
+                    "file": "content-elements/articles-image2.html",
+                    "icon": "two-columns",
+                    "label": "Article-Container 2-column",
+                    "parts": [
+                        {
+                            "label": "Related Articles Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Article",
+                            "partId": "image"
+                        }
+                    ],
+                    "styleConfigs": ["article-container-context"]
+                },
+                {
+                    "description": "Number of allowed articles: 3",
+                    "elementId": "articles-image",
+                    "file": "content-elements/articles-image.html",
+                    "icon": "three-columns",
+                    "label": "Article-Container 3-column",
+                    "parts": [
+                        {
+                            "label": "Related Articles Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Article",
+                            "partId": "image"
+                        }
+                    ],
+                    "styleConfigs": ["article-container-context"]
+                },
+                {
+                    "elementId": "articles-content",
+                    "file": "content-elements/articles-content.html",
+                    "icon": "text",
+                    "label": "Article",
+                    "parts": [
+                        {
+                            "label": "Article Link",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Article Tag Link",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Teaserimage",
+                            "partId": "image"
+                        },
+                        {
+                            "label": "Article Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Estimated reading time",
+                            "partId": "plain-text"
+                        }
+                    ],
+                    "styleConfigs": ["articles-content-overlay"]
+                },
+                {
+                    "elementId": "articles-title",
+                    "file": "content-elements/articles-title.html",
+                    "icon": "heading",
+                    "label": "Title",
+                    "parts": [
+                        {
+                            "label": "Article Title",
+                            "partId": "plain-text"
+                        }
+                    ]
+                }
+            ],
+            "groupId": "related-articles",
+            "label": "Related Articles"
+        },
+        {
+            "contentElements": [
+                {
+                    "elementId": "articlesalt-backtotop",
+                    "file": "content-elements/articlesalt-backtotop.html",
+                    "icon": "signpost",
+                    "label": "«back to top»-Button"
+                },
+                {
+                    "elementId": "articlesalt-calltoaction",
+                    "file": "content-elements/articlesalt-calltoaction.html",
+                    "icon": "megaphone",
+                    "label": "«Call-to-action»-Button"
+                },
+                {
+                    "description": "Animated Version",
+                    "elementId": "articlesalt-calltoaction-two",
+                    "file": "content-elements/articlesalt-calltoaction-two.html",
+                    "icon": "chain",
+                    "label": "CTA Button",
+                    "parts": [
+                        {
+                            "label": "Link Details",
+                            "partId": "link"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "articlesalt-optinoptout",
+                    "file": "content-elements/articlesalt-optinoptout.html",
+                    "icon": "signpost",
+                    "label": "«optin/optout»-Button"
+                },
+                {
+                    "elementId": "articlesalt-confirm",
+                    "file": "content-elements/articlesalt-confirm.html",
+                    "icon": "signpost",
+                    "label": "«Wildcard»-Button"
+                }
+            ],
+            "groupId": "alternative-elements",
+            "label": "Alternative Elements"
+        },
+        {
+            "contentElements": [
+                {
+                    "elementId": "content-text",
+                    "file": "content-elements/content-text.html",
+                    "icon": "text",
+                    "label": "Bodytext-Element",
+                    "parts": [
+                        {
+                            "label": "Title Bodytext",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "htmlEditorConfig": "full",
+                            "label": "Content Bodytext",
+                            "partId": "formatted-text"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-cta",
+                    "file": "content-elements/content-cta.html",
+                    "icon": "handshake",
+                    "label": "Contact Link",
+                    "parts": [
+                        {
+                            "label": "Hyperlink",
+                            "partId": "link"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-spacer",
+                    "file": "content-elements/content-spacer.html",
+                    "icon": "divider",
+                    "label": "Divider",
+                    "parts": [
+                        {
+                            "label": "Divider",
+                            "partId": "link"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-download-item",
+                    "file": "content-elements/content-download-item.html",
+                    "icon": "chain",
+                    "label": "Download Item",
+                    "parts": [
+                        {
+                            "label": "Link to Article",
+                            "partId": "link"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-downloads",
+                    "file": "content-elements/content-downloads.html",
+                    "icon": "pile",
+                    "label": "Downloads",
+                    "parts": [
+                        {
+                            "label": "Title",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "For Advanced Table + Image",
+                    "elementId": "element-heading",
+                    "file": "content-elements/element-heading.html",
+                    "icon": "snippet",
+                    "label": "Element Heading",
+                    "parts": [
+                        {
+                            "label": "Legend, Title",
+                            "partId": "plain-text"
+                        }
+                    ],
+                    "styleConfigs": ["heading-alignment", "heading-styling"]
+                },
+                {
+                    "description": "For Advanced Table + Image",
+                    "elementId": "element-legend",
+                    "file": "content-elements/element-legend.html",
+                    "icon": "snippet",
+                    "label": "Element Legend",
+                    "parts": [
+                        {
+                            "htmlEditorConfig": "legend-formatting",
+                            "partId": "formatted-text"
+                        }
+                    ],
+                    "styleConfigs": ["element-legend-alignment"]
+                },
+                {
+                    "description": "without legend",
+                    "elementId": "content-image",
+                    "file": "content-elements/content-image.html",
+                    "icon": "image",
+                    "label": "Image-Element",
+                    "parts": [
+                        {
+                            "label": "Imagesource",
+                            "partId": "image"
+                        }
+                    ]
+                },
+                {
+                    "description": "with top headline and legend",
+                    "elementId": "content-text-title-image-alt",
+                    "file": "content-elements/content-text-title-image-alt.html",
+                    "icon": "snippet",
+                    "label": "Alternative Image-Element",
+                    "parts": [
+                        {
+                            "label": "Imagesource",
+                            "partId": "image"
+                        }
+                    ]
+                },
+                {
+                    "description": "with title and legend",
+                    "elementId": "content-text-title-image",
+                    "file": "content-elements/content-text-title-image.html",
+                    "icon": "snippet",
+                    "label": "Image-Element",
+                    "parts": [
+                        {
+                            "label": "Imagesource",
+                            "partId": "image"
+                        },
+                        {
+                            "label": "Legend, Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Legend, source-reference",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "with legend",
+                    "elementId": "content-text-image",
+                    "file": "content-elements/content-text-image.html",
+                    "icon": "text-with-image",
+                    "label": "Image-Element",
+                    "parts": [
+                        {
+                            "label": "Imagesource",
+                            "partId": "image"
+                        },
+                        {
+                            "label": "Picture caption",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "print/subscribe, social-follow",
+                    "elementId": "content-printsubscribe",
+                    "file": "content-elements/content-printsubscribe.html",
+                    "icon": "pile",
+                    "label": "Interaction-Container"
+                },
+                {
+                    "elementId": "content-link-block",
+                    "file": "content-elements/content-link-block.html",
+                    "icon": "snippet",
+                    "label": "Link Block",
+                    "parts": [
+                        {
+                            "label": "Icon Image",
+                            "partId": "image"
+                        },
+                        {
+                            "label": "Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Button Link",
+                            "partId": "link"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-links-group",
+                    "file": "content-elements/content-links-group.html",
+                    "icon": "pile",
+                    "label": "Links Group",
+                    "parts": [
+                        {
+                            "label": "Title",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-links-group-item",
+                    "file": "content-elements/content-links-group-item.html",
+                    "icon": "chain",
+                    "label": "Links Group Item",
+                    "parts": [
+                        {
+                            "label": "Link to File",
+                            "partId": "link"
+                        }
+                    ]
+                },
+                {
+                    "description": "For Links Group element",
+                    "elementId": "content-links-group-title",
+                    "file": "content-elements/content-links-group-title.html",
+                    "icon": "heading",
+                    "label": "Title",
+                    "parts": [
+                        {
+                            "htmlEditorConfig": "content-title-configs",
+                            "partId": "formatted-text"
+                        }
+                    ],
+                    "styleConfigs": ["links-group-title-styles"]
+                },
+                {
+                    "elementId": "content-list-element",
+                    "file": "content-elements/content-list-element.html",
+                    "icon": "list",
+                    "label": "List element",
+                    "parts": [
+                        {
+                            "htmlEditorConfig": "list-element-configs",
+                            "label": "Text",
+                            "partId": "formatted-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "Part of Interaction-Container",
+                    "elementId": "content-content1",
+                    "file": "content-elements/content-content1.html",
+                    "icon": "paperclip",
+                    "label": "Print/Subscribe-Element"
+                },
+                {
+                    "elementId": "content-quote",
+                    "file": "content-elements/content-quote.html",
+                    "icon": "communication",
+                    "label": "Quote",
+                    "parts": [
+                        {
+                            "label": "Quote",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Source-reference",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "Title/Text in a box",
+                    "elementId": "content-highlightbox",
+                    "file": "content-elements/content-highlightbox.html",
+                    "icon": "formfield",
+                    "label": "Rectangle",
+                    "parts": [
+                        {
+                            "label": "Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Content",
+                            "partId": "plain-text"
+                        }
+                    ],
+                    "styleConfigs": [
+                        "highlightbox-text-align",
+                        "highlightbox-color-theme"
+                    ]
+                },
+                {
+                    "description": "Title/Text in a box with 2 buttons",
+                    "elementId": "content-highlightbox2",
+                    "file": "content-elements/content-highlightbox2.html",
+                    "icon": "formfield",
+                    "label": "Rectangle with Buttons",
+                    "parts": [
+                        {
+                            "label": "Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Content",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Label Left Button",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Label Right Button",
+                            "partId": "link"
+                        }
+                    ],
+                    "styleConfigs": ["highlightbox2-text-align"]
+                },
+                {
+                    "description": "Element with One Dropzone",
+                    "elementId": "rectangle-advanced",
+                    "file": "content-elements/rectangle-advanced.html",
+                    "icon": "formfield",
+                    "label": "Rectangle Advanced",
+                    "parts": [],
+                    "styleConfigs": ["highlightbox-color-theme"]
+                },
+                {
+                    "elementId": "content-single-link",
+                    "file": "content-elements/content-single-link.html",
+                    "icon": "chain",
+                    "label": "Single Legal Link",
+                    "parts": [
+                        {
+                            "htmlEditorConfig": "single-legal-link",
+                            "partId": "formatted-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "Part of Interaction-Container",
+                    "elementId": "content-content2",
+                    "file": "content-elements/content-content2.html",
+                    "icon": "social-follow",
+                    "label": "Social-Follow-Element",
+                    "parts": [
+                        {
+                            "label": "Title for Social-Follow",
+                            "partId": "plain-text"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-sticky-buttons",
+                    "file": "content-elements/content-sticky-buttons.html",
+                    "icon": "chain",
+                    "label": "Sticky Buttons",
+                    "parts": [
+                        {
+                            "label": "First Link",
+                            "partId": "link"
+                        },
+                        {
+                            "label": "Second Link",
+                            "partId": "link"
+                        }
+                    ],
+                    "styleConfigs": ["display"]
+                },
+                {
+                    "elementId": "content-table",
+                    "file": "content-elements/content-table.html",
+                    "icon": "table",
+                    "label": "Table"
+                },
+                {
+                    "description": "With Title + Legend",
+                    "elementId": "content-table-advanced",
+                    "file": "content-elements/content-table-advanced.html",
+                    "icon": "table",
+                    "label": "Table"
+                },
+                {
+                    "description": "Level One",
+                    "elementId": "content-title-lvl-one",
+                    "file": "content-elements/content-title-lvl-one.html",
+                    "icon": "snippet",
+                    "label": "Title",
+                    "parts": [
+                        {
+                            "htmlEditorConfig": "content-title-configs",
+                            "partId": "formatted-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "Level Two",
+                    "elementId": "content-title-lvl-two",
+                    "file": "content-elements/content-title-lvl-two.html",
+                    "icon": "snippet",
+                    "label": "Title",
+                    "parts": [
+                        {
+                            "htmlEditorConfig": "content-title-configs",
+                            "partId": "formatted-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "Level Three",
+                    "elementId": "content-title-lvl-three",
+                    "file": "content-elements/content-title-lvl-three.html",
+                    "icon": "snippet",
+                    "label": "Title",
+                    "parts": [
+                        {
+                            "htmlEditorConfig": "content-title-configs",
+                            "partId": "formatted-text"
+                        }
+                    ]
+                },
+                {
+                    "description": "External Videosource",
+                    "elementId": "content-video",
+                    "file": "content-elements/content-video.html",
+                    "icon": "video",
+                    "label": "Embed-Video",
+                    "parts": [
+                        {
+                            "label": "Video-Source",
+                            "partId": "video"
+                        }
+                    ]
+                },
+                {
+                    "elementId": "content-video-html",
+                    "file": "content-elements/content-video-html.html",
+                    "icon": "metadata",
+                    "label": "iframe-Video",
+                    "parts": [
+                        {
+                            "label": "iframe-Video-Source",
+                            "partId": "html"
+                        }
+                    ]
+                },
+                {
+                    "description": "Video Snippet",
+                    "elementId": "content-video-tag",
+                    "file": "content-elements/content-video-tag.html",
+                    "icon": "youtube",
+                    "label": "Video",
+                    "parts": [
+                        {
+                            "label": "Video Link",
+                            "partId": "video"
+                        }
+                    ]
+                },
+                {
+                    "description": "Only change link",
+                    "elementId": "podcast-audio",
+                    "file": "content-elements/podcast-audio.html",
+                    "icon": "youtube",
+                    "label": "Podcast Audio",
+                    "parts": [
+                        {
+                            "label": "Podcast Title",
+                            "partId": "plain-text"
+                        },
+                        {
+                            "label": "Audio Content",
+                            "partId": "html"
+                        }
+                    ]
+                }
+            ],
+            "groupId": "normal-elements",
+            "label": "Content Elements"
+        }
+    ],
+    "date": "26.08.22, 11:00",
+    "defaultLocale": "en-CH",
+    "htmlEditorConfigs": {
+        "content-title-configs": {
+            "enter": "br",
+            "features": ["bold", "italic", "underline", "fontSize"],
+            "fontSizeDefault": "14",
+            "fontSizeUnit": "px",
+            "fontSizes": ["14", "15", "16", "17", "18", "19", "20"],
+            "lineHeights": ["1.1", "1.5"]
+        },
+        "full": {
+            "backgroundColors": [
+                "#973436",
+                "#000000",
+                "#ffffff",
+                "#4283bc",
+                "#296b4f",
+                "#4283bc",
+                "#333963"
+            ],
+            "enter": "p",
+            "features": [
+                "formatUL",
+                "formatOL",
+                "subscript",
+                "superscript",
+                "textColor",
+                "insertLink",
+                "bold"
+            ],
+            "fontSizeDefault": "12",
+            "fontSizeUnit": "pt",
+            "fontSizes": [
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "18",
+                "24",
+                "30",
+                "36",
+                "48",
+                "72"
+            ],
+            "formats": ["h1", "h2", "h3", "h4", "pre", "p"],
+            "lineHeights": ["1", "1.15", "1.5", "2"],
+            "textColors": ["#000000", "#141e55", "#22338b", "#eeeeee"]
+        },
+        "legend-formatting": {
+            "enter": "br",
+            "features": [
+                "bold",
+                "italic",
+                "underline",
+                "subscript",
+                "superscript",
+                "textColor",
+                "insertLink",
+                "fontSize"
+            ],
+            "fontSizeDefault": "14",
+            "fontSizeUnit": "px",
+            "fontSizes": [
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "formats": ["p"],
+            "textColors": ["#008fb3", "#20419a"]
+        },
+        "list-element-configs": {
+            "features": [
+                "bold",
+                "underline",
+                "italic",
+                "subscript",
+                "superscript",
+                "textColor",
+                "insertLink"
+            ],
+            "textColors": ["#008fb3", "#20419a"]
+        },
+        "single-legal-link": {
+            "enter": "br",
+            "features": [
+                "bold",
+                "fontSize",
+                "insertLink",
+                "textColor",
+                "underline"
+            ],
+            "fontSizeDefault": "16",
+            "fontSizeUnit": "px",
+            "fontSizes": [
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24"
+            ],
+            "lineHeights": ["1.1", "1.5"],
+            "textColors": ["#000000", "#22338b"]
+        }
+    },
+    "locales": [
+        "en-CH",
+        "de-CH",
+        "fr-CH",
+        "it-CH",
+        "es-CH",
+        "pt-CH",
+        "ru-CH",
+        "zh-TW",
+        "zh-CN"
+    ],
+    "nls": {
+        "website.title": {
+            "*": "BJB CAMP CX Website"
+        },
+        "HowToInvest": {
+            "*": "How to invest",
+            "de-CH": "Wie investieren",
+            "es-CH": "Cómo invertir",
+            "it-CH": "Come investire",
+            "fr-CH": "Comment investir"
+        }
+    },
+    "schemaVersion": "22.0",
+
+    "styleConfigs": {
+        "article-container-context": {
+            "cssClasses": [
+                {
+                    "cssClass": "content-context",
+                    "label": "Content"
+                },
+                {
+                    "cssClass": "articles-context",
+                    "label": "Articles"
+                }
+            ],
+            "label": "Context"
+        },
+        "articles-content-overlay": {
+            "cssClasses": [
+                {
+                    "cssClass": "video-overlay-visible",
+                    "label": "Video"
+                },
+                {
+                    "cssClass": "podcast-overlay-visible",
+                    "label": "Posdcast"
+                },
+                {
+                    "cssClass": "overlay-hidden",
+                    "label": "None"
+                }
+            ],
+            "label": "Show overlay  "
+        },
+        "display": {
+            "cssClasses": [
+                {
+                    "cssClass": "hide-button",
+                    "label": "One Button"
+                },
+                {
+                    "cssClass": "show-button",
+                    "label": "Two Buttons"
+                }
+            ],
+            "label": "Number of Buttons"
+        },
+        "element-legend-alignment": {
+            "cssClasses": [
+                {
+                    "cssClass": "module-content-gallery__content",
+                    "label": "Indented"
+                },
+                {
+                    "cssClass": "element-legend-not-indented",
+                    "label": "Left-Aligned"
+                }
+            ],
+            "label": "Alignment Legend"
+        },
+        "header-img-layout": {
+            "cssClasses": [
+                {
+                    "cssClass": "ratio-21-9",
+                    "label": "21 : 9"
+                },
+                {
+                    "cssClass": "ratio-random",
+                    "label": "General"
+                }
+            ],
+            "label": "Layout"
+        },
+        "heading-alignment": {
+            "cssClasses": [
+                {
+                    "cssClass": "module-content-gallery__content",
+                    "label": "Indented"
+                },
+                {
+                    "cssClass": "element-heading-not-indented",
+                    "label": "Left-Aligned"
+                }
+            ],
+            "label": "Alignment Heading"
+        },
+        "heading-styling": {
+            "cssClasses": [
+                {
+                    "cssClass": "element-heading-styling-classic",
+                    "label": "Classic"
+                },
+                {
+                    "cssClass": "element-heading-styling-bodytext",
+                    "label": "Bodytext Title"
+                }
+            ],
+            "label": "Heading Style"
+        },
+        "highlightbox-color-theme": {
+            "cssClasses": [
+                {
+                    "cssClass": "highlightbox-bright",
+                    "label": "Bright"
+                },
+                {
+                    "cssClass": "highlightbox-stone",
+                    "label": "Stone"
+                },
+                {
+                    "cssClass": "highlightbox-dark",
+                    "label": "Dark"
+                }
+            ],
+            "label": "Theme"
+        },
+        "highlightbox-text-align": {
+            "cssClasses": [
+                {
+                    "cssClass": "highlightbox-text-align-left",
+                    "label": "Left"
+                },
+                {
+                    "cssClass": "highlightbox-text-align-center",
+                    "label": "Center"
+                }
+            ],
+            "label": "Align"
+        },
+        "highlightbox2-text-align": {
+            "cssClasses": [
+                {
+                    "cssClass": "highlightbox2-text-align-left",
+                    "label": "Left"
+                },
+                {
+                    "cssClass": "highlightbox2-text-align-center",
+                    "label": "Center"
+                }
+            ],
+            "label": "Align"
+        },
+        "links-group-title-styles": {
+            "cssClasses": [
+                {
+                    "cssClass": "default-links-group-title",
+                    "label": "Normal"
+                },
+                {
+                    "cssClass": "uppercase-links-group-title",
+                    "label": "Uppercase Only"
+                }
+            ],
+            "label": "Link Group Title Style"
+        }
+    },
+    "title": "CX Website for BJB",
+    "website": {
+        "includes": {
+            "__page__": {
+                "editable": true,
+                "file": "include/page.html",
+                "name": "Vorlage für Inhaltsseiten"
+            },
+            "header": {
+                "editable": true,
+                "file": "include/header.html",
+                "name": "Kopfzeile"
+            },
+            "navigation": {
+                "editable": false,
+                "file": "include/product-nav.hbs",
+                "name": "Navigation"
+            },
+            "product-nav": {
+                "editable": false,
+                "file": "include/product-nav.hbs",
+                "name": "Product Nav"
+            }
+        },
+        "maxNavigationLevel": 1
+    }
+}
