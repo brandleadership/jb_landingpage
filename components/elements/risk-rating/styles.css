@@ -80,25 +80,25 @@
     margin-right: auto;
 }
 
-.highlight-first .risk-rating__rating div:nth-child(1),
-.highlight-second .risk-rating__rating div:nth-child(2),
-.highlight-third .risk-rating__rating div:nth-child(3),
-.highlight-fourth .risk-rating__rating div:nth-child(4),
-.highlight-fifth .risk-rating__rating div:nth-child(5),
-.highlight-sixth .risk-rating__rating div:nth-child(6),
-.highlight-seventh .risk-rating__rating div:nth-child(7) {
+.risk-level-one .risk-rating__rating div:nth-child(1),
+.risk-level-two .risk-rating__rating div:nth-child(2),
+.risk-level-three .risk-rating__rating div:nth-child(3),
+.risk-level-four .risk-rating__rating div:nth-child(4),
+.risk-level-five .risk-rating__rating div:nth-child(5),
+.risk-level-six .risk-rating__rating div:nth-child(6),
+.risk-level-seven .risk-rating__rating div:nth-child(7) {
     border: 3px solid #141e55;
     background-color: #141e55;
     flex-grow: 0.08;
 }
 
-.highlight-first .risk-rating__rating div:nth-child(1) p,
-.highlight-second .risk-rating__rating div:nth-child(2) p,
-.highlight-third .risk-rating__rating div:nth-child(3) p,
-.highlight-fourth .risk-rating__rating div:nth-child(4) p,
-.highlight-fifth .risk-rating__rating div:nth-child(5) p,
-.highlight-sixth .risk-rating__rating div:nth-child(6) p,
-.highlight-seventh .risk-rating__rating div:nth-child(7) p {
+.risk-level-one .risk-rating__rating div:nth-child(1) p,
+.risk-level-two .risk-rating__rating div:nth-child(2) p,
+.risk-level-three .risk-rating__rating div:nth-child(3) p,
+.risk-level-four .risk-rating__rating div:nth-child(4) p,
+.risk-level-five .risk-rating__rating div:nth-child(5) p,
+.risk-level-six .risk-rating__rating div:nth-child(6) p,
+.risk-level-seven .risk-rating__rating div:nth-child(7) p {
     color: #ffffff;
 }
 
@@ -127,13 +127,13 @@
     animation-duration: 3s;
 }
 
-.highlight-first .risk-rating__rating div:nth-child(1),
-.highlight-second .risk-rating__rating div:nth-child(2),
-.highlight-third .risk-rating__rating div:nth-child(3),
-.highlight-fourth .risk-rating__rating div:nth-child(4),
-.highlight-fifth .risk-rating__rating div:nth-child(5),
-.highlight-sixth .risk-rating__rating div:nth-child(6),
-.highlight-seventh .risk-rating__rating div:nth-child(7) {
+.risk-level-one .risk-rating__rating div:nth-child(1),
+.risk-level-two .risk-rating__rating div:nth-child(2),
+.risk-level-three .risk-rating__rating div:nth-child(3),
+.risk-level-four .risk-rating__rating div:nth-child(4),
+.risk-level-five .risk-rating__rating div:nth-child(5),
+.risk-level-six .risk-rating__rating div:nth-child(6),
+.risk-level-seven .risk-rating__rating div:nth-child(7) {
     animation-name: zoomIn;
     animation-duration: 3s;
 }
@@ -171,13 +171,13 @@
         padding: 0;
     }
 
-    .highlight-first .risk-rating__rating div:nth-child(1),
-    .highlight-second .risk-rating__rating div:nth-child(2),
-    .highlight-third .risk-rating__rating div:nth-child(3),
-    .highlight-fourth .risk-rating__rating div:nth-child(4),
-    .highlight-fifth .risk-rating__rating div:nth-child(5),
-    .highlight-sixth .risk-rating__rating div:nth-child(6),
-    .highlight-seventh .risk-rating__rating div:nth-child(7) {
+    .risk-level-one .risk-rating__rating div:nth-child(1),
+    .risk-level-two .risk-rating__rating div:nth-child(2),
+    .risk-level-three .risk-rating__rating div:nth-child(3),
+    .risk-level-four .risk-rating__rating div:nth-child(4),
+    .risk-level-five .risk-rating__rating div:nth-child(5),
+    .risk-level-six .risk-rating__rating div:nth-child(6),
+    .risk-level-seven .risk-rating__rating div:nth-child(7) {
         border: 3px solid #141e55;
         background-color: #141e55;
         flex-grow: 0.3;
@@ -227,4 +227,8 @@
 }
 .highlight-seventh .conclusion::before {
     content: 'This rates the potential losses from future performance at a very high level, and poor market condi­tions are extremely likely to impact the counterparty’s capacity to pay you.';
+}
+
+.active-risk {
+    background-color: #d0d2dd;
 }
