@@ -72,7 +72,7 @@
     <title></title>
   </head>
   <body>
-    <main class="main">
+    <main class="main" id="main">
       <section >
         <header class="header-wrapper">
           <nav class="navigation">
@@ -83,7 +83,6 @@
                 {% include '../../components/elements/header-logo/template.twig' %}
             {% endblock %}
           </div>
-         
           </nav>
         </header>
         <div>
@@ -91,14 +90,14 @@
         </div>
         <div class="article-content-wrapper">
           <div data-bsi-dropzone="header"
-            data-bsi-dropzone-allowed-elements="header-container"
-            data-bsi-dropzone-max-number-of-elements="1">
+            data-bsi-dropzone-allowed-elements="header-container "
+            data-bsi-dropzone-max-number-of-elements="2">
             {% block header %}
 
             {% endblock %}
           </div>
           <div data-bsi-dropzone="content"
-            data-bsi-dropzone-allowed-elements="podcast-audio articlesalt-calltoaction-two content-printsubscribe content-text content-list-element content-video-tag content-sticky-buttons content-video-html content-quote content-text-image content-text-title-image content-text-title-image-alt content-image content-cta content-downloads content-download-item content-link-block content-links-group content-highlightbox content-highlightbox2 content-spacer content-table content-table-advanced content-title-lvl-one content-title-lvl-two content-title-lvl-three articles-image articles-image1 articles-image2 articles-imagewide rectangle-advanced related-topics"
+            data-bsi-dropzone-allowed-elements="chart chart-freeform podcast-audio articlesalt-calltoaction-two content-printsubscribe content-text content-list-element content-video-tag content-sticky-buttons content-video-html content-quote content-text-image content-text-title-image content-text-title-image-alt content-image content-cta content-downloads content-download-item content-link-block content-links-group content-highlightbox content-highlightbox2 content-spacer content-table content-table-advanced content-title-lvl-one content-title-lvl-two content-title-lvl-three articles-image articles-image1 articles-image2 articles-imagewide rectangle-advanced related-topics risk-rating"
             class="article-content-wrapper">
             {% block content %}
 
@@ -128,9 +127,16 @@
         </div>
       </section>
     </main>
-    <script  src="./js/plyr.js"></script>
-    <script data-bsi-remove-if="draft" src="./js/components.js"></script>
-    <script data-bsi-remove-if="draft" src="./js/custom.js"></script>
-    <script data-bsi-remove-if="draft"> document.getElementById("copyright-year").innerHTML = new Date().getFullYear()</script>
+    
+    {# <script  src="./scripts/plyr.js"></script>
+  
+    <script data-bsi-remove-if="draft" src="./scripts/components.js"></script>
+    <script data-bsi-remove-if="draft" src="./scripts/custom.js"></script> #}
+    {# <script data-bsi-remove-if="draft"> document.getElementById("copyright-year").innerHTML = new Date().getFullYear()</script> #}
+    <script src="{{ bsi_cx_js_module_runtime_href() }}"
+            defer="defer"></script>
+        <script src="{{ bsi_cx_js_module_href('main') }}"
+            defer="defer"></script>
+        {{ bsi_cx_js_module_missing_chunks_import() }}
   </body>
 </html>

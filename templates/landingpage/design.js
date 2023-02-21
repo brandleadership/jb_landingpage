@@ -63,6 +63,7 @@ module.exports = cx.design
                 require('../../components/elements/rectangle'),
                 require('../../components/elements/rectangle-advanced'),
                 require('../../components/elements/rectangle-with-buttons'),
+                require('../../components/elements/risk-rating'),
                 require('../../components/elements/single-legal-link'),
                 require('../../components/elements/social-follow'),
                 require('../../components/elements/sticky-buttons'),
@@ -71,7 +72,9 @@ module.exports = cx.design
                 require('../../components/elements/title-lvl-one'),
                 require('../../components/elements/title-lvl-three'),
                 require('../../components/elements/title-lvl-two'),
-                require('../../components/elements/video-tag')
+                require('../../components/elements/video-tag'),
+                require('../../components/elements/chart'),
+                require('../../components/elements/chart-freeform')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')
@@ -92,5 +95,12 @@ module.exports = cx.design
                 require('../../components/footer/footer-links'),
                 require('../../components/footer/legal-links'),
                 require('../../components/footer/socials')
+            )
+    )
+    .withDropzones(
+        cx.dropzone
+            .withDropzone('header')
+            .withAllowedElements(
+                require('../../components/header/header-container')
             )
     );
