@@ -9,7 +9,7 @@ module.exports = cx.contentElement
         cx.part.formattedText
             .withLabel('Bodytext')
             .withHtmlEditorConfig(
-                require('../../../configs/editor/body-text-config')
+                require('../../../configs/editor/title-text-config')
             ),
         cx.part.formattedText
             .withLabel('Content Bodytext')
