@@ -55,7 +55,13 @@ module.exports = WebpackConfigBuilder.fromConfigs(
         .withTargetVersion(Version.CX_22_0)
         .withRootPath(path.resolve(__dirname, 'templates', 'website'))
         .withPropertiesFilePath('properties.js')
-        .withModules(new ModuleConfig().withName('main').withPath('main.js'))
+        .withModules(
+            new ModuleConfig().withName('main').withPath('main.js'),
+            new ModuleConfig().withName('chart').withPath('chart.js'),
+            new ModuleConfig()
+                .withName('chart_freeform')
+                .withPath('chart-freeform.js')
+        )
         .withAdditionalFilesToCopy(
             {
                 from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
