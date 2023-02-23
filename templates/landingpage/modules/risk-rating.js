@@ -1,7 +1,3 @@
-//When a highlight is selected in bsi, the highlight class is set to this risk level.
-// Now, we have to automatically add a second class which then manages showing the correct text below.
-
-//const bubbles = document.getElementsByClassName('risk-rating-element');
 const riskBar = document.getElementsByClassName('risk-bar');
 Array.from(riskBar).map((bar) => {
     const bubbles = bar.getElementsByClassName('risk-rating-element');
