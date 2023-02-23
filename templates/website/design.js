@@ -91,7 +91,8 @@ module.exports = cx.design
                 require('../../components/elements/video-tag'),
                 require('../../components/elements/podcast-audio'),
                 require('../../components/elements/chart'),
-                require('../../components/elements/chart-freeform')
+                require('../../components/elements/chart-freeform'),
+                require('../../components/elements/risk-rating')
             ),
         cx.contentElementGroup
             .withGroupId('navigation')

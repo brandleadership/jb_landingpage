@@ -50,7 +50,8 @@ module.exports = cx.pageInclude
                 require('../../../../components/related-articles/articles-2-columns'),
                 require('../../../../components/related-articles/articles-1-column-wide'),
                 require('../../../../components/elements/chart'),
-                require('../../../../components/elements/chart-freeform')
+                require('../../../../components/elements/chart-freeform'),
+                require('../../../../components/elements/risk-rating')
             ),
         cx.dropzone
             .withDropzone('articles')

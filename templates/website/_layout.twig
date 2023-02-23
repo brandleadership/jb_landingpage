@@ -58,7 +58,7 @@
    <link rel="stylesheet" href="{{ bsi_cx_css_href() }}" />
   </head>
   <body>
-   <main class="main">
+   <main class="main" id="main">
 
   <section class="page-template template-article-page">
 
@@ -72,9 +72,16 @@
 
         </main>
 
-    <script src="./js/plyr.js"></script>
+    {# <script src="./js/plyr.js"></script>
     <script data-bsi-remove-if="draft" src="./js/components.js"></script>
     <script data-bsi-remove-if="draft" src="./js/custom.js"></script>
-    <script data-bsi-remove-if="draft"> document.getElementById("copyright-year").innerHTML = new Date().getFullYear()</script>
+    <script data-bsi-remove-if="draft"> document.getElementById("copyright-year").innerHTML = new Date().getFullYear()</script> #}
+     <script src="{{ bsi_cx_js_module_runtime_href() }}"
+            defer="defer"></script>
+        <script src="{{ bsi_cx_js_module_href('main') }}"
+            defer="defer"></script>
+              <script src="{{ bsi_cx_js_module_href('root') }}"
+            defer="defer"></script>
+        {{ bsi_cx_js_module_missing_chunks_import() }}
   </body>
 </html>

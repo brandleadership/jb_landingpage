@@ -7,10 +7,18 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.plainText.withLabel('Subtitle'),
-        cx.part.plainText.withLabel('Description Top'),
+        cx.part.formattedText
+            .withLabel('Description Top')
+            .withHtmlEditorConfig(
+                require('../../../configs/editor/title-text-config')
+            ),
         cx.part
             .raw('juliusbaer-chart')
             .withLabel('Chart')
             .withProperty('type', 'line'),
-        cx.part.plainText.withLabel('Description Bottom')
+        cx.part.formattedText
+            .withLabel('Description Bottom')
+            .withHtmlEditorConfig(
+                require('../../../configs/editor/title-text-config')
+            )
     );
