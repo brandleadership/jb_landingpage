@@ -1,14 +1,44 @@
 //When a highlight is selected in bsi, the highlight class is set to this risk level.
 // Now, we have to automatically add a second class which then manages showing the correct text below.
 
-const wrapper = document.getElementsByClassName('risk-bar')[0];
+const bubbles = document.getElementsByClassName('risk-rating-element');
+const riskBar = document.getElementsByClassName('risk-bar');
 
-wrapper.classList.contains('risk-level-five')
-    ? wrapper.classList.toggle('highlight-fifth')
-    : '';
+Array.from(bubbles).map((bubble) => {
+    bubble.addEventListener('click', (event) => {
+        Array.from(bubbles).map((bubble) =>
+            bubble.classList.remove('active-risk')
+        );
+        bubble.classList.add('active-risk');
+        const bubbleClass = bubble.classList[1];
+        const riskBarClass = riskBar[0].classList[2];
+        riskBar[0].classList.replace(riskBarClass, bubbleClass);
+    });
+});
 
-const firstBubble = document.getElementsByClassName('risk-rating-element')[0];
-firstBubble.addEventListener('click', () => {
-    firstBubble.classList.add('active-risk');
-    wrapper.classList.replace('highlight-fifth', 'highlight-first');
+Array.from(riskBar).map((bar) => {
+    const highLight = bar.classList[1];
+    switch (highLight) {
+        case 'risk-level-one':
+            bar.classList.add('highlight-first');
+            break;
+        case 'risk-level-two':
+            bar.classList.add('highlight-second');
+            break;
+        case 'risk-level-three':
+            bar.classList.add('highlight-third');
+            break;
+        case 'risk-level-four':
+            bar.classList.add('highlight-fourth');
+            break;
+        case 'risk-level-five':
+            bar.classList.add('highlight-fifth');
+            break;
+        case 'risk-level-six':
+            bar.classList.add('highlight-sixth');
+            break;
+        case 'risk-level-seven':
+            bar.classList.add('highlight-seventh');
+            break;
+    }
 });
