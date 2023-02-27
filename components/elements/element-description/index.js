@@ -7,12 +7,11 @@ module.exports = cx.contentElement
     .withDescription('For Charts')
     .withFile(require('./template.twig'))
     .withStyleConfigs(
-        require('../../../configs/styles/heading-align')
-        // require('../../../configs/styles/heading-body-text')
+        require('../../../configs/styles/heading-align'),
+        require('../../../configs/styles/heading-body-text')
     )
     .withParts(
         cx.part.formattedText
-            .withId('31427dda-a216-11ed-a8fc-0242ac120002')
             .withLabel('Description Title')
             .withHtmlEditorConfig(
                 require('../../../configs/editor/title-text-config')
