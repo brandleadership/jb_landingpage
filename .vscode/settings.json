@@ -5,5 +5,13 @@
     "prettier.documentSelectors": ["**/*.twig"],
     "workbench.colorTheme": "Atom One Dark",
     "files.autoSave": "onFocusChange",
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "html.autoClosingTags": true,
+    "auto-rename-tag.activationOnLanguage": ["html", "twig", "javascript"],
+    "auto-close-tag.activationOnLanguage": [
+        "html",
+        "twig",
+        "plaintext",
+        "markdown"
+    ]
 }

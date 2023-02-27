@@ -1,6 +1,15 @@
 {% extends '_layout.twig' %}
 
 {% block header %}
+    {% include '../../components/elements/chart/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/chart-freeform/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/risk-rating/template.twig' with {
+        properties: properties
+    } %}
     {% include '../../components/header/header-container/template.twig' with {
         properties: properties
     } %}
@@ -19,6 +28,9 @@
 {% endblock %}
 
 {% block content %}
+    {% include '../../components/elements/risk-rating/template.twig' with {
+        properties: properties
+    } %}
     {% include '../../components/elements/video-tag/template.twig' with {
         properties: properties
     } %}
@@ -59,6 +71,9 @@
         properties: properties
     } %}
     {% include '../../components/elements/rectangle-with-buttons/template.twig' with {
+        properties: properties
+    } %}
+    {% include '../../components/elements/risk-rating/template.twig' with {
         properties: properties
     } %}
     {% include '../../components/elements/sticky-buttons/template.twig' with {

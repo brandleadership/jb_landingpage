@@ -1,0 +1,238 @@
+.risk-rating__rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 0 50px;
+}
+
+.risk-rating-element {
+    position: relative;
+    border: 3px solid #141e55;
+    border-radius: 50%;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    flex-basis: calc(100% / 11);
+}
+
+.risk-rating-element p {
+    font-style: normal;
+    font-weight: 325;
+    font-size: 22px;
+    line-height: 39px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #141e55;
+}
+
+.risk-rating__legend {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.line-container {
+    display: flex;
+    width: 95%;
+    margin: 24px auto;
+    align-items: center;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background: black;
+    position: relative;
+}
+
+.line.arrow-right::after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid black;
+}
+
+.line.arrow-right::before {
+    position: absolute;
+    content: '';
+    top: -8px;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid black;
+}
+
+.legend-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.risk-level-one .risk-rating__rating div:nth-child(1),
+.risk-level-two .risk-rating__rating div:nth-child(2),
+.risk-level-three .risk-rating__rating div:nth-child(3),
+.risk-level-four .risk-rating__rating div:nth-child(4),
+.risk-level-five .risk-rating__rating div:nth-child(5),
+.risk-level-six .risk-rating__rating div:nth-child(6),
+.risk-level-seven .risk-rating__rating div:nth-child(7) {
+    border: 3px solid #141e55;
+    background-color: #141e55;
+    flex-grow: 0.08;
+}
+
+.risk-level-one .risk-rating__rating div:nth-child(1) p,
+.risk-level-two .risk-rating__rating div:nth-child(2) p,
+.risk-level-three .risk-rating__rating div:nth-child(3) p,
+.risk-level-four .risk-rating__rating div:nth-child(4) p,
+.risk-level-five .risk-rating__rating div:nth-child(5) p,
+.risk-level-six .risk-rating__rating div:nth-child(6) p,
+.risk-level-seven .risk-rating__rating div:nth-child(7) p {
+    color: #ffffff;
+}
+
+.text-block {
+    margin-top: 30px;
+}
+
+.strong {
+    font-weight: 500;
+}
+
+/* animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.risk-bar {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.risk-level-one .risk-rating__rating div:nth-child(1),
+.risk-level-two .risk-rating__rating div:nth-child(2),
+.risk-level-three .risk-rating__rating div:nth-child(3),
+.risk-level-four .risk-rating__rating div:nth-child(4),
+.risk-level-five .risk-rating__rating div:nth-child(5),
+.risk-level-six .risk-rating__rating div:nth-child(6),
+.risk-level-seven .risk-rating__rating div:nth-child(7) {
+    animation-name: zoomIn;
+    animation-duration: 3s;
+}
+
+@media only screen and (max-width: 1200px) {
+    .risk-rating-element {
+        border: 2px solid #141e55;
+    }
+
+    .risk-rating-element p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .risk-rating-element {
+        border: 1px solid #141e55;
+        flex-basis: calc(100% / 8);
+    }
+
+    .risk-rating__rating {
+        padding: 0 20px;
+    }
+
+    .legend-box {
+        width: 90%;
+    }
+
+    .line-container {
+        width: 90%;
+    }
+
+    .risk-rating-element p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .risk-level-one .risk-rating__rating div:nth-child(1),
+    .risk-level-two .risk-rating__rating div:nth-child(2),
+    .risk-level-three .risk-rating__rating div:nth-child(3),
+    .risk-level-four .risk-rating__rating div:nth-child(4),
+    .risk-level-five .risk-rating__rating div:nth-child(5),
+    .risk-level-six .risk-rating__rating div:nth-child(6),
+    .risk-level-seven .risk-rating__rating div:nth-child(7) {
+        border: 3px solid #141e55;
+        background-color: #141e55;
+        flex-grow: 0.3;
+    }
+}
+
+/* Add texts depending on the selected class  */
+.highlight-first .risk-level::before {
+    content: 'Risk Level 1:';
+}
+.highlight-second .risk-level::before {
+    content: 'Risk Level 2:';
+}
+.highlight-third .risk-level::before {
+    content: 'Risk Level 3:';
+}
+.highlight-fourth .risk-level::before {
+    content: 'Risk Level 4:';
+}
+.highlight-fifth .risk-level::before {
+    content: 'Risk Level 5:';
+}
+.highlight-sixth .risk-level::before {
+    content: 'Risk Level 6:';
+}
+.highlight-seventh .risk-level::before {
+    content: 'Risk Level 7:';
+}
+
+.highlight-first .conclusion::before {
+    content: 'This rates the potential losses from future performance at a very low level, and poor market condi­tions are extremely unlikely to impact the counterparty’s capacity to pay you.';
+}
+.highlight-second .conclusion::before {
+    content: 'This rates the potential losses from future performance at a low level, and poor market conditions are very unlikely to impact the counterparty’s capacity to pay you.';
+}
+.highlight-third .conclusion::before {
+    content: 'This rates the potential losses from future performance at a medium-low level, and poor market conditions are unlikely to impact the counterparty’s capacity to pay you.';
+}
+.highlight-fourth .conclusion::before {
+    content: 'This rates the potential losses from future performance at a medium level, and poor market conditions might impact the counterparty’s capacity to pay you.';
+}
+.highlight-fifth .conclusion::before {
+    content: 'This rates the potential losses from future performance at a medium-high level, and poor market conditions are likely to impact the counterparty’s capacity to pay you.';
+}
+.highlight-sixth .conclusion::before {
+    content: 'This rates the potential losses from future performance at a high level, and poor market conditions are very likely to impact the counterparty’s capacity to pay you.';
+}
+.highlight-seventh .conclusion::before {
+    content: 'This rates the potential losses from future performance at a very high level, and poor market condi­tions are extremely likely to impact the counterparty’s capacity to pay you.';
+}
+
+.active-risk {
+    background-color: #d0d2dd;
+}
+
+.risk-rating-element:hover {
+    cursor: pointer;
+}

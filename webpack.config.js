@@ -15,8 +15,25 @@ const landingpageBuildConfig = new BuildConfig()
     .withTargetVersion(Version.CX_22_0)
     .withRootPath(path.resolve(__dirname, 'templates', 'landingpage'))
     .withPropertiesFilePath('properties.js')
-    .withModulesRootPath('modules')
-    .withModules(new ModuleConfig().withName('main').withPath('main.js'))
+    .withModulesRootPath(path.resolve(__dirname, 'modules'))
+    .withModules(
+        new ModuleConfig()
+            .withName('main')
+            .withPath(
+                path.resolve(
+                    __dirname,
+                    'templates',
+                    'landingpage',
+                    'modules',
+                    'main.js'
+                )
+            ),
+        new ModuleConfig().withName('root').withPath('root.js'),
+        new ModuleConfig().withName('chart').withPath('chart.js'),
+        new ModuleConfig()
+            .withName('chart_freeform')
+            .withPath('chart-freeform.js')
+    )
     .withAdditionalFilesToCopy(
         {
             from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
@@ -33,6 +50,49 @@ const landingpageBuildConfig = new BuildConfig()
         }
     );
 
+const websiteBuildConfig = new BuildConfig()
+    .withName('website_JB_')
+    .withVersion('v2.0.0')
+    .withDesignType(DesignType.WEBSITE)
+    .withTargetVersion(Version.CX_22_0)
+    .withRootPath(path.resolve(__dirname, 'templates', 'website'))
+    .withPropertiesFilePath('properties.js')
+    .withModulesRootPath(path.resolve(__dirname, 'modules'))
+    .withModules(
+        new ModuleConfig()
+            .withName('main')
+            .withPath(
+                path.resolve(
+                    __dirname,
+                    'templates',
+                    'website',
+                    'modules',
+                    'main.js'
+                )
+            ),
+        new ModuleConfig().withName('root').withPath('root.js'),
+        new ModuleConfig().withName('chart').withPath('chart.js'),
+        new ModuleConfig()
+            .withName('chart_freeform')
+            .withPath('chart-freeform.js')
+    )
+    .withAdditionalFilesToCopy(
+        {
+            from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
+            to: 'static/img', // copy to <output folder>/files/**/*
+        },
+
+        {
+            from: path.resolve(
+                __dirname,
+                'templates',
+                'website',
+                'preview.png'
+            ),
+            to: 'static/preview.png',
+        }
+    );
+
 module.exports = WebpackConfigBuilder.fromConfigs(
     landingpageBuildConfig
         .clone()
@@ -42,16 +102,12 @@ module.exports = WebpackConfigBuilder.fromConfigs(
         .clone()
         .withName('JB-LP-en-cx-22.0')
         .withPropertiesFilePath('lang-en.js'),
-    new BuildConfig()
-        .withName('website_JB_')
-        .withVersion('v2.0.0')
-        .withDesignType(DesignType.WEBSITE)
-        .withTargetVersion(Version.CX_22_0)
-        .withRootPath(path.resolve(__dirname, 'templates', 'website'))
-        .withPropertiesFilePath('properties.js')
-        .withModules(new ModuleConfig().withName('main').withPath('main.js'))
-        .withAdditionalFilesToCopy({
-            from: path.resolve(__dirname, 'assets', 'img'), // copy from <project root>/files/**/*
-            to: 'static/img', // copy to <output folder>/files/**/*
-        })
+    websiteBuildConfig
+        .clone()
+        .withName('JB-website-de-cx-22.0')
+        .withPropertiesFilePath('lang-de.js'),
+    websiteBuildConfig
+        .clone()
+        .withName('JB-website-en-cx-22.0')
+        .withPropertiesFilePath('lang-en.js')
 );

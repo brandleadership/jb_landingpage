@@ -7,6 +7,7 @@ module.exports = cx.design
     .withTitle('Website')
     .withAuthor('Gateb')
     .withDate('28.12.2022')
+    .withPreviewImage('static/preview.png')
     .withRawDefaultLocale('en-CH')
     .withRawLocales('en-CH', 'de-CH')
     .withContentElementGroups(
@@ -88,7 +89,10 @@ module.exports = cx.design
                 require('../../components/elements/embed-video'),
                 require('../../components/elements/iframe-video'),
                 require('../../components/elements/video-tag'),
-                require('../../components/elements/podcast-audio')
+                require('../../components/elements/podcast-audio'),
+                require('../../components/elements/chart'),
+                require('../../components/elements/chart-freeform'),
+                require('../../components/elements/risk-rating')
             ),
         cx.contentElementGroup
             .withGroupId('navigation')
