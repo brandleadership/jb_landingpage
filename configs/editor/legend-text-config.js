@@ -4,57 +4,23 @@ const {
     Format,
     FontSizeUnit,
     cx,
+    bsiProperty,
 } = require('@bsi-cx/design-build');
 
 module.exports = cx.htmlEditorConfig
-    .withIdentifier('extended')
+    .withIdentifier('extendedlegend')
     .withFeatures(
         Feature.BOLD,
         Feature.ITALIC,
         Feature.UNDERLINE,
-        Feature.STRIKE_THROUGH,
         Feature.SUBSCRIPT,
         Feature.SUPERSCRIPT,
         Feature.FONT_SIZE,
-        Feature.LINE_HEIGHT,
         Feature.TEXT_COLOR,
-        Feature.BACKGROUND_COLOR,
-        Feature.ALIGN_LEFT,
-        Feature.ALIGN_CENTER,
-        Feature.ALIGN_RIGHT,
-        Feature.ALIGN_JUSTIFY,
-        Feature.FORMAT_OL,
-        Feature.FORMAT_UL,
-        Feature.OUTDENT,
-        Feature.INDENT,
-        Feature.PARAGRAPH_FORMAT,
-        Feature.QUOTE,
-        Feature.SPECIAL_CHARACTERS,
-        Feature.EMOTICONS,
         Feature.INSERT_LINK
     )
-    .withTextColors('#ffffff', '#008fb3', '#20419a')
-    .withBackgroundColors(
-        '#973436',
-        '#000000',
-        '#ffffff',
-        '#4283bc',
-        '#296b4f',
-        '#4283bc',
-        '#333963'
-    )
-    .withFormats(
-        Format.P,
-        Format.H1,
-        Format.H2,
-        Format.H3,
-        Format.H4,
-        Format.H5,
-        Format.H6,
-        Format.PRE
-    )
-    .withFontSizes(8, 9, 10, 11, 12, 14, 16, 18, 24, 30, 36, 48, 72)
+    .withTextColors('#000000', '#141e55', '#22338b', '#eeeeee')
+    .withFontSizes(8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 21, 22, 23, 24)
     .withFontSizeUnit(FontSizeUnit.PX)
-    .withFontSizeDefault(14)
-    .withLineHeights(1, 1.15, 1.5, 2)
+    .withFontSizeDefault(16)
     .withEnterMode(EnterMode.BR);
