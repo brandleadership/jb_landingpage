@@ -23792,3 +23792,9 @@ section.disclaimer__section
     height: 80%;
     width: 80%;
 } */
+
+
+.ratio-21-9 .aspect-21-9::before,
+.ratio-random .aspect-21-9::before {
+  padding-bottom: 0!important;
+}
