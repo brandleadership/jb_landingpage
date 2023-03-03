@@ -19,8 +19,8 @@ module.exports = cx.htmlEditorConfig
         Feature.TEXT_COLOR,
         Feature.INSERT_LINK
     )
-    .withTextColors('#000000', '#141e55', '#22338b', '#eeeeee')
+    .withTextColors('#141e55', '#22338b')
     .withFontSizes(8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 21, 22, 23, 24)
     .withFontSizeUnit(FontSizeUnit.PX)
     .withFontSizeDefault(16)
-    .withEnterMode(EnterMode.BR);
+    .withEnterMode(EnterMode.P);

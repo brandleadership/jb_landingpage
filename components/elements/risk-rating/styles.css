@@ -80,25 +80,25 @@
     margin-right: auto;
 }
 
-.risk-level-one .risk-rating__rating div:nth-child(1),
-.risk-level-two .risk-rating__rating div:nth-child(2),
-.risk-level-three .risk-rating__rating div:nth-child(3),
-.risk-level-four .risk-rating__rating div:nth-child(4),
-.risk-level-five .risk-rating__rating div:nth-child(5),
-.risk-level-six .risk-rating__rating div:nth-child(6),
-.risk-level-seven .risk-rating__rating div:nth-child(7) {
+.risk-level-1 .risk-rating__rating div:nth-child(1),
+.risk-level-2 .risk-rating__rating div:nth-child(2),
+.risk-level-3 .risk-rating__rating div:nth-child(3),
+.risk-level-4 .risk-rating__rating div:nth-child(4),
+.risk-level-5 .risk-rating__rating div:nth-child(5),
+.risk-level-6 .risk-rating__rating div:nth-child(6),
+.risk-level-7 .risk-rating__rating div:nth-child(7) {
     border: 3px solid #141e55;
     background-color: #141e55;
     flex-grow: 0.08;
 }
 
-.risk-level-one .risk-rating__rating div:nth-child(1) p,
-.risk-level-two .risk-rating__rating div:nth-child(2) p,
-.risk-level-three .risk-rating__rating div:nth-child(3) p,
-.risk-level-four .risk-rating__rating div:nth-child(4) p,
-.risk-level-five .risk-rating__rating div:nth-child(5) p,
-.risk-level-six .risk-rating__rating div:nth-child(6) p,
-.risk-level-seven .risk-rating__rating div:nth-child(7) p {
+.risk-level-1 .risk-rating__rating div:nth-child(1) p,
+.risk-level-2 .risk-rating__rating div:nth-child(2) p,
+.risk-level-3 .risk-rating__rating div:nth-child(3) p,
+.risk-level-4 .risk-rating__rating div:nth-child(4) p,
+.risk-level-5 .risk-rating__rating div:nth-child(5) p,
+.risk-level-6 .risk-rating__rating div:nth-child(6) p,
+.risk-level-7 .risk-rating__rating div:nth-child(7) p {
     color: #ffffff;
 }
 
@@ -127,13 +127,13 @@
     animation-duration: 3s;
 }
 
-.risk-level-one .risk-rating__rating div:nth-child(1),
-.risk-level-two .risk-rating__rating div:nth-child(2),
-.risk-level-three .risk-rating__rating div:nth-child(3),
-.risk-level-four .risk-rating__rating div:nth-child(4),
-.risk-level-five .risk-rating__rating div:nth-child(5),
-.risk-level-six .risk-rating__rating div:nth-child(6),
-.risk-level-seven .risk-rating__rating div:nth-child(7) {
+.risk-level-1 .risk-rating__rating div:nth-child(1),
+.risk-level-2 .risk-rating__rating div:nth-child(2),
+.risk-level-3 .risk-rating__rating div:nth-child(3),
+.risk-level-4 .risk-rating__rating div:nth-child(4),
+.risk-level-5 .risk-rating__rating div:nth-child(5),
+.risk-level-6 .risk-rating__rating div:nth-child(6),
+.risk-level-7 .risk-rating__rating div:nth-child(7) {
     animation-name: zoomIn;
     animation-duration: 3s;
 }
@@ -171,13 +171,13 @@
         padding: 0;
     }
 
-    .risk-level-one .risk-rating__rating div:nth-child(1),
-    .risk-level-two .risk-rating__rating div:nth-child(2),
-    .risk-level-three .risk-rating__rating div:nth-child(3),
-    .risk-level-four .risk-rating__rating div:nth-child(4),
-    .risk-level-five .risk-rating__rating div:nth-child(5),
-    .risk-level-six .risk-rating__rating div:nth-child(6),
-    .risk-level-seven .risk-rating__rating div:nth-child(7) {
+    .risk-level-1 .risk-rating__rating div:nth-child(1),
+    .risk-level-2 .risk-rating__rating div:nth-child(2),
+    .risk-level-3 .risk-rating__rating div:nth-child(3),
+    .risk-level-4 .risk-rating__rating div:nth-child(4),
+    .risk-level-5 .risk-rating__rating div:nth-child(5),
+    .risk-level-6 .risk-rating__rating div:nth-child(6),
+    .risk-level-7 .risk-rating__rating div:nth-child(7) {
         border: 3px solid #141e55;
         background-color: #141e55;
         flex-grow: 0.3;

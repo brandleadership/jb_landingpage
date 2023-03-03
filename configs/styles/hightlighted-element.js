@@ -4,11 +4,11 @@ module.exports = cx.style
     .withIdentifier('Highlightelement-box')
     .withLabel('Hightlighted Element')
     .withCssClasses(
-        cx.cssClass.withLabel('First').withCssClass('risk-level-one'),
-        cx.cssClass.withLabel('Second').withCssClass('risk-level-two'),
-        cx.cssClass.withLabel('Third').withCssClass('risk-level-three'),
-        cx.cssClass.withLabel('Fourth').withCssClass('risk-level-four'),
-        cx.cssClass.withLabel('Fifth').withCssClass('risk-level-five'),
-        cx.cssClass.withLabel('Sixth').withCssClass('risk-level-six'),
-        cx.cssClass.withLabel('Seventh').withCssClass('risk-level-seven')
+        cx.cssClass.withLabel('Highlight-1').withCssClass('risk-level-1'),
+        cx.cssClass.withLabel('Highlight-2').withCssClass('risk-level-2'),
+        cx.cssClass.withLabel('Highlight-3').withCssClass('risk-level-3'),
+        cx.cssClass.withLabel('Highlight-4').withCssClass('risk-level-4'),
+        cx.cssClass.withLabel('Highlight-5').withCssClass('risk-level-5'),
+        cx.cssClass.withLabel('Highlight-6').withCssClass('risk-level-6'),
+        cx.cssClass.withLabel('Highlight-7').withCssClass('risk-level-7')
     );
