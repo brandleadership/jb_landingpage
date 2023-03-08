@@ -1,10 +1,10 @@
 const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
-    .withElementId('risk-rating')
+    .withElementId('risk-rating-website')
     .withIcon(Icon.SNIPPET)
     .withLabel('Risk Rating')
-    .withFile(require('./template.twig'))
+    .withFile(require('./template.hbs.twig'))
     .withStyleConfigs(require('../../../configs/styles/highlighted-element'))
     .withParts(
         cx.part.plainText.withLabel('Heading'),

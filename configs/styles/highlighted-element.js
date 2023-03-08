@@ -2,7 +2,7 @@ const { cx } = require('@bsi-cx/design-build');
 
 module.exports = cx.style
     .withIdentifier('Highlightelement-box')
-    .withLabel('Hightlighted Element')
+    .withLabel('Highlighted Element')
     .withCssClasses(
         cx.cssClass.withLabel('Highlight-1').withCssClass('risk-level-1'),
         cx.cssClass.withLabel('Highlight-2').withCssClass('risk-level-2'),

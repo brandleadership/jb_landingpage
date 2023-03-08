@@ -102,12 +102,17 @@ module.exports = WebpackConfigBuilder.fromConfigs(
         .clone()
         .withName('JB-LP-en-cx-22.0')
         .withPropertiesFilePath('lang-en.js'),
-    websiteBuildConfig
+    landingpageBuildConfig
         .clone()
-        .withName('JB-website-de-cx-22.0')
-        .withPropertiesFilePath('lang-de.js'),
-    websiteBuildConfig
+        .withName('JB-LP-es-cx-22.0')
+        .withPropertiesFilePath('lang-es.js'),
+    landingpageBuildConfig
         .clone()
-        .withName('JB-website-en-cx-22.0')
-        .withPropertiesFilePath('lang-en.js')
+        .withName('JB-LP-fr-cx-22.0')
+        .withPropertiesFilePath('lang-fr.js'),
+    landingpageBuildConfig
+        .clone()
+        .withName('JB-LP-it-cx-22.0')
+        .withPropertiesFilePath('lang-it.js'),
+    websiteBuildConfig.clone().withName('JB-website-en-cx-22.0')
 );
