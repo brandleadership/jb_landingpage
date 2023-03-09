@@ -142,6 +142,7 @@
         ]
     },
     "options": {
+        "clip": false,
         "interaction": {
             "intersect": false,
             "mode": "index"
