@@ -40,9 +40,6 @@ for (let i = 0; i < defaultCharts.length; i++) {
                         pointStyle: 'circle',
                     },
                 },
-                layout: {
-                    padding: 20,
-                },
                 interaction: {
                     intersect: false,
                     mode: 'index',

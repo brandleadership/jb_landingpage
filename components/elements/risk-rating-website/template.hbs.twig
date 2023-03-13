@@ -1,4 +1,4 @@
-<div data-bsi-element="risk-rating" class="risk-bar risk-level-5">
+<div data-bsi-element="risk-rating-website" class="risk-bar risk-level-5">
     <section class="template-section-spacer--media-components">
         <div class="row center-xs">
             <div class="col-md-8 col-sm-12 col-xs-12">
@@ -51,10 +51,10 @@
                                 </div>
                                 <div class="legend-box">
                                     <p>
-                                        {{ properties.lower_risk }}
+                                         {% verbatim %}{{ bsi.nls 'lower_risk' }}{% endverbatim %}
                                     </p>
                                     <p>
-                                        {{ properties.higher_risk }}
+                                        {% verbatim %}{{ bsi.nls 'higher_risk' }}{% endverbatim %}
                                     </p>
                                 </div>
                             </div>
@@ -62,51 +62,51 @@
                         <div class="text-block col-xs-12 module-content-gallery__content element-description">
                             <div class="text-small module-content-gallery__content-caption">
                                 <p>
+                                 
                                     <b class="risk-level"></b>
                                     <span class="conclusion"></span>
                                     <style type="text/css">
                                         .highlight-first .risk-level::before {
-                                        content: "{{ properties.risk_level_1 }}"
+                                        content: "{% verbatim %}{{ bsi.nls 'risk_level_1' }}{% endverbatim %}"
                                         } .highlight-second .risk-level::before
-                                        { content: "{{
-                                            properties.risk_level_2
-                                        }}" } .highlight-third
-                                        .risk-level::before { content: "{{
-                                            properties.risk_level_3
-                                        }}" } .highlight-fourth
-                                        .risk-level::before { content: "{{
-                                            properties.risk_level_4
-                                        }}" } .highlight-fifth
-                                        .risk-level::before { content: "{{
-                                            properties.risk_level_5
-                                        }}" } .highlight-sixth
-                                        .risk-level::before { content: "{{
-                                            properties.risk_level_6
-                                        }}" } .highlight-seventh
-                                        .risk-level::before { content: "{{
-                                            properties.risk_level_7
-                                        }}" } .highlight-first
-                                        .conclusion::before { content: "{{
-                                            properties.risk_rating_1
-                                        }}" } .highlight-second
-                                        .conclusion::before { content: "{{
-                                            properties.risk_rating_2
-                                        }}" } .highlight-third
-                                        .conclusion::before { content: "{{
-                                            properties.risk_rating_3
-                                        }}" } .highlight-fourth
-                                        .conclusion::before { content: "{{
-                                            properties.risk_rating_4
-                                        }}" } .highlight-fifth
-                                        .conclusion::before { content: "{{
-                                            properties.risk_rating_5
-                                        }}" } .highlight-sixth
-                                        .conclusion::before { content: "{{
-                                            properties.risk_rating_6
-                                        }}" } .highlight-seventh
-                                        .conclusion::before { content: "{{
-                                            properties.risk_rating_7
-                                        }}" }
+                                        { content: "{% verbatim %}{{ bsi.nls 'risk_level_2'
+                                        }}{% endverbatim %}" } .highlight-third
+                                        .risk-level::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_level_3'
+                                        }}{% endverbatim %}" } .highlight-fourth
+                                        .risk-level::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_level_4'
+                                        }}{% endverbatim %}" } .highlight-fifth
+                                        .risk-level::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_level_5'
+                                        }}{% endverbatim %}" } .highlight-sixth
+                                        .risk-level::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_level_6'
+                                        }}{% endverbatim %}" } .highlight-seventh
+                                        .risk-level::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_level_7'
+                                        }}{% endverbatim %}" } .highlight-first
+                                        .conclusion::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_rating_1'
+                                        }}{% endverbatim %}" } .highlight-second
+                                        .conclusion::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_rating_2'
+                                        }}{% endverbatim %}" } .highlight-third
+                                        .conclusion::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_rating_3'
+                                        }}{% endverbatim %}" } .highlight-fourth
+                                        .conclusion::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_rating_4'
+                                        }}{% endverbatim %}" } .highlight-fifth
+                                        .conclusion::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_rating_5'
+                                        }}{% endverbatim %}" } .highlight-sixth
+                                        .conclusion::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_rating_6'
+                                        }}{% endverbatim %}" } .highlight-seventh
+                                        .conclusion::before { content: "{% verbatim %}{{
+                                            bsi.nls 'risk_rating_7'
+                                        }}{% endverbatim %}" }
                                     </style>
                                 </p>
                             </div>

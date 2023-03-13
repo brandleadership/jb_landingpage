@@ -17,25 +17,25 @@ Array.from(riskBar).map((bar) => {
 Array.from(riskBar).map((bar) => {
     const highLight = bar.classList[1];
     switch (highLight) {
-        case 'risk-level-one':
+        case 'risk-level-1':
             bar.classList.add('highlight-first');
             break;
-        case 'risk-level-two':
+        case 'risk-level-2':
             bar.classList.add('highlight-second');
             break;
-        case 'risk-level-three':
+        case 'risk-level-3':
             bar.classList.add('highlight-third');
             break;
-        case 'risk-level-four':
+        case 'risk-level-4':
             bar.classList.add('highlight-fourth');
             break;
-        case 'risk-level-five':
+        case 'risk-level-5':
             bar.classList.add('highlight-fifth');
             break;
-        case 'risk-level-six':
+        case 'risk-level-6':
             bar.classList.add('highlight-sixth');
             break;
-        case 'risk-level-seven':
+        case 'risk-level-7':
             bar.classList.add('highlight-seventh');
             break;
     }
