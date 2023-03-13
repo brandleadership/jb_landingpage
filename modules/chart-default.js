@@ -1,11 +1,47 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, defaultCharts } from './chart';
+import { Tooltip } from 'chart.js';
+
+Tooltip.positioners.custom = function (elements) {
+    if (!elements.length) {
+        return false;
+    }
+    var offset = 10;
+
+    return {
+        x: elements[0].element.x,
+        y: elements[0].element.y - offset,
+    };
+};
 
 // Font Settings
+Chart.defaults.elements.line.borderWidth = 1;
 Chart.defaults.plugins.legend.labels.textAlign = 'left';
 Chart.defaults.plugins.legend.labels.color = '#000000';
 Chart.defaults.font.family = '"VerlagSSm"';
 Chart.defaults.font.weight = 'bold';
+Chart.defaults.scales.linear.ticks.callback = function (val) {
+    return ' ' + val;
+};
+Chart.defaults.clip = false;
+Chart.defaults.plugins.tooltip.position = 'custom';
+
+Chart.defaults.plugins.tooltip.backgroundColor = 'rgb(255, 255, 255)';
+Chart.defaults.plugins.tooltip.borderColor = '#141e55';
+Chart.defaults.plugins.tooltip.titleColor = '#141e55';
+Chart.defaults.plugins.tooltip.bodyColor = '#141e55';
+Chart.defaults.plugins.tooltip.cornerRadius = 2;
+Chart.defaults.plugins.tooltip.borderWidth = 1;
+Chart.defaults.plugins.tooltip.xAlign = 'center';
+Chart.defaults.plugins.tooltip.yAlign = 'bottom';
+Chart.defaults.plugins.tooltip.callbacks.title = function (context) {
+    let title = context[0].label || '';
+    let titleParts = title.split('-');
+    return titleParts[2] + '.' + titleParts[1] + '.' + titleParts[0];
+};
+Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
+    return context.formattedValue;
+};
 
 for (let i = 0; i < defaultCharts.length; i++) {
     (async function () {
@@ -58,12 +94,21 @@ for (let i = 0; i < defaultCharts.length; i++) {
                         ticks: {
                             // Only show year not full date
                             callback: function (value) {
-                                return this.getLabelForValue(value).substring(
-                                    0,
-                                    4
-                                );
+                                console.log(this.getLabelForValue(value));
+                                const curLabel =
+                                    this.getLabelForValue(value).substring(
+                                        5,
+                                        7
+                                    ) +
+                                    '.' +
+                                    this.getLabelForValue(value).substring(
+                                        0,
+                                        4
+                                    );
+
+                                return curLabel;
                             },
-                            maxTicksLimit: 6,
+                            maxTicksLimit: 5,
                             maxRotation: 0,
                             minRotation: 0,
                             color: '#000000',
