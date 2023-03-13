@@ -273,4 +273,13 @@ module.exports = [
             'Questo valore classifica le perdite potenziali derivanti dalla performance futura a un livello molto elevato; è estremamente probabile che delle condizioni di mercato sfavorevoli possano incidere sulla capacità della controparte di pagarvi.'
         )
     ),
+    cx.h.nls(
+        'nav_title',
+        cx.h.t('HOW TO INVEST'),
+        cx.h.t('en', 'HOW TO INVEST'),
+        cx.h.t(Locale.DE_CH, 'WIE INVESTIEREN'),
+        cx.h.t(Locale.FR_CH, 'COMMENT INVESTIR'),
+        cx.h.t('es', 'CÓMO INVERTIR'),
+        cx.h.t('it-CH', 'COME INVESTIRE')
+    ),
 ];
