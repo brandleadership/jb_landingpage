@@ -15,7 +15,7 @@ Tooltip.positioners.custom = function (elements) {
 };
 
 // Font Settings
-Chart.defaults.elements.line.borderWidth = 2;
+Chart.defaults.elements.line.borderWidth = 1;
 Chart.defaults.plugins.legend.labels.textAlign = 'left';
 Chart.defaults.plugins.legend.labels.color = '#000000';
 Chart.defaults.font.family = '"VerlagSSm"';
@@ -93,28 +93,22 @@ for (let i = 0; i < defaultCharts.length; i++) {
                         },
                         ticks: {
                             // Only show year not full date
-                            callback: function (value, index, ticks) {
-                                const curLabel = this.getLabelForValue(
-                                    value
-                                ).substring(0, 4);
-                                //const allTicks = data.data.datasets[0].data;
-                                // const filteredArray = allTicks.filter(function (
-                                //     item
-                                // ) {
-                                //     console.log(
-                                //         index,
-                                //         value,
-                                //         item.x.substring(0, 4) == curLabel,
-                                //         item.x.substring(0, 4),
-                                //         data.data.datasets[0].data[value]
-                                //     );
+                            callback: function (value) {
+                                console.log(this.getLabelForValue(value));
+                                const curLabel =
+                                    this.getLabelForValue(value).substring(
+                                        5,
+                                        7
+                                    ) +
+                                    '.' +
+                                    this.getLabelForValue(value).substring(
+                                        0,
+                                        4
+                                    );
 
-                                //     return item.x.substring(0, 4) != curLabel;
-                                // });
-                                // console.log('filteredArray', filteredArray);
                                 return curLabel;
                             },
-                            maxTicksLimit: 6,
+                            maxTicksLimit: 5,
                             maxRotation: 0,
                             minRotation: 0,
                             color: '#000000',
