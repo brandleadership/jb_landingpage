@@ -21,4 +21,5 @@ module.exports = cx.htmlEditorConfig
     )
     .withTextColors('#000000', '#141e55', '#22338b', '#eeeeee')
     .withFontSizeUnit(FontSizeUnit.REM)
-    .withFontSizeDefault(1.5);
+    .withFontSizeDefault(1.5)
+    .withEnterMode(EnterMode.BR);

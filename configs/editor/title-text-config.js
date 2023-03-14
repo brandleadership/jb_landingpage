@@ -8,15 +8,19 @@ const {
 } = require('@bsi-cx/design-build');
 
 module.exports = cx.htmlEditorConfig
-    .withIdentifier('extended')
+    .withIdentifier('extendehfghfhdlegend')
     .withFeatures(
         Feature.BOLD,
         Feature.ITALIC,
         Feature.UNDERLINE,
-        Feature.FONT_SIZE
+        Feature.SUBSCRIPT,
+        Feature.SUPERSCRIPT,
+        Feature.FONT_SIZE,
+        Feature.TEXT_COLOR,
+        Feature.INSERT_LINK
     )
-    .withFontSizes(14, 15, 16, 17, 18, 19, 20)
+    .withTextColors('#141e55', '#22338b')
+    .withFontSizes(8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 21, 22, 23, 24)
     .withFontSizeUnit(FontSizeUnit.PX)
-    .withFontSizeDefault(14)
-    .withLineHeights(1.1, 1.5)
-    .withEnterMode(EnterMode.BR);
+    .withFontSizeDefault(16)
+    .withEnterMode(EnterMode.P);
