@@ -1,5 +1,5 @@
 import Chart from 'chart.js/auto';
-import { bgcolors, defaultCharts } from './chart';
+import { bgcolors, indexedCharts } from './chart';
 import { Tooltip } from 'chart.js';
 
 Tooltip.positioners.custom = function (elements) {
@@ -43,10 +43,10 @@ Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
     return context.formattedValue;
 };
 
-for (let i = 0; i < defaultCharts.length; i++) {
+for (let i = 0; i < indexedCharts.length; i++) {
     (async function () {
         /* Grab data from bsi element part input */
-        let JSONScript = defaultCharts[i].getElementsByTagName('script')[0];
+        let JSONScript = indexedCharts[i].getElementsByTagName('script')[0];
         const data = await JSON.parse(JSONScript.textContent);
 
         // Loop over datasets and add the matching color
@@ -56,10 +56,19 @@ for (let i = 0; i < defaultCharts.length; i++) {
                 ...data.data.datasets[i],
                 ...{ backgroundColor: bgcolors[i] },
             };
+
+            //calculating indexed data
+            let product = 1;
+            data.data.datasets[i].data.map((item) => {
+                product = product * (item.y / 100 + 1);
+                console.log(product);
+                item.y = (product - 1) * 100;
+                console.log(item.y, 68);
+            });
         }
 
         /* Generate chart with pre-defined config */
-        new Chart(defaultCharts[i].getElementsByTagName('canvas')[0], {
+        new Chart(indexedCharts[i].getElementsByTagName('canvas')[0], {
             type: 'line',
             data: {
                 datasets: data.data.datasets.map((x) => ({

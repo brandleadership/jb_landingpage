@@ -93,6 +93,7 @@ module.exports = cx.design
                 require('../../components/elements/podcast-audio'),
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
+                require('../../components/elements/chart-indexed'),
                 require('../../components/elements/risk-rating-website')
             ),
         cx.contentElementGroup
