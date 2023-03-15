@@ -42,7 +42,7 @@ Chart.defaults.plugins.tooltip.callbacks.title = function (context) {
 Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
     return context.formattedValue;
 };
-
+console.log(indexedCharts);
 for (let i = 0; i < indexedCharts.length; i++) {
     (async function () {
         /* Grab data from bsi element part input */
@@ -56,6 +56,7 @@ for (let i = 0; i < indexedCharts.length; i++) {
                 ...data.data.datasets[i],
                 ...{ backgroundColor: bgcolors[i] },
             };
+            console.log(data.y);
 
             //calculating indexed data
             let product = 1;

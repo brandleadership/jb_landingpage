@@ -32,7 +32,10 @@ const landingpageBuildConfig = new BuildConfig()
         new ModuleConfig().withName('chart').withPath('chart.js'),
         new ModuleConfig()
             .withName('chart_freeform')
-            .withPath('chart-freeform.js')
+            .withPath('chart-freeform.js'),
+        new ModuleConfig()
+            .withName('chart_indexed')
+            .withPath('chart-indexed.js')
     )
     .withAdditionalFilesToCopy(
         {
@@ -74,7 +77,10 @@ const websiteBuildConfig = new BuildConfig()
         new ModuleConfig().withName('chart').withPath('chart.js'),
         new ModuleConfig()
             .withName('chart_freeform')
-            .withPath('chart-freeform.js')
+            .withPath('chart-freeform.js'),
+        new ModuleConfig()
+            .withName('chart_indexed')
+            .withPath('chart-indexed.js')
     )
     .withAdditionalFilesToCopy(
         {
