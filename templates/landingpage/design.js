@@ -19,7 +19,8 @@ module.exports = cx.design
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),
-                require('../../components/header/header-lead')
+                require('../../components/header/header-lead'),
+                require('../../components/elements/rational-text')
             ),
         cx.contentElementGroup
             .withGroupId('related-articles')

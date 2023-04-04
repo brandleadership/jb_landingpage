@@ -94,7 +94,8 @@ module.exports = cx.design
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
                 require('../../components/elements/chart-indexed'),
-                require('../../components/elements/risk-rating-website')
+                require('../../components/elements/risk-rating-website'),
+                require('../../components/elements/rational-text')
             ),
         cx.contentElementGroup
             .withGroupId('navigation')

@@ -9,6 +9,12 @@ module.exports = cx.pageInclude
     .withFile(require('./page.twig'))
     .withDropzones(
         cx.dropzone
+            .withDropzone('rational')
+            .withMaxAllowedElements(1)
+            .withAllowedElements(
+                require('../../../../components/elements/rational-text')
+            ),
+        cx.dropzone
             .withDropzone('header')
             .withMaxAllowedElements(1)
             .withAllowedElements(

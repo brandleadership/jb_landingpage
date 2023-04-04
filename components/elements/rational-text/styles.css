@@ -1,0 +1,57 @@
+.accordion {
+    background-color: rgb(176, 170, 126);
+    color: #141e55;
+    line-height: 1.875rem;
+    cursor: pointer;
+    padding: 40px 80px 30px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.title-rational-text {
+    font-weight: 700;
+}
+
+.main-text {
+    font-size: 18px;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(176, 170, 126);
+}
+
+.icon-rational {
+    color: #141e55;
+    fill: #141e55;
+    width: 28px;
+    height: 28px;
+}
+.panel {
+    padding: 0 80px 30px;
+    background-color: rgb(176, 170, 126);
+    overflow: hidden;
+    color: #141e55;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+
+.title-rational-text {
+    margin-right: 20px;
+}
+
+.hidden-block {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
