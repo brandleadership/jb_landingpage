@@ -1,5 +1,5 @@
 .accordion {
-    background-color: rgb(208, 204, 178);
+    background-color: #efeee5;
     color: #141e55;
     cursor: pointer;
     padding: 40px 80px 30px;
@@ -21,7 +21,7 @@
 }
 .panel {
     padding: 0 80px 30px;
-    background-color: rgb(208, 204, 178);
+    background-color: #efeee5;
     overflow: hidden;
     color: #141e55;
 }
