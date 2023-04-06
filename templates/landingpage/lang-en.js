@@ -28,4 +28,12 @@ module.exports = {
         'This rates the potential losses from future performance at a high level, and poor market conditions are very likely to impact the counterparty’s capacity to pay you.',
     risk_rating_7:
         'This rates the potential losses from future performance at a very high level, and poor market condi­tions are extremely likely to impact the counterparty’s capacity to pay you.',
+    footer: {
+        about_us: 'About us',
+        contact: 'Contact',
+        legal: 'Legal',
+        data_privacy_policy: 'Data privacy policy',
+        terms_of_use: 'Terms of use',
+        news_alert: 'News alert',
+    },
 };

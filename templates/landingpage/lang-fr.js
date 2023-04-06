@@ -28,4 +28,13 @@ module.exports = {
         'Cela évalue les pertes potentielles liées à la performance futur à un niveau élevé, et il est très probable que de mauvaises conditions du marché aient une incidence sur la capacité de la contrepartie à vous payer.',
     risk_rating_7:
         'Cela évalue les pertes potentielles liées à la performance future à un niveau très élevé, et il est extrêmement probable que de mauvaises conditions du marché aient une incidence sur la capacité de la contrepartie à vous payer.',
+    footer: {
+        about_us: 'À PROPOS DE NOUS',
+        contact: 'CONTACTS',
+        legal: 'LÉGAL',
+        data_privacy_policy:
+            'POLITIQUE DE CONFIDENTIALITÉ DES DONNÉES POUR LES SERVICES ÉLECTRONIQUES',
+        terms_of_use: "CONDITIONS D'UTILISATION",
+        news_alert: 'NEWS ALERT',
+    },
 };
