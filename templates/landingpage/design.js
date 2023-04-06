@@ -19,8 +19,7 @@ module.exports = cx.design
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),
-                require('../../components/header/header-lead'),
-                require('../../components/elements/rational-text')
+                require('../../components/header/header-lead')
             ),
         cx.contentElementGroup
             .withGroupId('related-articles')
@@ -76,7 +75,8 @@ module.exports = cx.design
                 require('../../components/elements/video-tag'),
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
-                require('../../components/elements/chart-indexed')
+                require('../../components/elements/chart-indexed'),
+                require('../../components/elements/rational-text')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')

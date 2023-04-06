@@ -55,3 +55,13 @@
 .rotate {
     transform: rotate(180deg);
 }
+
+@media (max-width: 599px) {
+    .accordion {
+        padding: 40px 10px 30px;
+    }
+
+    .panel {
+        padding: 0 10px 30px;
+    }
+}
