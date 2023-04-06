@@ -87,6 +87,6 @@ module.exports = cx.pageInclude
         cx.dropzone
             .withDropzone('footer')
             .withAllowedElements(
-                require('../../../../components/footer/footer-container')
+                require('../../../../components/footer/footer-container-website')
             )
     );
