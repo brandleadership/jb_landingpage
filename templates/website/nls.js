@@ -282,4 +282,67 @@ module.exports = [
         cx.h.t('es', 'CÓMO INVERTIR'),
         cx.h.t('it-CH', 'COME INVESTIRE')
     ),
+    cx.h.nls(
+        'about_us',
+        cx.h.t('About us'),
+        cx.h.t('en', 'About us'),
+        cx.h.t(Locale.DE_CH, 'Über uns'),
+        cx.h.t(Locale.FR_CH, 'À PROPOS DE NOUS'),
+        cx.h.t('es', 'La empresa'),
+        cx.h.t('it-CH', 'SU DI NOI')
+    ),
+    cx.h.nls(
+        'contact',
+        cx.h.t('Contact'),
+        cx.h.t('en', 'Contact'),
+        cx.h.t(Locale.DE_CH, 'Kontakt'),
+        cx.h.t(Locale.FR_CH, 'CONTACTS'),
+        cx.h.t('es', 'Contacto'),
+        cx.h.t('it-CH', 'CONTATTI')
+    ),
+    cx.h.nls(
+        'legal',
+        cx.h.t('Legal'),
+        cx.h.t('en', 'Legal'),
+        cx.h.t(Locale.DE_CH, 'Rechtliches'),
+        cx.h.t(Locale.FR_CH, 'LÉGAL'),
+        cx.h.t('es', 'Aspectos legales'),
+        cx.h.t('it-CH', 'LEGALE')
+    ),
+    cx.h.nls(
+        'data_privacy_policy',
+        cx.h.t('Data privacy policy'),
+        cx.h.t('en', 'Data privacy policy'),
+        cx.h.t(Locale.DE_CH, 'DATENSCHUTZERKLÄRUNG FÜR ELEKTRONISCHE DIENSTE'),
+        cx.h.t(
+            Locale.FR_CH,
+            'POLITIQUE DE CONFIDENTIALITÉ DES DONNÉES POUR LES SERVICES ÉLECTRONIQUES'
+        ),
+        cx.h.t(
+            'es',
+            'POLÍTICA DE PRIVACIDAD DE LOS DATOS PARA SERVICIOS ELECTRÓNICOS'
+        ),
+        cx.h.t(
+            'it-CH',
+            'POLITICA SULLA PRIVACY DEI DATI PER I SERVIZI ELETTRONICI'
+        )
+    ),
+    cx.h.nls(
+        'terms_of_use',
+        cx.h.t('Terms of use'),
+        cx.h.t('en', 'Terms of use'),
+        cx.h.t(Locale.DE_CH, 'NUTZUNGSBEDINGUNGEN'),
+        cx.h.t(Locale.FR_CH, "CONDITIONS D'UTILISATION"),
+        cx.h.t('es', 'CONDICIONES DE USO'),
+        cx.h.t('it-CH', "CONDIZIONI D' USO")
+    ),
+    cx.h.nls(
+        'news_alert',
+        cx.h.t('News alert'),
+        cx.h.t('en', 'News alert'),
+        cx.h.t(Locale.DE_CH, 'NEWS ALERT'),
+        cx.h.t(Locale.FR_CH, 'NEWS ALERT'),
+        cx.h.t('es', 'NEWS ALERT'),
+        cx.h.t('it-CH', 'NEWS ALERT')
+    ),
 ];

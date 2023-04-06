@@ -28,13 +28,12 @@ module.exports = {
         'Questo valore classifica le perdite potenziali derivanti dalla performance futura a un livello elevato; è molto probabile che delle condizioni di mercato sfavorevoli possano incidere sulla capacità della controparte di pagarvi.',
     risk_rating_7:
         'Questo valore classifica le perdite potenziali derivanti dalla performance futura a un livello molto elevato; è estremamente probabile che delle condizioni di mercato sfavorevoli possano incidere sulla capacità della controparte di pagarvi.',
-    footer: {
-        about_us: 'SU DI NOI',
-        contact: 'CONTATTI',
-        legal: 'LEGALE',
-        data_privacy_policy:
-            'POLITICA SULLA PRIVACY DEI DATI PER I SERVIZI ELETTRONICI',
-        terms_of_use: "CONDIZIONI D' USO",
-        news_alert: 'NEWS ALERT',
-    },
+
+    about_us: 'SU DI NOI',
+    contact: 'CONTATTI',
+    legal: 'LEGALE',
+    data_privacy_policy:
+        'POLITICA SULLA PRIVACY DEI DATI PER I SERVIZI ELETTRONICI',
+    terms_of_use: "CONDIZIONI D' USO",
+    news_alert: 'NEWS ALERT',
 };

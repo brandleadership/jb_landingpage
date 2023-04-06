@@ -28,12 +28,10 @@ module.exports = {
         'Potenzielle Verluste in der künftigen Performance werden als mittelhoch bis hoch eingeschätzt, und es ist wahrscheinlich, dass schlechte Marktbedingungen die Zahlungsfähigkeit der Gegenpartei beeinträchtigen.',
     risk_rating_7:
         'Potenzielle Verluste in der künftigen Performance werden auf einem sehr hohen Niveau bewertet, und es ist extrem wahrscheinlich, dass schlechte Marktbedingungen die Zahlungsfähigkeit der Gegenpartei beeinträchtigen.',
-    footer: {
-        about_us: 'Über uns',
-        contact: 'Kontakt',
-        legal: 'Rechtliches',
-        data_privacy_policy: 'DATENSCHUTZERKLÄRUNG FÜR ELEKTRONISCHE DIENSTE',
-        terms_of_use: 'NUTZUNGSBEDINGUNGEN',
-        news_alert: 'NEWS ALERT',
-    },
+    about_us: 'Über uns',
+    contact: 'Kontakt',
+    legal: 'Rechtliches',
+    data_privacy_policy: 'DATENSCHUTZERKLÄRUNG FÜR ELEKTRONISCHE DIENSTE',
+    terms_of_use: 'NUTZUNGSBEDINGUNGEN',
+    news_alert: 'NEWS ALERT',
 };

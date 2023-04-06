@@ -28,13 +28,11 @@ module.exports = {
         'Valora las pérdidas potenciales de futuros rendimientos en un nivel alto y es muy probable que las condiciones de mercado desfavorables afecten la capacidad de la contraparte de cumplir las obligaciones de pago pactadas con usted.',
     risk_rating_7:
         'Valora las pérdidas potenciales de futuros rendimientos en un nivel muy alto y es extremadamente probable que condiciones de mercado desfavorables afecten la capacidad de la contraparte de cumplir las obligaciones de pago pactadas con usted.',
-    footer: {
-        about_us: 'La empresa',
-        contact: 'Contacto',
-        legal: 'Aspectos legales',
-        data_privacy_policy:
-            'POLÍTICA DE PRIVACIDAD DE LOS DATOS PARA SERVICIOS ELECTRÓNICOS',
-        terms_of_use: 'CONDICIONES DE USO',
-        news_alert: 'NEWS ALERT',
-    },
+    about_us: 'La empresa',
+    contact: 'Contacto',
+    legal: 'Aspectos legales',
+    data_privacy_policy:
+        'POLÍTICA DE PRIVACIDAD DE LOS DATOS PARA SERVICIOS ELECTRÓNICOS',
+    terms_of_use: 'CONDICIONES DE USO',
+    news_alert: 'NEWS ALERT',
 };
