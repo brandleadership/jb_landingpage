@@ -1,0 +1,112 @@
+<div data-bsi-element="slider-two-el">
+    <section class="template-section-spacer--media-components">
+        <div class="row center-xs">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="media-image">
+                    {# <div class="slideshow-container"> #}
+                    {# <div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <div data-bsi-dropzone="slide-1" data-bsi-dropzone-allowed-elements="chart-indexed">   {% block slide_1 %}
+   {% include '../chart-indexed/template.twig' %}
+            {% endblock %}</div>
+   <img data-bsi-element-part="image" src="{{
+            url
+                ?
+                : bsi_cx_asset('../../../assets/img/header_sample_1.jpg')
+            }}" style="width:100%"> 
+   <div class="text">Caption Text</div> 
+ </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <div data-bsi-dropzone="slide-2" data-bsi-dropzone-allowed-elements="chart"
+           >   {% block slide_2 %}
+   {% include '../chart/template.twig' %}
+            {% endblock %}</div>
+   <img data-bsi-element-part="image"  src="{{
+            url
+                ?
+                : bsi_cx_asset('../../../assets/img/header_sample_2.jpg')
+            }}" style="width:100%"> #}
+                    {# <div class="text">Caption Two</div>
+ </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <div data-bsi-dropzone="slide-3" data-bsi-dropzone-allowed-elements="table">   {% block slide_3 %}
+   {% include '../table/template.twig' %}
+            {% endblock %}</div>
+   <img data-bsi-element-part="image"  src="{{
+            url
+                ?
+                : bsi_cx_asset('../../../assets/img/header_sample_3.jpg')
+            }}" style="width:100%"> 
+   <div class="text">Caption Three</div> 
+ </div>
+
+<a   class="prev" >❮</a>
+<a   class="next" >❯</a>
+
+</div>    #}
+
+                    {# <div class="carousel" data-carousel>
+                            <button class="carousel-button prev"
+                                data-carousel-button="prev">
+                                &#8656;
+                            </button>
+                            <button class="carousel-button next"
+                                data-carousel-button="next">
+                                &#8658;
+                            </button>
+                            <ul data-slides>
+                                <li class="slide" data-active>
+                                    <div data-bsi-dropzone="slide-1" data-bsi-dropzone-allowed-elements="chart-indexed">   {% block slide_1 %}
+
+            {% endblock %}</div>
+                                </li>
+                                <li class="slide">
+                                 </div>
+  <div data-bsi-dropzone="slide-2" data-bsi-dropzone-allowed-elements="chart"
+           >   {% block slide_2 %}
+
+            {% endblock %}</div>
+                                </li>
+                                <li class="slide">
+                                    <div data-bsi-dropzone="slide-3" data-bsi-dropzone-allowed-elements="table">   {% block slide_3 %}
+
+            {% endblock %}</div>
+                                </li>
+                            </ul>
+                        </div> #}
+                    {# </div> #}
+                    <div class="slider-container">
+                        <div class="carousel">
+                            <div class="slider">
+                                <section>
+                                    <div data-bsi-dropzone="slide-1"
+                                        data-bsi-dropzone-allowed-elements="chart-indexed">
+                                        {% block slide_1 %}
+
+                                        {% endblock %}
+                                    </div>
+                                </section>
+                                <section>
+                                    <div data-bsi-dropzone="slide-2"
+                                        data-bsi-dropzone-allowed-elements="table">
+                                        {% block slide_2 %}
+
+                                        {% endblock %}
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="controls">
+                                <button href="" class="arrow prev">prev</button>
+                                <button href="" class="arrow next">next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
