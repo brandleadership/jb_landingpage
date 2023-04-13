@@ -8,3 +8,6 @@ export const defaultCharts =
 
 export const freeformCharts =
     mainContainer.getElementsByClassName('chart-freeform');
+
+export const indexedCharts =
+    mainContainer.getElementsByClassName('chart-indexed');

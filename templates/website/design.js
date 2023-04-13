@@ -9,7 +9,7 @@ module.exports = cx.design
     .withDate('28.12.2022')
     .withPreviewImage('static/preview.png')
     .withRawDefaultLocale('en-CH')
-    .withRawLocales('en-CH', 'de-CH', 'fr-CH', 'es-CH', 'it-CH')
+    .withRawLocales('en-CH', 'de-CH', 'fr-CH', 'es-CH', 'it-CH', 'es')
     .withNLS(...require('./nls'))
     .withContentElementGroups(
         cx.contentElementGroup
@@ -93,6 +93,7 @@ module.exports = cx.design
                 require('../../components/elements/podcast-audio'),
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
+                require('../../components/elements/chart-indexed'),
                 require('../../components/elements/risk-rating-website')
             ),
         cx.contentElementGroup
