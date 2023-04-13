@@ -75,7 +75,8 @@ module.exports = cx.design
                 require('../../components/elements/video-tag'),
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
-                require('../../components/elements/chart-indexed')
+                require('../../components/elements/chart-indexed'),
+                require('../../components/elements/rational-text')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')

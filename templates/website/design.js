@@ -26,11 +26,11 @@ module.exports = cx.design
             .withGroupId('footer')
             .withLabel('Footer Elements')
             .withContentElements(
-                require('../../components/footer/footer-container'),
+                require('../../components/footer/footer-container-website'),
                 require('../../components/footer/disclaimer'),
-                require('../../components/footer/footer-links'),
+                require('../../components/footer/footer-links-website'),
                 require('../../components/footer/socials'),
-                require('../../components/footer/legal-links')
+                require('../../components/footer/legal-links-website')
             ),
         cx.contentElementGroup
             .withGroupId('related-articles')
@@ -94,7 +94,8 @@ module.exports = cx.design
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
                 require('../../components/elements/chart-indexed'),
-                require('../../components/elements/risk-rating-website')
+                require('../../components/elements/risk-rating-website'),
+                require('../../components/elements/rational-text')
             ),
         cx.contentElementGroup
             .withGroupId('navigation')

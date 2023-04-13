@@ -23866,3 +23866,7 @@ section.disclaimer__section
 .ratio-random .aspect-21-9::before {
     padding-bottom: 0 !important;
 }
+
+.rational-text-wrapper {
+    margin-bottom: 20px;
+}

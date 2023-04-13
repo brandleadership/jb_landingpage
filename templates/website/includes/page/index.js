@@ -9,6 +9,12 @@ module.exports = cx.pageInclude
     .withFile(require('./page.twig'))
     .withDropzones(
         cx.dropzone
+            .withDropzone('rational')
+            .withMaxAllowedElements(1)
+            .withAllowedElements(
+                require('../../../../components/elements/rational-text')
+            ),
+        cx.dropzone
             .withDropzone('header')
             .withMaxAllowedElements(1)
             .withAllowedElements(
@@ -81,6 +87,6 @@ module.exports = cx.pageInclude
         cx.dropzone
             .withDropzone('footer')
             .withAllowedElements(
-                require('../../../../components/footer/footer-container')
+                require('../../../../components/footer/footer-container-website')
             )
     );
