@@ -14,6 +14,6 @@ module.exports = cx.contentElement
         cx.part.formattedText
             .withLabel('Not Visible Secondary Text')
             .withHtmlEditorConfig(
-                require('../../../configs/editor/title-text-config')
+                require('../../../configs/editor/body-text-config')
             )
     );
