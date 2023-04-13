@@ -108,6 +108,7 @@ module.exports = cx.design
         cx.website
             .withMaxNavigationLevel(2)
             .withIncludes(
+                require('./includes/rational-top-header'),
                 require('./includes/page'),
                 require('./includes/header'),
                 require('./includes/product-nav'),
