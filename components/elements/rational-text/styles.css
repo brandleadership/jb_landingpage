@@ -21,7 +21,9 @@
 }
 .panel {
     padding: 0 80px 30px;
+
     background-color: #efeee5;
+
     overflow: hidden;
     color: #141e55;
 }
