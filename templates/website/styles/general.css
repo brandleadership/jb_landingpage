@@ -5868,13 +5868,13 @@ table thead tr {
     position: relative;
     padding-top: 160px;
     transition: padding-top 0.2s linear;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
-@media (-ms-high-contrast: none) {
+/* @media (-ms-high-contrast: none) {
     .page-template {
         height: 100vh;
     }
-}
+} */
 @media (min-width: 960px) and (max-width: 1280px) {
     .page-template {
         padding-top: 140px;
