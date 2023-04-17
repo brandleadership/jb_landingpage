@@ -7,4 +7,12 @@ module.exports = cx.include
     .withIdentifier('header')
     .withName('Header')
     .withEditable(true)
-    .withFile(require('./header.twig'));
+    .withFile(require('./header.twig'))
+    .withDropzones(
+        cx.dropzone
+            .withDropzone('rational-text')
+            .withMaxAllowedElements(1)
+            .withAllowedElements(
+                require('../../../../components/elements/rational-text')
+            )
+    );
