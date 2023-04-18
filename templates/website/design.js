@@ -111,6 +111,7 @@ module.exports = cx.design
                 require('./includes/page'),
                 require('./includes/header'),
                 require('./includes/product-nav'),
-                require('./includes/navigation')
+                require('./includes/navigation'),
+                require('./includes/footer')
             )
     );
