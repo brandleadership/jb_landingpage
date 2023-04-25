@@ -1,28 +1,28 @@
 <!-- footer-link-list_start -->
-<div data-bsi-element="footer-links">
+<div data-bsi-element="footer-links-website">
     <ul class="navigation-footer-primary module-navigation-footer__navigation-footer-primary">
         <li class="navigation-footer-primary__link">
             <a data-bsi-element-part="link"
-                id="e04b985e-6b0a-11ed-a1eb-0242ac120002"
+          
                 class="footer-link"
                 href="[About Us]">
-                {{ properties.about_us }}
+            {% verbatim %}{{ bsi.nls 'about_us' }}{% endverbatim %}
             </a>
         </li>
         <li class="navigation-footer-primary__link">
             <a data-bsi-element-part="link"
-                id="e04b9b88-6b0a-11ed-a1eb-0242ac120002"
+          
                 class="footer-link"
                 href="[Contact]">
-                {{ properties.contact }}
+               {% verbatim %}{{ bsi.nls 'contact' }}{% endverbatim %}
             </a>
         </li>
         <li class="navigation-footer-primary__link">
             <a data-bsi-element-part="link"
-                id="e04b9d40-6b0a-11ed-a1eb-0242ac120002"
+           
                 class="footer-link"
                 href="[Legal]">
-                {{ properties.legal }}
+             {% verbatim %}{{ bsi.nls 'legal' }}{% endverbatim %}
             </a>
         </li>
     </ul>

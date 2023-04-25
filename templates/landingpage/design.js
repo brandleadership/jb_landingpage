@@ -19,8 +19,7 @@ module.exports = cx.design
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),
-                require('../../components/header/header-lead'),
-                require('../../components/elements/rational-text')
+                require('../../components/header/header-lead')
             ),
         cx.contentElementGroup
             .withGroupId('related-articles')
@@ -79,7 +78,8 @@ module.exports = cx.design
                 require('../../components/elements/chart-indexed'),
                 require('../../components/elements/slider-two-el'),
                 require('../../components/elements/mandate-table-title-legend'),
-                require('../../components/elements/html-table-element')
+                require('../../components/elements/html-table-element'),
+                require('../../components/elements/rational-text')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')

@@ -1,0 +1,47 @@
+<div data-bsi-element="footer-container" class="element footer-container">
+    <div class="footer-container">
+        {% block footer %}
+            <section class="template-section-spacer--last">
+                <footer class="module-navigation-footer">
+                    <div class="module-navigation-footer__inner">
+                        <!-- footer-link-list_start -->
+                        <div class="col-lg-6 col-sm-6 col-xs-12"
+                            data-bsi-dropzone="links"
+                            data-bsi-dropzone-allowed-elements="footer-links-website"
+                            data-bsi-dropzone-max-number-of-elements="1">
+                            {% include '../footer-links-website/template.hbs.twig' %}
+                        </div>
+                        <!-- footer-link-list_end -->
+
+                        <!-- social-link-list_start -->
+                        <div class="col-lg-6 col-sm-6 col-xs-12"
+                            data-bsi-dropzone="social"
+                            data-bsi-dropzone-allowed-elements="footer-social"
+                            data-bsi-dropzone-max-number-of-elements="1">
+                            {% include '../socials/template.twig' %}
+                        </div>
+                        <!-- social-link-list_end -->
+
+                        <!-- settings-link-list_start -->
+                        <div class="col-lg-12 col-xs-12"
+                            data-bsi-dropzone="legal"
+                            data-bsi-dropzone-allowed-elements="footer-legal-website"
+                            data-bsi-dropzone-max-number-of-elements="1">
+                            {% include '../legal-links-website/template.hbs.twig' %}
+                        </div>
+                        <!-- settings-link-list_end -->
+
+                        <!-- disclaimer_text_start -->
+                        <div class="col-lg-12 col-xs-12 component-content-rich-text"
+                            data-bsi-dropzone="disclaimer"
+                            data-bsi-dropzone-allowed-elements="footer-disclaimer"
+                            data-bsi-dropzone-max-number-of-elements="1">
+                            {% include '../disclaimer/template.twig' %}
+                        </div>
+                        <!-- disclaimer_text_end -->
+                    </div>
+                </footer>
+            </section>
+        {% endblock %}
+    </div>
+</div>

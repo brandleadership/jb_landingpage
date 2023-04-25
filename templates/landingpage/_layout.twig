@@ -74,15 +74,15 @@
   <body>
     <main class="main" id="main">
       <section >
-        <header class="header-wrapper">
-          <nav class="navigation">
-           <div data-bsi-dropzone="rational-text" class="rational-text-wrapper"
+     <div data-bsi-dropzone="rational-text" class="rational-text-wrapper"
             data-bsi-dropzone-allowed-elements="rational-text"
             data-bsi-dropzone-max-number-of-elements="1">
             {% block rational %}
-                {% include '../../components/elements/rational-text/template.twig' %}
+                {# {% include '../../components/elements/rational-text/template.twig' %} #}
             {% endblock %}
           </div>
+        <header class="header-wrapper">
+          <nav class="navigation">
            <div data-bsi-dropzone="logo"
             data-bsi-dropzone-allowed-elements="header-logo"
             data-bsi-dropzone-max-number-of-elements="1">
