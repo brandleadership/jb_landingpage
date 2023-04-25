@@ -1,24 +1,34 @@
-<div data-bsi-element="slider-two-el">
+<div data-bsi-element="slider-three-el">
     <div class="slideshow-container slider">
         <div class="mySlides fade">
             <div class="numbertext">
-                1 of 2
+                1 of 3
             </div>
             <div data-bsi-dropzone="slide-1"
-                data-bsi-dropzone-allowed-elements="chart image-headline-legend mandate-table">
+                data-bsi-dropzone-allowed-elements="chart image-headline-legend">
                 {% block slide_1 %}
 
                 {% endblock %}
             </div>
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">
-                2 of 2
+                2 of 3
             </div>
             <div data-bsi-dropzone="slide-2"
-                data-bsi-dropzone-allowed-elements="chart image-headline-legend mandate-table">
+                data-bsi-dropzone-allowed-elements="chart image-headline-legend">
                 {% block slide_2 %}
+
+                {% endblock %}
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">
+                3 of 3
+            </div>
+            <div data-bsi-dropzone="slide-3"
+                data-bsi-dropzone-allowed-elements="chart image-headline-legend">
+                {% block slide_3 %}
 
                 {% endblock %}
             </div>

@@ -77,7 +77,9 @@ module.exports = cx.design
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
                 require('../../components/elements/chart-indexed'),
-                require('../../components/elements/slider-two-el')
+                require('../../components/elements/slider-two-el'),
+                require('../../components/elements/mandate-table-title-legend'),
+                require('../../components/elements/html-table-element')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')
