@@ -56,13 +56,6 @@ for (let i = 0; i < defaultCharts.length; i++) {
                 ...data.data.datasets[i],
                 ...{ backgroundColor: bgcolors[i] },
             };
-            // let product = 1;
-            // data.data.datasets[i].data.map((item) => {
-            //     product = product * (item.y / 100 + 1);
-            //     console.log(product);
-            //     item.y = (product - 1) * 100;
-            //     console.log(item.y, 68);
-            // });
         }
 
         /* Generate chart with pre-defined config */

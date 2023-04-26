@@ -57,10 +57,6 @@
     left: 20px;
 }
 
-.dots-box {
-    display: none;
-}
-
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -130,6 +126,10 @@
 
     .prev,
     .next {
+        display: none;
+    }
+
+    .dots-box {
         display: block;
     }
 }
