@@ -7,21 +7,21 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withDropzones(
         cx.dropzone
-            .withDropzone('slide-1')
+            .withDropzone('slide-three-el-1')
             .withAllowedElements(
-                require('../chart'),
+                require('../horizontal-bar-chart'),
                 require('../image-headline-legend')
             ),
         cx.dropzone
-            .withDropzone('slide-2')
+            .withDropzone('slide-three-el-2')
             .withAllowedElements(
                 require('../image-headline-legend'),
-                require('../chart')
+                require('../horizontal-bar-chart')
             ),
         cx.dropzone
-            .withDropzone('slide-3')
+            .withDropzone('slide-three-el-3')
             .withAllowedElements(
                 require('../image-headline-legend'),
-                require('../chart')
+                require('../horizontal-bar-chart')
             )
     );

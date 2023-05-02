@@ -1,12 +1,15 @@
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-const dot1 = document.querySelector('.dot-1');
-const dot2 = document.querySelector('.dot-2');
+const first = document.querySelector('.button-first');
+const second = document.querySelector('.button-second');
+const third = document.querySelector('.button-third');
+const dotFirst = document.querySelector('.dot-1-three-el');
+const dotSecond = document.querySelector('.dot-2-three-el');
+const dotThird = document.querySelector('.dot-3-three-el');
+const buttons = document.querySelectorAll('.button-element');
 
 let slideIndex = 1;
 
 // Add touch event listeners
-const slideshow = document.querySelector('.slideshow-container');
+const slideshow = document.querySelector('.slideshow-container-three-el');
 let xDown = null;
 let yDown = null;
 
@@ -50,8 +53,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName('mySlides');
-    let dots = document.getElementsByClassName('dot');
+    let slides = document.getElementsByClassName('slides-three-el');
+    let dots = document.getElementsByClassName('dot-three-el');
     if (!slides || !slideshow) {
         return;
     }
@@ -68,23 +71,41 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
     slides[slideIndex - 1].style.display = 'block';
-    dots[slideIndex - 1].className += ' active';
+    dots[slideIndex - 1].className += 'active';
 }
 
-prev?.addEventListener('click', (e) => {
-    plusSlides(-1);
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        buttons.forEach((button) => {
+            button.classList.remove('clicked-button');
+        });
+
+        button.classList.add('clicked-button');
+    });
 });
 
-next?.addEventListener('click', (e) => {
-    plusSlides(1);
-});
-
-dot1?.addEventListener('click', (e) => {
+first?.addEventListener('click', (e) => {
     currentSlide(1);
 });
 
-dot2?.addEventListener('click', (e) => {
+second?.addEventListener('click', (e) => {
     currentSlide(2);
+});
+
+third?.addEventListener('click', (e) => {
+    currentSlide(3);
+});
+
+dotFirst?.addEventListener('click', (e) => {
+    currentSlide(1);
+});
+
+dotSecond?.addEventListener('click', (e) => {
+    currentSlide(2);
+});
+
+dotThird?.addEventListener('click', (e) => {
+    currentSlide(3);
 });
 
 slideshow?.addEventListener('touchstart', handleTouchStart, false);

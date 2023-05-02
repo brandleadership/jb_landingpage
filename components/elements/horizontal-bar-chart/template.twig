@@ -5,14 +5,16 @@
                 {% include '../element-heading/template.twig' with {
                     isNoElement: true
                 } %}
-                <div data-bsi-element-part="juliusbaer-chart-bar">
+                <div data-bsi-element-part="juliusbaer-chart">
                     <script type="application/json"
-                        id="data"
+                        id="data-bar"
                         data-bsi-chart-config="">
                         {% include './chart-config.json' %}
                     </script>
                 </div>
-                <div id="chart-wrapper" class="chart-bar-wrapper">
+                <div id="chart-wrapper"
+                    class="chart-wrapper"
+                    style="background-color: #efeee5;">
                     <canvas id="horizontal-bar-chart"></canvas>
                 </div>
                 {% include '../element-description/template.twig' with {

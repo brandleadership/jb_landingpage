@@ -325,7 +325,8 @@ Remove awkward spacing */ .ratio-21-9 .aspect-21-9::before,
     margin-top: 25px;
 }
 .custom-table-wrapper {
-    overflow-x: scroll;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 .title-lvl-one {
     margin: 15px 0;

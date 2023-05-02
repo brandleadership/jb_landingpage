@@ -35,7 +35,8 @@ const landingpageBuildConfig = new BuildConfig()
             .withPath('chart-freeform.js'),
         new ModuleConfig()
             .withName('chart_indexed')
-            .withPath('chart-indexed.js')
+            .withPath('chart-indexed.js'),
+        new ModuleConfig().withName('chart_bar').withPath('chart-bar.js')
     )
     .withAdditionalFilesToCopy(
         {

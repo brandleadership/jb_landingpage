@@ -111,7 +111,9 @@ button {
 
 .custom-table-wrapper {
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .single-link-element {

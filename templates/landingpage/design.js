@@ -79,7 +79,9 @@ module.exports = cx.design
                 require('../../components/elements/slider-two-el'),
                 require('../../components/elements/mandate-table-title-legend'),
                 require('../../components/elements/html-table-element'),
-                require('../../components/elements/rational-text')
+                require('../../components/elements/rational-text'),
+                require('../../components/elements/horizontal-bar-chart'),
+                require('../../components/elements/slider-three-el')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')

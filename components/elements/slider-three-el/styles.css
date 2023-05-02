@@ -1,68 +1,103 @@
 /* Slideshow container */
-.slideshow-container {
-    max-width: 83.33333%;
+.slideshow-container-three-el {
+    display: flex;
+    flex-direction: row;
+
     margin: auto;
-    background-color: #efeee5;
+    background-color: #ffffff;
     position: relative;
 }
 
-.background {
-    background-color: #efeee5;
+.slider-box {
+    width: 70%;
+    margin: auto;
+    height: auto;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
+.three-button-container {
+    width: 30%;
+    padding: 160px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-element {
     cursor: pointer;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: auto;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 14px;
-    transition: 0.6s ease;
-    user-select: none;
-    background-color: #141e55;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-}
-
-.prev {
-    right: 55px;
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
+    border: 3px solid #141e55;
+    border-radius: 50%;
     text-align: center;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    transition: all 0.2s ease-in-out;
+    align-self: flex-start;
+    margin-right: 20px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    display: block;
-    color: black;
-    font-size: 12px;
-    position: absolute;
-    bottom: 10px;
+.button-element:hover,
+.button-element:focus {
+    background-color: #141e55;
+    transform: scale(1.1);
+}
+.button-element p:hover,
+.button-element p:focus {
+    color: white;
+}
+
+.clicked-button {
+    background-color: #141e55;
+    transform: scale(1.1);
+}
+
+.clicked-button .button-text {
+    color: white;
+}
+
+.vertical-line-1 {
+    height: 20px;
     left: 20px;
+    top: 200px;
+    border: 1px solid #141e55;
+    align-self: flex-start;
+    margin-left: 19px;
 }
 
-.dots-box {
+.vertical-line-2 {
+    height: 20px;
+    left: 20px;
+    top: 260px;
+    border: 1px solid #141e55;
+    align-self: flex-start;
+    margin-left: 19px;
+}
+
+.button-element p {
+    font-style: normal;
+    font-weight: 325;
+    font-size: 22px;
+    line-height: 39px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #141e55;
+}
+
+.dots-box-three-el {
     display: none;
 }
 
+.button-text-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button-title .button-title-text {
+    font-weight: 700;
+}
+
 /* The dots/bullets/indicators */
-.dot {
+.dot-three-el {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -73,15 +108,14 @@
     transition: background-color 0.6s ease;
 }
 
-.dots-box {
-    display: block;
+.dots-box-three-el {
     position: absolute;
     bottom: 10px;
     right: 45%;
 }
 
 .active,
-.dot:hover {
+.dot-three-el:hover {
     background-color: #717171;
 }
 
@@ -101,35 +135,31 @@
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
+/* @media only screen and (max-width: 300px) {
+    .text-three-el {
         font-size: 11px;
     }
-}
+} */
 
 @media (max-width: 599px) {
-    .slideshow-container {
+    .slideshow-container-three-el {
         max-width: 100%;
         margin: auto;
     }
 }
 
 @media (min-width: 600px) and (max-width: 959px) {
-    .slideshow-container {
+    .slideshow-container-three-el {
         max-width: 90%;
         margin: auto;
     }
 }
 
 @media (max-width: 959px) {
-    .numbertext {
+    .numbertext-three-el {
         display: none;
     }
-
-    .prev,
-    .next {
-        display: none;
+    .dots-box-three-el {
+        display: block;
     }
 }

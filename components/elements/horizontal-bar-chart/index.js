@@ -9,8 +9,8 @@ module.exports = cx.contentElement
     .withParts(
         cx.part.plainText.withLabel('Subtitle'),
         cx.part
-            .raw('juliusbaer-chart-bar')
-            .withLabel('Chart JSON')
+            .raw('juliusbaer-chart')
+            .withLabel('Chart Bar Data')
             .withProperty('type', 'bar'),
         cx.part.formattedText
             .withLabel('Description Bottom')

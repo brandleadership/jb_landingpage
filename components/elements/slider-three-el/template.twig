@@ -1,45 +1,76 @@
 <div data-bsi-element="slider-three-el">
-    <div class="slideshow-container slider">
-        <div class="mySlides fade">
-            <div class="numbertext">
-                1 of 3
+    <div class="slideshow-container-three-el col-md-8 col-sm-12 col-xs-12 slider">
+        <div class="three-button-container">
+            <div class="button-text-box">
+                <div class="button-element button-first clicked-button">
+                    <p class="button-text">
+                        1
+                    </p>
+                </div>
+                <div class="button-title">
+                    <p class="button-title-text">
+                        Allocation by assett class
+                    </p>
+                </div>
             </div>
-            <div data-bsi-dropzone="slide-1"
-                data-bsi-dropzone-allowed-elements="chart image-headline-legend">
-                {% block slide_1 %}
+            <div class="vertical-line-1"></div>
+            <div class="button-text-box">
+                <div class="button-element button-second">
+                    <p class="button-text">
+                        2
+                    </p>
+                </div>
+                <div class="button-title">
+                    <p class="button-title-text">
+                        Equity allocation
+                    </p>
+                </div>
+            </div>
+            <div class="vertical-line-2"></div>
+            <div class="button-text-box">
+                <div class="button-element button-third">
+                    <p class="button-text">
+                        3
+                    </p>
+                </div>
+                <div class="button-title">
+                    <p class="button-title-text">
+                        Income income allocation
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-box">
+            <div class="slides-three-el fade">
+                <div data-bsi-dropzone="slide-three-el-1"
+                    data-bsi-dropzone-allowed-elements="chart image-headline-legend">
+                    {% block slide_1 %}
 
-                {% endblock %}
+                    {% endblock %}
+                </div>
             </div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">
-                2 of 3
-            </div>
-            <div data-bsi-dropzone="slide-2"
-                data-bsi-dropzone-allowed-elements="chart image-headline-legend">
-                {% block slide_2 %}
+            <div class="slides-three-el fade">
+                <div data-bsi-dropzone="slide-three-el-2"
+                    data-bsi-dropzone-allowed-elements="chart image-headline-legend">
+                    {% block slide_2 %}
 
-                {% endblock %}
+                    {% endblock %}
+                </div>
             </div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">
-                3 of 3
-            </div>
-            <div data-bsi-dropzone="slide-3"
-                data-bsi-dropzone-allowed-elements="chart image-headline-legend">
-                {% block slide_3 %}
+            <div class="slides-three-el fade">
+                <div data-bsi-dropzone="slide-three-el-3"
+                    data-bsi-dropzone-allowed-elements="chart image-headline-legend">
+                    {% block slide_3 %}
 
-                {% endblock %}
+                    {% endblock %}
+                </div>
             </div>
         </div>
-        <div class="slider-buttons">
-            <a class="prev">❮</a>
-            <a class="next">❯</a>
-        </div>
-        <div style="text-align: center;" class="dots-box">
-            <span class="dot dot-1"></span>
-            <span class="dot dot-2"></span>
+
+        <div style="text-align: center;" class="dots-box-three-el">
+            <span class="dot-three-el dot-1-three-el"></span>
+            <span class="dot-three-el dot-2-three-el"></span>
+            <span class="dot-three-el dot-3-three-el"></span>
         </div>
     </div>
 </div>

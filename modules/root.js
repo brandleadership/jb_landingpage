@@ -5,3 +5,5 @@ import './chart-indexed';
 import './risk-rating';
 import './accordion';
 import './slider-two-el';
+import './slide-three-el';
+import './chart-bar';

@@ -12,6 +12,7 @@ module.exports = cx.contentElement
             .withAllowedElements(
                 require('../chart'),
                 require('../image-headline-legend'),
+                require('../chart-indexed'),
                 require('../mandate-table-title-legend')
             ),
         cx.dropzone
@@ -19,6 +20,7 @@ module.exports = cx.contentElement
             .withAllowedElements(
                 require('../image-headline-legend'),
                 require('../chart'),
+                require('../chart-indexed'),
                 require('../mandate-table-title-legend')
             )
     );
