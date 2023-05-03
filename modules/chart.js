@@ -15,3 +15,5 @@ export const indexedCharts =
 export const BarCharts = mainContainer.getElementsByClassName(
     'horizontal-bar-chart'
 );
+
+export const PieCharts = mainContainer.getElementsByClassName('pie-chart');

@@ -81,6 +81,7 @@ module.exports = cx.design
                 require('../../components/elements/html-table-element'),
                 require('../../components/elements/rational-text'),
                 require('../../components/elements/horizontal-bar-chart'),
+                require('../../components/elements/chart-pie'),
                 require('../../components/elements/slider-three-el')
             ),
         cx.contentElementGroup

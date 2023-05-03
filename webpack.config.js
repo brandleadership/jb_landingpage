@@ -36,7 +36,8 @@ const landingpageBuildConfig = new BuildConfig()
         new ModuleConfig()
             .withName('chart_indexed')
             .withPath('chart-indexed.js'),
-        new ModuleConfig().withName('chart_bar').withPath('chart-bar.js')
+        new ModuleConfig().withName('chart_bar').withPath('chart-bar.js'),
+        new ModuleConfig().withName('chart_pie').withPath('chart-pie.js')
     )
     .withAdditionalFilesToCopy(
         {

@@ -1,11 +1,12 @@
 {
+    "type": "pie",
     "data": {
         "datasets": [
             {
                 "data": [
                     { "x": "World Excellence", "y": 10 },
                     { "x": "World Value", "y": 3 },
-                    { "x": "Home Bias", "y": 23 },
+                    { "x": "Home Bias", "y": 6 },
                     { "x": "Tactical Calls", "y": 4 },
                     { "x": "Other Equities", "y": 12 }
                 ]

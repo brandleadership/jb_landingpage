@@ -64,7 +64,7 @@ for (let i = 0; i < BarCharts.length; i++) {
             options: {
                 layout: {
                     padding: {
-                        left: 40,
+                        left: 15,
                         right: 40,
                     },
                 },
@@ -103,13 +103,13 @@ for (let i = 0; i < BarCharts.length; i++) {
                                     this.getLabelForValue(value).split(' ');
 
                                 const newArr = [];
-                                console.log('array length', arr.length);
+                                //console.log('array length', arr.length);
 
                                 for (i = 0; i < arr.length; i++) {
-                                    console.log('item index', i);
+                                    //console.log('item index', i);
                                     if (
                                         arr[i]?.length + arr[i + 1]?.length <
-                                        15
+                                        16
                                     ) {
                                         newArr.push(
                                             '  ' + arr[i] + ' ' + arr[i + 1]
@@ -119,7 +119,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                                         newArr.push('  ' + arr[i]);
                                     }
                                 }
-                                console.log(newArr);
+                                //console.log(newArr);
                                 return newArr;
                             },
                             crossAlign: 'far',

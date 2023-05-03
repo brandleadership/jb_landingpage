@@ -2,7 +2,7 @@
 .slideshow-container-three-el {
     display: flex;
     flex-direction: row;
-
+    max-width: 83.33333%;
     margin: auto;
     background-color: #ffffff;
     position: relative;
@@ -16,7 +16,7 @@
 
 .three-button-container {
     width: 30%;
-    padding: 160px 0;
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
 }
@@ -94,6 +94,7 @@
 }
 .button-title .button-title-text {
     font-weight: 700;
+    font-size: 1rem;
 }
 
 /* The dots/bullets/indicators */
@@ -134,17 +135,13 @@
     }
 }
 
-/* On smaller screens, decrease text size */
-/* @media only screen and (max-width: 300px) {
-    .text-three-el {
-        font-size: 11px;
-    }
-} */
-
 @media (max-width: 599px) {
     .slideshow-container-three-el {
         max-width: 100%;
         margin: auto;
+    }
+    .three-button-container {
+        display: none;
     }
 }
 
@@ -155,11 +152,46 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .button-title .button-title-text {
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+    .button-element {
+        width: 30px;
+        height: 30px;
+    }
+    .button-element p {
+        font-size: 16px;
+    }
+    .vertical-line-1 {
+        margin-left: 15px;
+        height: 15px;
+    }
+
+    .vertical-line-2 {
+        margin-left: 15px;
+        height: 15px;
+    }
+}
+
 @media (max-width: 959px) {
     .numbertext-three-el {
         display: none;
     }
     .dots-box-three-el {
         display: block;
+    }
+    .three-button-container {
+        display: none;
+    }
+    .slider-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1429px) {
+    .three-button-container {
+        padding: 160px 0;
     }
 }
