@@ -3,8 +3,8 @@ import { bgcolors, PieCharts } from './chart';
 
 // Font Settings
 
-Chart.defaults.plugins.tooltip.enabled = false;
-Chart.defaults.plugins.legend.display = false;
+//Chart.defaults.plugins.tooltip.enabled = false;
+//Chart.defaults.plugins.legend.display = false;
 Chart.defaults.borderColor = 'transparent';
 Chart.defaults.plugins.legend.labels.textAlign = 'left';
 Chart.defaults.plugins.legend.labels.color = '#000000';

@@ -1,12 +1,11 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, BarCharts } from './chart';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
+//import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 // Chart.register(ChartDataLabels);
 // Font Settings
 
-Chart.defaults.plugins.tooltip.enabled = false;
-Chart.defaults.plugins.legend.display = false;
+//Chart.defaults.plugins.legend.display = false;
 Chart.defaults.borderColor = 'transparent';
 Chart.defaults.plugins.legend.labels.textAlign = 'left';
 Chart.defaults.plugins.legend.labels.color = '#000000';
@@ -60,8 +59,11 @@ for (let i = 0; i < BarCharts.length; i++) {
                     },
                 })),
             },
-            plugins: [ChartDataLabels],
+            //plugins: [ChartDataLabels],
             options: {
+                legend: {
+                    display: false,
+                },
                 layout: {
                     padding: {
                         left: 15,
