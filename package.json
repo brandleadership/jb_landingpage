@@ -1,4 +1,18 @@
 {
+    "name": "@brandleadership/jb_landingpage",
+    "description": "The BSI Landingpage Design for Julius Baer.",
+    "version": "1.0.0",
+    "main": "webpack.config.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/brandleadership/jb_landingpage.git"
+    },
+    "author": "Cécile Hefti, Iryna Alchynska",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/brandleadership/jb_landingpage/issues"
+    },
+    "homepage": "https://github.com/brandleadership/jb_landingpage#readme",
     "devDependencies": {
         "@bsi-cx/design-build": "^1.12.1"
     },
