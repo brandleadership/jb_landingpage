@@ -6,10 +6,6 @@
     position: relative;
 }
 
-.background {
-    background-color: #efeee5;
-}
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -73,7 +69,7 @@
 }
 
 /* Fading animation */
-.fade {
+/* .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -85,7 +81,7 @@
     to {
         opacity: 1;
     }
-}
+} */
 
 .fade {
     opacity: 0;

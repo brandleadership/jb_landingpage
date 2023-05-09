@@ -3,11 +3,31 @@
         "datasets": [
             {
                 "data": [
-                    { "x": "World Excellence", "y": 10 },
-                    { "x": "World Value", "y": 3 },
-                    { "x": "Home Bias", "y": 23 },
-                    { "x": "Tactical Calls", "y": 4 },
-                    { "x": "Other Equities", "y": 12 }
+                    {
+                        "x": "World Excellence",
+                        "y": 6.15,
+                        "bgc": "rgb(176, 170, 126)"
+                    },
+                    {
+                        "x": "World Value",
+                        "y": 7.21,
+                        "bgc": "rgb(176, 170, 126)"
+                    },
+                    {
+                        "x": "Home Bias",
+                        "y": 5.52,
+                        "bgc": "rgb(176, 170, 126)"
+                    },
+                    {
+                        "x": "Tactical Calls",
+                        "y": 11.96,
+                        "bgc": "rgb(176, 170, 126)"
+                    },
+                    {
+                        "x": "Other Equities",
+                        "y": 4.8,
+                        "bgc": "rgb(176, 170, 126)"
+                    }
                 ]
             }
         ]

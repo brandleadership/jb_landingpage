@@ -1,9 +1,8 @@
 import Chart from 'chart.js/auto';
-import { bgcolors, PieCharts } from './chart';
+import { PieCharts } from './chart';
 
 // Font Settings
 
-//Chart.defaults.plugins.tooltip.enabled = false;
 //Chart.defaults.plugins.legend.display = false;
 Chart.defaults.borderColor = 'transparent';
 Chart.defaults.plugins.legend.labels.textAlign = 'left';
@@ -15,106 +14,88 @@ for (let i = 0; i < PieCharts.length; i++) {
     (async function () {
         let JSONScript = PieCharts[i].getElementsByTagName('script')[0];
         const data = await JSON.parse(JSONScript.textContent);
-        console.log(data);
 
         let datasetlength = data.data.datasets.length;
         for (let i = 0; i < datasetlength; i++) {
-            console.log(data.data.datasets[i]);
             data.data.datasets[i] = {
                 ...data.data.datasets[i],
-                ...{ backgroundColor: bgcolors[i] },
             };
         }
 
-        /* Generate chart with pre-defined config */
         new Chart(PieCharts[i].getElementsByTagName('canvas')[0], {
             type: 'pie',
             data: {
+                labels: data.data.datasets.flatMap((x) =>
+                    x.data.map((el) => el.x)
+                ),
                 datasets: data.data.datasets.map((x) => ({
-                    label: x.label,
-                    backgroundColor: x.backgroundColor,
-                    borderColor: x.backgroundColor,
-                    data: x.data,
+                    backgroundColor: x.data.map((el) => el.bgc),
+                    data: x.data.map((el) => el.y),
                 })),
             },
 
-            // options: {
-            //     layout: {
-            //         padding: {
-            //             left: 15,
-            //             right: 40,
-            //         },
-            //     },
-            //     plugins: {
-            //         datalabels: {
-            //             formatter: function (value, context) {
-            //                 return (
-            //                     context.chart.data.datasets[0].data[
-            //                         context.dataIndex
-            //                     ].x + ' % '
-            //                 );
-            //             },
-            //         },
-            //     },
-            //     indexAxis: 'y',
+            options: {
+                layout: {
+                    padding: 50,
+                },
+                responsive: true,
 
-            //     scales: {
-            //         x: {
-            //             axis: 'y',
-            //             ticks: {
-            //                 display: false,
-            //             },
-            //             grid: {
-            //                 display: false,
-            //                 drawOnChartArea: false,
-            //                 drawBorder: false,
-            //                 drawTicks: false,
-            //             },
-
-            //             beginAtZero: true,
-            //         },
-            //         y: {
-            //             ticks: {
-            //                 callback: function (value) {
-            //                     const arr =
-            //                         this.getLabelForValue(value).split(' ');
-
-            //                     const newArr = [];
-            //                     console.log('array length', arr.length);
-
-            //                     for (i = 0; i < arr.length; i++) {
-            //                         console.log('item index', i);
-            //                         if (
-            //                             arr[i]?.length + arr[i + 1]?.length <
-            //                             16
-            //                         ) {
-            //                             newArr.push(
-            //                                 '  ' + arr[i] + ' ' + arr[i + 1]
-            //                             );
-            //                             i++;
-            //                         } else {
-            //                             newArr.push('  ' + arr[i]);
-            //                         }
-            //                     }
-            //                     console.log(newArr);
-            //                     return newArr;
-            //                 },
-            //                 crossAlign: 'far',
-            //                 padding: 30,
-            //             },
-
-            //             grid: {
-            //                 display: false,
-            //                 drawOnChartArea: false,
-            //                 drawBorder: false,
-            //                 drawTicks: false,
-            //             },
-
-            //             color: '#000000',
-            //             align: 'start',
-            //         },
-            //     },
-            // },
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            label: function (context) {
+                                console.log(context.label);
+                                return context.formattedValue + '%';
+                            },
+                            title: function (context) {
+                                console.log(context.formattedValue);
+                                return context.label;
+                            },
+                        },
+                    },
+                    legend: {
+                        display: false,
+                        position: 'bottom',
+                    },
+                },
+            },
         });
+        const legendCallback = function (data) {
+            const legendItems = data.data.datasets.flatMap((dataset, i) => {
+                const backgroundColors = dataset.data.map((el) => el.bgc);
+                const labels = dataset.data.map((el) => el.x);
+                const percentage = dataset.data.map((el) => el.y);
+
+                return labels.map((label, j) => {
+                    const backgroundColor = backgroundColors[j];
+                    const percent = percentage[j];
+
+                    return `
+                <li>
+                  <div class="legendValue">
+  <span style="display: inline-block; background-color: ${backgroundColor}; width: 25px; height: 25px; vertical-align: middle;"></span>
+  <span class="percent" style="display: inline-block; margin-left: 15px; width: 40px; vertical-align: middle;">${percent}%</span>
+  <span style="display: inline-block; padding-left: 15px; vertical-align: middle;">${label}</span>
+</div>
+                </li>
+                <div class="clear"></div>
+            `;
+                });
+            });
+
+            const legendHTML = `
+        <ul class="legend">
+            ${legendItems.join('')}
+        </ul>
+    `;
+
+            return legendHTML;
+        };
+
+        document.getElementById('legend').innerHTML = legendCallback(data);
     })();
 }

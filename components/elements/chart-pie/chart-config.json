@@ -4,11 +4,22 @@
         "datasets": [
             {
                 "data": [
-                    { "x": "World Excellence", "y": 10 },
-                    { "x": "World Value", "y": 3 },
-                    { "x": "Home Bias", "y": 6 },
-                    { "x": "Tactical Calls", "y": 4 },
-                    { "x": "Other Equities", "y": 12 }
+                    {
+                        "x": "Bonds and Similar Positions",
+                        "y": 58.8,
+                        "bgc": "rgb(20, 30, 85)"
+                    },
+                    {
+                        "x": "Equities and Similar Positions",
+                        "y": 30.7,
+                        "bgc": "rgb(67, 75, 119)"
+                    },
+                    {
+                        "x": "Alternative Investments",
+                        "y": 5.9,
+                        "bgc": "rgb(114, 120, 153)"
+                    },
+                    { "x": "Liquidity", "y": 4.5, "bgc": "rgb(161, 165, 187)" }
                 ]
             }
         ]

@@ -1,14 +1,15 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, BarCharts } from './chart';
-//import ChartDataLabels from 'chartjs-plugin-datalabels';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 // Chart.register(ChartDataLabels);
 // Font Settings
 
 //Chart.defaults.plugins.legend.display = false;
+Chart.defaults.plugins.legend.display = false;
 Chart.defaults.borderColor = 'transparent';
-Chart.defaults.plugins.legend.labels.textAlign = 'left';
-Chart.defaults.plugins.legend.labels.color = '#000000';
+// Chart.defaults.plugins.legend.labels.textAlign = 'left';
+// Chart.defaults.plugins.legend.labels.color = '#000000';
 Chart.defaults.font.family = '"VerlagSSm"';
 Chart.defaults.font.weight = 'bold';
 Chart.defaults.scales.linear.ticks.callback = function (val) {
@@ -59,7 +60,8 @@ for (let i = 0; i < BarCharts.length; i++) {
                     },
                 })),
             },
-            //plugins: [ChartDataLabels],
+
+            plugins: [ChartDataLabels],
             options: {
                 legend: {
                     display: false,
@@ -67,10 +69,21 @@ for (let i = 0; i < BarCharts.length; i++) {
                 layout: {
                     padding: {
                         left: 15,
-                        right: 40,
+                        right: 50,
                     },
                 },
                 plugins: {
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            label: function (context) {
+                                return context.formattedValue + '%';
+                            },
+                            title: function (context) {
+                                return context.label;
+                            },
+                        },
+                    },
                     datalabels: {
                         formatter: function (value, context) {
                             return (
@@ -86,14 +99,19 @@ for (let i = 0; i < BarCharts.length; i++) {
                 scales: {
                     x: {
                         axis: 'y',
+                        position: 'top',
                         ticks: {
-                            display: false,
+                            display: true,
+
+                            callback: function (value) {
+                                return value + ' %' + '  ';
+                            },
                         },
                         grid: {
-                            display: false,
-                            drawOnChartArea: false,
-                            drawBorder: false,
-                            drawTicks: false,
+                            // display: true,
+                            drawOnChartArea: true,
+                            // drawBorder: false,
+                            color: '#000000',
                         },
 
                         beginAtZero: true,
@@ -105,10 +123,8 @@ for (let i = 0; i < BarCharts.length; i++) {
                                     this.getLabelForValue(value).split(' ');
 
                                 const newArr = [];
-                                //console.log('array length', arr.length);
 
                                 for (i = 0; i < arr.length; i++) {
-                                    //console.log('item index', i);
                                     if (
                                         arr[i]?.length + arr[i + 1]?.length <
                                         16
@@ -121,9 +137,10 @@ for (let i = 0; i < BarCharts.length; i++) {
                                         newArr.push('  ' + arr[i]);
                                     }
                                 }
-                                //console.log(newArr);
+
                                 return newArr;
                             },
+
                             crossAlign: 'far',
                             padding: 30,
                         },
