@@ -5,6 +5,11 @@ module.exports = cx.contentElement
     .withIcon(Icon.SNIPPET)
     .withLabel('Slider Three Elements')
     .withFile(require('./template.twig'))
+    .withParts(
+        cx.part.plainText.withLabel('Title 1'),
+        cx.part.plainText.withLabel('Title 2'),
+        cx.part.plainText.withLabel('Title 3')
+    )
     .withDropzones(
         cx.dropzone
             .withDropzone('slide-three-el-1')

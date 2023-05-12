@@ -1,17 +1,12 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, BarCharts } from './chart';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-// Chart.register(ChartDataLabels);
 // Font Settings
 
-//Chart.defaults.plugins.legend.display = false;
-Chart.defaults.plugins.legend.display = false;
 Chart.defaults.borderColor = 'transparent';
-// Chart.defaults.plugins.legend.labels.textAlign = 'left';
-// Chart.defaults.plugins.legend.labels.color = '#000000';
+
 Chart.defaults.font.family = '"VerlagSSm"';
-Chart.defaults.font.weight = 'bold';
+//Chart.defaults.font.weight = 'normal';
 Chart.defaults.scales.linear.ticks.callback = function (val) {
     return ' ' + val;
 };
@@ -46,33 +41,21 @@ for (let i = 0; i < BarCharts.length; i++) {
                         };
                         return newObj;
                     }),
-                    datalabels: {
-                        color: '#141E55',
-                        anchor: 'end',
-                        align: 'right',
-                        labels: {
-                            title: {
-                                font: {
-                                    weight: '900',
-                                },
-                            },
-                        },
-                    },
                 })),
             },
-
-            plugins: [ChartDataLabels],
             options: {
                 legend: {
                     display: false,
                 },
                 layout: {
                     padding: {
-                        left: 15,
-                        right: 50,
+                        right: 55,
                     },
                 },
                 plugins: {
+                    legend: {
+                        display: false,
+                    },
                     tooltip: {
                         enabled: true,
                         callbacks: {
@@ -108,9 +91,8 @@ for (let i = 0; i < BarCharts.length; i++) {
                             },
                         },
                         grid: {
-                            // display: true,
                             drawOnChartArea: true,
-                            // drawBorder: false,
+
                             color: '#000000',
                         },
 
@@ -141,7 +123,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                                 return newArr;
                             },
 
-                            crossAlign: 'far',
+                            crossAlign: 'center',
                             padding: 30,
                         },
 

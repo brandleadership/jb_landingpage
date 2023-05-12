@@ -140,6 +140,7 @@ for (let i = 0; i < indexedCharts.length; i++) {
                         enabled: false,
                     },
                     legend: {
+                        display: true,
                         maxWidth: 10,
                         position: 'bottom',
                         align: 'start',

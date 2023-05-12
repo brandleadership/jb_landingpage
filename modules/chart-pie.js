@@ -3,7 +3,6 @@ import { PieCharts } from './chart';
 
 // Font Settings
 
-//Chart.defaults.plugins.legend.display = false;
 Chart.defaults.borderColor = 'transparent';
 Chart.defaults.plugins.legend.labels.textAlign = 'left';
 Chart.defaults.plugins.legend.labels.color = '#000000';
@@ -38,12 +37,12 @@ for (let i = 0; i < PieCharts.length; i++) {
                 layout: {
                     padding: 50,
                 },
+                legend: {
+                    display: false,
+                },
                 responsive: true,
 
                 plugins: {
-                    legend: {
-                        display: false,
-                    },
                     tooltip: {
                         enabled: true,
                         callbacks: {
@@ -59,7 +58,6 @@ for (let i = 0; i < PieCharts.length; i++) {
                     },
                     legend: {
                         display: false,
-                        position: 'bottom',
                     },
                 },
             },
@@ -82,7 +80,7 @@ for (let i = 0; i < PieCharts.length; i++) {
   <span style="display: inline-block; padding-left: 15px; vertical-align: middle;">${label}</span>
 </div>
                 </li>
-                <div class="clear"></div>
+                <div class="clear"></div>&nbsp;
             `;
                 });
             });

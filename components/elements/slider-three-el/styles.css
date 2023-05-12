@@ -152,6 +152,10 @@
     .three-button-container {
         display: none;
     }
+    .dot-three-el {
+        height: 7px;
+        width: 7px;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 959px) {
@@ -184,7 +188,7 @@
     }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 768px) {
     .numbertext-three-el {
         display: none;
     }
