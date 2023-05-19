@@ -5,6 +5,7 @@ const dotFirst = document.querySelector('.dot-1-three-el');
 const dotSecond = document.querySelector('.dot-2-three-el');
 const dotThird = document.querySelector('.dot-3-three-el');
 const buttons = document.querySelectorAll('.button-element');
+const buttonTitleTexts = document.querySelectorAll('.button-title-text');
 
 let slideIndex = 1;
 
@@ -76,15 +77,32 @@ function showSlides(n) {
     dots[slideIndex - 1].className += ' active';
 }
 
-buttons.forEach((button) => {
+buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
         buttons.forEach((button) => {
             button.classList.remove('clicked-button');
         });
-
         button.classList.add('clicked-button');
+        currentSlide(index + 1);
     });
 });
+
+buttonTitleTexts.forEach((text, index) => {
+    text.parentElement.addEventListener('click', () => {
+        buttons.forEach((button) => {
+            button.classList.remove('clicked-button');
+        });
+        buttons[index].classList.add('clicked-button');
+        currentSlide(index + 1);
+    });
+});
+
+function updateButtonStyles(activeIndex) {
+    buttons.forEach((button) => {
+        button.classList.remove('clicked-button');
+    });
+    buttons[activeIndex - 1].classList.add('clicked-button');
+}
 
 first?.addEventListener('click', (e) => {
     currentSlide(1);
@@ -100,14 +118,17 @@ third?.addEventListener('click', (e) => {
 
 dotFirst?.addEventListener('click', (e) => {
     currentSlide(1);
+    updateButtonStyles(1);
 });
 
 dotSecond?.addEventListener('click', (e) => {
     currentSlide(2);
+    updateButtonStyles(2);
 });
 
 dotThird?.addEventListener('click', (e) => {
     currentSlide(3);
+    updateButtonStyles(3);
 });
 
 slideshow?.addEventListener('touchstart', handleTouchStart, false);

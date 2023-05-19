@@ -80,7 +80,7 @@ for (let i = 0; i < PieCharts.length; i++) {
   <span style="display: inline-block; padding-left: 15px; vertical-align: middle;">${label}</span>
 </div>
                 </li>
-                <div class="clear"></div>&nbsp;
+                <div class="clear"></div>
             `;
                 });
             });

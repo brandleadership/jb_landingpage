@@ -405,7 +405,7 @@ li {
 .chart-wrapper-horizontal-bar {
     position: relative;
     height: 450px;
-    width: 900px;
+    width: 680px;
     margin: auto;
 }
 
@@ -468,7 +468,7 @@ li {
 @media only screen and (min-width: 1436px) {
     .juliusbaer-chart-pie-chart-wrapper {
         aspect-ratio: 1/1;
-        width: 50%;
+        width: 70%;
         height: 50%;
         margin-bottom: 20px;
     }
@@ -477,7 +477,7 @@ li {
 @media only screen and (max-width: 1435px) {
     .juliusbaer-chart-pie-chart-wrapper {
         aspect-ratio: 1/1;
-        width: 50%;
+        width: 70%;
         height: 50%;
         margin-bottom: 10px;
     }
@@ -492,7 +492,7 @@ li {
 @media only screen and (max-width: 1200px) {
     .juliusbaer-chart-pie-chart-wrapper {
         aspect-ratio: 1/1;
-        width: 50%;
+        width: 100%;
         height: 50%;
         margin-bottom: 10px;
     }

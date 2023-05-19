@@ -44,6 +44,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                 })),
             },
             options: {
+                barPercentage: 0.4,
                 legend: {
                     display: false,
                 },
@@ -67,15 +68,6 @@ for (let i = 0; i < BarCharts.length; i++) {
                             },
                         },
                     },
-                    datalabels: {
-                        formatter: function (value, context) {
-                            return (
-                                context.chart.data.datasets[0].data[
-                                    context.dataIndex
-                                ].x + ' % '
-                            );
-                        },
-                    },
                 },
                 indexAxis: 'y',
 
@@ -85,7 +77,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                         position: 'top',
                         ticks: {
                             display: true,
-
+                            align: 'center',
                             callback: function (value) {
                                 return value + ' %' + '  ';
                             },
@@ -100,6 +92,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                     },
                     y: {
                         ticks: {
+                            // mirror: true,
                             callback: function (value) {
                                 const arr =
                                     this.getLabelForValue(value).split(' ');
@@ -123,7 +116,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                                 return newArr;
                             },
 
-                            crossAlign: 'center',
+                            crossAlign: 'left',
                             padding: 30,
                         },
 
