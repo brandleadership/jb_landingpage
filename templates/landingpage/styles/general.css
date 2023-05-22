@@ -130,7 +130,7 @@ button {
     margin: 0 60px;
 }
 
-.custom-table-container table {
+/* .custom-table-container table {
     border-spacing: 0 !important;
     width: 100%;
     display: table;
@@ -142,7 +142,7 @@ button {
     padding: 10px;
     color: #333;
     border-collapse: collapse;
-}
+} */
 
 @media (max-width: 959px) {
     .single-link-element {
