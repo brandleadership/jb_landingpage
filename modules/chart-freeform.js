@@ -15,7 +15,7 @@ Chart.defaults.scales.category.ticks.color = '#000000';
 Chart.defaults.scales.linear.ticks.color = '#000000';
 
 // Legend Defaults
-Chart.defaults.plugins.legend.display = true;
+//Chart.defaults.plugins.legend.display = true;
 Chart.defaults.plugins.legend.position = 'bottom';
 Chart.defaults.plugins.legend.align = 'start';
 Chart.defaults.plugins.legend.labels.boxWidth = 40;

@@ -1,0 +1,27 @@
+<div data-bsi-element="horizontal-bar-chart" class="horizontal-bar-chart">
+    <section class="template-section-spacer--media-components">
+        <div class="row center-xs">
+            <div class="col-sm-12 col-xs-12">
+                <div class="display-none-desktop">
+                    {% include '../element-heading/template.twig' with {
+                        isNoElement: true
+                    } %}
+                </div>
+                <div data-bsi-element-part="juliusbaer-chart">
+                    <script type="application/json"
+                        id="data-bar"
+                        data-bsi-chart-config="">
+                        {% include './chart-config.json' %}
+                    </script>
+                </div>
+                <div class="chart-legend-wrapper-bar">
+                    <div id="chart-wrapper"
+                        class="chart-wrapper-horizontal-bar"
+                        style="background-color: #efeee5;">
+                        <canvas id="horizontal-bar-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

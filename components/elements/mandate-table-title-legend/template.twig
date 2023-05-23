@@ -1,0 +1,27 @@
+<div data-bsi-element="mandate-table">
+    <section class="template-section-spacer--media-components">
+        <div class="row center-xs">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div data-bsi-dropzone="mandate-table-title"
+                    data-bsi-dropzone-allowed-elements="element-heading"
+                    data-bsi-dropzone-max-number-of-elements="1">
+                    {% include '../element-heading/template.twig' %}
+                </div>
+            </div>
+        </div>
+        <div data-bsi-dropzone="mandate-table"
+            data-bsi-dropzone-allowed-elements="content-table"
+            data-bsi-dropzone-max-number-of-elements="1">
+            {% include '../html-table-element/template.twig' %}
+        </div>
+        <div class="row center-xs">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div data-bsi-dropzone="mandate-table-legend"
+                    data-bsi-dropzone-allowed-elements="element-legend"
+                    data-bsi-dropzone-max-number-of-elements="1">
+                    {% include '../element-legend/template.twig' %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,28 @@
+<div data-bsi-element="pie-chart" class="pie-chart">
+    <section class="template-section-spacer--media-components">
+        <div class="row center-xs">
+            <div class="col-sm-12 col-xs-12">
+                <div class="display-none-desktop">
+                    {% include '../element-heading/template.twig' with {
+                        isNoElement: true
+                    } %}
+                </div>
+                <div data-bsi-element-part="juliusbaer-chart">
+                    <script type="application/json"
+                        id="data-pie"
+                        data-bsi-chart-config="">
+                        {% include './chart-config.json' %}
+                    </script>
+                </div>
+                <div class="chart-legend-wrapper"
+                    style="background-color: #efeee5;">
+                    <div id="chart-wrapper"
+                        class="juliusbaer-chart-pie-chart-wrapper">
+                        <canvas id="pie-chart"></canvas>
+                    </div>
+                    <div id="legend"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

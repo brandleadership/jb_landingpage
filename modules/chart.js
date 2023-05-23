@@ -11,3 +11,9 @@ export const freeformCharts =
 
 export const indexedCharts =
     mainContainer.getElementsByClassName('chart-indexed');
+
+export const BarCharts = mainContainer.getElementsByClassName(
+    'horizontal-bar-chart'
+);
+
+export const PieCharts = mainContainer.getElementsByClassName('pie-chart');

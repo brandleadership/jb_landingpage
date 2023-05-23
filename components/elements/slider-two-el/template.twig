@@ -1,0 +1,35 @@
+<div data-bsi-element="slider-two-el">
+    <div class="slideshow-container slider">
+        <div class="mySlides fade show">
+            <div class="numbertext">
+                1 / 2
+            </div>
+            <div data-bsi-dropzone="slide-1"
+                data-bsi-dropzone-allowed-elements="chart chart-indexed image-headline-legend mandate-table">
+                {% block slide_1 %}
+
+                {% endblock %}
+            </div>
+        </div>
+
+        <div class="mySlides fade show">
+            <div class="numbertext">
+                2 / 2
+            </div>
+            <div data-bsi-dropzone="slide-2"
+                data-bsi-dropzone-allowed-elements="chart chart-indexed image-headline-legend mandate-table">
+                {% block slide_2 %}
+
+                {% endblock %}
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+        </div>
+        <div style="text-align: center;" class="dots-box">
+            <span class="dot dot-1"></span>
+            <span class="dot dot-2"></span>
+        </div>
+    </div>
+</div>

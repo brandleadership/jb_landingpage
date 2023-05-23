@@ -1,0 +1,220 @@
+/* Slideshow container */
+.slideshow-container-three-el {
+    display: flex;
+    flex-direction: row;
+    max-width: 83.33333%;
+    margin: auto;
+    background-color: #efeee5;
+    position: relative;
+}
+
+.slider-box {
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.three-button-container {
+    width: 40%;
+    padding-left: 40px;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+}
+
+.button-box:before {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background-color: #141e55;
+    left: 19px;
+}
+
+.button-element {
+    background-color: #efeee5;
+    cursor: pointer;
+    border: 3px solid #141e55;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    transition: all 0.2s ease-in-out;
+    z-index: 111;
+    margin-right: 20px;
+}
+
+.button-element:hover,
+.button-element:focus {
+    background-color: #141e55;
+    transform: scale(1.1);
+}
+.button-element p:hover,
+.button-element p:focus {
+    color: white;
+}
+
+.clicked-button {
+    background-color: #141e55;
+    transform: scale(1.1);
+}
+
+.clicked-button .button-text {
+    color: white;
+}
+
+.vertical-line-1 {
+    height: 20px;
+
+    margin-left: 25px;
+}
+
+.vertical-line-2 {
+    height: 20px;
+
+    margin-left: 25px;
+}
+
+.button-element p {
+    font-style: normal;
+    font-weight: 325;
+    font-size: 22px;
+    line-height: 39px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #141e55;
+}
+
+.button-text.module-content-gallery__content-title {
+    margin-bottom: 0;
+}
+.dots-box-three-el {
+    display: block;
+}
+
+.button-text-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-title-text {
+    cursor: pointer;
+}
+
+.button-title .button-title-text.h5 {
+    font-size: 1.3rem;
+}
+
+/* The dots/bullets/indicators */
+.dot-three-el {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dots-box-three-el {
+    position: absolute;
+    bottom: 10px;
+    right: 45%;
+}
+
+.active,
+.dot-three-el:hover {
+    background-color: #717171;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+@media (max-width: 599px) {
+    .slideshow-container-three-el {
+        max-width: 100%;
+        margin: auto;
+    }
+    .three-button-container {
+        display: none;
+    }
+    .dot-three-el {
+        height: 7px;
+        width: 7px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+    .slideshow-container-three-el {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* .button-title .button-title-text {
+        font-weight: 700;
+        font-size: 0.8rem;
+    } */
+    .button-element {
+        width: 40px;
+        height: 40px;
+    }
+    .button-element p {
+        font-size: 16px;
+    }
+    .vertical-line-1 {
+        margin-left: 15px;
+        height: 20px;
+    }
+
+    .vertical-line-2 {
+        margin-left: 15px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .numbertext-three-el {
+        display: none;
+    }
+    .dots-box-three-el {
+        display: block;
+    }
+    .three-button-container {
+        display: none;
+    }
+    .slider-box {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .slider-box {
+        width: 60%;
+    }
+
+    .three-button-container {
+        width: 40%;
+    }
+}

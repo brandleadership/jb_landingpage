@@ -17,7 +17,8 @@
         "@bsi-cx/design-build": "^1.12.1"
     },
     "dependencies": {
-        "chart.js": "^4.1.2",
+        "chart.js": "^4.2.1",
+        "chartjs-plugin-datalabels": "^2.2.0",
         "prettier": "^2.8.0",
         "prettier-plugin-twig-melody": "^0.4.6"
     },
