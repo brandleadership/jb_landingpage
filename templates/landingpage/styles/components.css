@@ -44,14 +44,6 @@
     padding: 14px;
 }
 
-.podcast-overlay {
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
-    width: 50px;
-    height: 50px;
-}
-
 @media (min-width: 600px) and (max-width: 959px) {
     .two-articles .teaser-components-article-card {
         margin-bottom: 0px;
@@ -62,16 +54,6 @@
     .teaser-components-article-card {
         margin-bottom: 0px;
     }
-}
-
-.overlay-hidden button.a-button-play,
-.podcast-overlay-visible button.a-button-play {
-    display: none;
-}
-
-.overlay-hidden img.podcast-overlay,
-.video-overlay-visible img.podcast-overlay {
-    display: none;
 }
 
 .a-button-play__icon {
@@ -85,7 +67,7 @@
     padding: 20px 0px;
 }
 
-.calltoaction-button {
+/* .calltoaction-button {
     line-height: 22px;
     background-color: #141e55;
     border: solid 10px #141e55;
@@ -104,8 +86,8 @@
     border-radius: 5px;
     box-shadow: 0px;
     margin-bottom: 40px;
-}
-.calltoaction-button-two {
+} */
+/* .calltoaction-button-two {
     line-height: 22px;
     color: #141e55;
     padding: 10px 0 10px 15px;
@@ -155,7 +137,7 @@
 
 .calltoaction-button-two:hover::before {
     width: 100%;
-}
+} */
 
 .cta-button-two-container {
     width: 100%;
@@ -230,19 +212,20 @@
         display: block;
     }
 }
+
 .grey-bg {
     background-color: #dfddcb;
     display: grid;
 }
 
-.image-block__image {
+/* .image-block__image {
     width: 120px;
     height: 120px;
     margin: auto;
     display: block;
     margin-top: -60px;
     margin-bottom: 40px;
-}
+} */
 
 .h4 {
     margin-bottom: 40px;
@@ -330,15 +313,6 @@
     overflow-x: auto;
     white-space: nowrap;
 }
-.title-lvl-one {
-    margin: 15px 0;
-}
-.title-lvl-two {
-    margin: 15px 0;
-}
-.title-lvl-three {
-    margin: 15px 0;
-}
 
 /* Otherwise margin not respected, don't know why */
 .title-lvl-three-container {
@@ -349,63 +323,15 @@
     text-decoration: none;
     color: inherit;
 }
-.podcast-audio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin: 15px 0;
-}
-
-#audio-element {
-    margin-bottom: 15px;
-}
-
-#podcast-audio-container,
-#podcast-audio {
-    width: 100%;
-}
 
 li {
     list-style-type: none;
-}
-#legend {
-    padding-left: 30px;
-    padding-bottom: 30px;
-}
-
-.label {
-    margin-left: 15px;
-    color: #000000;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-.legendValue {
-    margin-bottom: 5px;
-    white-space: nowrap; /* Prevent line breaks */
-}
-
-.clear {
-    clear: both;
-}
-
-.display-none-desktop {
-    display: none;
 }
 
 .chart-wrapper {
     position: relative;
     height: 500px;
     width: 900px;
-    margin: auto;
-}
-
-.chart-wrapper-horizontal-bar {
-    position: relative;
-    height: 450px;
-    width: 680px;
     margin: auto;
 }
 
@@ -450,37 +376,14 @@ li {
         height: 300px;
     }
 
-    .chart-wrapper-horizontal-bar {
+    /* .chart-wrapper-horizontal-bar {
         aspect-ratio: 1/1;
         width: 100%;
         height: 180px;
-    }
+    } */
 }
 
-.juliusbaer-chart-pie-chart-wrapper {
-    position: relative;
-    height: 450px;
-    width: 450px;
-    margin: auto;
-    background-color: #efeee5;
-}
-
-@media only screen and (min-width: 1436px) {
-    .juliusbaer-chart-pie-chart-wrapper {
-        aspect-ratio: 1/1;
-        width: 70%;
-        height: 50%;
-        margin-bottom: 20px;
-    }
-}
-
-@media only screen and (max-width: 1435px) {
-    .juliusbaer-chart-pie-chart-wrapper {
-        aspect-ratio: 1/1;
-        width: 70%;
-        height: 50%;
-        margin-bottom: 10px;
-    }
+/* @media only screen and (max-width: 1435px) {
     .chart-wrapper-horizontal-bar {
         aspect-ratio: 2/1;
         width: 100%;
@@ -490,16 +393,6 @@ li {
 }
 
 @media only screen and (max-width: 1200px) {
-    .juliusbaer-chart-pie-chart-wrapper {
-        aspect-ratio: 1/1;
-        width: 100%;
-        height: 50%;
-        margin-bottom: 10px;
-    }
-
-    /* .display-none-desktop {
-        display: block;
-    } */
     .chart-wrapper-horizontal-bar {
         aspect-ratio: 2/1;
         width: 100%;
@@ -509,24 +402,16 @@ li {
 }
 
 @media only screen and (max-width: 600px) {
-    .juliusbaer-chart-pie-chart-wrapper {
-        aspect-ratio: 1/1;
-        width: 100%;
-        height: 55%;
-    }
-    #legend {
-        padding-left: 15px;
-        padding-bottom: 15px;
-    }
     .chart-wrapper-horizontal-bar {
         aspect-ratio: 1/1;
         width: 100%;
         height: 180px;
     }
+
 }
 
 @media only screen and (max-width: 900px) {
     .display-none-desktop {
         display: block;
     }
-}
+} */

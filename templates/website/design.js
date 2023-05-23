@@ -95,7 +95,14 @@ module.exports = cx.design
                 require('../../components/elements/chart-freeform'),
                 require('../../components/elements/chart-indexed'),
                 require('../../components/elements/risk-rating-website'),
-                require('../../components/elements/rational-text')
+                require('../../components/elements/rational-text'),
+                require('../../components/elements/slider-two-el'),
+                require('../../components/elements/mandate-table-title-legend'),
+                require('../../components/elements/html-table-element'),
+                require('../../components/elements/rational-text'),
+                require('../../components/elements/horizontal-bar-chart'),
+                require('../../components/elements/chart-pie'),
+                require('../../components/elements/slider-three-el')
             ),
         cx.contentElementGroup
             .withGroupId('navigation')
