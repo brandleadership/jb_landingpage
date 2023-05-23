@@ -497,9 +497,9 @@ li {
         margin-bottom: 10px;
     }
 
-    .display-none-desktop {
+    /* .display-none-desktop {
         display: block;
-    }
+    } */
     .chart-wrapper-horizontal-bar {
         aspect-ratio: 2/1;
         width: 100%;
@@ -522,5 +522,11 @@ li {
         aspect-ratio: 1/1;
         width: 100%;
         height: 180px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .display-none-desktop {
+        display: block;
     }
 }
