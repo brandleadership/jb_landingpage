@@ -3,6 +3,12 @@
     <article class="module-hero-article-page module-hero-article-page--push-left template-section-spacer--hero-article">
         <header>
             {% block header1 %}
+                <div data-bsi-dropzone="header-navigation-line"
+                    data-bsi-dropzone-allowed-elements="header-navigation-line"
+                    data-bsi-dropzone-max-number-of-elements="1"
+                    class="row center-xs">
+                    {# {% include '../navigation-line/template.twig' %} #}
+                </div>
                 <div data-bsi-dropzone="header1"
                     data-bsi-dropzone-allowed-elements="header-h1"
                     data-bsi-dropzone-max-number-of-elements="1"
