@@ -53,6 +53,12 @@ const maxHeight = Array.from(document.getElementsByClassName('mySlides')).sort(
 )[document.getElementsByClassName('mySlides').length - 1];
 
 maxHeight.classList.add('main-slide');
+let slides = document.getElementsByClassName('mySlides');
+for (let i = 0; i < slides.length; i++) {
+    slides[i].style.position = 'absolute';
+}
+
+maxHeight.style.position = 'relative';
 
 function showSlides(n) {
     let i;
@@ -77,7 +83,6 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
     slides[slideIndex - 1].style.opacity = '1';
-
     slides[slideIndex - 1].classList.add('show');
     dots[slideIndex - 1].className += ' active';
 }
