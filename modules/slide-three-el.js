@@ -52,6 +52,16 @@ function currentSlide(n) {
     showSlides((slideIndex = n));
 }
 
+const maxHeight = Array.from(
+    document.getElementsByClassName('slides-three-el')
+).sort((a, b) => a.scrollHeight - b.scrollHeight)[
+    document.getElementsByClassName('slides-three-el').length - 1
+];
+slideshow.setAttribute(
+    'style',
+    `height:${maxHeight.getBoundingClientRect().height}px`
+);
+
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName('slides-three-el');
@@ -66,13 +76,15 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+        slides[i].style.visibility = 'hidden';
+        slides[i].style.position = 'absolute';
         slides[i].classList.remove('show');
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
-    slides[slideIndex - 1].style.display = 'block';
+    slides[slideIndex - 1].style.visibility = 'visible';
+    slides[slideIndex - 1].style.position = 'relative';
     slides[slideIndex - 1].classList.add('show');
     dots[slideIndex - 1].className += ' active';
 }

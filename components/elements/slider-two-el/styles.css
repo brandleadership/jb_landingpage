@@ -83,14 +83,14 @@
     }
 } */
 
-.fade {
+/* .fade {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 .fade.show {
     opacity: 1;
-}
+} */
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -135,4 +135,16 @@
         height: 7px;
         width: 7px;
     }
+}
+
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.mySlides.main-slide {
+    position: relative;
 }

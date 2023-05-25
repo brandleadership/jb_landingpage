@@ -48,9 +48,16 @@ function currentSlide(n) {
     showSlides((slideIndex = n));
 }
 
+const maxHeight = Array.from(document.getElementsByClassName('mySlides')).sort(
+    (a, b) => a.scrollHeight - b.scrollHeight
+)[document.getElementsByClassName('mySlides').length - 1];
+
+maxHeight.classList.add('main-slide');
+
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName('mySlides');
+
     let dots = document.getElementsByClassName('dot');
     if (!slides || !slideshow) {
         return;
@@ -62,13 +69,15 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+        slides[i].style.opacity = '0';
+
         slides[i].classList.remove('show');
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
-    slides[slideIndex - 1].style.display = 'block';
+    slides[slideIndex - 1].style.opacity = '1';
+
     slides[slideIndex - 1].classList.add('show');
     dots[slideIndex - 1].className += ' active';
 }
