@@ -1,16 +1,16 @@
-const first = document.querySelector('.button-first');
-const second = document.querySelector('.button-second');
-const third = document.querySelector('.button-third');
-const dotFirst = document.querySelector('.dot-1-three-el');
-const dotSecond = document.querySelector('.dot-2-three-el');
-const dotThird = document.querySelector('.dot-3-three-el');
-const buttons = document.querySelectorAll('.button-element');
-const buttonTitleTexts = document.querySelectorAll('.button-title-text');
+const first = document?.querySelector('.button-first');
+const second = document?.querySelector('.button-second');
+const third = document?.querySelector('.button-third');
+const dotFirst = document?.querySelector('.dot-1-three-el');
+const dotSecond = document?.querySelector('.dot-2-three-el');
+const dotThird = document?.querySelector('.dot-3-three-el');
+const buttons = document?.querySelectorAll('.button-element');
+const buttonTitleTexts = document?.querySelectorAll('.button-title-text');
 
 let slideIndex = 1;
 
 // Add touch event listeners
-const slideshow = document.querySelector('.slideshow-container-three-el');
+const slideshow = document?.querySelector('.slideshow-container-three-el');
 let xDown = null;
 let yDown = null;
 
@@ -53,19 +53,27 @@ function currentSlide(n) {
 }
 
 const maxHeight = Array.from(
-    document.getElementsByClassName('slides-three-el')
+    document?.getElementsByClassName('slides-three-el')
 ).sort((a, b) => a.scrollHeight - b.scrollHeight)[
-    document.getElementsByClassName('slides-three-el').length - 1
+    document?.getElementsByClassName('slides-three-el').length - 1
 ];
-slideshow.setAttribute(
-    'style',
-    `height:${maxHeight.getBoundingClientRect().height}px`
-);
+
+if (maxHeight) {
+    maxHeight.classList.add('main-slide');
+    let slides = document?.getElementsByClassName('slides-three-el');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.position = 'absolute';
+    }
+
+    maxHeight.style.position = 'relative';
+    slideshow.height = maxHeight;
+}
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName('slides-three-el');
-    let dots = document.getElementsByClassName('dot-three-el');
+    let slides = document?.getElementsByClassName('slides-three-el');
+    let dots = document?.getElementsByClassName('dot-three-el');
+
     if (!slides || !slideshow) {
         return;
     }
@@ -76,21 +84,19 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.visibility = 'hidden';
-        slides[i].style.position = 'absolute';
+        slides[i].style.opacity = '0';
         slides[i].classList.remove('show');
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
-    slides[slideIndex - 1].style.visibility = 'visible';
-    slides[slideIndex - 1].style.position = 'relative';
+    slides[slideIndex - 1].style.opacity = '1';
     slides[slideIndex - 1].classList.add('show');
     dots[slideIndex - 1].className += ' active';
 }
 
 buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
+    button?.addEventListener('click', () => {
         buttons.forEach((button) => {
             button.classList.remove('clicked-button');
         });
@@ -100,7 +106,7 @@ buttons.forEach((button, index) => {
 });
 
 buttonTitleTexts.forEach((text, index) => {
-    text.parentElement.addEventListener('click', () => {
+    text.parentElement?.addEventListener('click', () => {
         buttons.forEach((button) => {
             button.classList.remove('clicked-button');
         });

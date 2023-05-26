@@ -1,8 +1,10 @@
 /* important added because bsi elements have position:relative; would overwrite */
 .sticky {
+    width: 230px;
     position: sticky;
     bottom: 0;
-    padding: 50px;
+    padding: 0 50px;
+    left: calc(100% - 250px);
 }
 
 .sticky-button {
