@@ -141,14 +141,14 @@
     background-color: #717171;
 }
 
-.fade {
+/* .fade {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 .fade.show {
     opacity: 1;
-}
+} */
 
 @media (max-width: 599px) {
     .slideshow-container-three-el {

@@ -6,7 +6,7 @@
 .label {
     margin-left: 15px;
     color: #000000;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 700;
 }
 
@@ -25,7 +25,6 @@
 
 .juliusbaer-chart-pie-chart-wrapper {
     position: relative;
-
     width: 450px;
     margin: auto;
     background-color: #efeee5;
