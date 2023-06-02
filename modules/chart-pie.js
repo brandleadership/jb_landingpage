@@ -35,7 +35,11 @@ for (let i = 0; i < PieCharts.length; i++) {
 
             options: {
                 layout: {
-                    padding: 50,
+                    padding: {
+                        bottom: 40,
+                        left: 0,
+                        right: 0,
+                    },
                 },
                 legend: {
                     display: false,
