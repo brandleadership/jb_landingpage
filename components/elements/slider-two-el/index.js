@@ -13,7 +13,12 @@ module.exports = cx.contentElement
                 require('../chart'),
                 require('../image-headline-legend'),
                 require('../chart-indexed'),
-                require('../mandate-table-title-legend')
+                require('../mandate-table-title-legend'),
+                require('../horizontal-bar-chart'),
+                require('../chart-pie'),
+                require('../table'),
+                 require('../table-advanced'),
+                   require('../bodytext'),
             ),
         cx.dropzone
             .withDropzone('slide-2')
@@ -21,6 +26,11 @@ module.exports = cx.contentElement
                 require('../image-headline-legend'),
                 require('../chart'),
                 require('../chart-indexed'),
-                require('../mandate-table-title-legend')
+                require('../mandate-table-title-legend'),
+                require('../horizontal-bar-chart'),
+                require('../chart-pie'),
+                require('../table'),
+                 require('../table-advanced'),
+                   require('../bodytext'),
             )
     );

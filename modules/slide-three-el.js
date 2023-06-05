@@ -43,6 +43,7 @@ function handleTouchMove(evt) {
 }
 
 showSlides(slideIndex);
+maxHeightCalculation();
 
 function plusSlides(n) {
     showSlides((slideIndex += n));
@@ -52,22 +53,51 @@ function currentSlide(n) {
     showSlides((slideIndex = n));
 }
 
-const maxHeight = Array.from(
-    document?.getElementsByClassName('slides-three-el')
-).sort((a, b) => a.scrollHeight - b.scrollHeight)[
-    document?.getElementsByClassName('slides-three-el').length - 1
-];
+// function maxWidthCalculation () {
+// const maxHeight = Array.from(
+//     document?.getElementsByClassName('slides-three-el')
+// ).sort((a, b) => {
 
-if (maxHeight) {
+//     return a.offsetHeight - b.offsetHeight })[
+//     document?.getElementsByClassName('slides-three-el').length - 1
+// ];
+
+// if (maxHeight) {
+//     maxHeight.classList.add('main-slide');
+//     let slides = document?.getElementsByClassName('slides-three-el');
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.position = 'absolute';
+//     }
+
+//     maxHeight.style.position = 'relative';
+//     slideshow.height = maxHeight;
+// }
+// console.log(maxHeight)
+// }
+
+function maxHeightCalculation() {
+    const slides = document?.getElementsByClassName('slides-three-el');
+    if (!slides || slides.length === 0) {
+        return;
+    }
+
+    const slidesArray = Array.from(slides);
+    slidesArray.sort((a, b) => b.offsetHeight - a.offsetHeight);
+    const maxHeight = slidesArray[0];
     maxHeight.classList.add('main-slide');
-    let slides = document?.getElementsByClassName('slides-three-el');
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.position = 'absolute';
+
+    for (let i = 0; i < slidesArray.length; i++) {
+        slidesArray[i].style.position = 'absolute';
     }
 
     maxHeight.style.position = 'relative';
-    slideshow.height = maxHeight;
+    slideshow.style.height = maxHeight.offsetHeight + 'px';
 }
+
+maxHeightCalculation();
+
+window.addEventListener('resize', maxHeightCalculation);
+window.addEventListener('load', maxHeightCalculation);
 
 function showSlides(n) {
     let i;
@@ -86,11 +116,17 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.opacity = '0';
         slides[i].classList.remove('show');
+        // if (i === 0) {
+        //     slides[i].style.position = 'relative';
+        // } else {
+        //     slides[i].style.position = 'absolute';
+        // }
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
     slides[slideIndex - 1].style.opacity = '1';
+
     slides[slideIndex - 1].classList.add('show');
     dots[slideIndex - 1].className += ' active';
 }
@@ -102,6 +138,7 @@ buttons.forEach((button, index) => {
         });
         button.classList.add('clicked-button');
         currentSlide(index + 1);
+        maxHeightCalculation();
     });
 });
 

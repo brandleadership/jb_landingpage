@@ -3,10 +3,7 @@
     width: 100%;
     margin: auto;
 }
-.chart-wrapper-horizontal-bar canvas {
-    width: 100% !important;
-    height: 100% !important;
-}
+
 @media only screen and (max-width: 400px) {
     .chart-wrapper-horizontal-bar {
         width: 100%;
