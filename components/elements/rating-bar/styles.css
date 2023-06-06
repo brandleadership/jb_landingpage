@@ -1,0 +1,23 @@
+.bottom-rating-bar-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.top-box-wrapper {
+    text-align: center;
+    background-color: #141e55;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.top-box-wrapper .element-heading .h5 {
+    color: white;
+}
+
+.top-box-wrapper .element-description .text-small {
+    color: white;
+    font-size: 19px;
+}

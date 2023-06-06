@@ -1,0 +1,66 @@
+<div data-bsi-element="rating-bar">
+    <section class="template-section-spacer--media-components">
+        <div class="row center-xs">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="media-image">
+                    <div class="media-image__wrap">
+                        <div class="top-box-wrapper">
+                            {% include '../element-heading/template.twig' with {
+                                isNoElement: true,
+                                legend: ' How satisfied are you with Julius Baer overall?'
+                            } %}
+                            {% include '../element-description/template.twig' with {
+                                isNoElement: true,
+                                legend: '   Please select an option'
+                            } %}
+                        </div>
+                        <div class="bottom-rating-bar-box-wrapper">
+                            <!-- First Cell -->
+                            <div class="rating-bar-element"
+                                data-bsi-dropzone="rating-container">
+                                {% include '../rating-element/template.twig' with {
+                                    text: 'Extremely satisfied'
+                                } %}
+                            </div>
+                            <!-- Second Cell -->
+                            <div class="rating-bar-element"
+                                data-bsi-dropzone="rating-container-2">
+                                {% include '../rating-element/template.twig' with {
+                                    text: 'Very satisfied'
+                                } %}
+                            </div>
+                            <!-- Third Cell -->
+                            <div class="rating-bar-element"
+                                data-bsi-dropzone="rating-container-3">
+                                {% include '../rating-element/template.twig' with {
+                                    text: 'Satisfied'
+                                } %}
+                            </div>
+                            <!-- Fourth Cell -->
+                            <div class="rating-bar-element"
+                                data-bsi-dropzone="rating-container-4">
+                                {% include '../rating-element/template.twig' with {
+                                    text: 'Partly dissatisfied'
+                                } %}
+                            </div>
+                            <!-- Fifth Cell -->
+                            <div class="rating-bar-element"
+                                data-bsi-dropzone="rating-container-5">
+                                {% include '../rating-element/template.twig' with {
+                                    text: 'Dissatisfied'
+                                } %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div align="center" style="border-radius: 5px; background-color: #141e55;">
+    <a href="button_link"
+        target="_blank"
+        style="font-size: 14px; line-height:22px; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #ffffff; font-weight: bold; text-decoration: none;border-radius: 5px; padding: 12px 18px; border: 1px solid #ffffff; display: inline-block;">
+        button_text
+    </a>
+</div>

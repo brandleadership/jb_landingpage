@@ -83,7 +83,9 @@ module.exports = cx.design
                 require('../../components/elements/rational-text'),
                 require('../../components/elements/horizontal-bar-chart'),
                 require('../../components/elements/chart-pie'),
-                require('../../components/elements/slider-three-el')
+                require('../../components/elements/slider-three-el'),
+                require('../../components/elements/rating-bar'),
+                require('../../components/elements/rating-element')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')
