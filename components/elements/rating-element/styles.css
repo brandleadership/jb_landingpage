@@ -30,6 +30,16 @@
     margin-top: 20px;
     inline-size: 150px;
     overflow-wrap: break-word;
+    color: #141e55;
+}
+
+.rating-bar-checkbox-link-bottom a {
+    color: #141e55;
+    text-decoration: none;
+}
+
+.rating-bar-checkbox-link-bottom a:active {
+    color: #141e55;
 }
 
 .rating-bar-link-bottom {
@@ -38,4 +48,9 @@
     font-size: 19px;
     line-height: 22px;
     margin: 10px 0 0 0;
+}
+
+.rating-bar-link-bottom > a {
+    color: #141e55;
+    text-decoration: none;
 }
