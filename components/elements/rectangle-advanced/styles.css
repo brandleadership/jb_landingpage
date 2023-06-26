@@ -9,7 +9,7 @@
 }
 
 .rectangle-advanced-dark .component-content-info-box {
-    background-color: #141e55;
+    background-color: var(--royalBlue);
 }
 
 .rectangle-advanced-stone .component-content-info-box {

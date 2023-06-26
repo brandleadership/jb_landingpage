@@ -49,18 +49,6 @@ function currentSlide(n) {
     showSlides((slideIndex = n));
 }
 
-// const maxHeight = Array.from(document?.getElementsByClassName('mySlides')).sort(
-//     (a, b) => a.scrollHeight - b.scrollHeight
-// )[document?.getElementsByClassName('mySlides').length - 1];
-
-// maxHeight?.classList.add('main-slide');
-// let slides = document?.getElementsByClassName('mySlides');
-// for (let i = 0; i < slides.length; i++) {
-//     slides[i].style.position = 'absolute';
-// }
-
-// maxHeight.style.position = 'relative';
-
 const maxHeight = Array.from(document?.getElementsByClassName('mySlides')).sort(
     (a, b) => a.scrollHeight - b.scrollHeight
 )[document?.getElementsByClassName('mySlides').length - 1];

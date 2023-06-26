@@ -1,6 +1,6 @@
 .label {
     margin-left: 15px;
-    color: #000000;
+    color: var(--black);
     font-size: 0.8rem;
     font-weight: 700;
 }

@@ -17,8 +17,8 @@ module.exports = cx.contentElement
                 require('../horizontal-bar-chart'),
                 require('../chart-pie'),
                 require('../table'),
-                 require('../table-advanced'),
-                   require('../bodytext'),
+                require('../table-advanced'),
+                require('../bodytext')
             ),
         cx.dropzone
             .withDropzone('slide-2')
@@ -30,7 +30,7 @@ module.exports = cx.contentElement
                 require('../horizontal-bar-chart'),
                 require('../chart-pie'),
                 require('../table'),
-                 require('../table-advanced'),
-                   require('../bodytext'),
+                require('../table-advanced'),
+                require('../bodytext')
             )
     );

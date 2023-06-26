@@ -3,11 +3,11 @@
 }
 
 .html-table-wrapper {
-    background-color: #141e55;
+    background-color: var(--royalBlue);
     padding: 20px;
 }
 .html-table-wrapper p {
-    color: #ffffff;
+    color: var(--white);
     font-weight: 300;
     font-style: normal;
     font-size: 1rem;
@@ -24,7 +24,7 @@
 }
 
 .text-container.border {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--white);
 }
 
 .text-container .label-text {

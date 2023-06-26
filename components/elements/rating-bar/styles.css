@@ -1,3 +1,5 @@
+/* // $royalBlue: bsiProperty('royalBlue'); */
+
 .bottom-rating-bar-box-wrapper {
     display: flex;
     flex-direction: row;
@@ -8,16 +10,17 @@
 
 .top-box-wrapper {
     text-align: center;
-    background-color: #141e55;
+    /* //   background-color: $royalBlue; */
+    background-color: var(--royalBlue);
     padding: 20px;
     margin-bottom: 40px;
 }
 
 .top-box-wrapper .element-heading .h5 {
-    color: white;
+    color: var(--white);
 }
 
 .top-box-wrapper .element-description .text-small {
-    color: white;
+    color: var(--white);
     font-size: 19px;
 }

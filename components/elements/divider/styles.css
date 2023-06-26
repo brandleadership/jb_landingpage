@@ -14,7 +14,7 @@
     line-height: 1rem;
     letter-spacing: 2px;
     letter-spacing: 0.125rem;
-    color: #141e55;
+    color: var(--royalBlue);
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -30,7 +30,7 @@
     transition: top 0.3s ease-in-out 0s;
 }
 .component-special-article-back-to-top__icon svg {
-    fill: #141e55;
+    fill: var(--royalBlue);
 }
 .component-special-article-back-to-top:hover
     .component-special-article-back-to-top__icon {

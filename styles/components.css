@@ -161,7 +161,7 @@
     font-weight: 700;
     font-size: 1.0625rem;
     line-height: 1.875rem;
-    color: #141e55;
+    color: var(--royalBlue);
 }
 .element-legend-not-indented {
     padding: 0;
@@ -182,12 +182,12 @@
 }
 
 .highlightbox-dark .component-content-info-box {
-    background-color: #141e55;
+    background-color: var(--royalBlue);
 }
 
 .highlightbox-dark .component-content-info-box__title,
 .highlightbox-dark .component-content-rich-text p {
-    color: white;
+    color: var(--white);
 }
 
 .component-content-info-box h4 {
@@ -244,8 +244,8 @@
 }
 
 .sticky-button {
-    background-color: #141e55;
-    color: white;
+    background-color: var(--royalBlue);
+    color: var(--white);
     width: 130px;
     height: 130px;
     display: flex;
@@ -259,7 +259,7 @@
 }
 
 .sticky-button p {
-    color: white;
+    color: var(--white);
 }
 
 @media only screen and (max-width: 600px) {

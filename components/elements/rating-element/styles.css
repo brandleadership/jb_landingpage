@@ -1,9 +1,9 @@
 .rating-bar-checkbox {
-    background-color: #ffffff;
+    background-color: var(--white);
     width: 25px;
     height: 25px;
     padding: 0;
-    border: 1px solid #141e55;
+    border: 1px solid var(--royalBlue);
     border-radius: 5px;
     text-align: center;
 }
@@ -25,32 +25,32 @@
     display: inline-block;
 }
 .rating-bar-checkbox-link-bottom {
-    background: #ffffff;
+    background: var(--white);
     padding: 5px;
     margin-top: 20px;
     inline-size: 150px;
     overflow-wrap: break-word;
-    color: #141e55;
+    color: var(--royalBlue);
 }
 
 .rating-bar-checkbox-link-bottom a {
-    color: #141e55;
+    color: var(--royalBlue);
     text-decoration: none;
 }
 
 .rating-bar-checkbox-link-bottom a:active {
-    color: #141e55;
+    color: var(--royalBlue);
 }
 
 .rating-bar-link-bottom {
     text-decoration: none;
-    color: #141e55;
+    color: var(--royalBlue);
     font-size: 19px;
     line-height: 22px;
     margin: 10px 0 0 0;
 }
 
 .rating-bar-link-bottom > a {
-    color: #141e55;
+    color: var(--royalBlue);
     text-decoration: none;
 }

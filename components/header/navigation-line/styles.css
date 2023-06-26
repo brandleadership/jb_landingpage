@@ -12,6 +12,8 @@
     display: inline-block;
 }
 
+/* Styles are commented as in the future they can be used to make dots absolute and to style element in different way, do not delete at the moment */
+
 /* .navigation-line-text .text-nav-line {
     color: rgb(20, 30, 85);
     text-transform: uppercase;
