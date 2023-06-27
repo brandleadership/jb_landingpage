@@ -10,5 +10,5 @@
     font-weight: 700;
     font-size: 1.0625rem;
     line-height: 1.875rem;
-    color: #141e55;
+    color: var(--royalBlue);
 }

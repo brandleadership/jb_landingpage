@@ -1,12 +1,13 @@
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-const dot1 = document.querySelector('.dot-1');
-const dot2 = document.querySelector('.dot-2');
+const slideshow = document?.querySelector('.slideshow-container');
+const prev = document?.querySelector('.prev');
+const next = document?.querySelector('.next');
+const dot1 = document?.querySelector('.dot-1');
+const dot2 = document?.querySelector('.dot-2');
 
 let slideIndex = 1;
 
 // Add touch event listeners
-const slideshow = document.querySelector('.slideshow-container');
+
 let xDown = null;
 let yDown = null;
 
@@ -48,10 +49,25 @@ function currentSlide(n) {
     showSlides((slideIndex = n));
 }
 
+const maxHeight = Array.from(document?.getElementsByClassName('mySlides')).sort(
+    (a, b) => a.scrollHeight - b.scrollHeight
+)[document?.getElementsByClassName('mySlides').length - 1];
+
+if (maxHeight) {
+    maxHeight.classList.add('main-slide');
+    let slides = document?.getElementsByClassName('mySlides');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.position = 'absolute';
+    }
+
+    maxHeight.style.position = 'relative';
+}
+
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName('mySlides');
-    let dots = document.getElementsByClassName('dot');
+    let slides = document?.getElementsByClassName('mySlides');
+
+    let dots = document?.getElementsByClassName('dot');
     if (!slides || !slideshow) {
         return;
     }
@@ -62,13 +78,14 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+        slides[i].style.opacity = '0';
+
         slides[i].classList.remove('show');
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
-    slides[slideIndex - 1].style.display = 'block';
+    slides[slideIndex - 1].style.opacity = '1';
     slides[slideIndex - 1].classList.add('show');
     dots[slideIndex - 1].className += ' active';
 }

@@ -1,12 +1,15 @@
 /* important added because bsi elements have position:relative; would overwrite */
 .sticky {
+    width: 230px;
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     padding: 50px;
+    left: calc(100% - 250px);
 }
 
 .sticky-button {
-    background-color: #141e55;
+    background-color: var(--royalBlue);
     color: white;
     width: 130px;
     height: 130px;
@@ -30,6 +33,7 @@
         display: flex;
         justify-content: space-evenly;
         padding: 20px;
+        width: 330px;
     }
     .sticky-button {
         margin-left: unset;

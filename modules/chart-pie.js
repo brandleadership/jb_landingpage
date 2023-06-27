@@ -35,7 +35,11 @@ for (let i = 0; i < PieCharts.length; i++) {
 
             options: {
                 layout: {
-                    padding: 50,
+                    padding: {
+                        bottom: 40,
+                        left: 0,
+                        right: 0,
+                    },
                 },
                 legend: {
                     display: false,
@@ -75,9 +79,9 @@ for (let i = 0; i < PieCharts.length; i++) {
                     return `
                 <li>
                   <div class="legendValue">
-  <span style="display: inline-block; background-color: ${backgroundColor}; width: 25px; height: 25px; vertical-align: middle;"></span>
-  <span class="percent" style="display: inline-block; margin-left: 15px; width: 40px; vertical-align: middle;">${percent}%</span>
-  <span style="display: inline-block; padding-left: 15px; vertical-align: middle;">${label}</span>
+  <span class="square" style=" background-color: ${backgroundColor};"></span>
+  <span class="percent">${percent}%</span>
+  <span class="labels">${label}</span>
 </div>
                 </li>
                 <div class="clear"></div>

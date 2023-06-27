@@ -1,6 +1,6 @@
 .calltoaction-button-two {
     line-height: 22px;
-    color: #141e55;
+    color: var(--royalBlue);
     padding: 10px 0 10px 15px;
     border: none;
     font-size: 16px;
@@ -20,7 +20,7 @@
     position: absolute;
     bottom: 0;
     content: '';
-    background-color: #141e55;
+    background-color: var(--royalBlue);
 }
 
 .calltoaction-button-two::after {

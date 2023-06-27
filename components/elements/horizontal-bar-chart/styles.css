@@ -1,40 +1,32 @@
 .chart-wrapper-horizontal-bar {
     position: relative;
-    height: 450px;
-    width: 680px;
+    width: 100%;
     margin: auto;
 }
 
 @media only screen and (max-width: 400px) {
     .chart-wrapper-horizontal-bar {
-        aspect-ratio: 1/1;
         width: 100%;
-        height: 180px;
     }
 }
 
 @media only screen and (max-width: 1435px) {
     .chart-wrapper-horizontal-bar {
-        aspect-ratio: 2/1;
         width: 100%;
-        height: 90%;
+
         margin-bottom: 10px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .chart-wrapper-horizontal-bar {
-        aspect-ratio: 2/1;
         width: 100%;
-        height: 70%;
         margin-bottom: 10px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .chart-wrapper-horizontal-bar {
-        aspect-ratio: 1/1;
         width: 100%;
-        height: 180px;
     }
 }

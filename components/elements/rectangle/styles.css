@@ -9,11 +9,11 @@
 }
 
 .highlightbox-bright .component-content-info-box {
-    background-color: white;
+    background-color: var(--white);
 }
 
 .highlightbox-dark .component-content-info-box {
-    background-color: #141e55;
+    background-color: var(--royalBlue);
 }
 
 .highlightbox-dark .component-content-info-box__title,
