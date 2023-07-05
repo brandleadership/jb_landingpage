@@ -34,4 +34,9 @@ module.exports = {
     data_privacy_policy: 'DATENSCHUTZERKLÄRUNG FÜR ELEKTRONISCHE DIENSTE',
     terms_of_use: 'NUTZUNGSBEDINGUNGEN',
     news_alert: 'NEWS ALERT',
+    form: {
+        comment: 'Kommentar',
+        title_error: 'Feld ist obligatorisch',
+        provide_required: 'Bitte füllen Sie alle Pflichtfelder aus',
+    },
 };

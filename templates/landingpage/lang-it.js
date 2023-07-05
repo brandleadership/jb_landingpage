@@ -36,4 +36,10 @@ module.exports = {
         'POLITICA SULLA PRIVACY DEI DATI PER I SERVIZI ELETTRONICI',
     terms_of_use: "CONDIZIONI D' USO",
     news_alert: 'NEWS ALERT',
+    form: {
+        comment: 'Commento',
+        title_error: 'Campo obbligatorio',
+        provide_required:
+            'Per favore, compila tutti i campi obbligatori nel modulo',
+    },
 };
