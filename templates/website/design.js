@@ -20,7 +20,8 @@ module.exports = cx.design
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),
-                require('../../components/header/header-lead')
+                require('../../components/header/header-lead'),
+                require('../../components/header/navigation-line')
             ),
         cx.contentElementGroup
             .withGroupId('footer')
@@ -95,7 +96,6 @@ module.exports = cx.design
                 require('../../components/elements/chart-freeform'),
                 require('../../components/elements/chart-indexed'),
                 require('../../components/elements/risk-rating-website'),
-                require('../../components/elements/rational-text'),
                 require('../../components/elements/slider-two-el'),
                 require('../../components/elements/mandate-table-title-legend'),
                 require('../../components/elements/html-table-element'),
