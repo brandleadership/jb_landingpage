@@ -1,0 +1,25 @@
+<div data-bsi-element="rating-bar-form" class="rating-bar-top">
+    <section class="template-section-spacer--media-components">
+        <div class="row center-xs">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="media-image">
+                    <div class="media-image__wrap">
+                        <div class="top-box-wrapper-form">
+                            {% include '../element-heading/template.twig' with {
+                                isNoElement: true,
+                                legend: ' How satisfied are you with Julius Baer overall?'
+                            } %}
+                            {% include '../element-description/template.twig' with {
+                                isNoElement: true,
+                                legend: '   Please select an option'
+                            } %}
+                        </div>
+                        <div data-bsi-dropzone="rating-bar-form-container">
+                            {% include '../form/template.twig' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

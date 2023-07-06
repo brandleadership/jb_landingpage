@@ -14,25 +14,23 @@ input[type='radio'] {
 
 .custom-radiobutton-container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
-}
-
-.custom-radiobutton-container:not(:last-child) {
     margin-bottom: 15px;
 }
 
 /* accomodate spacing for custom radiobutton in label */
 
 .custom-radiobutton-container label {
-    padding-left: 30px;
-    width: calc(100% - 30px);
+    padding-top: 30px;
     z-index: 2;
-    margin-left: -15px;
+    width: 90%;
+    margin-top: -15px;
     font-size: 19px;
     line-height: 22px;
+    text-align: center;
 }
 
 .custom-radiobutton-container label:hover {
@@ -47,14 +45,26 @@ input[type='radio'] {
 .radiobutton-set-container {
     display: flex;
     flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .custom-radiobutton-container .custom-radiobutton-frame {
-    background-color: white;
+    /* background-color: white;
     width: 25px;
     height: 25px;
-    border: 1px solid #141e55;
+    border: 1px solid #141e55; */
+    background-color: var(--white);
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: 1px solid var(--royalBlue);
+    border-radius: 5px;
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: row;

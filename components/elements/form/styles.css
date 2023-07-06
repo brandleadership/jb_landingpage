@@ -29,6 +29,7 @@ form .missing-required-field {
 .reverse-for-required > label {
     margin-top: 3px;
     padding-left: 10px;
+    display: none;
 }
 
 input[type='text']:required ~ label::after,
@@ -82,31 +83,37 @@ select:hover {
 
 .submit-buttom-container {
     position: relative;
-    display: inline-block;
+    text-align: center;
+    display: block;
     margin-bottom: 30px;
     margin-top: 50px;
 }
 
 .submit-button {
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: 900;
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 2px;
-    color: #141e55;
-    background-color: #ffffff;
-    text-transform: uppercase;
-    border: none;
-    transition: padding 0.3s ease-out 0s;
+    line-height: 22px;
+    background-color: var(--royalBlue);
+    border: solid 10px var(--royalBlue);
+    border-left: solid 20px var(--royalBlue);
+    border-right: solid 20px var(--royalBlue);
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--white);
+    /* mso-line-height-rule: exactly;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    mso-border-alt: 8px solid var(--royalBlue); */
+    border-radius: 5px;
+    margin-bottom: 40px;
 }
 
-.submit-button:hover {
+/* .submit-button:hover {
     padding-left: 36px;
     padding-right: 0;
     transition: padding 0.3s ease-out 0s;
-}
-.submit-button-left-border,
+} */
+/* .submit-button-left-border,
 .submit-button-bottom-border {
     position: absolute;
     left: 0;
@@ -127,11 +134,11 @@ select:hover {
     border-left: 1px solid #141e55;
     width: 1px;
     transition: height 0.2s ease-out 0.1s;
-}
-.submit-button:hover ~ .submit-button-left-border {
+} */
+/* .submit-button:hover ~ .submit-button-left-border {
     height: 0;
     transition: height 0.2s ease-out 0.1s;
-}
+} */
 
 input:not([type='submit']) {
     height: 40px;
@@ -219,7 +226,7 @@ label {
     padding-bottom: 8px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid rgba(20, 30, 85, 0.3);
+    border: 1px solid rgba(20, 30, 85, 0.3);
     -webkit-appearance: none;
     border-radius: 0;
     &.red-border {
@@ -334,15 +341,13 @@ input::placeholder {
     border-bottom: 1px solid #141e55;
 }
 
-.text-field input:focus::-ms-input-placeholder,
-.text-field textarea:focus::-ms-textarea-placeholder {
+.text-field input:focus::-ms-input-placeholder {
     opacity: 0;
     -ms-transition: opacity 0.3s linear 0s;
     transition: opacity 0.3s linear 0s;
 }
 
-.text-field input:focus::placeholder,
-.text-field textarea:focus::placeholder {
+.text-field input:focus::placeholder {
     opacity: 0;
     transition: opacity 0.3s linear 0s;
 }

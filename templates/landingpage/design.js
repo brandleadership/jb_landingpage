@@ -88,7 +88,8 @@ module.exports = cx.design
                 require('../../components/elements/rating-element'),
                 require('../../components/elements/form'),
                 require('../../components/elements/form-textarea'),
-                require('../../components/elements/radio-buttons')
+                require('../../components/elements/radio-buttons'),
+                require('../../components/elements/rating-bar-form')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')

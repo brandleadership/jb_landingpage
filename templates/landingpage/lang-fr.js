@@ -38,7 +38,8 @@ module.exports = {
     news_alert: 'NEWS ALERT',
     form: {
         comment: 'Commentaire',
-        title_error: 'Champ obligatoire',
+        textarea_error: 'Veuillez remplir ce champ.',
+        title_error: 'Veuillez sélectionner une option.',
         provide_required:
             'Veuillez remplir tous les champs obligatoires dans le formulaire',
     },

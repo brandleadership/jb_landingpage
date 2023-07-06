@@ -23,7 +23,7 @@
 }
 
 .text-field input:focus .text-field-label {
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.3s ease-in 0s;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .text-field textarea:focus .text-field-label {
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.3s ease-in 0s;
 }
 
@@ -64,24 +64,24 @@
     padding-bottom: 8px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid rgba(20, 30, 85, 0.3);
+    border: 1px solid rgba(20, 30, 85, 0.3);
     -webkit-appearance: none;
     border-radius: 0;
-    &.red-border {
+    /* &.red-border {
         position: relative;
-        border-bottom: 1px solid red;
+        border: 1px solid red;
     }
     &.missing-required-field ~ .error-message {
         display: block;
         color: red;
         font-size: 12px;
-    }
+    } */
 }
 
 .text-field input.red-border,
 .text-field textarea.red-border {
     position: relative;
-    border-bottom: 1px solid red;
+    border: 1px solid red;
 }
 
 .text-field input.missing-required-field ~ .error-message,

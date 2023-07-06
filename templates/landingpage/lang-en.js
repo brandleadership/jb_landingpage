@@ -37,7 +37,8 @@ module.exports = {
     news_alert: 'News alert',
     form: {
         comment: 'Comment',
-        title_error: 'Field is required',
+        textarea_error: 'Please fill out this field.',
+        title_error: 'Please select an option.',
         provide_required: 'Please, fill in all required fields in the form',
     },
 };

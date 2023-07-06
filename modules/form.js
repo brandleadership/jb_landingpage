@@ -9,7 +9,7 @@ const radioError = radioWrapper?.getElementsByClassName(
     'error-message-title'
 )[0];
 const textareaWrapper = document.querySelector('.textarea-wrapper');
-const textarea = document.querySelectorAll('textarea');
+const textarea = document.querySelector('.textarea');
 const textareaError = radioWrapper?.getElementsByClassName('error-message')[0];
 
 function verifyFields(event) {
@@ -18,7 +18,7 @@ function verifyFields(event) {
     const isRadioBTNTrueAndRequired = verifyRadioBtn();
     const isTextareaRequired = verifyTextarea();
 
-    if (isRadioBTNTrue && isTextareaRequired) {
+    if (isRadioBTNTrueAndRequired && isTextareaRequired) {
         // submissionFormsError.classList.add('isVisible');
         submissionForms?.submit();
     } else {
@@ -27,22 +27,29 @@ function verifyFields(event) {
 }
 
 function verifyRadioBtn() {
-    if (!radioBtn) {
+    if (!radioButtons) {
         return true;
     }
-    const isChecked = Array.from(radioButtons).some(
-        (radioBtn) => radioBtn.checked
+
+    const isRequired = Array.from(radioButtons).some((radioBtn) =>
+        radioBtn.hasAttribute('required')
     );
 
-    if (!isChecked) {
-        radioError?.classList.remove('isVisible');
+    if (isRequired) {
+        const isChecked = Array.from(radioButtons).some(
+            (radioBtn) => radioBtn.checked
+        );
 
-        return false;
-    } else {
-        radioError?.classList.add('isVisible');
-        // submissionFormsError.classList.remove('isVisible');
-        return true;
+        if (!isChecked) {
+            radioError?.classList.remove('isVisible');
+            return false;
+        } else {
+            radioError?.classList.add('isVisible');
+            return true;
+        }
     }
+
+    return true;
 }
 
 function verifyTextarea() {
@@ -50,9 +57,11 @@ function verifyTextarea() {
         return true;
     }
     if (textarea.required && textarea.value === '') {
+        textareaError?.classList.remove('isVisible');
         textarea.classList.add('red-border');
         return false;
     } else {
+        textareaError?.classList.add('isVisible');
         textarea.classList.remove('red-border');
         return true;
     }
