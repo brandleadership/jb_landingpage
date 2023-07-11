@@ -328,6 +328,10 @@ li {
     list-style-type: none;
 }
 
+.component-content-text .body-text li {
+    list-style-type: unset;
+}
+
 .chart-wrapper {
     position: relative;
 

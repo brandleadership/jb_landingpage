@@ -158,7 +158,7 @@ select {
 }
 
 label {
-    color: rgba(20, 30, 85, 0.7);
+    color: var(--royalBlue);
 }
 
 .text-field-label {
@@ -167,7 +167,7 @@ label {
     left: 0;
     top: -10px;
     opacity: 0;
-    color: rgba(20, 30, 85, 0.7);
+    color: var(--royalBlue);
     transition: opacity 0.3s ease-in 0s;
 }
 
@@ -177,7 +177,7 @@ label {
     left: 0;
     top: -25px;
     opacity: 0;
-    color: rgba(20, 30, 85, 0.7);
+    color: var(--royalBlue);
     transition: opacity 0.3s ease-in 0s;
 }
 
@@ -188,25 +188,6 @@ label {
 .text-field input:focus .text-field-label {
     opacity: 1;
     transition: opacity 0.3s ease-in 0s;
-}
-
-.text-field textarea {
-    font-family: VerlagSSm, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    padding-left: 13px;
-    width: 100%;
-    background: transparent;
-    border: 1px solid rgba(20, 30, 85, 0.2);
-    border-top: none;
-    color: rgba(20, 30, 85, 0.8);
-    margin-top: 25px;
-    height: 250px;
-    overflow: auto;
 }
 
 .text-field textarea:focus .text-field-label {
@@ -226,7 +207,7 @@ label {
     padding-bottom: 8px;
     width: 100%;
     border: none;
-    border: 1px solid rgba(20, 30, 85, 0.3);
+    border: 1px solid var(--royalBlue);
     -webkit-appearance: none;
     border-radius: 0;
     &.red-border {
@@ -267,6 +248,16 @@ label {
     left: 25%;
 }
 .error-message-form.isVisible {
+    display: none;
+}
+
+.error-message-textarea {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+}
+
+.error-message-textarea.isVisible {
     display: none;
 }
 
@@ -396,20 +387,6 @@ input::placeholder {
     }
 }
 
-/* // animation
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-} */
-
 .title-wrapper {
     animation-name: fadeInDown;
     animation-duration: 2s;
@@ -449,19 +426,6 @@ input::placeholder {
     color: rgba(20, 30, 85, 0.8);
     margin-top: 0;
 }
-
-/* animation
-
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-
-    50% {
-        opacity: 1;
-    }
-} */
 
 .dropdown-text {
     animation-name: zoomIn;

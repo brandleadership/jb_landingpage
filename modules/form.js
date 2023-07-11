@@ -10,7 +10,9 @@ const radioError = radioWrapper?.getElementsByClassName(
 )[0];
 const textareaWrapper = document.querySelector('.textarea-wrapper');
 const textarea = document.querySelector('.textarea');
-const textareaError = radioWrapper?.getElementsByClassName('error-message')[0];
+const textareaError = textareaWrapper?.getElementsByClassName(
+    'error-message-textarea'
+)[0];
 
 function verifyFields(event) {
     event.preventDefault();
@@ -21,6 +23,7 @@ function verifyFields(event) {
     if (isRadioBTNTrueAndRequired && isTextareaRequired) {
         // submissionFormsError.classList.add('isVisible');
         submissionForms?.submit();
+        submissionForms?.reset();
     } else {
         // submissionFormsError.classList.remove('isVisible');
     }
@@ -70,9 +73,11 @@ function verifyTextarea() {
 textarea?.addEventListener('input', (event) => {
     const target = event.target;
     if (target.value !== '') {
+        textareaError?.classList.add('isVisible');
         textarea.classList.remove('red-border');
     } else {
         textarea.classList.add('red-border');
+        textareaError?.classList.remove('isVisible');
     }
 });
 

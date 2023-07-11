@@ -101,7 +101,7 @@ button {
     font-weight: 200;
     font-style: normal;
 }
-*/ .page-template {
+ .page-template {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;

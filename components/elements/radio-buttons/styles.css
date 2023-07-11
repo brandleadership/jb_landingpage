@@ -54,10 +54,6 @@ input[type='radio'] {
     margin-right: auto;
 }
 .custom-radiobutton-container .custom-radiobutton-frame {
-    /* background-color: white;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #141e55; */
     background-color: var(--white);
     width: 25px;
     height: 25px;
@@ -98,4 +94,33 @@ input[type='radio'] {
 
 .radiobutton-container-wrapper > div > label {
     margin-bottom: 5px;
+}
+
+/* Tablet layout: 3 columns */
+@media (max-width: 1024px) {
+    .radiobutton-set-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .radiobutton-set-container .custom-radiobutton-container {
+        width: 33.33%;
+    }
+}
+
+/* Mobile layout: 2/2/1 columns */
+@media (max-width: 800px) {
+    .radiobutton-set-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .radiobutton-set-container .custom-radiobutton-container {
+        width: 50%;
+    }
+    .radiobutton-set-container .custom-radiobutton-container:nth-child(3),
+    .radiobutton-set-container .custom-radiobutton-container:nth-child(4) {
+        width: 50%;
+    }
+    .radiobutton-set-container .custom-radiobutton-container:nth-child(5) {
+        width: 100%;
+    }
 }

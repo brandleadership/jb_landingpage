@@ -28,19 +28,16 @@
 }
 
 .text-field textarea {
-    font-family: VerlagSSm, sans-serif;
-    font-weight: 300;
     font-style: normal;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.625rem;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
     padding-left: 13px;
     width: 100%;
     background: transparent;
     border: 1px solid rgba(20, 30, 85, 0.2);
     border-top: none;
-    color: rgba(20, 30, 85, 0.8);
+    color: var(--royalBlue);
     margin-top: 25px;
     height: 250px;
     overflow: auto;
@@ -53,13 +50,10 @@
 
 .text-field input,
 .text-field textarea {
-    font-family: VerlagSSm, sans-serif;
-    font-weight: 300;
     font-style: normal;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.625rem;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
     flex-basis: 100%;
     padding-bottom: 8px;
     width: 100%;
@@ -89,4 +83,8 @@
     display: block;
     color: red;
     font-size: 12px;
+}
+
+.textarea {
+    margin-bottom: 25px;
 }
