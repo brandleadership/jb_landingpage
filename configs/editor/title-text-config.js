@@ -23,4 +23,4 @@ module.exports = cx.htmlEditorConfig
     .withFontSizes(8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 21, 22, 23, 24)
     .withFontSizeUnit(FontSizeUnit.PX)
     .withFontSizeDefault(16)
-    .withEnterMode(EnterMode.P);
+    .withEnterMode(EnterMode.BR);

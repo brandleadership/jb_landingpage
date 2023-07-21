@@ -22,6 +22,8 @@
 .three-button-container {
     width: 40%;
     padding-left: 40px;
+    padding-top: 68px;
+    padding-bottom: 68px;
 }
 
 .button-box {

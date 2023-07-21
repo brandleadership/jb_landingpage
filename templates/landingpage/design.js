@@ -85,11 +85,11 @@ module.exports = cx.design
                 require('../../components/elements/chart-pie'),
                 require('../../components/elements/slider-three-el'),
                 require('../../components/elements/rating-bar'),
-                require('../../components/elements/rating-element'),
-                require('../../components/elements/form'),
-                require('../../components/elements/form-textarea'),
-                require('../../components/elements/radio-buttons'),
-                require('../../components/elements/rating-bar-form')
+                require('../../components/elements/rating-element')
+                // require('../../components/elements/form'),
+                // require('../../components/elements/form-textarea'),
+                // require('../../components/elements/radio-buttons'),
+                // require('../../components/elements/rating-bar-form')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')
