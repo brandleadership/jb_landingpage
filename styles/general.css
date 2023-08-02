@@ -101,7 +101,7 @@ button {
     font-weight: 200;
     font-style: normal;
 }
-*/ .page-template {
+.page-template {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -5491,7 +5491,7 @@ i {
 }
 .template-section-spacer--media-components {
     position: relative;
-    padding: 68px 0;
+    padding: 34px 0;
 }
 .template-section-spacer--text-below-hero {
     position: relative;
@@ -13874,6 +13874,7 @@ select[data-ss-uuid] {
 .module-content-gallery__content {
     padding: 0;
     min-height: 35px;
+    color: rgba(20, 30, 85, 0.7);
 }
 @media (min-width: 600px) and (max-width: 959px) {
     .module-content-gallery__content {
@@ -13892,7 +13893,7 @@ select[data-ss-uuid] {
 .module-content-gallery__content-caption {
     margin-bottom: 5px;
 }
-.module-content-gallery__content-text {
+.module-content-gallery__content-text.element-description {
     color: rgba(20, 30, 85, 0.7);
 }
 .module-content-gallery__control-wrapper {

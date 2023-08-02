@@ -1,0 +1,22 @@
+.bottom-rating-bar-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.rating-bar-top .top-box-wrapper-form {
+    text-align: center;
+    background-color: var(--royalBlue);
+    padding: 20px;
+}
+
+.rating-bar-top .top-box-wrapper-form .element-heading .h5 {
+    color: var(--white);
+}
+
+.rating-bar-top .top-box-wrapper-form .element-description .text-small {
+    color: var(--white);
+    font-size: 19px;
+}

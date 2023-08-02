@@ -5,7 +5,6 @@ module.exports = cx.contentElement
     .withIcon(Icon.SNIPPET)
     .withLabel('Slider Two Elements')
     .withFile(require('./template.twig'))
-
     .withDropzones(
         cx.dropzone
             .withDropzone('slide-1')

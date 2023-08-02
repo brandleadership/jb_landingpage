@@ -1,5 +1,6 @@
 .title-lvl-three {
     margin: 15px 0;
+    color: var(--royalBlue);
 }
 
 /* Otherwise margin not respected, don't know why */

@@ -6,6 +6,7 @@ module.exports = cx.contentElement
     .withLabel('Slider Three Elements')
     .withFile(require('./template.twig'))
     .withParts(
+        cx.part.plainText.withLabel('General Title'),
         cx.part.plainText.withLabel('Title 1'),
         cx.part.plainText.withLabel('Title 2'),
         cx.part.plainText.withLabel('Title 3')

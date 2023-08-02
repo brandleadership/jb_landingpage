@@ -36,4 +36,11 @@ module.exports = {
         'POLITIQUE DE CONFIDENTIALITÉ DES DONNÉES POUR LES SERVICES ÉLECTRONIQUES',
     terms_of_use: "CONDITIONS D'UTILISATION",
     news_alert: 'NEWS ALERT',
+    form: {
+        comment: 'Commentaire',
+        textarea_error: 'Veuillez remplir ce champ.',
+        title_error: 'Veuillez sélectionner une option.',
+        provide_required:
+            'Veuillez remplir tous les champs obligatoires dans le formulaire',
+    },
 };

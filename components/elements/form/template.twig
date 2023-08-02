@@ -1,0 +1,24 @@
+<div data-bsi-element="form-main">
+    <form data-bsi-element-part="form" class="submission-form" id="sample-form">
+        <div data-bsi-form-validation="">
+            <p data-bsi-form-validation-item=""></p>
+        </div>
+        <div data-bsi-dropzone="form-container">
+            {% include '../form-textarea/template.twig' %}
+            {% include '../radio-buttons/template.twig' %}
+        </div>
+        <div class="form-submit-button-container" id="error-wrapper">
+            <p class="error-message-form isVisible">
+                {{ properties.form.provide_required }}
+            </p>
+            <div class="submit-buttom-container">
+                <input data-bsi-part="form-submit"
+                    class="submit-button"
+                    type="submit"
+                    value="Senden" />
+                <div class="submit-button-bottom-border"></div>
+                <div class="submit-button-left-border"></div>
+            </div>
+        </div>
+    </form>
+</div>

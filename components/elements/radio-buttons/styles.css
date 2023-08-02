@@ -1,0 +1,126 @@
+/* highlight required radiobutton sets with required star */
+.required-radiobutton-field::after {
+    content: '*';
+    color: #141e55;
+    padding-left: 5px;
+}
+/* disable default radiobutton display */
+
+input[type='radio'] {
+    display: none;
+}
+
+/* correctly align content */
+
+.custom-radiobutton-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* accomodate spacing for custom radiobutton in label */
+
+.custom-radiobutton-container label {
+    padding-top: 30px;
+    z-index: 2;
+    width: 90%;
+    margin-top: -15px;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.custom-radiobutton-container label:hover {
+    cursor: pointer;
+}
+
+/* create custom radiobutton frame */
+#option-radio-group {
+    position: relative;
+}
+
+.radiobutton-set-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.custom-radiobutton-container .custom-radiobutton-frame {
+    background-color: var(--white);
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: 1px solid var(--royalBlue);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.custom-radiobutton-container label:hover ~ .custom-radiobutton-frame {
+    background-color: white;
+}
+
+/* create custom radiobutton checked symbol */
+
+.custom-radiobutton-frame::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #141e55;
+    background-color: #141e55;
+    display: none;
+    z-index: 1;
+}
+
+.custom-radiobutton-container input:checked ~ .custom-radiobutton-frame::after {
+    display: block;
+}
+
+.radiobutton-container-wrapper {
+    margin: 10px 0;
+}
+
+.radiobutton-container-wrapper > div > label {
+    margin-bottom: 5px;
+}
+
+/* Tablet layout: 3 columns */
+@media (max-width: 1024px) {
+    .radiobutton-set-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .radiobutton-set-container .custom-radiobutton-container {
+        width: 33.33%;
+    }
+}
+
+/* Mobile layout: 2/2/1 columns */
+@media (max-width: 800px) {
+    .radiobutton-set-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .radiobutton-set-container .custom-radiobutton-container {
+        width: 50%;
+    }
+    .radiobutton-set-container .custom-radiobutton-container:nth-child(3),
+    .radiobutton-set-container .custom-radiobutton-container:nth-child(4) {
+        width: 50%;
+    }
+    .radiobutton-set-container .custom-radiobutton-container:nth-child(5) {
+        width: 100%;
+    }
+}
