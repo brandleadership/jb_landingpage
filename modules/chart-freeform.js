@@ -1,8 +1,8 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, freeformCharts } from './chart';
 
-/* 
-/* Define Chart Default Values 
+/*
+/* Define Chart Default Values
 */
 
 // Interactions
@@ -13,6 +13,8 @@ Chart.defaults.interaction.mode = 'index';
 Chart.defaults.scale.display = true;
 Chart.defaults.scales.category.ticks.color = '#000000';
 Chart.defaults.scales.linear.ticks.color = '#000000';
+
+Chart.defaults.scale.grid.color = '#D0D2DE';
 
 // Legend Defaults
 //Chart.defaults.plugins.legend.display = true;
@@ -45,5 +47,6 @@ Chart.defaults.font.weight = 'bold';
 
         // Generate chart without pre-defined config
         new Chart(freeformCharts[i].getElementsByTagName('canvas')[0], data);
+        console.log(data);
     }
 })();
