@@ -47,6 +47,5 @@ Chart.defaults.font.weight = 'bold';
 
         // Generate chart without pre-defined config
         new Chart(freeformCharts[i].getElementsByTagName('canvas')[0], data);
-        console.log(data);
     }
 })();
