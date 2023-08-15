@@ -44,6 +44,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                 })),
             },
             options: {
+                responsive: true,
                 barPercentage: 0.4,
                 legend: {
                     display: false,
