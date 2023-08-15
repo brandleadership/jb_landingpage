@@ -70,6 +70,13 @@ function maxHeightCalculation() {
 
     maxHeight.style.position = 'relative';
     slideshow.style.height = maxHeight.offsetHeight + 'px';
+
+    const horizontalCharts = slideshow?.querySelectorAll(
+        '.chart-wrapper-horizontal-bar'
+    );
+    horizontalCharts?.forEach((item) => {
+        item.style.height = maxHeight.offsetHeight - 68 + 'px';
+    });
 }
 
 maxHeightCalculation();
