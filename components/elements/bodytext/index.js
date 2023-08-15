@@ -7,7 +7,7 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.formattedText
-            .withLabel('Bodytext')
+            .withLabel('Title Bodytext')
             .withHtmlEditorConfig(
                 require('../../../configs/editor/title-text-config')
             ),

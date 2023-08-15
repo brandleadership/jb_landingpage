@@ -5468,7 +5468,9 @@ i {
 .template-section-spacer--text-components
     + .template-section-spacer--richtext-components,
 .template-section-spacer--text-components
-    + .template-section-spacer--text-components {
+    + .template-section-spacer--text-components,
+.content-title-lvl-two + .template-section-spacer--richtext-components,
+.content-title-lvl-three + .template-section-spacer--richtext-components {
     padding-top: 0;
 }
 .template-section-spacer--richtext-components
