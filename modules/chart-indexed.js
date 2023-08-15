@@ -130,6 +130,11 @@ for (let i = 0; i < indexedCharts.length; i++) {
                         border: {
                             display: false,
                         },
+                        grid: {
+                            display: true,
+                            drawOnChartArea: true,
+                            color: '#D0D2DE',
+                        },
                         ticks: {
                             color: '#000000',
                         },

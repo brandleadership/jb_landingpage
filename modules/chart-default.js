@@ -123,6 +123,11 @@ for (let i = 0; i < defaultCharts.length; i++) {
                         ticks: {
                             color: '#000000',
                         },
+                        grid: {
+                            display: true,
+                            drawOnChartArea: true,
+                            color: '#D0D2DE',
+                        },
                     },
                 },
                 plugins: {
