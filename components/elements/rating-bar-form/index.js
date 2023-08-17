@@ -7,7 +7,11 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.plainText.withLabel('Heading'),
-        cx.part.formattedText.withLabel('Description')
+        cx.part.formattedText
+            .withLabel('Description')
+            .withHtmlEditorConfig(
+                require('../../../configs/editor/body-text-config')
+            )
     )
     .withDropzones(
         cx.dropzone
