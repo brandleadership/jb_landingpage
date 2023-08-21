@@ -1,12 +1,3 @@
-/* // Remove awkward spacing  */
-/* .ratio-21-9 .aspect-21-9::before,
-.ratio-random .aspect-21-9::before {
-    padding-bottom: 0 !important;
-} */
-
-/* enable aspect ratios that are different from 21:9 too; the class below sets a fixed with AND height, so you use the same selector and
- add "auto". Same is applied to img, so */
-/* Note that the module-hero-article-page--push-left class is applied onto the div wrapping the dropzone */
 .module-hero-article-page--push-left
     .ratio-random
     .module-hero-article-page__media-image-aspect,
@@ -66,78 +57,6 @@
 .article-container-context.content-context {
     padding: 20px 0px;
 }
-
-/* .calltoaction-button {
-    line-height: 22px;
-    background-color: #141e55;
-    border: solid 10px #141e55;
-    border-left: solid 20px #141e55;
-    border-right: solid 20px #141e55;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    color: #ffffff;
-    mso-line-height-rule: exactly;
-    display: inline-block;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    mso-border-alt: 8px solid #141e55;
-    border-radius: 5px;
-    box-shadow: 0px;
-    margin-bottom: 40px;
-} */
-/* .calltoaction-button-two {
-    line-height: 22px;
-    color: #141e55;
-    padding: 10px 0 10px 15px;
-    border: none;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    mso-line-height-rule: exactly;
-    display: inline-block;
-    margin-bottom: 40px;
-    position: relative;
-    overflow: hidden;
-    transition: padding 0.5s;
-}
-
-.calltoaction-button-two::after,
-.calltoaction-button-two::before {
-    position: absolute;
-    bottom: 0;
-    content: '';
-    background-color: #141e55;
-}
-
-.calltoaction-button-two::after {
-    left: 0;
-    height: 80%;
-    width: 1px;
-    transition: height 0.5s;
-}
-
-.calltoaction-button-two::before {
-    width: 50%;
-    height: 1px;
-    left: 0;
-    transition: width 0.5s;
-}
-
-.calltoaction-button-two:hover {
-    cursor: pointer;
-    padding-left: 30px;
-}
-
-.calltoaction-button-two:hover::after {
-    height: 0;
-}
-
-.calltoaction-button-two:hover::before {
-    width: 100%;
-} */
 
 .cta-button-two-container {
     width: 100%;
@@ -217,15 +136,6 @@
     background-color: #dfddcb;
     display: grid;
 }
-
-/* .image-block__image {
-    width: 120px;
-    height: 120px;
-    margin: auto;
-    display: block;
-    margin-top: -60px;
-    margin-bottom: 40px;
-} */
 
 .h4 {
     margin-bottom: 40px;
@@ -377,43 +287,4 @@ li {
         aspect-ratio: 1/1;
         width: 300px;
     }
-
-    /* .chart-wrapper-horizontal-bar {
-        aspect-ratio: 1/1;
-        width: 100%;
-        height: 180px;
-    } */
 }
-
-/* @media only screen and (max-width: 1435px) {
-    .chart-wrapper-horizontal-bar {
-        aspect-ratio: 2/1;
-        width: 100%;
-        height: 90%;
-        margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .chart-wrapper-horizontal-bar {
-        aspect-ratio: 2/1;
-        width: 100%;
-        height: 70%;
-        margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .chart-wrapper-horizontal-bar {
-        aspect-ratio: 1/1;
-        width: 100%;
-        height: 180px;
-    }
-
-}
-
-@media only screen and (max-width: 900px) {
-    .display-none-desktop {
-        display: block;
-    }
-} */

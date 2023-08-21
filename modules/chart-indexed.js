@@ -56,15 +56,15 @@ for (let i = 0; i < indexedCharts.length; i++) {
                 ...data.data.datasets[i],
                 ...{ backgroundColor: bgcolors[i] },
             };
-            //console.log(data.y);
+          
 
             //calculating indexed data
             let product = 1;
             data.data.datasets[i].data.map((item) => {
                 product = product * (item.y / 100 + 1);
-                //console.log(product);
+             
                 item.y = (product - 1) * 100;
-                //console.log(item.y, 68);
+              
             });
         }
 

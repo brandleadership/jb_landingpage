@@ -16,7 +16,7 @@ for (let i = 0; i < BarCharts.length; i++) {
         /* Grab data from bsi element part input */
         let JSONScript = BarCharts[i].getElementsByTagName('script')[0];
         const data = await JSON.parse(JSONScript.textContent);
-        // console.log(data, 'bar');
+     
         //Loop over datasets and add the matching color
         let datasetlength = data.data.datasets.length;
         for (let i = 0; i < datasetlength; i++) {
