@@ -8,6 +8,8 @@
     <meta charset="utf-8" />
     <meta name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+       <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;">
+       
     {# <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/components.css" />
     <link rel="stylesheet" href="./css/custom.css" /> #}
@@ -104,7 +106,7 @@
             {% endblock %}
           </div>
           <div data-bsi-dropzone="content"
-            data-bsi-dropzone-allowed-elements="chart-indexed chart chart-freeform podcast-audio articlesalt-calltoaction-two content-printsubscribe content-text content-list-element content-video-tag content-sticky-buttons content-video-html content-quote content-text-image content-text-title-image content-text-title-image-alt content-image content-cta content-downloads content-download-item content-link-block content-links-group content-highlightbox content-highlightbox2 content-spacer content-table content-table-advanced content-title-lvl-one content-title-lvl-two content-title-lvl-three articles-image articles-image1 articles-image2 articles-imagewide rectangle-advanced related-topics risk-rating"
+            data-bsi-dropzone-allowed-elements=" rating-bar-form pie-chart slider-three-el horizontal-bar-chart slider-two-el chart-indexed chart chart-freeform podcast-audio content-video articlesalt-calltoaction-two content-printsubscribe content-text content-list-element content-video-tag content-sticky-buttons content-video-html content-quote content-text-image content-text-title-image content-text-title-image-alt content-image content-cta content-downloads content-download-item content-link-block content-links-group content-highlightbox content-highlightbox2 content-spacer content-table content-table-advanced content-title-lvl-one content-title-lvl-two content-title-lvl-three articles-image articles-image1 articles-image2 articles-imagewide rectangle-advanced related-topics risk-rating"
             class="article-content-wrapper">
             {% block content %}
 

@@ -1,8 +1,8 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, freeformCharts } from './chart';
 
-/* 
-/* Define Chart Default Values 
+/*
+/* Define Chart Default Values
 */
 
 // Interactions
@@ -14,8 +14,10 @@ Chart.defaults.scale.display = true;
 Chart.defaults.scales.category.ticks.color = '#000000';
 Chart.defaults.scales.linear.ticks.color = '#000000';
 
+Chart.defaults.scale.grid.color = '#D0D2DE';
+
 // Legend Defaults
-Chart.defaults.plugins.legend.display = true;
+//Chart.defaults.plugins.legend.display = true;
 Chart.defaults.plugins.legend.position = 'bottom';
 Chart.defaults.plugins.legend.align = 'start';
 Chart.defaults.plugins.legend.labels.boxWidth = 40;

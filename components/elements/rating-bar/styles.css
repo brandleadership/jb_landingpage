@@ -1,0 +1,26 @@
+/* // $royalBlue: bsiProperty('royalBlue'); */
+
+.bottom-rating-bar-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.top-box-wrapper {
+    text-align: center;
+    /* //   background-color: $royalBlue; */
+    background-color: var(--royalBlue);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.top-box-wrapper .element-heading .h5 {
+    color: var(--white);
+}
+
+.top-box-wrapper .element-description .text-small {
+    color: var(--white);
+    font-size: 19px;
+}

@@ -19,7 +19,8 @@ module.exports = cx.design
                 require('../../components/header/header-container'),
                 require('../../components/header/header-h1'),
                 require('../../components/header/header-image'),
-                require('../../components/header/header-lead')
+                require('../../components/header/header-lead'),
+                require('../../components/header/navigation-line')
             ),
         cx.contentElementGroup
             .withGroupId('related-articles')
@@ -76,7 +77,19 @@ module.exports = cx.design
                 require('../../components/elements/chart'),
                 require('../../components/elements/chart-freeform'),
                 require('../../components/elements/chart-indexed'),
-                require('../../components/elements/rational-text')
+                require('../../components/elements/slider-two-el'),
+                require('../../components/elements/mandate-table-title-legend'),
+                require('../../components/elements/html-table-element'),
+                require('../../components/elements/rational-text'),
+                require('../../components/elements/horizontal-bar-chart'),
+                require('../../components/elements/chart-pie'),
+                require('../../components/elements/slider-three-el'),
+                // require('../../components/elements/rating-bar'),
+                // require('../../components/elements/rating-element')
+                require('../../components/elements/form'),
+                require('../../components/elements/form-textarea'),
+                require('../../components/elements/radio-buttons'),
+                require('../../components/elements/rating-bar-form')
             ),
         cx.contentElementGroup
             .withGroupId('alternative-elements')

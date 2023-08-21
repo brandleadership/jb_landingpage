@@ -1,0 +1,81 @@
+.text-field-label {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    opacity: 0;
+    color: rgba(20, 30, 85, 0.7);
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.form-dropdown .text-field-label {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    opacity: 0;
+    color: rgba(20, 30, 85, 0.7);
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.text-field {
+    position: relative;
+}
+
+.text-field input:focus .text-field-label {
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.text-field textarea {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    padding-left: 13px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(20, 30, 85, 0.2);
+    border-top: none;
+    color: var(--royalBlue);
+    margin-top: 25px;
+    height: 250px;
+    overflow: auto;
+}
+
+.text-field textarea:focus .text-field-label {
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.text-field input,
+.text-field textarea {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    flex-basis: 100%;
+    padding-bottom: 8px;
+    width: 100%;
+    border: none;
+    border: 1px solid rgba(20, 30, 85, 0.3);
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.text-field input.red-border,
+.text-field textarea[required].red-border {
+    position: relative;
+    border: 1px solid red;
+}
+
+.text-field input.missing-required-field ~ .error-message,
+.text-field textarea[required].missing-required-field ~ .error-message {
+    display: block;
+    color: red;
+    font-size: 12px;
+}
+
+.textarea {
+    margin-bottom: 25px;
+}

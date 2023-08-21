@@ -9,7 +9,7 @@
 
 .risk-rating-element {
     position: relative;
-    border: 3px solid #141e55;
+    border: 3px solid var(--royalBlue);
     border-radius: 50%;
     text-align: center;
     aspect-ratio: 1 / 1;
@@ -25,7 +25,7 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    color: #141e55;
+    color: var(--royalBlue);
 }
 
 .risk-rating__legend {
@@ -92,8 +92,8 @@
 .risk-level-5 .risk-rating__rating div:nth-child(5),
 .risk-level-6 .risk-rating__rating div:nth-child(6),
 .risk-level-7 .risk-rating__rating div:nth-child(7) {
-    border: 3px solid #141e55;
-    background-color: #141e55;
+    border: 3px solid var(--royalBlue);
+    background-color: var(--royalBlue);
     flex-grow: 0.08;
 }
 
@@ -104,7 +104,7 @@
 .risk-level-5 .risk-rating__rating div:nth-child(5) p,
 .risk-level-6 .risk-rating__rating div:nth-child(6) p,
 .risk-level-7 .risk-rating__rating div:nth-child(7) p {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .text-block {
@@ -145,7 +145,7 @@
 
 @media only screen and (max-width: 1200px) {
     .risk-rating-element {
-        border: 2px solid #141e55;
+        border: 2px solid var(--royalBlue);
     }
 
     .risk-rating-element p {
@@ -155,7 +155,7 @@
 
 @media only screen and (max-width: 600px) {
     .risk-rating-element {
-        border: 1px solid #141e55;
+        border: 1px solid var(--royalBlue);
         flex-basis: calc(100% / 8);
     }
 
@@ -183,8 +183,8 @@
     .risk-level-5 .risk-rating__rating div:nth-child(5),
     .risk-level-6 .risk-rating__rating div:nth-child(6),
     .risk-level-7 .risk-rating__rating div:nth-child(7) {
-        border: 3px solid #141e55;
-        background-color: #141e55;
+        border: 3px solid var(--royalBlue);
+        background-color: var(--royalBlue);
         flex-grow: 0.3;
     }
 }

@@ -1,0 +1,110 @@
+<div data-bsi-element="slider-three-el"
+    class="template-section-spacer--media-components">
+    <div class="row center-xs">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            {% include '../element-heading/template.twig' with {
+                isNoElement: true
+            } %}
+        </div>
+    </div>
+    <div class="slideshow-container-three-el slider">
+        <div class="three-button-container">
+            <div class="button-box">
+                <div class="button-text-box">
+                    <div class="button-element clicked-button button-first">
+                        <p class="button-text">
+                            1
+                        </p>
+                    </div>
+                    <div class="button-title">
+                        <h5 data-bsi-element-part="plain-text"
+                            class="button-title-text component-content-rich-text text">
+                            Allocation by assett class
+                        </h5>
+                    </div>
+                </div>
+                <div class="vertical-line-1"></div>
+                <div class="button-text-box">
+                    <div class="button-element button-second">
+                        <p class="button-text">
+                            2
+                        </p>
+                    </div>
+                    <div class="button-title">
+                        <h5 data-bsi-element-part="plain-text"
+                            class="button-title-text component-content-rich-text text">
+                            Equity allocation
+                        </h5>
+                    </div>
+                </div>
+                <div class="vertical-line-2"></div>
+                <div class="button-text-box">
+                    <div class="button-element button-third">
+                        <p class="button-text">
+                            3
+                        </p>
+                    </div>
+                    <div class="button-title">
+                        <h5 data-bsi-element-part="plain-text"
+                            class="button-title-text component-content-rich-text text">
+                            Income allocation
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-box">
+            <div class="slides-three-el slide-1 fade show">
+                <div data-bsi-dropzone="slide-three-el-1"
+                    data-bsi-dropzone-allowed-elements="chart image-headline-legend">
+                    {% block slide_1 %}
+
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="slides-three-el slide-2-3 fade show">
+                <div data-bsi-dropzone="slide-three-el-2"
+                    data-bsi-dropzone-allowed-elements="chart image-headline-legend">
+                    {% block slide_2 %}
+
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="slides-three-el slide-2-3 fade show">
+                <div data-bsi-dropzone="slide-three-el-3"
+                    data-bsi-dropzone-allowed-elements="chart image-headline-legend">
+                    {% block slide_3 %}
+
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;" class="dots-box-three-el">
+            <span class="dot-three-el dot-1-three-el"></span>
+            <span class="dot-three-el dot-2-three-el"></span>
+            <span class="dot-three-el dot-3-three-el"></span>
+        </div>
+    </div>
+</div>
+
+{# <div class="title-wrapper">
+                <div class="button-title">
+                    <h5 data-bsi-element-part="plain-text"
+                        class="button-title-text h5 module-content-gallery__content-title">
+                        Income allocation
+                    </h5>
+                </div>
+                <div class="button-title">
+                    <h5 data-bsi-element-part="plain-text"
+                        class="button-title-text h5 module-content-gallery__content-title">
+                        Equity allocation
+                    </h5>
+                </div>
+                <div class="button-title">
+                    <h5 data-bsi-element-part="plain-text"
+                        class="button-title-text h5 module-content-gallery__content-title">
+                        Allocation by assett class
+                    </h5>
+                </div>
+            </div> #}

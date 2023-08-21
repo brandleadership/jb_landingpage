@@ -35,4 +35,10 @@ module.exports = {
     data_privacy_policy: 'Data privacy policy',
     terms_of_use: 'Terms of use',
     news_alert: 'News alert',
+    form: {
+        comment: 'Comment',
+        textarea_error: 'Please fill out this field.',
+        title_error: 'Please select an option.',
+        provide_required: 'Please, fill in all required fields in the form',
+    },
 };

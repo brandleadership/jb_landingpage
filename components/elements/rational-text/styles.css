@@ -1,6 +1,6 @@
 .accordion {
     background-color: #efeee5;
-    color: #141e55;
+    color: var(--royalBlue);
     cursor: pointer;
     padding: 40px 80px 30px;
     width: 100%;
@@ -14,8 +14,8 @@
 }
 
 .icon-rational {
-    color: #141e55;
-    fill: #141e55;
+    color: var(--royalBlue);
+    fill: var(--royalBlue);
     width: 28px;
     height: 28px;
 }
@@ -25,7 +25,7 @@
     background-color: #efeee5;
 
     overflow: hidden;
-    color: #141e55;
+    color: var(--royalBlue);
 }
 
 .title-rational-text {

@@ -10,7 +10,7 @@ module.exports = cx.include
     .withFile(require('./footer.twig'))
     .withDropzones(
         cx.dropzone
-            .withDropzone('footer-container')
+            .withDropzone('footer-website')
             .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../../../components/footer/footer-container-website')

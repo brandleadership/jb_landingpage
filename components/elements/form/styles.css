@@ -1,0 +1,426 @@
+form .missing-required-field {
+    border-color: red;
+}
+
+#required-missing-feedback {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: red;
+    overflow: hidden;
+    height: 0;
+}
+
+#required-missing-feedback.enable {
+    height: auto;
+}
+
+.reverse-for-required {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* spacing needed due to reversing */
+.reverse-for-required > label {
+    margin-top: 3px;
+    padding-left: 10px;
+    display: none;
+}
+
+input[type='text']:required ~ label::after,
+input[type='number']:required ~ label::after,
+input[type='email']:required ~ label::after,
+input[type='tel']:required ~ label::after,
+select:required ~ label::after {
+    content: '*';
+    color: #141e55;
+    padding-left: 5px;
+}
+
+/* generally used form stylings */
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'] {
+    border-radius: 3px;
+    border-bottom: 1px solid #687374;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+/* increased padding for select to have same appearance as input fields */
+select {
+    padding: 10px 10px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+*:-moz-focusring {
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+/* // submit button styles */
+
+.submit-buttom-container {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.submit-button {
+    line-height: 22px;
+    background-color: var(--royalBlue);
+    border: solid 10px var(--royalBlue);
+    border-left: solid 20px var(--royalBlue);
+    border-right: solid 20px var(--royalBlue);
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--white);
+    /* mso-line-height-rule: exactly;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    mso-border-alt: 8px solid var(--royalBlue); */
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+/* .submit-button:hover {
+    padding-left: 36px;
+    padding-right: 0;
+    transition: padding 0.3s ease-out 0s;
+} */
+/* .submit-button-left-border,
+.submit-button-bottom-border {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.submit-button-bottom-border {
+    width: 50%;
+    border-bottom: 1px solid #141e55;
+    height: 1px;
+    transition: width 0.3s ease-out 0s;
+}
+.submit-button:hover ~ .submit-button-bottom-border {
+    width: calc(100% - 1px);
+    transition: width 0.3s ease-out 0s;
+}
+.submit-button-left-border {
+    height: 66%;
+    border-left: 1px solid #141e55;
+    width: 1px;
+    transition: height 0.2s ease-out 0.1s;
+} */
+/* .submit-button:hover ~ .submit-button-left-border {
+    height: 0;
+    transition: height 0.2s ease-out 0.1s;
+} */
+
+input:not([type='submit']) {
+    height: 40px;
+    border: 1px solid rgba(20, 30, 85, 0.3);
+}
+
+select {
+    height: 40px;
+    border: 1px solid rgba(20, 30, 85, 0.3);
+    /* &.red-border-select {
+        border: 1px solid red;
+    } */
+}
+
+.formatted-text {
+    margin: 0;
+}
+
+label {
+    color: var(--royalBlue);
+}
+
+.text-field-label {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    opacity: 0;
+    color: var(--royalBlue);
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.form-dropdown .text-field-label {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    opacity: 0;
+    color: var(--royalBlue);
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.text-field {
+    position: relative;
+}
+
+.text-field input:focus .text-field-label {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.text-field textarea:focus .text-field-label {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.text-field input {
+    font-family: VerlagSSm, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    flex-basis: 100%;
+    padding-bottom: 8px;
+    width: 100%;
+    border: none;
+    border: 1px solid var(--royalBlue);
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.text-field input.missing-required-field ~ .error-message {
+    display: block;
+    color: red;
+    font-size: 12px;
+}
+
+.error-message {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    bottom: -10px;
+    left: 0;
+}
+#error-wrapper {
+    position: relative;
+}
+
+.error-message-form {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    left: 25%;
+}
+.error-message-form.isVisible {
+    display: none;
+}
+
+textarea[required] + .error-message-textarea {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+}
+
+.error-message-textarea.isVisible,
+:not(textarea[required]) + .error-message-textarea {
+    display: none;
+}
+
+.error-message-title {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    bottom: -25px;
+}
+
+.error-message-title.isVisible {
+    display: none;
+}
+
+.error-message.isVisible {
+    display: none;
+}
+
+input[type='checkbox'].missing-required-field ~ .custom-checkbox-frame {
+    border: 1px solid red;
+}
+
+input[type='radio'].missing-required-field ~ .custom-checkbox-frame {
+    border: 1px solid red;
+}
+
+@media (-ms-high-contrast: none) {
+    .text-field input {
+        padding-bottom: 14px;
+    }
+}
+
+.text-field input::-ms-input-placeholder {
+    font-family: VerlagSSm, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    color: rgba(20, 30, 85, 0.8);
+    opacity: 1;
+    -ms-transition: opacity 0.3s linear 0s;
+    transition: opacity 0.3s linear 0s;
+}
+
+input::placeholder {
+    color: rgba(20, 30, 85, 0.8);
+}
+
+.text-field input::placeholder,
+.text-field textarea::placeholder {
+    font-family: VerlagSSm, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    color: rgba(20, 30, 85, 0.8);
+    opacity: 1;
+    transition: opacity 0.3s linear 0s;
+}
+
+.text-field input:focus,
+.text-field textarea:focus,
+.text-field select:focus {
+    outline: none;
+}
+
+.text-field input:focus {
+    border-bottom: 1px solid #141e55;
+}
+
+.text-field input:focus::-ms-input-placeholder {
+    opacity: 0;
+    -ms-transition: opacity 0.3s linear 0s;
+    transition: opacity 0.3s linear 0s;
+}
+
+.text-field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s linear 0s;
+}
+
+.text-field input:focus ~ label,
+.text-field textarea:focus ~ label,
+.text-field select:focus ~ label {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+.submission-form {
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+}
+
+/* //form title */
+
+.title-wrapper {
+    max-width: 362px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #141e55;
+    text-align: start;
+}
+
+.title-wrapper h4 {
+    font-family: VerlagSSm, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: 1px;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+@media (min-width: 700px) {
+    .title-wrapper {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
+
+.title-wrapper {
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+}
+
+/* city2+zip */
+
+.module-form-components__two-cols-sm {
+    display: flex;
+    align-items: flex-start;
+}
+
+.first-row-city {
+    width: 68%;
+    margin-right: 30px;
+}
+
+.second-row-zip {
+    width: 28%;
+}
+
+/* dropdown text */
+
+.dropdown-text {
+    text-align: left;
+    margin-bottom: 34px;
+}
+
+.dropdown-text p {
+    font-family: VerlagSSm, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    color: rgba(20, 30, 85, 0.8);
+    margin-top: 0;
+}
+
+.dropdown-text {
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+}
