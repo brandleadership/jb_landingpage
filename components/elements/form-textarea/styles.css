@@ -61,25 +61,16 @@
     border: 1px solid rgba(20, 30, 85, 0.3);
     -webkit-appearance: none;
     border-radius: 0;
-    /* &.red-border {
-        position: relative;
-        border: 1px solid red;
-    }
-    &.missing-required-field ~ .error-message {
-        display: block;
-        color: red;
-        font-size: 12px;
-    } */
 }
 
 .text-field input.red-border,
-.text-field textarea.red-border {
+.text-field textarea[required].red-border {
     position: relative;
     border: 1px solid red;
 }
 
 .text-field input.missing-required-field ~ .error-message,
-.text-field textarea.missing-required-field ~ .error-message {
+.text-field textarea[required].missing-required-field ~ .error-message {
     display: block;
     color: red;
     font-size: 12px;

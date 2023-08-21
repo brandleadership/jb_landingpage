@@ -1,3 +1,8 @@
+/* Hide Label */
+.radiobutton-container-label {
+    display: none;
+}
+
 /* highlight required radiobutton sets with required star */
 .required-radiobutton-field::after {
     content: '*';

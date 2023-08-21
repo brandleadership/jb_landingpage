@@ -108,6 +108,10 @@ select:hover {
     margin-bottom: 40px;
 }
 
+.submit-button:hover {
+    cursor: pointer;
+}
+
 /* .submit-button:hover {
     padding-left: 36px;
     padding-right: 0;
@@ -148,9 +152,9 @@ input:not([type='submit']) {
 select {
     height: 40px;
     border: 1px solid rgba(20, 30, 85, 0.3);
-    &.red-border-select {
+    /* &.red-border-select {
         border: 1px solid red;
-    }
+    } */
 }
 
 .formatted-text {
@@ -210,18 +214,6 @@ label {
     border: 1px solid var(--royalBlue);
     -webkit-appearance: none;
     border-radius: 0;
-    &.red-border {
-        position: relative;
-        border-bottom: 1px solid red;
-    }
-    /* // & ~ .error-message {
-    //     display: none;
-    // } */
-    &.missing-required-field ~ .error-message {
-        display: block;
-        color: red;
-        font-size: 12px;
-    }
 }
 
 .text-field input.missing-required-field ~ .error-message {
@@ -251,13 +243,14 @@ label {
     display: none;
 }
 
-.error-message-textarea {
+textarea[required] + .error-message-textarea {
     position: absolute;
     color: red;
     font-size: 12px;
 }
 
-.error-message-textarea.isVisible {
+.error-message-textarea.isVisible,
+:not(textarea[required]) + .error-message-textarea {
     display: none;
 }
 

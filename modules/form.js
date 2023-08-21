@@ -21,11 +21,11 @@ function verifyFields(event) {
     const isTextareaRequired = verifyTextarea();
 
     if (isRadioBTNTrueAndRequired && isTextareaRequired) {
-        // submissionFormsError.classList.add('isVisible');
+        submissionFormsError.classList.add('isVisible');
         submissionForms?.submit();
         submissionForms?.reset();
     } else {
-        // submissionFormsError.classList.remove('isVisible');
+        submissionFormsError.classList.remove('isVisible');
     }
 }
 
