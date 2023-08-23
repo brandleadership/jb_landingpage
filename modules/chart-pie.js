@@ -45,17 +45,16 @@ for (let i = 0; i < PieCharts.length; i++) {
                     display: false,
                 },
                 responsive: true,
-
                 plugins: {
                     tooltip: {
-                        enabled: true,
+                        position: 'average',
+                        yAlign: 'center',
                         callbacks: {
-                            label: function (context) {
-                                console.log(context.label);
+                            label: (context) => {
                                 return context.formattedValue + '%';
                             },
-                            title: function (context) {
-                                console.log(context.formattedValue);
+
+                            title: (context) => {
                                 return context.label;
                             },
                         },

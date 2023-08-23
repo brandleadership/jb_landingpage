@@ -2,17 +2,17 @@ import Chart from 'chart.js/auto';
 import { bgcolors, indexedCharts } from './chart';
 import { Tooltip } from 'chart.js';
 
-Tooltip.positioners.custom = function (elements) {
-    if (!elements.length) {
-        return false;
-    }
-    var offset = 10;
+// Tooltip.positioners.custom = function (elements) {
+//     if (!elements.length) {
+//         return false;
+//     }
+//     var offset = 10;
 
-    return {
-        x: elements[0].element.x,
-        y: elements[0].element.y - offset,
-    };
-};
+//     return {
+//         x: elements[0].element.x,
+//         y: elements[0].element.y - offset,
+//     };
+// };
 
 // Font Settings
 Chart.defaults.elements.line.borderWidth = 1;
@@ -32,16 +32,16 @@ Chart.defaults.plugins.tooltip.titleColor = '#141e55';
 Chart.defaults.plugins.tooltip.bodyColor = '#141e55';
 Chart.defaults.plugins.tooltip.cornerRadius = 2;
 Chart.defaults.plugins.tooltip.borderWidth = 1;
-Chart.defaults.plugins.tooltip.xAlign = 'center';
-Chart.defaults.plugins.tooltip.yAlign = 'bottom';
-Chart.defaults.plugins.tooltip.callbacks.title = function (context) {
-    let title = context[0].label || '';
-    let titleParts = title.split('-');
-    return titleParts[2] + '.' + titleParts[1] + '.' + titleParts[0];
-};
-Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
-    return context.formattedValue;
-};
+// Chart.defaults.plugins.tooltip.xAlign = 'center';
+// Chart.defaults.plugins.tooltip.yAlign = 'bottom';
+// Chart.defaults.plugins.tooltip.callbacks.title = function (context) {
+//     let title = context[0].label || '';
+//     let titleParts = title.split('-');
+//     return titleParts[2] + '.' + titleParts[1] + '.' + titleParts[0];
+// };
+// Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
+//     return context.formattedValue;
+// };
 //console.log(indexedCharts);
 for (let i = 0; i < indexedCharts.length; i++) {
     (async function () {
@@ -56,15 +56,13 @@ for (let i = 0; i < indexedCharts.length; i++) {
                 ...data.data.datasets[i],
                 ...{ backgroundColor: bgcolors[i] },
             };
-          
 
             //calculating indexed data
             let product = 1;
             data.data.datasets[i].data.map((item) => {
                 product = product * (item.y / 100 + 1);
-             
+
                 item.y = (product - 1) * 100;
-              
             });
         }
 
@@ -144,6 +142,26 @@ for (let i = 0; i < indexedCharts.length; i++) {
                     colors: {
                         enabled: false,
                     },
+                    // tooltip: {
+                    //     xAlign: 'center',
+                    //     yAlign: 'bottom',
+                    //     callbacks: {
+                    //         title: (context) => {
+                    //             let title = context[0].label || '';
+                    //             let titleParts = title.split('-');
+                    //             return (
+                    //                 titleParts[2] +
+                    //                 '.' +
+                    //                 titleParts[1] +
+                    //                 '.' +
+                    //                 titleParts[0]
+                    //             );
+                    //         },
+                    //         label: (context) => {
+                    //             return context.formattedValue;
+                    //         },
+                    //     },
+                    // },
                     legend: {
                         display: true,
                         maxWidth: 10,
@@ -164,5 +182,5 @@ for (let i = 0; i < indexedCharts.length; i++) {
                 },
             },
         });
-    })();
+    });
 }

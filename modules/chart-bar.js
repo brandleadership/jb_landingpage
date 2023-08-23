@@ -6,7 +6,6 @@ import { bgcolors, BarCharts } from './chart';
 Chart.defaults.borderColor = 'transparent';
 
 Chart.defaults.font.family = '"VerlagSSm"';
-//Chart.defaults.font.weight = 'normal';
 Chart.defaults.scales.linear.ticks.callback = function (val) {
     return ' ' + val;
 };
@@ -16,7 +15,7 @@ for (let i = 0; i < BarCharts.length; i++) {
         /* Grab data from bsi element part input */
         let JSONScript = BarCharts[i].getElementsByTagName('script')[0];
         const data = await JSON.parse(JSONScript.textContent);
-     
+
         //Loop over datasets and add the matching color
         let datasetlength = data.data.datasets.length;
         for (let i = 0; i < datasetlength; i++) {
@@ -43,7 +42,9 @@ for (let i = 0; i < BarCharts.length; i++) {
                     }),
                 })),
             },
+
             options: {
+                indexAxis: 'y',
                 responsive: true,
                 barPercentage: 0.4,
                 legend: {
@@ -59,7 +60,9 @@ for (let i = 0; i < BarCharts.length; i++) {
                         display: false,
                     },
                     tooltip: {
-                        enabled: true,
+                        position: 'average',
+                        yAlign: 'right',
+                        xAlign: 'center',
                         callbacks: {
                             label: function (context) {
                                 return context.formattedValue + '%';
@@ -70,22 +73,18 @@ for (let i = 0; i < BarCharts.length; i++) {
                         },
                     },
                 },
-                indexAxis: 'y',
-
                 scales: {
                     x: {
-                        axis: 'y',
                         position: 'top',
                         ticks: {
                             display: true,
-                            align: 'center',
+                            // align: 'center',
                             callback: function (value) {
                                 return value + ' %' + '  ';
                             },
                         },
                         grid: {
                             drawOnChartArea: true,
-
                             color: '#000000',
                         },
 
@@ -93,7 +92,6 @@ for (let i = 0; i < BarCharts.length; i++) {
                     },
                     y: {
                         ticks: {
-                            // mirror: true,
                             callback: function (value) {
                                 const arr =
                                     this.getLabelForValue(value).split(' ');

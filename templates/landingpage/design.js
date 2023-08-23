@@ -84,6 +84,7 @@ module.exports = cx.design
                 require('../../components/elements/horizontal-bar-chart'),
                 require('../../components/elements/chart-pie'),
                 require('../../components/elements/slider-three-el'),
+                require('../../components/elements/slider-transform'),
                 // require('../../components/elements/rating-bar'),
                 // require('../../components/elements/rating-element')
                 require('../../components/elements/form'),

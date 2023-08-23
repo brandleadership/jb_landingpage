@@ -32,16 +32,16 @@ Chart.defaults.plugins.tooltip.titleColor = '#141e55';
 Chart.defaults.plugins.tooltip.bodyColor = '#141e55';
 Chart.defaults.plugins.tooltip.cornerRadius = 2;
 Chart.defaults.plugins.tooltip.borderWidth = 1;
-Chart.defaults.plugins.tooltip.xAlign = 'center';
-Chart.defaults.plugins.tooltip.yAlign = 'bottom';
-Chart.defaults.plugins.tooltip.callbacks.title = function (context) {
-    let title = context[0].label || '';
-    let titleParts = title.split('-');
-    return titleParts[2] + '.' + titleParts[1] + '.' + titleParts[0];
-};
-Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
-    return context.formattedValue;
-};
+// Chart.defaults.plugins.tooltip.xAlign = 'center';
+// Chart.defaults.plugins.tooltip.yAlign = 'bottom';
+// Chart.defaults.plugins.tooltip.callbacks.title = function (context) {
+//     let title = context[0].label || '';
+//     let titleParts = title.split('-');
+//     return titleParts[2] + '.' + titleParts[1] + '.' + titleParts[0];
+// };
+// Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
+//     return context.formattedValue;
+// };
 
 for (let i = 0; i < defaultCharts.length; i++) {
     (async function () {
@@ -131,6 +131,26 @@ for (let i = 0; i < defaultCharts.length; i++) {
                     },
                 },
                 plugins: {
+                    tooltip: {
+                        xAlign: 'center',
+                        yAlign: 'bottom',
+                        callbacks: {
+                            title: (context) => {
+                                let title = context[0].label || '';
+                                let titleParts = title.split('-');
+                                return (
+                                    titleParts[2] +
+                                    '.' +
+                                    titleParts[1] +
+                                    '.' +
+                                    titleParts[0]
+                                );
+                            },
+                            label: (context) => {
+                                return context.formattedValue;
+                            },
+                        },
+                    },
                     colors: {
                         enabled: false,
                     },
