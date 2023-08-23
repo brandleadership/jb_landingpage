@@ -2,17 +2,17 @@ import Chart from 'chart.js/auto';
 import { bgcolors, indexedCharts } from './chart';
 import { Tooltip } from 'chart.js';
 
-// Tooltip.positioners.custom = function (elements) {
-//     if (!elements.length) {
-//         return false;
-//     }
-//     var offset = 10;
+Tooltip.positioners.custom = function (elements) {
+    if (!elements.length) {
+        return false;
+    }
+    var offset = 10;
 
-//     return {
-//         x: elements[0].element.x,
-//         y: elements[0].element.y - offset,
-//     };
-// };
+    return {
+        x: elements[0].element.x,
+        y: elements[0].element.y - offset,
+    };
+};
 
 // Font Settings
 Chart.defaults.elements.line.borderWidth = 1;
@@ -24,7 +24,7 @@ Chart.defaults.scales.linear.ticks.callback = function (val) {
     return ' ' + val;
 };
 Chart.defaults.clip = false;
-Chart.defaults.plugins.tooltip.position = 'custom';
+// Chart.defaults.plugins.tooltip.position = 'custom';
 
 Chart.defaults.plugins.tooltip.backgroundColor = 'rgb(255, 255, 255)';
 Chart.defaults.plugins.tooltip.borderColor = '#141e55';
@@ -139,29 +139,30 @@ for (let i = 0; i < indexedCharts.length; i++) {
                     },
                 },
                 plugins: {
+                    tooltip: {
+                        position: 'custom',
+                        xAlign: 'center',
+                        yAlign: 'bottom',
+                        callbacks: {
+                            title: (context) => {
+                                let title = context[0].label || '';
+                                let titleParts = title.split('-');
+                                return (
+                                    titleParts[2] +
+                                    '.' +
+                                    titleParts[1] +
+                                    '.' +
+                                    titleParts[0]
+                                );
+                            },
+                            label: (context) => {
+                                return context.formattedValue;
+                            },
+                        },
+                    },
                     colors: {
                         enabled: false,
                     },
-                    // tooltip: {
-                    //     xAlign: 'center',
-                    //     yAlign: 'bottom',
-                    //     callbacks: {
-                    //         title: (context) => {
-                    //             let title = context[0].label || '';
-                    //             let titleParts = title.split('-');
-                    //             return (
-                    //                 titleParts[2] +
-                    //                 '.' +
-                    //                 titleParts[1] +
-                    //                 '.' +
-                    //                 titleParts[0]
-                    //             );
-                    //         },
-                    //         label: (context) => {
-                    //             return context.formattedValue;
-                    //         },
-                    //     },
-                    // },
                     legend: {
                         display: true,
                         maxWidth: 10,
@@ -182,5 +183,5 @@ for (let i = 0; i < indexedCharts.length; i++) {
                 },
             },
         });
-    });
+    })();
 }

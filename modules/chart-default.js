@@ -24,7 +24,7 @@ Chart.defaults.scales.linear.ticks.callback = function (val) {
     return ' ' + val;
 };
 Chart.defaults.clip = false;
-Chart.defaults.plugins.tooltip.position = 'custom';
+// Chart.defaults.plugins.tooltip.position = 'custom';
 
 Chart.defaults.plugins.tooltip.backgroundColor = 'rgb(255, 255, 255)';
 Chart.defaults.plugins.tooltip.borderColor = '#141e55';
@@ -132,6 +132,7 @@ for (let i = 0; i < defaultCharts.length; i++) {
                 },
                 plugins: {
                     tooltip: {
+                        position: 'custom',
                         xAlign: 'center',
                         yAlign: 'bottom',
                         callbacks: {

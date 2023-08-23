@@ -3,7 +3,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 module.exports = cx.contentElement
     .withElementId('slider-transform')
     .withIcon(Icon.SNIPPET)
-    .withLabel('Slider Three Elements')
+    .withLabel('Slider Three Elements Transform')
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.plainText.withLabel('General Title'),
