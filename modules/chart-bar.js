@@ -1,21 +1,11 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, BarCharts } from './chart';
 
-// Font Settings
-
-Chart.defaults.borderColor = 'transparent';
-
-Chart.defaults.font.family = '"VerlagSSm"';
-Chart.defaults.scales.linear.ticks.callback = function (val) {
-    return ' ' + val;
-};
-
 for (let i = 0; i < BarCharts.length; i++) {
     (async function () {
         /* Grab data from bsi element part input */
         let JSONScript = BarCharts[i].getElementsByTagName('script')[0];
         const data = await JSON.parse(JSONScript.textContent);
-
         //Loop over datasets and add the matching color
         let datasetlength = data.data.datasets.length;
         for (let i = 0; i < datasetlength; i++) {
@@ -46,20 +36,18 @@ for (let i = 0; i < BarCharts.length; i++) {
             options: {
                 indexAxis: 'y',
                 responsive: true,
-                barPercentage: 0.4,
-                legend: {
-                    display: false,
-                },
-                layout: {
-                    padding: {
-                        right: 55,
-                    },
-                },
+                barThickness: 24,
                 plugins: {
                     legend: {
                         display: false,
                     },
                     tooltip: {
+                        backgroundColor: 'rgb(255, 255, 255)',
+                        borderColor: '#141e55',
+                        titleColor: '#141e55',
+                        bodyColor: '#141e55',
+                        cornerRadius: 2,
+                        borderWidth: 1,
                         position: 'average',
                         yAlign: 'right',
                         xAlign: 'center',
@@ -78,7 +66,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                         position: 'top',
                         ticks: {
                             display: true,
-                            // align: 'center',
+                            align: 'center',
                             callback: function (value) {
                                 return value + ' %' + '  ';
                             },
@@ -87,8 +75,6 @@ for (let i = 0; i < BarCharts.length; i++) {
                             drawOnChartArea: true,
                             color: '#000000',
                         },
-
-                        beginAtZero: true,
                     },
                     y: {
                         ticks: {

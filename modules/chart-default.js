@@ -14,34 +14,10 @@ Tooltip.positioners.custom = function (elements) {
     };
 };
 
-// Font Settings
-Chart.defaults.elements.line.borderWidth = 1;
-Chart.defaults.plugins.legend.labels.textAlign = 'left';
-Chart.defaults.plugins.legend.labels.color = '#000000';
+// // Font Settings
+
 Chart.defaults.font.family = '"VerlagSSm"';
 Chart.defaults.font.weight = 'bold';
-Chart.defaults.scales.linear.ticks.callback = function (val) {
-    return ' ' + val;
-};
-Chart.defaults.clip = false;
-// Chart.defaults.plugins.tooltip.position = 'custom';
-
-Chart.defaults.plugins.tooltip.backgroundColor = 'rgb(255, 255, 255)';
-Chart.defaults.plugins.tooltip.borderColor = '#141e55';
-Chart.defaults.plugins.tooltip.titleColor = '#141e55';
-Chart.defaults.plugins.tooltip.bodyColor = '#141e55';
-Chart.defaults.plugins.tooltip.cornerRadius = 2;
-Chart.defaults.plugins.tooltip.borderWidth = 1;
-// Chart.defaults.plugins.tooltip.xAlign = 'center';
-// Chart.defaults.plugins.tooltip.yAlign = 'bottom';
-// Chart.defaults.plugins.tooltip.callbacks.title = function (context) {
-//     let title = context[0].label || '';
-//     let titleParts = title.split('-');
-//     return titleParts[2] + '.' + titleParts[1] + '.' + titleParts[0];
-// };
-// Chart.defaults.plugins.tooltip.callbacks.label = function (context) {
-//     return context.formattedValue;
-// };
 
 for (let i = 0; i < defaultCharts.length; i++) {
     (async function () {
@@ -70,8 +46,10 @@ for (let i = 0; i < defaultCharts.length; i++) {
                 })),
             },
             options: {
+                clip: false,
                 datasets: {
                     line: {
+                        borderWidth: 1,
                         pointRadius: 0,
                         pointStyle: 'circle',
                     },
@@ -92,6 +70,10 @@ for (let i = 0; i < defaultCharts.length; i++) {
                             drawBorder: false,
                         },
                         ticks: {
+                            //add space before ticks
+                            callback: function (val) {
+                                return ' ' + val;
+                            },
                             // Only show year not full date
                             callback: function (value) {
                                 const curLabel =
@@ -132,6 +114,13 @@ for (let i = 0; i < defaultCharts.length; i++) {
                 },
                 plugins: {
                     tooltip: {
+                        position: 'custom',
+                        backgroundColor: 'rgb(255, 255, 255)',
+                        borderColor: '#141e55',
+                        titleColor: '#141e55',
+                        bodyColor: '#141e55',
+                        cornerRadius: 2,
+                        borderWidth: 1,
                         position: 'custom',
                         xAlign: 'center',
                         yAlign: 'bottom',
