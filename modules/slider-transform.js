@@ -52,6 +52,7 @@ let currentDot = 0;
 let currentBtn = 0;
 
 showSlide(position, currentDot, currentBtn);
+highlightButton(0);
 
 function showSlide(newPosition, newDot, newBtn) {
     position = newPosition;
@@ -62,29 +63,58 @@ function showSlide(newPosition, newDot, newBtn) {
 
     toggle.forEach((item) => item.classList.remove('active'));
     toggle[currentDot].classList.add('active');
-
-    clickedBtn[currentBtn].classList.add('clicked-button');
 }
 
-// Add event listeners to the buttons
-for (let i = 0; i < clickedBtn.length; i++) {
-    clickedBtn[i].addEventListener('click', function (button) {
-        let newPosition = -100 * i;
+// // Add event listeners to the buttons
+// for (let i = 0; i < clickedBtn.length; i++) {
+//     clickedBtn[i].addEventListener('click', function () {
+//         let newPosition = -100 * i;
+//         showSlide(newPosition, i, i);
+//         highlightButton(i);
+//     });
+// }
 
-        showSlide(newPosition, i, currentBtn);
+// // Function to highlight the clicked button
+// function highlightButton(index) {
+//     clickedBtn.forEach((btn) => btn.classList.remove('clicked-button'));
+//     clickedBtn[index].classList.add('clicked-button');
+// }
 
-        // Remove the 'clicked-button' class from all buttons
-        clickedBtn.forEach((btn) => btn.classList.remove('clicked-button'));
+// // Add event listeners to the dots
+// for (let i = 0; i < toggle.length; i++) {
+//     toggle[i].addEventListener('click', function () {
+//         let newPosition = -100 * i;
+//         showSlide(newPosition, i, currentBtn);
+//         highlightDot(currentBtn);
+//     });
+// }
 
-        // Add the 'clicked-button' class to the clicked button
-        clickedBtn[i].classList.add('clicked-button');
-    });
-}
+// // Function to highlight the clicked dot
+// function highlightDot(index) {
+//     toggle.forEach((dot) => dot.classList.remove('active'));
+//     toggle[index].classList.add('active');
+// }
 
 // Add event listeners to the dots
 for (let i = 0; i < toggle.length; i++) {
     toggle[i].addEventListener('click', function () {
         let newPosition = -100 * i;
         showSlide(newPosition, i, currentBtn);
+        highlightButton(i); // Highlight the corresponding button
     });
+}
+
+// Add event listeners to the buttons
+for (let i = 0; i < clickedBtn.length; i++) {
+    clickedBtn[i].addEventListener('click', function () {
+        let newPosition = -100 * i;
+        showSlide(newPosition, i, i);
+        highlightButton(i); // Highlight the clicked button
+    });
+}
+
+// Function to highlight the clicked button
+function highlightButton(index) {
+    clickedBtn.forEach((btn) => btn.classList.remove('clicked-button'));
+    clickedBtn[index].classList.add('clicked-button');
 }
