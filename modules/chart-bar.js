@@ -36,7 +36,7 @@ for (let i = 0; i < BarCharts.length; i++) {
             options: {
                 indexAxis: 'y',
                 responsive: true,
-                barThickness: 24,
+                barPercentage: 0.4,
                 plugins: {
                     legend: {
                         display: false,
@@ -67,6 +67,7 @@ for (let i = 0; i < BarCharts.length; i++) {
                         ticks: {
                             display: true,
                             align: 'center',
+                            color: '#000000',
                             callback: function (value) {
                                 return value + ' %' + '  ';
                             },
@@ -100,8 +101,9 @@ for (let i = 0; i < BarCharts.length; i++) {
 
                                 return newArr;
                             },
-
+                            color: '#000000',
                             crossAlign: 'left',
+                            beginAtZero: true,
                             padding: 30,
                         },
 

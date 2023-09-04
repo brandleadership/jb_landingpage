@@ -4,50 +4,50 @@ const next = document?.querySelector('.next');
 const dot1 = document?.querySelector('.dot-1');
 const dot2 = document?.querySelector('.dot-2');
 
-let slideIndex = 1;
+// let slideIndex = 1;
 
-// Add touch event listeners
+// // Add touch event listeners
 
-let xDown = null;
-let yDown = null;
+// let xDown = null;
+// let yDown = null;
 
-function handleTouchStart(evt) {
-    xDown = evt.touches[0].clientX;
-    yDown = evt.touches[0].clientY;
-}
+// function handleTouchStart(evt) {
+//     xDown = evt.touches[0].clientX;
+//     yDown = evt.touches[0].clientY;
+// }
 
-function handleTouchMove(evt) {
-    if (!xDown || !yDown) {
-        return;
-    }
+// function handleTouchMove(evt) {
+//     if (!xDown || !yDown) {
+//         return;
+//     }
 
-    let xUp = evt.touches[0].clientX;
-    let yUp = evt.touches[0].clientY;
+//     let xUp = evt.touches[0].clientX;
+//     let yUp = evt.touches[0].clientY;
 
-    let xDiff = xDown - xUp;
-    let yDiff = yDown - yUp;
+//     let xDiff = xDown - xUp;
+//     let yDiff = yDown - yUp;
 
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        if (xDiff > 0) {
-            plusSlides(1); // swipe left
-        } else {
-            plusSlides(-1); // swipe right
-        }
-    }
+//     if (Math.abs(xDiff) > Math.abs(yDiff)) {
+//         if (xDiff > 0) {
+//             plusSlides(1); // swipe left
+//         } else {
+//             plusSlides(-1); // swipe right
+//         }
+//     }
 
-    xDown = null;
-    yDown = null;
-}
+//     xDown = null;
+//     yDown = null;
+// }
 
-showSlides(slideIndex);
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides((slideIndex += n));
-}
+// function plusSlides(n) {
+//     showSlides((slideIndex += n));
+// }
 
-function currentSlide(n) {
-    showSlides((slideIndex = n));
-}
+// function currentSlide(n) {
+//     showSlides((slideIndex = n));
+// }
 
 const maxHeight = Array.from(document?.getElementsByClassName('mySlides')).sort(
     (a, b) => a.scrollHeight - b.scrollHeight

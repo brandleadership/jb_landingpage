@@ -18,6 +18,7 @@ Tooltip.positioners.custom = function (elements) {
 
 Chart.defaults.font.family = '"VerlagSSm"';
 Chart.defaults.font.weight = 'bold';
+Chart.defaults.font.color = '#000000';
 
 for (let i = 0; i < defaultCharts.length; i++) {
     (async function () {
