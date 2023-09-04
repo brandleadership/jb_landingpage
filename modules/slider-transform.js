@@ -4,45 +4,35 @@ const toggle = document.querySelectorAll('.dot-three-el');
 const clickedBtn = document.querySelectorAll('.button-element');
 
 // Add touch event listeners
-// let startX = 0;
-// let isDragging = false;
 
-// // Add touch event listeners
+let touchStartX = 0;
+let touchEndX = 0;
 
-// wrap.addEventListener('touchstart', (e) => {
-//     startX = e.touches[0].clientX;
-//     isDragging = true;
-// });
+wrap.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
 
-// wrap.addEventListener('touchmove', (e) => {
-//     if (!isDragging) return;
+wrap.addEventListener('touchmove', (e) => {
+    touchEndX = e.touches[0].clientX;
+});
 
-//     const currentX = e.touches[0].clientX;
-//     const diffX = startX - currentX;
+wrap.addEventListener('touchend', () => {
+    const touchDistance = touchEndX - touchStartX;
 
-//     // Detect swipe direction (right or left)
-//     if (diffX > 0) {
-//         showSlide(wrap, -itemWidth, 1); // Swipe left
-//     } else if (diffX < 0) {
-//         showSlide(wrap, itemWidth, -1); // Swipe right
-//     }
+    // Adjust this threshold to control swipe sensitivity
+    const swipeThreshold = 50;
 
-//     startX = currentX;
-// });
-
-// wrap.addEventListener('touchend', () => {
-//     isDragging = false;
-// });
-
-// slider
-
-// let desiredWidth = 800;
-
-// items.forEach((item) => {
-//     item.style.width = desiredWidth + '%';
-// });
-// window.addEventListener('resize', maxHeightCalculation);
-// window.addEventListener('load', maxHeightCalculation);
+    if (touchDistance > swipeThreshold && currentBtn > 0) {
+        // Swipe to the right
+        showSlide(position + 100, currentDot - 1, currentBtn - 1);
+    } else if (
+        touchDistance < -swipeThreshold &&
+        currentBtn < clickedBtn.length - 1
+    ) {
+        // Swipe to the left
+        showSlide(position - 100, currentDot + 1, currentBtn + 1);
+    }
+});
 
 function maxHeightCalculation() {
     const maxHeight = document?.getElementsByClassName(

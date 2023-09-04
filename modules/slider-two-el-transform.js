@@ -5,44 +5,38 @@ const toggle = document.querySelectorAll('.dot');
 const items = document.querySelectorAll('.item-two-el');
 const item = document.querySelector('item');
 
-// // Add touch event listeners
-// let startX = 0;
-// let isDragging = false;
+// Add touch event listeners
+let startX = 0;
+let isDragging = false;
 
-// // Add touch event listeners
+// Add touch event listeners
 
-// wrap.addEventListener('touchstart', (e) => {
-//     startX = e.touches[0].clientX;
-//     isDragging = true;
-// });
+wrap.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+});
 
-// wrap.addEventListener('touchmove', (e) => {
-//     if (!isDragging) return;
+wrap.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
 
-//     const currentX = e.touches[0].clientX;
-//     const diffX = startX - currentX;
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
 
-//     // Detect swipe direction (right or left)
-//     if (diffX > 0) {
-//         showSlide(wrap, -itemWidth, 1); // Swipe left
-//     } else if (diffX < 0) {
-//         showSlide(wrap, itemWidth, -1); // Swipe right
-//     }
+    // Detect swipe direction (right or left)
+    if (diffX > 0) {
+        showSlide(wrap, -100, 1); // Swipe left
+    } else if (diffX < 0) {
+        showSlide(wrap, 100, -1); // Swipe right
+    }
 
-//     startX = currentX;
-// });
+    startX = currentX;
+});
 
-// wrap.addEventListener('touchend', () => {
-//     isDragging = false;
-// });
+wrap.addEventListener('touchend', () => {
+    isDragging = false;
+});
 
-// slider transform
-
-// let desiredWidth = 800;
-
-// items.forEach((item) => {
-//     item.style.width = desiredWidth + 'px';
-// });
+//slider transform
 
 let itemWidth = 100;
 let position = 0;
@@ -58,13 +52,9 @@ function showSlide(elem, pix, n) {
     if (position < -100) {
         position -= pix;
         return false;
-        // position = -elem.clientWidth + pix;
-        // currentDot = toggle.length - 1;
     } else if (position > 0) {
         position -= pix;
         return false;
-        // position = 0;
-        // currentDot = 0;
     }
 
     elem.style.transform = 'translateX(' + position + '%)';
