@@ -3,7 +3,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 module.exports = cx.contentElement
     .withElementId('slider-two-el-transform')
     .withIcon(Icon.SNIPPET)
-    .withLabel('Slider Two Elements Transform')
+    .withLabel('Slider Two Elements')
     .withFile(require('./template.twig'))
     .withDropzones(
         cx.dropzone
