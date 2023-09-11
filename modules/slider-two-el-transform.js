@@ -9,8 +9,6 @@ const item = document.querySelector('item');
 let startX = 0;
 let isDragging = false;
 
-// Add touch event listeners
-
 wrap.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     isDragging = true;

@@ -19,7 +19,6 @@ wrap.addEventListener('touchmove', (e) => {
 wrap.addEventListener('touchend', () => {
     const touchDistance = touchEndX - touchStartX;
 
-    // Adjust this threshold to control swipe sensitivity
     const swipeThreshold = 50;
 
     if (touchDistance > swipeThreshold && currentBtn > 0) {
