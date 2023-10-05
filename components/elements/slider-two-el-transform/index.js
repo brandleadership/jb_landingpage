@@ -1,7 +1,7 @@
 const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
-    .withElementId('slider-two-el')
+    .withElementId('slider-two-el-transform')
     .withIcon(Icon.SNIPPET)
     .withLabel('Slider Two Elements')
     .withFile(require('./template.twig'))

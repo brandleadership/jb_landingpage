@@ -3,15 +3,19 @@
     display: flex;
     flex-direction: row;
     max-width: 83.33333%;
-    margin: auto;
+    margin: 0 auto;
     background-color: #efeee5;
     position: relative;
+    overflow: hidden;
 }
 
 .slider-box {
     width: 60%;
     margin: auto;
     height: auto;
+}
+.bsi-ce-edit-mode .item {
+    width: 100px;
 }
 
 .flex-container {
@@ -55,35 +59,26 @@
     z-index: 111;
     margin-right: 20px;
 }
-
+.clicked-button,
 .button-element:hover,
 .button-element:focus {
     background-color: var(--royalBlue);
     transform: scale(1.1);
 }
+.clicked-button,
+.button-text,
 .button-element p:hover,
 .button-element p:focus {
     color: white;
 }
 
-.clicked-button {
-    background-color: var(--royalBlue);
-    transform: scale(1.1);
-}
-
-.clicked-button .button-text {
-    color: white;
-}
-
 .vertical-line-1 {
     height: 20px;
-
     margin-left: 25px;
 }
 
 .vertical-line-2 {
     height: 20px;
-
     margin-left: 25px;
 }
 
@@ -143,6 +138,37 @@
     background-color: #717171;
 }
 
+.wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 800px;
+}
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+}
+.item {
+    display: block;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+.horizontal-bar-chart,
+.template-section-spacer--media-components {
+    height: 100%;
+}
+.template-section-spacer--media-components .row {
+    height: 100%;
+}
+.chart-legend-wrapper-bar,
+.chart-wrapper-horizontal-bar {
+    height: 100%;
+}
 @media (max-width: 599px) {
     .slideshow-container-three-el {
         max-width: 100%;

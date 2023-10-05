@@ -4,12 +4,6 @@
     margin: auto;
 }
 
-@media only screen and (max-width: 400px) {
-    .chart-wrapper-horizontal-bar {
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width: 1435px) {
     .chart-wrapper-horizontal-bar {
         width: 100%;
@@ -28,5 +22,12 @@
 @media only screen and (max-width: 600px) {
     .chart-wrapper-horizontal-bar {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .chart-wrapper-horizontal-bar {
+        width: 350px;
+        height: 350px;
     }
 }

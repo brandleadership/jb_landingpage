@@ -5,21 +5,20 @@
             {
                 "data": [
                     {
-                        "x": "Bonds and Similar Positions",
-                        "y": 58.8,
-                        "bgc": "rgb(20, 30, 85)"
-                    },
-                    {
+                        "bgc": "rgb(20, 30, 85)",
                         "x": "Equities and Similar Positions",
-                        "y": 30.7,
-                        "bgc": "rgb(67, 75, 119)"
+                        "y": 71.1
                     },
                     {
-                        "x": "Alternative Investments",
-                        "y": 5.9,
-                        "bgc": "rgb(114, 120, 153)"
+                        "bgc": "rgb(67, 75, 119)",
+                        "x": "Bonds and Similar Positions",
+                        "y": 22.9
                     },
-                    { "x": "Liquidity", "y": 4.5, "bgc": "rgb(161, 165, 187)" }
+                    {
+                        "bgc": "rgb(114, 120, 153)",
+                        "x": "Liquidity",
+                        "y": 6
+                    }
                 ]
             }
         ]

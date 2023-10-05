@@ -4,29 +4,24 @@
             {
                 "data": [
                     {
-                        "x": "World Excellence",
-                        "y": 6.15,
-                        "bgc": "rgb(176, 170, 126)"
-                    },
-                    {
-                        "x": "World Value",
-                        "y": 7.21,
-                        "bgc": "rgb(176, 170, 126)"
-                    },
-                    {
-                        "x": "Home Bias",
-                        "y": 5.52,
-                        "bgc": "rgb(176, 170, 126)"
-                    },
-                    {
+                        "bgc": "rgb(176, 170, 126)",
                         "x": "Tactical Calls",
-                        "y": 11.96,
-                        "bgc": "rgb(176, 170, 126)"
+                        "y": 12.64
                     },
                     {
-                        "x": "Other Equities",
-                        "y": 4.8,
-                        "bgc": "rgb(176, 170, 126)"
+                        "bgc": "rgb(176, 170, 126)",
+                        "x": "Home Bias",
+                        "y": 16.94
+                    },
+                    {
+                        "bgc": "rgb(176, 170, 126)",
+                        "x": "Core: World Value",
+                        "y": 12.58
+                    },
+                    {
+                        "bgc": "rgb(176, 170, 126)",
+                        "x": "Core: World Excellence",
+                        "y": 28.57
                     }
                 ]
             }
