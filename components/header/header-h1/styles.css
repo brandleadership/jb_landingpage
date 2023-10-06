@@ -3,45 +3,8 @@
     font-style: normal;
     line-height: 4.125rem;
     text-align: left;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+    overflow-wrap: break-word;
 }
-
-/* .module-hero-article-page--push-left .module-hero-article-page__headline {
-    font-family: VerlagSSm, sans-serif;
-    font-style: normal;
-    text-align: left;
-} */
-/* @media (min-width: 960px) and (max-width: 1280px) {
-    .module-hero-article-page--push-left .module-hero-article-page__headline {
-        font-size: 34px;
-        font-size: 2.125rem;
-        line-height: 2.75rem;
-    }
-}
-@media (min-width: 360px) and (max-width: 959px) {
-    .module-hero-article-page--push-left .module-hero-article-page__headline {
-        margin-right: 0;
-        margin-left: 0;
-        font-size: 34px;
-        word-break: break-word;
-        line-height: 2.75rem;
-    }
-} */
-
-/* .module-hero-article-page--2-col .module-hero-article-page__headline {
-    text-align: center;
-    margin-bottom: 31px;
-}
-
-
-@media (max-width: 959px) {
-    .module-hero-article-page--2-col .module-hero-article-page__headline {
-        margin-bottom: 32px;
-    }
-} */
 
 .module-hero-article-page--push-left .module-hero-article-page__headline {
     font-family: VerlagSSm, sans-serif;
