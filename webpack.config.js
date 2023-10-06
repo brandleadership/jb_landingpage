@@ -29,15 +29,6 @@ const landingpageBuildConfig = new BuildConfig()
                 )
             ),
         new ModuleConfig().withName('root').withPath('root.js')
-        // new ModuleConfig().withName('chart').withPath('chart.js'),
-        // new ModuleConfig()
-        //     .withName('chart_freeform')
-        //     .withPath('chart-freeform.js'),
-        // new ModuleConfig()
-        //     .withName('chart_indexed')
-        //     .withPath('chart-indexed.js'),
-        // new ModuleConfig().withName('chart_bar').withPath('chart-bar.js'),
-        // new ModuleConfig().withName('chart_pie').withPath('chart-pie.js')
     )
     .withAdditionalFilesToCopy(
         {
@@ -76,13 +67,6 @@ const websiteBuildConfig = new BuildConfig()
                 )
             ),
         new ModuleConfig().withName('root').withPath('root.js')
-        // new ModuleConfig().withName('chart').withPath('chart.js'),
-        // new ModuleConfig()
-        //     .withName('chart_freeform')
-        //     .withPath('chart-freeform.js'),
-        // new ModuleConfig()
-        //     .withName('chart_indexed')
-        //     .withPath('chart-indexed.js')
     )
     .withAdditionalFilesToCopy(
         {
