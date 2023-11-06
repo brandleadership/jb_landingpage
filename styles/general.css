@@ -5786,7 +5786,7 @@ table thead tr {
     position: relative;
     padding-top: 160px;
     transition: padding-top 0.2s linear;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 @media (-ms-high-contrast: none) {
     .page-template {
@@ -17883,8 +17883,6 @@ select[data-ss-uuid] {
     flex-wrap: wrap;
     flex-basis: 100%;
 }
-
-
 
 .module-navigation-footer__paragraph {
     letter-spacing: 0.03rem;
