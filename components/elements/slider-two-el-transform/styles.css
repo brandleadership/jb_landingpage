@@ -58,7 +58,6 @@
 /* Number text (1/2 ) */
 .numbertext1 {
     display: block;
-    font-family: VerlagSSm, sans-serif;
     font-weight: 300;
     font-style: normal;
     color: rgba(20, 30, 85, 0.8);
@@ -69,7 +68,6 @@
 
 .numbertext2 {
     display: block;
-    font-family: VerlagSSm, sans-serif;
     font-weight: 300;
     font-style: normal;
     color: rgba(20, 30, 85, 0.8);

@@ -4,7 +4,7 @@ import { PieCharts } from './chart';
 // Font Settings
 
 //Chart.defaults.borderColor = 'transparent';
-Chart.defaults.font.family = '"VerlagSSm"';
+Chart.defaults.font.family = 'VerlagText-Book';
 Chart.defaults.font.weight = 'bold';
 
 for (let i = 0; i < PieCharts.length; i++) {
