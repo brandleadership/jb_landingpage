@@ -254,7 +254,7 @@ button {
 .vjs-icon-play,
 .video-js .vjs-big-play-button .vjs-icon-placeholder:before,
 .video-js .vjs-play-control .vjs-icon-placeholder {
-    font-family: VideoJS;
+    font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -266,7 +266,7 @@ button {
 }
 
 .vjs-icon-play-circle {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -277,7 +277,7 @@ button {
 
 .vjs-icon-pause,
 .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -289,7 +289,7 @@ button {
 
 .vjs-icon-volume-mute,
 .video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -309,7 +309,7 @@ button {
 
 .vjs-icon-volume-low,
 .video-js .vjs-mute-control.vjs-vol-1 .vjs-icon-placeholder {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -329,7 +329,7 @@ button {
 
 .vjs-icon-volume-mid,
 .video-js .vjs-mute-control.vjs-vol-2 .vjs-icon-placeholder {
-    font-family: VideoJS;
+    font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -349,7 +349,7 @@ button {
 
 .vjs-icon-volume-high,
 .video-js .vjs-mute-control .vjs-icon-placeholder {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -369,7 +369,7 @@ button {
 
 .vjs-icon-fullscreen-enter,
 .video-js .vjs-fullscreen-control .vjs-icon-placeholder {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -404,7 +404,7 @@ button {
 
 .vjs-icon-fullscreen-exit,
 .video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -437,7 +437,7 @@ button {
 }
 
 .vjs-icon-square {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -447,7 +447,7 @@ button {
 }
 
 .vjs-icon-spinner {
-    font-family: VideoJS;
+      font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -463,7 +463,7 @@ button {
 .video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder,
 .video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder,
 .video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -490,7 +490,7 @@ button {
 .video-js .vjs-captions-button .vjs-icon-placeholder,
 .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder,
 .video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -504,7 +504,7 @@ button {
 
 .vjs-icon-chapters,
 .video-js .vjs-chapters-button .vjs-icon-placeholder {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -515,7 +515,7 @@ button {
 }
 
 .vjs-icon-share {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -525,7 +525,7 @@ button {
 }
 
 .vjs-icon-cog {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -538,7 +538,7 @@ button {
 .video-js .vjs-play-progress,
 .video-js .vjs-volume-level,
 .vjs-seek-to-live-control .vjs-icon-placeholder {
-    font-family: VideoJS;
+      font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -551,7 +551,7 @@ button {
 }
 
 .vjs-icon-circle-outline {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -561,7 +561,7 @@ button {
 }
 
 .vjs-icon-circle-inner-circle {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -571,7 +571,7 @@ button {
 }
 
 .vjs-icon-hd {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -582,7 +582,7 @@ button {
 
 .vjs-icon-cancel,
 .video-js .vjs-control.vjs-close-button .vjs-icon-placeholder {
-    font-family: VideoJS;
+    font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -594,7 +594,7 @@ button {
 
 .vjs-icon-replay,
 .video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder {
-    font-family: VideoJS;
+  font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -605,7 +605,7 @@ button {
 }
 
 .vjs-icon-facebook {
-    font-family: VideoJS;
+  font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -615,7 +615,7 @@ button {
 }
 
 .vjs-icon-gplus {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -625,7 +625,7 @@ button {
 }
 
 .vjs-icon-linkedin {
-    font-family: VideoJS;
+    font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -635,7 +635,7 @@ button {
 }
 
 .vjs-icon-twitter {
-    font-family: VideoJS;
+    font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -645,7 +645,7 @@ button {
 }
 
 .vjs-icon-tumblr {
-    font-family: VideoJS;
+  font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -655,7 +655,7 @@ button {
 }
 
 .vjs-icon-pinterest {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -666,7 +666,7 @@ button {
 
 .vjs-icon-audio-description,
 .video-js .vjs-descriptions-button .vjs-icon-placeholder {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -678,7 +678,7 @@ button {
 
 .vjs-icon-audio,
 .video-js .vjs-audio-button .vjs-icon-placeholder {
-    font-family: VideoJS;
+    font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -689,7 +689,7 @@ button {
 }
 
 .vjs-icon-next-item {
-    font-family: VideoJS;
+ font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -699,7 +699,7 @@ button {
 }
 
 .vjs-icon-previous-item {
-    font-family: VideoJS;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -720,7 +720,7 @@ button {
     line-height: 1;
     font-weight: normal;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Verlag SSm Book", sans-serif;
     word-break: initial;
 }
 
@@ -829,7 +829,7 @@ body.vjs-full-window {
     color: #fff;
     background-color: #000;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Verlag SSm Book", sans-serif;
     text-align: center;
     width: 300px;
     height: 150px;
@@ -952,7 +952,7 @@ body.vjs-full-window {
     display: block;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: "Verlag SSm Book", sans-serif;
     overflow: auto;
 }
 
@@ -1786,7 +1786,7 @@ video::-webkit-media-text-track-display {
 .vjs-error .vjs-error-display:before {
     color: #fff;
     content: 'X';
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: "Verlag SSm Book", sans-serif;
     font-size: 4em;
     left: 0;
     line-height: 1;
@@ -1947,7 +1947,7 @@ video::-webkit-media-text-track-display {
     .vjs-captions-menu-item
     .vjs-menu-item-text
     .vjs-icon-placeholder:before {
-    font-family: VideoJS;
+   font-family: "Verlag SSm Book", sans-serif;
     content: '\f10d';
     font-size: 1.5em;
     line-height: inherit;
@@ -1970,7 +1970,7 @@ video::-webkit-media-text-track-display {
     .vjs-main-desc-menu-item
     .vjs-menu-item-text
     .vjs-icon-placeholder:before {
-    font-family: VideoJS;
+  font-family: "Verlag SSm Book", sans-serif;
     content: ' \f11d';
     font-size: 1.5em;
     line-height: inherit;
@@ -10147,7 +10147,7 @@ select[data-ss-uuid] {
     position: relative;
     width: 100%;
     height: 100%;
-    font-family: VideoJS, sans-serif;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 28px;
@@ -17785,7 +17785,7 @@ select[data-ss-uuid] {
 .module-navigation-main .module-navigation-main__navigation-region-item:after {
     content: '\002e';
     position: absolute;
-    font-family: Lucida Grande, sans-serif;
+     font-family: "Verlag SSm Book", sans-serif;
     font-weight: 700;
     right: 7px;
     top: 43%;
