@@ -8,12 +8,12 @@ module.exports = cx.pageInclude
     .withEditable(true)
     .withFile(require('./page.twig'))
     .withDropzones(
-        cx.dropzone
-            .withDropzone('rational')
-            .withMaxAllowedElements(1)
-            .withAllowedElements(
-                require('../../../../components/elements/rational-text')
-            ),
+        // cx.dropzone
+        //     .withDropzone('rational')
+        //     .withMaxAllowedElements(1)
+        //     .withAllowedElements(
+        //         require('../../../../components/elements/rational-text')
+        //     ),
         cx.dropzone
             .withDropzone('header')
             .withMaxAllowedElements(1)
@@ -83,10 +83,10 @@ module.exports = cx.pageInclude
                 require('../../../../components/alternative-elements/wildcard'),
                 require('../../../../components/alternative-elements/cta-button'),
                 require('../../../../components/alternative-elements/cta-button-two')
-            ),
-        cx.dropzone
-            .withDropzone('footer')
-            .withAllowedElements(
-                require('../../../../components/footer/footer-container-website')
             )
+        // cx.dropzone
+        //     .withDropzone('footer')
+        //     .withAllowedElements(
+        //         require('../../../../components/footer/footer-container-website')
+        //     )
     );

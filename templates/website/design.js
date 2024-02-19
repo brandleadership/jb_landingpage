@@ -116,6 +116,7 @@ module.exports = cx.design
             .withMaxNavigationLevel(2)
             .withIncludes(
                 require('./includes/page'),
+                require('./includes/rational'),
                 require('./includes/header'),
                 require('./includes/product-nav'),
                 require('./includes/navigation'),

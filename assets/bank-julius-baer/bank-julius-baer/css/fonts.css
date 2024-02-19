@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "VerlagSSm-Light";
+    src:          url("../fonts/VerlagSSm-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Light";
+    src:     url("../fonts/VerlagSSm-Light.eot?#iefix");
+    src: url("../fonts/VerlagSSm-Light.eot?#iefix") format("eot"),
+         url("../fonts/VerlagSSm-Light.woff2") format("woff2"),
+         url("../fonts/VerlagSSm-Light.woff") format("woff"),
+         url("../fonts/VerlagSSm-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Light";
+    src:          url("../fonts/VerlagText-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Light";
+    src:     url("../fonts/VerlagSSm-Light.eot?#iefix");
+    src: url("../fonts/VerlagSSm-Light.eot?#iefix") format("eot"),
+         url("../fonts/VerlagSSm-Light.woff2") format("woff2"),
+         url("../fonts/VerlagSSm-Light.woff") format("woff"),
+         url("../fonts/VerlagSSm-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagSSm-Light";
+    src:          url("../fonts/VerlagSSm-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Light";
+    src:          url("../fonts/VerlagText-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Book";
+    src:          url("../fonts/VerlagText-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagOffice-Regular";
+    src:          url("../fonts/VerlagOffice-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Book";
+    src:          url("../fonts/VerlagText-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagSSm-Bold";
+    src:          url("../fonts/VerlagSSm-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagSSm-Bold";
+    src:          url("../fonts/VerlagSSm-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Bold";
+    src:          url("../fonts/VerlagText-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagOffice-Bold";
+    src:          url("../fonts/VerlagOffice-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Bold";
+    src:          url("../fonts/VerlagText-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Bold";
+    src:     url("../fonts/VerlagSSm-Bold.eot?#iefix");
+    src: url("../fonts/VerlagSSm-Bold.eot?#iefix") format("eot"),
+         url("../fonts/VerlagSSm-Bold.woff2") format("woff2"),
+         url("../fonts/VerlagSSm-Bold.woff") format("woff"),
+         url("../fonts/VerlagSSm-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Bold";
+    src:     url("../fonts/VerlagSSm-Bold.eot?#iefix");
+    src: url("../fonts/VerlagSSm-Bold.eot?#iefix") format("eot"),
+         url("../fonts/VerlagSSm-Bold.woff2") format("woff2"),
+         url("../fonts/VerlagSSm-Bold.woff") format("woff"),
+         url("../fonts/VerlagSSm-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Book";
+    src:     url("../fonts/VerlagSSm-Book.eot?#iefix");
+    src: url("../fonts/VerlagSSm-Book.eot?#iefix") format("eot"),
+         url("../fonts/VerlagSSm-Book.woff2") format("woff2"),
+         url("../fonts/VerlagSSm-Book.woff") format("woff"),
+         url("../fonts/VerlagSSm-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Book";
+    src:     url("../fonts/VerlagSSm-Book.eot?#iefix");
+    src: url("../fonts/VerlagSSm-Book.eot?#iefix") format("eot"),
+         url("../fonts/VerlagSSm-Book.woff2") format("woff2"),
+         url("../fonts/VerlagSSm-Book.woff") format("woff"),
+         url("../fonts/VerlagSSm-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+

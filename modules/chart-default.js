@@ -16,7 +16,7 @@ Tooltip.positioners.custom = function (elements) {
 
 // // Font Settings
 
-Chart.defaults.font.family = '"VerlagSSm"';
+Chart.defaults.font.family = 'VerlagText-Book';
 Chart.defaults.font.weight = 'bold';
 Chart.defaults.font.color = '#000000';
 
