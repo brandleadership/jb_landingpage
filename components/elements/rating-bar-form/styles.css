@@ -12,8 +12,13 @@
     padding: 20px;
 }
 
-.rating-bar-top .top-box-wrapper-form .element-heading .h5 {
+.rating-bar-top .top-box-wrapper-form .element-heading .h5,
+.rating-bar-top .top-box-wrapper-form .element-legend p {
     color: var(--white);
+}
+
+.rating-bar-top .top-box-wrapper-form .element-legend .text-small {
+    text-align: center;
 }
 
 .rating-bar-top .top-box-wrapper-form .element-description .text-small {

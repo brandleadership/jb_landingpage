@@ -3,10 +3,8 @@ import { PieCharts } from './chart';
 
 // Font Settings
 
-Chart.defaults.borderColor = 'transparent';
-Chart.defaults.plugins.legend.labels.textAlign = 'left';
-Chart.defaults.plugins.legend.labels.color = '#000000';
-Chart.defaults.font.family = '"VerlagSSm"';
+//Chart.defaults.borderColor = 'transparent';
+Chart.defaults.font.family = 'VerlagText-Book';
 Chart.defaults.font.weight = 'bold';
 
 for (let i = 0; i < PieCharts.length; i++) {
@@ -41,27 +39,31 @@ for (let i = 0; i < PieCharts.length; i++) {
                         right: 0,
                     },
                 },
-                legend: {
-                    display: false,
-                },
                 responsive: true,
-
                 plugins: {
-                    tooltip: {
-                        enabled: true,
-                        callbacks: {
-                            label: function (context) {
-                                console.log(context.label);
-                                return context.formattedValue + '%';
-                            },
-                            title: function (context) {
-                                console.log(context.formattedValue);
-                                return context.label;
-                            },
-                        },
-                    },
                     legend: {
                         display: false,
+                    },
+                    tooltip: {
+                        position: 'average',
+                        yAlign: 'center',
+                        backgroundColor: 'rgb(255, 255, 255)',
+                        borderColor: '#141e55',
+                        titleColor: '#141e55',
+                        bodyColor: '#141e55',
+                        cornerRadius: 2,
+                        borderWidth: 1,
+                        xAlign: 'center',
+                        yAlign: 'bottom',
+
+                        // callbacks: {
+                        //     label: (context) => {
+                        //         return context.formattedValue + '%';
+                        //     },
+                        //     title: (context) => {
+                        //         return context.label;
+                        //     },
+                        // },
                     },
                 },
             },
