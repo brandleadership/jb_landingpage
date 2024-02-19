@@ -14,9 +14,9 @@ Tooltip.positioners.custom = function (elements) {
     };
 };
 
-// // Font Settings
+// // Font Settings"
 
-Chart.defaults.font.family = 'Verlag SSm Book';
+Chart.defaults.font.family = '"Verlag SSm Book", sans-serif';
 Chart.defaults.font.weight = 'bold';
 Chart.defaults.font.color = '#000000';
 
