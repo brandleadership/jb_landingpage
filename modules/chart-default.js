@@ -158,7 +158,7 @@ for (let i = 0; i < defaultCharts.length; i++) {
                             boxPadding: 0,
                             color: '#000000',
                             font: {
-                                family: 'Verlag SSm Book',
+                                family: '"Verlag SSm Book", sans-serif',
                             },
                         },
                     },
