@@ -181,7 +181,7 @@
                     "boxPadding": 0,
                     "color": "#000000",
                     "font": {
-                        "family": "VerlagSSm"
+                        "family": "'Verlag SSm Book', sans-serif"
                     }
                 }
             }
