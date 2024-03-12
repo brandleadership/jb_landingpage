@@ -1,7 +1,7 @@
 import Chart from 'chart.js/auto';
 import { bgcolors, freeformCharts } from './chart';
 
-Chart.defaults.font.family = '"Verlag SSm Book", sans-serif';
+Chart.defaults.font.family = "'Verlag SSm Book', sans-serif";
 
 (async function () {
     for (let i = 0; i < freeformCharts.length; i++) {
